@@ -1,0 +1,107 @@
+/* -------------------- PERSONALIZACIÓN NAVBAR -------------------- */
+
+/* Botón "drop-down" */
+
+
+.custom-dropdown .dropdown-menu {
+  background-color: rgb(10, 25, 45);
+  border: none;
+
+}
+
+.custom-dropdown .dropdown-item {
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.custom-dropdown .dropdown-item:hover {
+  background-color: #22344f;
+  color: #879ae6;
+}
+
+/* Botón "Cotizá Ahora" */
+.cotiza-cta {
+  background-color: #023173; 
+  color: rgb(255, 255, 255);
+  border: solid blue 1px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+.cotiza-cta :hover {
+ /*  background-color: #5e5ca2;
+  text-decoration: none; */
+}
+
+/* Logo de la marca */
+.navbar-brand img {
+  height: 12vh;
+  margin-right: 10px;
+  
+}
+
+.navbar-brand span {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.logoTextStiles {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+/*   FONDO Y LETRAS DEL NAVBAR     */
+
+.navbarStyles {
+  background-color: rgb(10, 25, 45);
+  color: white;
+}
+
+.navbarStyles .nav-link {
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s ease;
+  color: white !important;
+}
+
+.navbarStyles .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.navbarStyles .nav-link:hover::after {
+  width: 80%;
+}
+
+.navbarStyles .nav-link:hover {
+  color: #879ae6 !important;
+}
+
+/* Aplica al texto "FenixBrokers" en el logo */
+.navbarStyles .navbar-brand span {
+  color: white !important;
+}
+
+/* -------------------- BOTÓN HAMBURGUESA EN BLANCO -------------------- */
+
+.navbarStyles .navbar-toggler {
+  border-color: white; /* borde blanco */
+}
+
+.navbarStyles .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+
