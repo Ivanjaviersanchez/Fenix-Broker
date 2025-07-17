@@ -3,7 +3,7 @@ import "./Personas.css";
 
 function Personas() {
   return (
-    <div>
+    <div className="containerPersonas">
       <h3>Seguros para Personas</h3>
       <Outlet />
     </div>

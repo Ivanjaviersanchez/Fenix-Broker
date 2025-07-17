@@ -2,11 +2,9 @@
 
 /* Botón "drop-down" */
 
-
 .custom-dropdown .dropdown-menu {
   background-color: rgb(10, 25, 45);
   border: none;
-
 }
 
 .custom-dropdown .dropdown-item {
@@ -39,9 +37,8 @@
 
 /* Logo de la marca */
 .navbar-brand img {
-  height: 12vh;
+  height: 14vh;
   margin-right: 10px;
-  
 }
 
 .navbar-brand span {
@@ -58,7 +55,7 @@
 /*   FONDO Y LETRAS DEL NAVBAR     */
 
 .navbarStyles {
-  background-color: rgb(10, 25, 45);
+  background-color: rgb(8, 24, 45);
   color: white;
 }
 

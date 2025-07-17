@@ -1,0 +1,79 @@
+.Container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+  padding: 2rem;
+  background-color: #bacae7;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  height: 70vh;
+}
+
+.card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #007b5e;
+}
+
+.beneficioCard h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+}
+
+.beneficioCard p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+/* Overlay sobre la imagen */
+.cardOverlay {
+  position: absolute; /* Permite posicionar dentro de la card */
+  bottom: 1rem; /* Margen inferior */
+  left: 50%;
+  transform: translateX(-50%); /* Centra horizontalmente */
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro */
+  padding: 1.5rem 1rem;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra el contenido dentro */
+  justify-content: flex-end;
+  border-radius: 12px;
+  text-align: center;
+}
+
+
+/* Botón dentro de la card */
+.cardLinkButton {
+  background-color: #023173;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9rem;
+  width: fit-content;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.cardLinkButton:hover {
+  background-color: #0051b3;
+}

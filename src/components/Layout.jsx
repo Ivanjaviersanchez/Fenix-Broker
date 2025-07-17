@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 import { Navbar, Nav, NavDropdown, Container, Button } from "react-bootstrap";
-import logo from "../assets/LogoImagen.png";
+import logo from "../assets/phoenix_transparent_resized.png";
 import Footer from "./Footer";
 import "./Layout.css";
 
