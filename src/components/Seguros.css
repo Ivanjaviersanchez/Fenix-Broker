@@ -1,25 +1,26 @@
-.Container {
+.ContainerSeguros {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 2rem;
-  margin: 2rem 0;
+  margin: 0;
   padding: 2rem;
   background-color: #bacae7;
-  border-radius: 16px;
+  /* border-radius: 16px; */
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  height: 70vh;
+  height: auto;
 }
 
-.card {
+.cardSeguros {
   background-color: white;
   border-radius: 12px;
   padding: 2rem 1.5rem;
   text-align: center;
   box-shadow: 0 2px 8px rgba(0,0,0,0.06);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 70vh;
 }
 
-.card:hover {
+.cardSeguros:hover {
   transform: translateY(-6px);
   box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
