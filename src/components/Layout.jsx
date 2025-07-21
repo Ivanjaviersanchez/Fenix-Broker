@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 import { Navbar, Nav, NavDropdown, Container, Button } from "react-bootstrap";
-import logo from "../assets/phoenix_transparent_resized.png";
+import logo from "../assets/LogoFinal.png";
 import Footer from "./Footer";
 import "./Layout.css";
 
@@ -16,9 +16,9 @@ function Layout() {
             <Container>
                 {/* LOGO y título */}
                 <Navbar.Brand as={Link} to="/" onClick={() => setExpanded(false)} className="d-flex align-items-center">
-                    <img src={logo} alt="Fenix logo" height="40" className="me-2"/>
+                    <img src={logo} alt="Fenix logo" className="me-1"/>
                     <div className="logoTextStiles">
-                        <span className="fw-bold fs-1 text-dark">Fenix</span>
+                        <span className="fw-bold fs-2 text-dark">Fenix</span>
                         <span className="fs-6 text-dark">Broker de seguros</span>
                     </div>
                 

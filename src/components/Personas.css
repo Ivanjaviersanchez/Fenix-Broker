@@ -1,3 +1,22 @@
+.ContainerCarruselPersonas {
+  padding: 2vh;
+  width: 40%;
+ /*  max-width: 1000px; */
+  margin: 0 auto;
+  /* Ajusta este valor para hacer el carrusel más pequeño */
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.ContainerCarruselPersonas img {
+  object-fit: cover; /* Mantiene relación de aspecto sin deformar */
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+}
+
+
 .ContainerPersonas {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -18,7 +37,7 @@
   text-align: center;
   box-shadow: 0 2px 8px rgba(0,0,0,0.06);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 100;
+  width: 100%;
   height: 120vh;
 }
 

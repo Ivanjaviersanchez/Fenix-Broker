@@ -1,0 +1,17 @@
+.ContainerCarruselHome {
+  padding: 2vh;
+  /* max-width: 1000px; */
+  width: 55%;
+  margin: 0 auto;
+  /* Ajusta este valor para hacer el carrusel más pequeño */
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.ContainerCarruselHome img {
+  object-fit: cover; /* Mantiene relación de aspecto sin deformar */
+  height: auto;
+  width: 100%;
+  border-radius: 12px;
+}
