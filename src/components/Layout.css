@@ -1,5 +1,59 @@
 /* -------------------- PERSONALIZACIÓN NAVBAR -------------------- */
 
+/*   FONDO Y LETRAS DEL NAVBAR     */
+
+.navbarStyles {
+  background-color: rgb(8, 24, 45);
+  color: white;
+}
+
+.navbarStyles .nav-link {
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s ease;
+  color: white !important;
+  
+}
+
+.navbarStyles .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 1px;
+  background-color: white;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.navbarStyles .nav-link:hover::after {
+  width: 80%;
+}
+
+.navbarStyles .nav-link:hover {
+  color: #879ae6 !important;
+}
+
+.navbarStyles .navbar-brand {
+  padding: 0;
+}
+/* Aplica al texto "FenixBrokers" en el logo */
+.navbarStyles .navbar-brand span {
+  color: white !important;
+  height: auto;
+}
+
+/* -------------------- BOTÓN HAMBURGUESA EN BLANCO -------------------- */
+
+.navbarStyles .navbar-toggler {
+  border-color: white; /* borde blanco */
+}
+
+.navbarStyles .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
 /* Botón "drop-down" */
 
 .custom-dropdown .dropdown-menu {
@@ -28,6 +82,8 @@
   font-size: 0.9rem;
   transition: background-color 0.3s ease;
   display: inline-block;
+  min-width: 160px;
+  font-size: 0.95rem;
 }
 
 .cotiza-cta :hover {
@@ -38,7 +94,9 @@
 /* Logo de la marca */
 .navbar-brand img {
   height: 14vh;
- 
+}
+.navbar-brand {
+  padding-right: 5vh;
 }
 
 
@@ -48,53 +106,31 @@
   text-align: left;
 }
 
-/*   FONDO Y LETRAS DEL NAVBAR     */
+/* -------------------- Media Queries para pantallas pequeñas -------------------- */
 
-.navbarStyles {
-  background-color: rgb(8, 24, 45);
-  color: white;
-}
+@media (max-width: 767px) {
 
-.navbarStyles .nav-link {
-  position: relative;
-  overflow: hidden;
-  transition: color 0.3s ease;
-  color: white !important;
-}
 
-.navbarStyles .nav-link::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0;
-  height: 2px;
-  background-color: white;
-  transition: all 0.3s ease;
-  transform: translateX(-50%);
-}
+  /* Mover el botón hamburguesa a la izquierda */
+  .navbarStyles .navbar-toggler {  
+    
+  }
 
-.navbarStyles .nav-link:hover::after {
-  width: 80%;
-}
+  /* Mover el logo a la derecha */
+  .navbarStyles .navbar-brand {
+    margin-right: 18vh;
+  }
 
-.navbarStyles .nav-link:hover {
-  color: #879ae6 !important;
-}
+ 
 
-/* Aplica al texto "FenixBrokers" en el logo */
-.navbarStyles .navbar-brand span {
-  color: white !important;
-}
-
-/* -------------------- BOTÓN HAMBURGUESA EN BLANCO -------------------- */
-
-.navbarStyles .navbar-toggler {
-  border-color: white; /* borde blanco */
-}
-
-.navbarStyles .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  /* Asegura que los links estén alineados a la izquierda */
+  .navbarStyles .navbar-nav {
+    display: flex;
+    flex-direction: column; /* Los enlaces estarán en columna */
+    align-items: flex-start; /* Los enlaces estarán alineados a la izquierda */
+    width: 100%;
+    padding-left: 20px; /* Espaciado para que no quede pegado al borde */
+  }
 }
 
 

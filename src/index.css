@@ -29,8 +29,8 @@ ul {
   
 }
 li {
-  list-style: none;
-  padding: 20px;
+  /* list-style: none; */
+  /* padding: 20px; */
   /* background-color: rgb(199, 208, 199);  */
   border-radius: 15px;
 }
