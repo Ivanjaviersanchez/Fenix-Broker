@@ -10,7 +10,7 @@
   height: auto;
 }
 
-.ContainerSegurosGrid4 {
+.ContainerSegurosGrid5 {
   display: grid;
   gap: 2rem;
   margin: 0;
@@ -19,7 +19,15 @@
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
   height: auto;
 
-  grid-template-columns: repeat(1, 1fr); /* Mobile por defecto */
+  grid-template-columns: repeat(2, 1fr); /* Mobile por defecto */
+}
+
+.ContainerSegurosGrid5 h3 {
+  font-size: 3vh;
+}
+
+.ContainerSegurosGrid5 .cardSeguros {
+  height: 35vh;
 }
 
 .cardSeguros {
@@ -43,12 +51,15 @@
   bottom: 1rem; /* Margen inferior */
   left: 50%;
   transform: translateX(-50%); /* Centra horizontalmente */
-  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro */
-  padding: 1.5rem 1rem;
-  width: 90%;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem 0.5rem;
+  width: 95%;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center; /* Centra el contenido dentro */
+ 
   justify-content: flex-end;
   border-radius: 12px;
   text-align: center;
@@ -57,7 +68,8 @@
 
 /* Botón dentro de la card */
 .cardLinkButton {
-  background-color: #023173;
+  background-color: #023173; 
+  border: solid blue 1px;
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 8px;
@@ -71,12 +83,13 @@
 
 .cardLinkButton:hover {
   background-color: #0051b3;
+  color: #879ae6;
 }
 
 .segurosList {
   list-style-type: disc;
   padding-left: 1.5rem;
-  margin: 0;
+  margin: 2.8vh;
   display: block;
 }
 
@@ -85,11 +98,15 @@
   margin-bottom: 0;
   font-size: 2vh;
   text-align: start;
+  color: #abc8f1;
 }
 
 @media (min-width: 1024px) {
-  .ContainerSegurosGrid4 {
-    grid-template-columns: repeat(4, 1fr); /* Desktop */
+  .ContainerSegurosGrid5 {
+    grid-template-columns: repeat(5, 1fr); /* Desktop */
+  }
+  .ContainerSegurosGrid5 .cardSeguros {
+    height: 30vh;
   }
 }
 
