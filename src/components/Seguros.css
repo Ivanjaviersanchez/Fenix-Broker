@@ -1,74 +1,57 @@
+/* ===== CONTAINERS ===== */
+
 .ContainerSeguros {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 2rem;
-  margin: 0;
   padding: 2rem;
   background-color: #bacae7;
-  /* border-radius: 16px; */
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  height: auto;
 }
 
 .ContainerSegurosGrid5 {
   display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Mobile */
   gap: 2rem;
-  margin: 0;
   padding: 2rem;
   background-color: #bacae7;
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  height: auto;
-
-  grid-template-columns: repeat(2, 1fr); /* Mobile por defecto */
 }
 
-.ContainerSegurosGrid5 h3 {
-  font-size: 3vh;
+@media (min-width: 1024px) {
+  .ContainerSegurosGrid5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
 }
 
-.ContainerSegurosGrid5 .cardSeguros {
-  height: 35vh;
-}
 
-.cardSeguros {
-  background-color: white;
+/* ===== CARDS INTRO ===== */
+
+.cardSegurosIntro {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  color: white;
   border-radius: 12px;
-  padding: 2rem 1.5rem;
-  text-align: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  height: 40vh;
-}
-
-.cardSeguros:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-}
-
-/* Overlay sobre la imagen */
-.cardOverlay {
-  position: absolute; /* Permite posicionar dentro de la card */
-  bottom: 1rem; /* Margen inferior */
-  left: 50%;
-  transform: translateX(-50%); /* Centra horizontalmente */
-
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 0.5rem 0.5rem;
-  width: 95%;
-  height: auto;
+  overflow: hidden;
+  min-height: 30vh;
   display: flex;
-  flex-direction: column;
-  align-items: center; /* Centra el contenido dentro */
- 
-  justify-content: flex-end;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 1rem;
+  height: 55vh;
+}
+
+.cardOverlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  width: 100%;
   border-radius: 12px;
   text-align: center;
 }
 
-
-/* Botón dentro de la card */
 .cardLinkButton {
-  background-color: #023173; 
+  background-color: #023173;
   border: solid blue 1px;
   color: white;
   padding: 0.5rem 1rem;
@@ -76,8 +59,8 @@
   text-decoration: none;
   font-weight: bold;
   font-size: 0.9rem;
-  width: fit-content;
   margin-top: 1rem;
+  display: inline-block;
   transition: background-color 0.3s ease;
 }
 
@@ -86,27 +69,114 @@
   color: #879ae6;
 }
 
+
+/* ===== CARD SEGUROS ===== */
+
+.cardSeguros {
+  position: relative;
+  height: 32vh;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.cardSeguros:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Título visible por defecto */
+.cardTitleDefault {
+  position: relative;
+  z-index: 1;
+  color: white;
+  font-size: 1.3rem;
+  padding: 0.5rem 1rem;
+  /* background-color: rgba(0, 0, 0, 0.4); */
+  border-radius: 8px;
+  margin: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Ocultar el título por defecto al hacer hover */
+.cardSeguros:hover .cardTitleDefault {
+  opacity: 0;
+}
+
+/* Overlay oculto por defecto */
+.cardOverlaySeguro {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 12px;
+}
+.cardOverlaySeguro h3 {
+  font-size: 3vh;
+}
+
+/* Mostrar overlay en hover */
+.cardSeguros:hover .cardOverlaySeguro {
+  opacity: 1;
+}
+
+/* Título dentro del overlay */
+.cardTitleHover {
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Lista de seguros */
 .segurosList {
-  list-style-type: disc;
-  padding-left: 1.5rem;
-  margin: 2.8vh;
-  display: block;
+  list-style-position: inside; /* Asegura que el punto quede junto al texto */
+  padding: 0;                  /* Eliminamos padding para evitar saltos */
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  align-items: flex-start;
+  width: 100%;
 }
 
 .segurosList li {
   display: list-item;
-  margin-bottom: 0;
-  font-size: 2vh;
-  text-align: start;
+  font-size: 0.85rem;
   color: #abc8f1;
+  line-height: 1.4;
+  text-align: left;
+  width: 100%;
 }
 
-@media (min-width: 1024px) {
-  .ContainerSegurosGrid5 {
-    grid-template-columns: repeat(5, 1fr); /* Desktop */
-  }
-  .ContainerSegurosGrid5 .cardSeguros {
-    height: 30vh;
-  }
+
+/* Botón en overlay */
+.cardLinkButtonSeguro {
+  background-color: #023173;
+  border: solid blue 1px;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.85rem;
+  margin-top: 0.8rem;
+  transition: background-color 0.3s ease;
+}
+
+.cardLinkButtonSeguro:hover {
+  background-color: #0051b3;
 }
 
