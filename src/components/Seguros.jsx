@@ -10,11 +10,11 @@ import logoSeguroObjetos from "../assets/LogoSeguroObjetos.png"
 import logoSeguroRetiro from "../assets/LogoSeguroRetiro.png"
 import logoSeguroVida from "../assets/LogoSeguroVida.png"
 import logoSeguroComercio from "../assets/LogoSeguroComercio.png"
-//import logoSeguroConsorcio from ""
-//import logoRespCivilEmpresa from ""
-//import logoSeguroBuque from ""
-//import logoSeguroART from ""
-//import logoSeguroCaucionEmpresa from ""
+import logoSeguroConsorcio from "../assets/LogoSeguroConsorcio.png"
+import logoRespCivilEmpresa from "../assets/LogoRespCivilEmpresas.png"
+import logoSeguroBuque from "../assets/LogoSeguroBuques.png"
+import logoSeguroART from "../assets/LogoSeguroART.png"
+import logoSeguroCaucionEmpresa from "../assets/LogoSeguroCaucionEmpresa.png"
 
 function Seguros() {
   const segurosList = [
@@ -26,11 +26,11 @@ function Seguros() {
     { id: "retiro", title: "Seguros de Retiro", img: logoSeguroRetiro, list: ["Plan de Retiro Básico", "Plan de Retiro Plus"] },
     { id: "vida", title: "Seguros de Vida", img: logoSeguroVida, list: ["Vida Individual", "Vida Colectivo"] },
     { id: "comercios", title: "Seguros para Comercios", img: logoSeguroComercio, list: ["Todo Riezgo Operativo", "Seguro para Incendio","Seguro para Robo"] },
-    //{ id: "consorcios", title: "Seguros para Consorcios", img: logoSeguroConsorcio, list: ["Seguro para OTROS", "Seguro para OTROS"] },
-    //{ id: "respcivil", title: "Responsabilidad Civil para Empresas", img: logoRespCivilEmpresa, list: ["Seguro para OTROS", "Seguro para OTROS"] },
-    //{ id: "buques", title: "Seguros de Buques", img: logoSeguroBuque, list: ["Seguro para OTROS", "Seguro para OTROS"] },
-    //{ id: "art", title: "Seguros ART", img: logoSeguroART, list: ["Seguro para OTROS", "Seguro para OTROS"] },
-    //{ id: "caucionempresas", title: "Seguros de Caucion para Empresas", img: logoSeguroCaucionEmpresa, list: ["Seguro para OTROS", "Seguro para OTROS"] },
+    { id: "consorcios", title: "Seguros para Consorcios", img: logoSeguroConsorcio, list: ["Responsabilidad Civil", "Daños por incendio", "Cobertura integral"] },
+    { id: "respcivil", title: "Responsabilidad Civil para Empresas", img: logoRespCivilEmpresa, list: ["Responsabilidad Civil General", "Responsabilidad Profesional"] },
+    { id: "buques", title: "Seguros de Buques", img: logoSeguroBuque, list: ["Cobertura Total de Buques", "Responsabilidad Marítima"] },
+    { id: "art", title: "Seguros ART", img: logoSeguroART, list: ["Cobertura por accidente", "Cobertura por enfermedad laboral"] },
+    { id: "caucionempresas", title: "Seguros de Caucion para Empresas", img: logoSeguroCaucionEmpresa, list: ["Caución Contractual", "Caución Judicial"] },
   ];
 
   return (

@@ -42,6 +42,31 @@ const segurosData = {
         title: "Seguros para Comercios",
         description: "Protegé tu comercio de riesgos operativos y pérdidas económicas.",
         items: ["Todo Riezgo Operativo", "Seguro para Incendio", "Seguro para Robo"]
+    },
+    consorcios: {
+        title: "Seguros para Consorcios",
+        description: "Coberturas específicas para edificios y propiedades en consorcio.",
+        items: ["Responsabilidad Civil", "Daños por incendio", "Cobertura integral"]
+    },
+    respcivil: {
+        title: "Responsabilidad Civil para Empresas",
+        description: "Protección ante reclamos de terceros por daños causados por tu empresa.",
+        items: ["Responsabilidad Civil General", "Responsabilidad Profesional"]
+    },
+    buques: {
+        title: "Seguros de Buques",
+        description: "Coberturas especializadas para embarcaciones comerciales o recreativas.",
+        items: ["Cobertura Total de Buques", "Responsabilidad Marítima"]
+    },
+    art: {
+        title: "Seguros ART",
+        description: "Seguros obligatorios para la protección de tus empleados ante accidentes laborales.",
+        items: ["Cobertura por accidente", "Cobertura por enfermedad laboral"]
+    },
+    caucionempresas: {
+        title: "Seguros de Caución para Empresas",
+        description: "Garantizá tus compromisos contractuales con seguros de caución.",
+        items: ["Caución Contractual", "Caución Judicial"]
     }
 };
 
