@@ -1,3 +1,5 @@
+import { useLocation } from "react-router-dom";
+
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
@@ -22,12 +24,24 @@ function Cotiza() {
     terms: yup.bool().required().oneOf([true], 'terms must be accepted'),
   });
 
+  const location = useLocation();
+  const { seguro, cobertura } = location.state || {};
+
+
   return (
     <div>
       <div className='ContainerFormCotizacion'>
         <h3>Solicitud de Cotizacion</h3>
         <p>Procesaremos tu solicitud con nuestros acesores para ofrecerte la mejor opcion ajustada a tu necesidad</p>
+        
+        {seguro && cobertura && (
+          <div className="CotizacionResumen">
+            <p>Estás solicitando una cotización para: <strong>{seguro}</strong></p>
+            <p>Cobertura seleccionada: <strong>{cobertura}</strong></p>
+          </div>
+        )}
       </div>
+      
       <div className="ContainerFormCotizacion">
         <Formik
           validationSchema={schema}

@@ -18,19 +18,19 @@ import logoSeguroComercio from "../assets/LogoSeguroComercio.png"
 
 function Seguros() {
   const segurosList = [
-    { title: "Seguros para Autos", img: logoSeguroAuto, list: ["Responsabilidad Civil", "Terceros Completo", "Todo Riesgo"] },
-    { title: "Seguros para Motos", img: logoSeguroMoto, list: ["Seguro Moto Base", "Seguro Moto Plus", "Seguro Moto Premium"] },
-    { title: "Seguros para el Hogar", img: logoSeguroHogar, list: ["Seguro Hogar Premium", "Seguro de Caución"] },
-    { title: "Seguros de Movilidad", img: logoSeguroMovilidad, list: ["Bicicletas", "Monopatines"] },
-    { title: "Objetos Personales", img: logoSeguroObjetos, list: ["Seguro de Bolso", "Seguro de Celulares", "Seguro de Notebooks"] },
-    { title: "Seguros de Retiro", img: logoSeguroRetiro, list: ["Plan de Retiro Básico", "Plan de Retiro Plus"] },
-    { title: "Seguros de Vida", img: logoSeguroVida, list: ["Vida Individual", "Vida Colectivo"] },
-    { title: "Seguros para Comercios", img: logoSeguroComercio, list: ["Todo Riezgo Operativo", "Seguro para Incendio","Seguro para Robo"] },
-    //{ title: "Seguros para Consorcios", img: logoSeguroConsorcio, list: ["Seguro para OTROS", "Seguro para OTROS"] },
-    //{ title: "Responsabilidad Civil para Empresas", img: logoRespCivilEmpresa, list: ["Seguro para OTROS", "Seguro para OTROS"] },
-    //{ title: "Seguros de Buques", img: logoSeguroBuque, list: ["Seguro para OTROS", "Seguro para OTROS"] },
-    //{ title: "Seguros ART", img: logoSeguroART, list: ["Seguro para OTROS", "Seguro para OTROS"] },
-    //{ title: "Seguros de Caucion para Empresas", img: logoSeguroCaucionEmpresa, list: ["Seguro para OTROS", "Seguro para OTROS"] },
+    { id: "autos", title: "Seguros para Autos", img: logoSeguroAuto, list: ["Responsabilidad Civil", "Terceros Completo", "Todo Riesgo"] },
+    { id: "motos", title: "Seguros para Motos", img: logoSeguroMoto, list: ["Seguro Moto Base", "Seguro Moto Plus", "Seguro Moto Premium"] },
+    { id: "hogar", title: "Seguros para el Hogar", img: logoSeguroHogar, list: ["Seguro Hogar Premium", "Seguro de Caución"] },
+    { id: "movilidad", title: "Seguros de Movilidad", img: logoSeguroMovilidad, list: ["Bicicletas", "Monopatines"] },
+    { id: "objetos", title: "Objetos Personales", img: logoSeguroObjetos, list: ["Seguro de Bolso", "Seguro de Celulares", "Seguro de Notebooks"] },
+    { id: "retiro", title: "Seguros de Retiro", img: logoSeguroRetiro, list: ["Plan de Retiro Básico", "Plan de Retiro Plus"] },
+    { id: "vida", title: "Seguros de Vida", img: logoSeguroVida, list: ["Vida Individual", "Vida Colectivo"] },
+    { id: "comercios", title: "Seguros para Comercios", img: logoSeguroComercio, list: ["Todo Riezgo Operativo", "Seguro para Incendio","Seguro para Robo"] },
+    //{ id: "consorcios", title: "Seguros para Consorcios", img: logoSeguroConsorcio, list: ["Seguro para OTROS", "Seguro para OTROS"] },
+    //{ id: "respcivil", title: "Responsabilidad Civil para Empresas", img: logoRespCivilEmpresa, list: ["Seguro para OTROS", "Seguro para OTROS"] },
+    //{ id: "buques", title: "Seguros de Buques", img: logoSeguroBuque, list: ["Seguro para OTROS", "Seguro para OTROS"] },
+    //{ id: "art", title: "Seguros ART", img: logoSeguroART, list: ["Seguro para OTROS", "Seguro para OTROS"] },
+    //{ id: "caucionempresas", title: "Seguros de Caucion para Empresas", img: logoSeguroCaucionEmpresa, list: ["Seguro para OTROS", "Seguro para OTROS"] },
   ];
 
   return (
@@ -70,7 +70,7 @@ function Seguros() {
                   <li key={i}>{text}</li>
                 ))}
               </ul>
-              <Link to="/seguros/personas" className="cardLinkButtonSeguro">Ver Seguros</Link>
+              <Link to={`/seguros/${item.id}`} className="cardLinkButtonSeguro">Ver Seguros</Link>
             </div>
           </div>
         ))}

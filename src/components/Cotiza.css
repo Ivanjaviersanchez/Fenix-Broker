@@ -6,3 +6,12 @@
   background-color: #bacae7;
   height: auto;
 }
+
+.CotizacionResumen {
+  background-color: #e9f1ff;
+  border: 1px solid #b1c9f8;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}

@@ -1,6 +1,5 @@
 import { Outlet, Link } from "react-router-dom";
 import "./Empresas.css";
-import empresasBg from "../assets/EmpresasBG.png"; 
 
 import logoSeguroComercio from "../assets/LogoSeguroComercio.png"
 //import logoSeguroConsorcio from ""
@@ -11,12 +10,12 @@ import logoSeguroComercio from "../assets/LogoSeguroComercio.png"
 
 function Empresas() {
   const segurosList = [
-      { title: "Seguros para Comercios", img: logoSeguroComercio, list: ["Todo Riezgo Operativo", "Seguro para Incendio","Seguro para Robo"] },
-      //{ title: "Seguros para Consorcios", img: logoSeguroConsorcio, list: ["Seguro para OTROS", "Seguro para OTROS"] },
-      //{ title: "Responsabilidad Civil para Empresas", img: logoRespCivilEmpresa, list: ["Seguro para OTROS", "Seguro para OTROS"] },
-      //{ title: "Seguros de Buques", img: logoSeguroBuque, list: ["Seguro para OTROS", "Seguro para OTROS"] },
-      //{ title: "Seguros ART", img: logoSeguroART, list: ["Seguro para OTROS", "Seguro para OTROS"] },
-      //{ title: "Seguros de Caucion para Empresas", img: logoSeguroCaucionEmpresa, list: ["Seguro para OTROS", "Seguro para OTROS"] },
+      { id: "comercios", title: "Seguros para Comercios", img: logoSeguroComercio, list: ["Todo Riezgo Operativo", "Seguro para Incendio","Seguro para Robo"] },
+      //{ id: "consorcios", title: "Seguros para Consorcios", img: logoSeguroConsorcio, list: ["Seguro para OTROS", "Seguro para OTROS"] },
+      //{ id: "respcivil", title: "Responsabilidad Civil para Empresas", img: logoRespCivilEmpresa, list: ["Seguro para OTROS", "Seguro para OTROS"] },
+      //{ id: "buques", title: "Seguros de Buques", img: logoSeguroBuque, list: ["Seguro para OTROS", "Seguro para OTROS"] },
+      //{ id: "art", title: "Seguros ART", img: logoSeguroART, list: ["Seguro para OTROS", "Seguro para OTROS"] },
+      //{ id: "caucionempresas", title: "Seguros de Caucion para Empresas", img: logoSeguroCaucionEmpresa, list: ["Seguro para OTROS", "Seguro para OTROS"] },
     ];
 
   return (
@@ -38,7 +37,7 @@ function Empresas() {
                   <li key={i}>{text}</li>
                 ))}
               </ul>
-              <Link to="/seguros/personas" className="cardLinkButtonSeguro">Ver Seguros</Link>
+              <Link to={`/seguros/${item.id}`} className="cardLinkButtonSeguro">Ver Seguros</Link>
             </div>
           </div>
         ))}
