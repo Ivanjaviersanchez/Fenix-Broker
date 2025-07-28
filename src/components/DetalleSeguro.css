@@ -2,11 +2,23 @@
 
 .ContainerDetalleSeguro {
   background-color: #bacae7;
-  padding: 1rem;
+  padding: 2rem;
 }
-.ContainerDetalleSeguro p {
-  margin-top: 3vh;
+
+.ContainerDetalleSeguro h3 {
+  color: rgb(1, 1, 144);
+  font-size: 5vh;
+  font-weight: bold;
+  text-align: center;
+}
+
+.ContainerDetalleSeguro p,
+.ContainerDetalleSeguro h4 {
+  color: rgb(1, 1, 144);
+  margin-top: 3.2vh;
   font-size: 3vh;
+  padding: 0 15%;
+  text-align: center;
 }
 
 /* ===== CARDS DE COBERTURAS ===== */
@@ -20,24 +32,49 @@
 }
 
 .DetalleCard {
-  background: linear-gradient(135deg, #3a5fcf, #6a8eff);
-  color: white;
+  background-color: #ffffff;
+  color: #333;
   padding: 1.5rem;
-  border-radius: 10px;
-  width: 260px;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 2px solid rgb(1, 1, 144);
+  border-radius: 20px;
+  width: 25%;
+  text-align: left;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
   transition: transform 0.2s ease-in-out;
+  justify-content: space-between;
 }
 
 .DetalleCard:hover {
   transform: scale(1.03);
 }
 
-.DetalleCard h5 {
-  font-size: 1.2rem;
+.DetalleCard h4 {
+  font-size: 3vh;
+  font-weight: 700;
+  color: rgb(1, 1, 144);
   margin-bottom: 1rem;
 }
+.DetalleCard h5 {
+  color: rgb(1, 1, 144);
+  margin-bottom: 1rem;
+}
+
+.BeneficiosList {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.BeneficiosList li {
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-size: 0.95rem;
+  
+}
+
+/* ===== BOTÓN COTIZA AHORA ===== */
 
 .CotizaButton {
   background-color: #023173; 
@@ -53,5 +90,8 @@
 }
 
 .CotizaButton:hover {
-  color: #879ae6 !important;
+  
+  color: #879ae6;
+  border: solid blue 1px;
+  
 }

@@ -5,6 +5,12 @@
   padding-right: 15vh;
   background-color: #bacae7;
   height: auto;
+  color: rgb(1, 1, 144);
+  font-size: 3vh;
+}
+.ContainerFormCotizacion h3 {
+  font-size: 4.5vh;
+
 }
 
 .CotizacionResumen {
@@ -14,4 +20,5 @@
   border-radius: 8px;
   margin-bottom: 1rem;
   font-size: 1.1rem;
+  color: rgb(1, 1, 144);
 }

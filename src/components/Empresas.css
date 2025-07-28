@@ -3,6 +3,7 @@
 .ContainerEmpresas {
   background-color: #bacae7;
   padding: 1rem;
+  color: rgb(1, 1, 144);
 }
 .ContainerEmpresas p {
   margin-top: 3vh;

@@ -3,6 +3,7 @@
 .ContainerPersonas {
   background-color: #bacae7;
   padding: 1rem;
+  color: rgb(1, 1, 144);
 }
 .ContainerPersonas p {
   margin-top: 3vh;
