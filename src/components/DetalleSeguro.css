@@ -21,6 +21,10 @@
   text-align: center;
 }
 
+.ContainerIncluyen {
+ 
+}
+
 /* ===== CARDS DE COBERTURAS ===== */
 
 .DetalleCardsContainer {
@@ -29,6 +33,7 @@
   gap: 2rem;
   margin-top: 2rem;
   justify-content: center;
+
 }
 
 .DetalleCard {
@@ -94,4 +99,74 @@
   color: #879ae6;
   border: solid blue 1px;
   
+}
+
+/* ===== TODOS LOS PLANES INCLUYEN ===== */
+
+.ContainerIncluyen {
+  margin-top: 4rem;
+  background-color: #ecf2ff;
+  border: solid blue 1px;
+  padding: 2rem 3%;
+  margin: 5vh 5vh;
+  border-radius: 20px;
+  text-align: center;
+
+}
+
+.ContainerIncluyen h4 {
+  font-size: 3.5vh;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.IncluyenGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+  align-items: start;
+  
+}
+
+.IncluyenItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #5a0c38;
+  font-size: 0.95rem;
+  text-align: center;
+  /* max-width: 220px;  */
+}
+.IncluyenItem p {
+  font-size: 3vh;
+}
+
+.IconPlaceholder {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #99004d;
+}
+
+/* Estilo responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+  .DetalleCardsContainer {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .DetalleCard {
+    width: 60%; /* o 100%, según tu diseño */
+  }
+
+  .ContainerIncluyen {
+    margin: 0;
+    padding: 0;
+  }
+
+  .IncluyenGrid {
+  
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
 }

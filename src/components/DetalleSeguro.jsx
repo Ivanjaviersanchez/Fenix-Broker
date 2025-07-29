@@ -4,8 +4,7 @@ import "./DetalleSeguro.css";
 const segurosData = {
   autos: {
     title: "Seguros para Autos",
-    description:
-      "Coberturas completas para proteger tu auto ante cualquier imprevisto. Garantiza que vos y tu vehículo estén siempre protegidos frente a todo tipo de riesgos, ofreciéndote tranquilidad y seguridad.",
+    description: "Coberturas completas para proteger tu auto ante cualquier imprevisto. Garantiza que vos y tu vehículo estén siempre protegidos frente a todo tipo de riesgos, ofreciéndote tranquilidad y seguridad.",
     items: [
       {
         nombre: "Responsabilidad Civil",
@@ -33,7 +32,15 @@ const segurosData = {
           "Franquicia o deducible ajustable"
         ]
       }
-    ]
+    ],
+    incluyen: [
+      "Inspección previa 100 % online",
+      "Cobertura por reclamos por daños causados por el vehículo a bienes de terceros o personas",
+      "Extensión de coberturas a países limítrofes",
+      "Sistema CLEAS: agiliza la gestión de siniestros entre compañías adheridas",
+      "Descuentos exclusivos en neumáticos",
+      "Consultorio Médico Virtual: disponible 24/7"
+    ], 
   },
   motos: {
     title: "Seguros para Motos",
@@ -56,7 +63,15 @@ const segurosData = {
           "Cobertura contra accidentes"
         ]
       }
-    ]
+    ],
+    incluyen: [
+      "Inspección ",
+      "Cobertura por reclamos por daños causados por el vehículo a bienes de terceros o personas",
+      "Extensión de coberturas a países limítrofes",
+      "Sistema CLEAS: agiliza la gestión de siniestros entre compañías adheridas",
+      "Descuentos exclusivos en neumáticos",
+      "Consultorio Médico Virtual: disponible 24/7"
+    ], 
   },
   hogar: {
     title: "Seguros para el Hogar",
@@ -80,7 +95,15 @@ const segurosData = {
           "Garantía judicial"
         ]
       }
-    ]
+    ],
+    incluyen: [
+      "Inspección previa 100 % online",
+      "Cobertura por reclamos por daños causados por el vehículo a bienes de terceros o personas",
+      "Extensión de coberturas a países limítrofes",
+      "Sistema CLEAS: agiliza la gestión de siniestros entre compañías adheridas",
+      "Descuentos exclusivos en neumáticos",
+      "Consultorio Médico Virtual: disponible 24/7"
+    ], 
   },
   movilidad: {
     title: "Seguros de Movilidad",
@@ -104,7 +127,15 @@ const segurosData = {
           "Cobertura en tránsito urbano"
         ]
       }
-    ]
+    ],
+    incluyen: [
+      "Inspección previa 100 % online",
+      "Cobertura por reclamos por daños causados por el vehículo a bienes de terceros o personas",
+      "Extensión de coberturas a países limítrofes",
+      "Sistema CLEAS: agiliza la gestión de siniestros entre compañías adheridas",
+      "Descuentos exclusivos en neumáticos",
+      "Consultorio Médico Virtual: disponible 24/7"
+    ], 
   },
   objetos: {
     title: "Objetos Personales",
@@ -127,7 +158,15 @@ const segurosData = {
           "Cobertura de accesorios"
         ]
       }
-    ]
+    ],
+    incluyen: [
+      "Inspección previa 100 % online",
+      "Cobertura por reclamos por daños causados por el vehículo a bienes de terceros o personas",
+      "Extensión de coberturas a países limítrofes",
+      "Sistema CLEAS: agiliza la gestión de siniestros entre compañías adheridas",
+      "Descuentos exclusivos en neumáticos",
+      "Consultorio Médico Virtual: disponible 24/7"
+    ], 
   },
   retiro: {
     title: "Seguros de Retiro",
@@ -145,7 +184,15 @@ const segurosData = {
           "Cobertura por invalidez y fallecimiento"
         ]
       }
-    ]
+    ],
+    incluyen: [
+      "Inspección previa 100 % online",
+      "Cobertura por reclamos por daños causados por el vehículo a bienes de terceros o personas",
+      "Extensión de coberturas a países limítrofes",
+      "Sistema CLEAS: agiliza la gestión de siniestros entre compañías adheridas",
+      "Descuentos exclusivos en neumáticos",
+      "Consultorio Médico Virtual: disponible 24/7"
+    ], 
   },
   vida: {
     title: "Seguros de Vida",
@@ -163,7 +210,15 @@ const segurosData = {
           "Cobertura extendida"
         ]
       }
-    ]
+    ],
+    incluyen: [
+      "Inspección previa 100 % online",
+      "Cobertura por reclamos por daños causados por el vehículo a bienes de terceros o personas",
+      "Extensión de coberturas a países limítrofes",
+      "Sistema CLEAS: agiliza la gestión de siniestros entre compañías adheridas",
+      "Descuentos exclusivos en neumáticos",
+      "Consultorio Médico Virtual: disponible 24/7"
+    ], 
   },
   comercios: {
     title: "Seguros para Comercios",
@@ -187,7 +242,15 @@ const segurosData = {
         nombre: "Seguro para Robo",
         beneficios: ["Robo de mercadería", "Caja fuerte", "Electrodomésticos"]
       }
-    ]
+    ],
+    incluyen: [
+      "Inspección previa 100 % online",
+      "Cobertura por reclamos por daños causados por el vehículo a bienes de terceros o personas",
+      "Extensión de coberturas a países limítrofes",
+      "Sistema CLEAS: agiliza la gestión de siniestros entre compañías adheridas",
+      "Descuentos exclusivos en neumáticos",
+      "Consultorio Médico Virtual: disponible 24/7"
+    ], 
   },
   consorcios: {
     title: "Seguros para Consorcios",
@@ -211,7 +274,15 @@ const segurosData = {
           "RC profesional del administrador"
         ]
       }
-    ]
+    ],
+    incluyen: [
+      "Inspección previa 100 % online",
+      "Cobertura por reclamos por daños causados por el vehículo a bienes de terceros o personas",
+      "Extensión de coberturas a países limítrofes",
+      "Sistema CLEAS: agiliza la gestión de siniestros entre compañías adheridas",
+      "Descuentos exclusivos en neumáticos",
+      "Consultorio Médico Virtual: disponible 24/7"
+    ], 
   },
   respcivil: {
     title: "Responsabilidad Civil para Empresas",
@@ -225,7 +296,15 @@ const segurosData = {
         nombre: "Responsabilidad Profesional",
         beneficios: ["Errores y omisiones", "Negligencia profesional", "Cobertura judicial"]
       }
-    ]
+    ],
+    incluyen: [
+      "Inspección previa 100 % online",
+      "Cobertura por reclamos por daños causados por el vehículo a bienes de terceros o personas",
+      "Extensión de coberturas a países limítrofes",
+      "Sistema CLEAS: agiliza la gestión de siniestros entre compañías adheridas",
+      "Descuentos exclusivos en neumáticos",
+      "Consultorio Médico Virtual: disponible 24/7"
+    ], 
   },
   buques: {
     title: "Seguros de Buques",
@@ -239,7 +318,15 @@ const segurosData = {
         nombre: "Responsabilidad Marítima",
         beneficios: ["Daños a terceros", "Colisiones", "Contaminación marina"]
       }
-    ]
+    ],
+    incluyen: [
+      "Inspección previa 100 % online",
+      "Cobertura por reclamos por daños causados por el vehículo a bienes de terceros o personas",
+      "Extensión de coberturas a países limítrofes",
+      "Sistema CLEAS: agiliza la gestión de siniestros entre compañías adheridas",
+      "Descuentos exclusivos en neumáticos",
+      "Consultorio Médico Virtual: disponible 24/7"
+    ], 
   },
   art: {
     title: "Seguros ART",
@@ -253,7 +340,15 @@ const segurosData = {
         nombre: "Cobertura por enfermedad laboral",
         beneficios: ["Cobertura total", "Diagnóstico y tratamiento", "Prestaciones económicas"]
       }
-    ]
+    ],
+    incluyen: [
+      "Inspección previa 100 % online",
+      "Cobertura por reclamos por daños causados por el vehículo a bienes de terceros o personas",
+      "Extensión de coberturas a países limítrofes",
+      "Sistema CLEAS: agiliza la gestión de siniestros entre compañías adheridas",
+      "Descuentos exclusivos en neumáticos",
+      "Consultorio Médico Virtual: disponible 24/7"
+    ], 
   },
   caucionempresas: {
     title: "Seguros de Caución para Empresas",
@@ -267,7 +362,15 @@ const segurosData = {
         nombre: "Caución Judicial",
         beneficios: ["Garantía ante procesos judiciales", "Medidas cautelares"]
       }
-    ]
+    ],
+    incluyen: [
+      "Inspección previa 100 % online",
+      "Cobertura por reclamos por daños causados por el vehículo a bienes de terceros o personas",
+      "Extensión de coberturas a países limítrofes",
+      "Sistema CLEAS: agiliza la gestión de siniestros entre compañías adheridas",
+      "Descuentos exclusivos en neumáticos",
+      "Consultorio Médico Virtual: disponible 24/7"
+    ], 
   }
 };
 
@@ -309,6 +412,22 @@ function DetalleSeguro() {
           </div>
         ))}
       </div>
+
+      {seguro.incluyen && seguro.incluyen.length > 0 && (
+        <div className="ContainerIncluyen">
+          <h4>Todos los planes incluyen:</h4>
+          <div className="IncluyenGrid">
+            {seguro.incluyen.map((item, index) => (
+              <div className="IncluyenItem" key={index}>
+                {/* Podés usar un ícono real aquí más adelante */}
+                <div className="IconPlaceholder">✔</div>
+                <p>{item}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
     </div>
   );
 }
