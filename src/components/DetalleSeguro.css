@@ -6,7 +6,7 @@
 }
 
 .ContainerDetalleSeguro h3 {
-  color: rgb(1, 1, 144);
+  color: rgb(2, 2, 108);
   font-size: 5vh;
   font-weight: bold;
   text-align: center;
@@ -14,16 +14,13 @@
 
 .ContainerDetalleSeguro p,
 .ContainerDetalleSeguro h4 {
-  color: rgb(1, 1, 144);
+  color: rgb(2, 2, 108);
   margin-top: 3.2vh;
   font-size: 3vh;
   padding: 0 15%;
   text-align: center;
 }
 
-.ContainerIncluyen {
- 
-}
 
 /* ===== CARDS DE COBERTURAS ===== */
 
@@ -105,8 +102,7 @@
 
 .ContainerIncluyen {
   margin-top: 4rem;
-  background-color: #ecf2ff;
-  border: solid blue 1px;
+  background-color: #899abd;
   padding: 2rem 3%;
   margin: 5vh 5vh;
   border-radius: 20px;

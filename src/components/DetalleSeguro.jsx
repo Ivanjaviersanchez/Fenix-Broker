@@ -44,7 +44,7 @@ const segurosData = {
   },
   motos: {
     title: "Seguros para Motos",
-    description: "Protegé tu moto con planes adaptados a tu uso diario.",
+    description: "Protegé tu moto con planes adaptados a tu uso diario, con las principales coberturas para que vos y tu moto estén siempre protegidos.",
     items: [
       {
         nombre: "Seguro Moto Base",
@@ -65,17 +65,14 @@ const segurosData = {
       }
     ],
     incluyen: [
-      "Inspección ",
-      "Cobertura por reclamos por daños causados por el vehículo a bienes de terceros o personas",
-      "Extensión de coberturas a países limítrofes",
-      "Sistema CLEAS: agiliza la gestión de siniestros entre compañías adheridas",
-      "Descuentos exclusivos en neumáticos",
-      "Consultorio Médico Virtual: disponible 24/7"
+      "Responsabilidad Civil",
+      "Accidentes Personales",
+      "Extensión de coberturas a países limítrofes"
     ], 
   },
   hogar: {
     title: "Seguros para el Hogar",
-    description: "Protegé tu casa y tus pertenencias con coberturas a medida.",
+    description: "Protegé tu casa y tus pertenencias con coberturas a medida orientadas a brindar seguridad y respaldo ante los imprevistos que sufra tu propiedad.",
     items: [
       {
         nombre: "Seguro Hogar Premium",
@@ -83,8 +80,10 @@ const segurosData = {
           "Incendio edificio y contenido",
           "Robo contenido",
           "Daños por agua",
+          "Granizo",
           "Cristales",
-          "Electrodomésticos"
+          "Electrodomésticos",
+          "Asistencia domiciliaria"
         ]
       },
       {
@@ -97,12 +96,8 @@ const segurosData = {
       }
     ],
     incluyen: [
-      "Inspección previa 100 % online",
-      "Cobertura por reclamos por daños causados por el vehículo a bienes de terceros o personas",
-      "Extensión de coberturas a países limítrofes",
-      "Sistema CLEAS: agiliza la gestión de siniestros entre compañías adheridas",
-      "Descuentos exclusivos en neumáticos",
-      "Consultorio Médico Virtual: disponible 24/7"
+      "Cobertura en todo el país",
+      "Contratación 100% online"
     ], 
   },
   movilidad: {
@@ -129,12 +124,9 @@ const segurosData = {
       }
     ],
     incluyen: [
-      "Inspección previa 100 % online",
-      "Cobertura por reclamos por daños causados por el vehículo a bienes de terceros o personas",
-      "Extensión de coberturas a países limítrofes",
-      "Sistema CLEAS: agiliza la gestión de siniestros entre compañías adheridas",
-      "Descuentos exclusivos en neumáticos",
-      "Consultorio Médico Virtual: disponible 24/7"
+      "Cobertura en todo el país",
+      "Traslado por averias",
+      "Contratación 100% online"
     ], 
   },
   objetos: {
@@ -160,12 +152,8 @@ const segurosData = {
       }
     ],
     incluyen: [
-      "Inspección previa 100 % online",
-      "Cobertura por reclamos por daños causados por el vehículo a bienes de terceros o personas",
-      "Extensión de coberturas a países limítrofes",
-      "Sistema CLEAS: agiliza la gestión de siniestros entre compañías adheridas",
-      "Descuentos exclusivos en neumáticos",
-      "Consultorio Médico Virtual: disponible 24/7"
+      "Cobertura en todo el país",
+      "Contratación 100% online"
     ], 
   },
   retiro: {
@@ -186,17 +174,13 @@ const segurosData = {
       }
     ],
     incluyen: [
-      "Inspección previa 100 % online",
-      "Cobertura por reclamos por daños causados por el vehículo a bienes de terceros o personas",
-      "Extensión de coberturas a países limítrofes",
-      "Sistema CLEAS: agiliza la gestión de siniestros entre compañías adheridas",
-      "Descuentos exclusivos en neumáticos",
-      "Consultorio Médico Virtual: disponible 24/7"
+      "Cobertura en todo el país",
+      "Contratación 100% online"
     ], 
   },
   vida: {
     title: "Seguros de Vida",
-    description: "Cuidá a los que más querés con nuestras coberturas de vida.",
+    description: "Cuidá a los que más querés con nuestras coberturas de vida que ofrecen protección y tranquilidad a quienes más querés, ante cualquier eventualidad.",
     items: [
       {
         nombre: "Vida Individual",
@@ -212,12 +196,9 @@ const segurosData = {
       }
     ],
     incluyen: [
-      "Inspección previa 100 % online",
-      "Cobertura por reclamos por daños causados por el vehículo a bienes de terceros o personas",
-      "Extensión de coberturas a países limítrofes",
-      "Sistema CLEAS: agiliza la gestión de siniestros entre compañías adheridas",
-      "Descuentos exclusivos en neumáticos",
-      "Consultorio Médico Virtual: disponible 24/7"
+      "Muerte cualquier causa",
+      "Indemnizaciones parciales",
+      "Invalidez total o permanente"
     ], 
   },
   comercios: {
@@ -244,12 +225,8 @@ const segurosData = {
       }
     ],
     incluyen: [
-      "Inspección previa 100 % online",
-      "Cobertura por reclamos por daños causados por el vehículo a bienes de terceros o personas",
-      "Extensión de coberturas a países limítrofes",
-      "Sistema CLEAS: agiliza la gestión de siniestros entre compañías adheridas",
-      "Descuentos exclusivos en neumáticos",
-      "Consultorio Médico Virtual: disponible 24/7"
+      "Cobertura en todo el país",
+      "Contratación 100% online"
     ], 
   },
   consorcios: {
@@ -276,12 +253,8 @@ const segurosData = {
       }
     ],
     incluyen: [
-      "Inspección previa 100 % online",
-      "Cobertura por reclamos por daños causados por el vehículo a bienes de terceros o personas",
-      "Extensión de coberturas a países limítrofes",
-      "Sistema CLEAS: agiliza la gestión de siniestros entre compañías adheridas",
-      "Descuentos exclusivos en neumáticos",
-      "Consultorio Médico Virtual: disponible 24/7"
+      "Cobertura en todo el país",
+      "Contratación 100% online"
     ], 
   },
   respcivil: {
@@ -298,12 +271,8 @@ const segurosData = {
       }
     ],
     incluyen: [
-      "Inspección previa 100 % online",
-      "Cobertura por reclamos por daños causados por el vehículo a bienes de terceros o personas",
-      "Extensión de coberturas a países limítrofes",
-      "Sistema CLEAS: agiliza la gestión de siniestros entre compañías adheridas",
-      "Descuentos exclusivos en neumáticos",
-      "Consultorio Médico Virtual: disponible 24/7"
+      "Cobertura en todo el país",
+      "Contratación 100% online"
     ], 
   },
   buques: {
@@ -320,12 +289,8 @@ const segurosData = {
       }
     ],
     incluyen: [
-      "Inspección previa 100 % online",
-      "Cobertura por reclamos por daños causados por el vehículo a bienes de terceros o personas",
-      "Extensión de coberturas a países limítrofes",
-      "Sistema CLEAS: agiliza la gestión de siniestros entre compañías adheridas",
-      "Descuentos exclusivos en neumáticos",
-      "Consultorio Médico Virtual: disponible 24/7"
+      "Cobertura en todo el país",
+      "Contratación 100% online"
     ], 
   },
   art: {
@@ -342,12 +307,8 @@ const segurosData = {
       }
     ],
     incluyen: [
-      "Inspección previa 100 % online",
-      "Cobertura por reclamos por daños causados por el vehículo a bienes de terceros o personas",
-      "Extensión de coberturas a países limítrofes",
-      "Sistema CLEAS: agiliza la gestión de siniestros entre compañías adheridas",
-      "Descuentos exclusivos en neumáticos",
-      "Consultorio Médico Virtual: disponible 24/7"
+      "Cobertura en todo el país",
+      "Contratación 100% online"
     ], 
   },
   caucionempresas: {
@@ -364,12 +325,8 @@ const segurosData = {
       }
     ],
     incluyen: [
-      "Inspección previa 100 % online",
-      "Cobertura por reclamos por daños causados por el vehículo a bienes de terceros o personas",
-      "Extensión de coberturas a países limítrofes",
-      "Sistema CLEAS: agiliza la gestión de siniestros entre compañías adheridas",
-      "Descuentos exclusivos en neumáticos",
-      "Consultorio Médico Virtual: disponible 24/7"
+      "Cobertura en todo el país",
+      "Contratación 100% online"
     ], 
   }
 };
