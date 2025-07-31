@@ -58,17 +58,9 @@ function Layout() {
     <>
       <Navbar className="navbarStyles" expand="md" sticky="top" expanded={expanded}>
         <Container>
-          <Navbar.Toggle
-            aria-controls="main-navbar-nav"
-            onClick={() => setExpanded((prev) => !prev)}
-          />
+          <Navbar.Toggle aria-controls="main-navbar-nav" onClick={() => setExpanded((prev) => !prev)} className="toggleStyles"/>
 
-          <Navbar.Brand
-            as={Link}
-            to="/"
-            onClick={() => setExpanded(false)}
-            className="d-flex align-items-center"
-          >
+          <Navbar.Brand as={Link} to="/" onClick={() => setExpanded(false)} className="d-flex align-items-center">
             <img src={logo} alt="Fenix logo" className="me-1" />
             <div className="logoTextStiles">
               <span className="fw-bold fs-2 text-dark">Fenix</span>

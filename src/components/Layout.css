@@ -3,15 +3,16 @@
 /*   FONDO Y LETRAS DEL NAVBAR     */
 
 .navbarStyles {
-  background-color: rgb(8, 24, 45);
-  color: white;
+  background-color: white;
+  color: #1e29c4;
 }
 
 .navbarStyles .nav-link {
   position: relative;
   overflow: hidden;
   transition: color 0.3s ease;
-  color: white !important;
+  color: #1e29c4;
+  font-weight: bold;
   
 }
 
@@ -22,7 +23,7 @@
   left: 50%;
   width: 0;
   height: 1px;
-  background-color: white;
+  background-color: #1e29c4;
   transition: all 0.3s ease;
   transform: translateX(-50%);
 }
@@ -32,7 +33,8 @@
 }
 
 .navbarStyles .nav-link:hover {
-  color: #879ae6 !important;
+  color: blue;
+  
 }
 
 .navbarStyles .navbar-brand {
@@ -40,11 +42,14 @@
 }
 /* Aplica al texto "FenixBrokers" en el logo */
 .navbarStyles .navbar-brand span {
-  color: white !important;
+  color: #1e29c4 !important;
   height: auto;
 }
 
 /* -------------------- BOTÓN HAMBURGUESA EN BLANCO -------------------- */
+.toggleStyles {
+  background-color: #1e29c4;
+}
 
 .navbarStyles .navbar-toggler {
   border-color: white; /* borde blanco */
@@ -57,36 +62,39 @@
 /* Botón "drop-down" */
 
 .custom-dropdown .dropdown-menu {
-  background-color: rgb(10, 25, 45);
+  background-color: white;
   border: none;
 }
 
 .custom-dropdown .dropdown-item {
-  color: white;
+  color: #1e29c4;
+  font-weight: bold;
   transition: background-color 0.3s ease, color 0.3s ease;
   font-size: 0.9rem;
 }
 
 .custom-dropdown .dropdown-item:hover {
-  background-color: #22344f;
-  color: #879ae6;
+  background-color: #b1b5bb;
+  color: blue;
 }
 
 /* Botón "Cotizá Ahora" */
 .cotiza-cta {
   background-color: #023173; 
-  color: rgb(255, 255, 255);
-  border: solid blue 1px;
+  color: rgb(255, 255, 255) !important;
+  border: solid blue 1px; 
   border-radius: 10px;
   font-weight: bold;
   font-size: 0.9rem;
   transition: background-color 0.3s ease;
   display: inline-block;
-  min-width: 160px;
+  min-width: 140px;
   font-size: 0.95rem;
 }
 
-.cotiza-cta :hover {
+.cotiza-cta:hover {
+  color: #879ae6 !important;
+  background-color: #0051b3;
  /*  background-color: #5e5ca2;
   text-decoration: none; */
 }
@@ -112,16 +120,15 @@
 
 
   /* Mover el botón hamburguesa a la izquierda */
+
   .navbarStyles .navbar-toggler {  
-    
+    color: #0051b3 !important;
   }
 
   /* Mover el logo a la derecha */
   .navbarStyles .navbar-brand {
     margin-right: 18vh;
   }
-
- 
 
   /* Asegura que los links estén alineados a la izquierda */
   .navbarStyles .navbar-nav {

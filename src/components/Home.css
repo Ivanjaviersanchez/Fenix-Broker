@@ -1,17 +1,70 @@
+/*        ESTILOS CARRUSEL HOME         */
+
 .ContainerCarruselHome {
-  background-color: #bacae7;
-  padding: 2rem;
- 
-  /* Ajusta este valor para hacer el carrusel más pequeño */
-  /* overflow: hidden;
-  border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); */
+  background-color: #edf2fd;
+  /* padding: 2rem; */
 }
 
 .ContainerCarruselHome img {
   object-fit: cover; /* Mantiene relación de aspecto sin deformar */
-  height: 70vh;
+  height: 85vh;
   width: 100%;
-  border-radius: 12px;
   
+}
+/*        ESTILOS CONTADORES HOME        */
+
+.ContainerContadoresHome {
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.ContainerContadoresHome h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.ContainerContadoresHome p {
+  margin-bottom: 40px;
+  color: #ccc;
+}
+
+.Contadores {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.ContadorItem {
+  border: 2px solid #0b5ed7;
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.ContadorItem h3 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.BtnConocenos {
+  padding: 12px 30px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.BtnConocenos:hover {
+  background-color: white;
+  color: #111;
 }

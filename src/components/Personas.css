@@ -1,7 +1,7 @@
 /* ===== CONTAINERS ===== */
 
 .ContainerPersonas {
-  background-color: #bacae7;
+  background-color: #edf2fd;
   padding: 1rem;
   color: rgb(2, 2, 108);
 }
@@ -15,7 +15,7 @@
   grid-template-columns: repeat(2, 1fr); /* Mobile */
   gap: 2rem;
   padding: 2rem;
-  background-color: #bacae7;
+  background-color: #edf2fd !important;
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
