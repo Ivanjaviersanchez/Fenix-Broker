@@ -1,7 +1,8 @@
 import { useState, useEffect, useRef } from "react";
 import { Link, Outlet } from "react-router-dom";
 import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
-import logo from "../assets/LogoFinal.png";
+/* import logo from "../assets/LogoFenixBlanco.png"; */
+import logo from "../assets/LogoFinal.png"; 
 import Footer from "./Footer";
 import "./Layout.css";
 

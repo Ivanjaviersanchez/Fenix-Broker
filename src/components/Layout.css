@@ -3,15 +3,15 @@
 /*   FONDO Y LETRAS DEL NAVBAR     */
 
 .navbarStyles {
-  background-color: white;
-  color: #1e29c4;
+  background-color: #1F5D89;
+  color: white;
 }
 
 .navbarStyles .nav-link {
   position: relative;
   overflow: hidden;
   transition: color 0.3s ease;
-  color: #1e29c4;
+  color: white !important;
   font-weight: bold;
   
 }
@@ -23,7 +23,7 @@
   left: 50%;
   width: 0;
   height: 1px;
-  background-color: #1e29c4;
+  background-color: #879ae6 !important;
   transition: all 0.3s ease;
   transform: translateX(-50%);
 }
@@ -33,7 +33,7 @@
 }
 
 .navbarStyles .nav-link:hover {
-  color: blue;
+  color: #879ae6 !important;
   
 }
 
@@ -42,13 +42,13 @@
 }
 /* Aplica al texto "FenixBrokers" en el logo */
 .navbarStyles .navbar-brand span {
-  color: #1e29c4 !important;
+  color: white !important;
   height: auto;
 }
 
 /* -------------------- BOTÓN HAMBURGUESA EN BLANCO -------------------- */
 .toggleStyles {
-  background-color: #1e29c4;
+  
 }
 
 .navbarStyles .navbar-toggler {
@@ -62,21 +62,23 @@
 /* Botón "drop-down" */
 
 .custom-dropdown .dropdown-menu {
-  background-color: white;
+  background-color: #1F5D89;
   border: none;
 }
 
 .custom-dropdown .dropdown-item {
-  color: #1e29c4;
+  color: white;
   font-weight: bold;
   transition: background-color 0.3s ease, color 0.3s ease;
   font-size: 0.9rem;
 }
 
 .custom-dropdown .dropdown-item:hover {
-  background-color: #b1b5bb;
-  color: blue;
+  background-color: #174567;
+  color: #879ae6 ;
+  font-weight: bold;
 }
+
 
 /* Botón "Cotizá Ahora" */
 .cotiza-cta {
@@ -122,7 +124,7 @@
   /* Mover el botón hamburguesa a la izquierda */
 
   .navbarStyles .navbar-toggler {  
-    color: #0051b3 !important;
+    color: #1F5D89;
   }
 
   /* Mover el logo a la derecha */
