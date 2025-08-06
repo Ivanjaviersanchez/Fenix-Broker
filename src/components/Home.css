@@ -15,25 +15,31 @@
 
 .ContainerContadoresHome {
   background-color: #111;
-  color: white;
+  color: #879ae6;
   text-align: center;
   padding: 50px 20px;
+  border-radius: 50px;
+  margin: 6vh;
 }
 
 .ContainerContadoresHome h2 {
-  font-size: 2rem;
+  
+  font-size: 6vh;
   margin-bottom: 10px;
+  font-family: 'New Astro', sans-serif;
 }
 
 .ContainerContadoresHome p {
   margin-bottom: 40px;
   color: #ccc;
+  font-weight: bold;
+  font-size: 2.4vh;
 }
 
 .Contadores {
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 100px;
   margin-bottom: 40px;
   flex-wrap: wrap;
 }
@@ -56,15 +62,18 @@
 }
 
 .BtnConocenos {
-  padding: 12px 30px;
-  background-color: transparent;
-  border: 1px solid white;
-  color: white;
-  cursor: pointer;
-  transition: background-color 0.3s;
+  background-color: #023173;
+  color: rgb(255, 255, 255) !important;
+  border: solid blue 1px; 
+  border-radius: 10px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  min-width: 140px;
+  font-size: 3vh;
 }
 
 .BtnConocenos:hover {
-  background-color: white;
-  color: #111;
+  color: #879ae6 !important;
+  background-color: #0051b3;
 }

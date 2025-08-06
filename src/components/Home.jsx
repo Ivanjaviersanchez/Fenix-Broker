@@ -50,18 +50,23 @@ function Home() {
         </Carousel>
       </div>
 
+      {/* Porque elegirnos */}
+      <div className="ContainerElegirnos">
+        
+      </div>
+
       {/* Contadores */}
       <div className="ContainerContadoresHome" ref={ref}>
-        <h2>Estamos listos para asesorarte</h2>
+        <h2>Siempre listos para asesorarte</h2>
         <p>El trato personalizado es una característica que nos destaca y posibilita forjar relaciones de largo plazo con nuestros clientes.</p>
 
         <div className="Contadores">
           <div className="ContadorItem">
-            <h3>{inView && <CountUp end={300} duration={3} />}+</h3>
+            <h3>{inView && <CountUp end={200} duration={3} />}+</h3>
             <p>Empresas nos eligen</p>
           </div>
           <div className="ContadorItem">
-            <h3>{inView && <CountUp end={20} duration={3} />}+</h3>
+            <h3>{inView && <CountUp end={30} duration={3} />}+</h3>
             <p>Años asesorando en el mercado</p>
           </div>
           <div className="ContadorItem">

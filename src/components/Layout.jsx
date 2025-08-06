@@ -64,8 +64,8 @@ function Layout() {
           <Navbar.Brand as={Link} to="/" onClick={() => setExpanded(false)} className="d-flex align-items-center">
             <img src={logo} alt="Fenix logo" className="me-1" />
             <div className="logoTextStiles">
-              <span className="fw-bold fs-2 text-dark">Fenix</span>
-              <span className="fs-6 text-dark">Broker de seguros</span>
+              <span className="fw-bold fs-1 text-dark">Fenix</span>
+              {/* <span className="fs-6 text-dark">Brokers</span> */}
             </div>
           </Navbar.Brand>
 

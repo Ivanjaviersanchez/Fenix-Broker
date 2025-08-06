@@ -5,6 +5,7 @@
 .navbarStyles {
   background-color: #1F5D89;
   color: white;
+  
 }
 
 .navbarStyles .nav-link {
@@ -12,8 +13,9 @@
   overflow: hidden;
   transition: color 0.3s ease;
   color: white !important;
-  font-weight: bold;
-  
+  font-weight: bold; 
+  /* font-family: 'New Astro', sans-serif; */ 
+  font-size: 2.4vh;
 }
 
 .navbarStyles .nav-link::after {
@@ -44,6 +46,7 @@
 .navbarStyles .navbar-brand span {
   color: white !important;
   height: auto;
+  font-family: 'New Astro', sans-serif;
 }
 
 /* -------------------- BOTÓN HAMBURGUESA EN BLANCO -------------------- */
@@ -74,7 +77,7 @@
 }
 
 .custom-dropdown .dropdown-item:hover {
-  background-color: #174567;
+  background-color: #1c547f;
   color: #879ae6 ;
   font-weight: bold;
 }
@@ -82,12 +85,11 @@
 
 /* Botón "Cotizá Ahora" */
 .cotiza-cta {
-  background-color: #023173; 
+  background-color: #023173;
   color: rgb(255, 255, 255) !important;
   border: solid blue 1px; 
   border-radius: 10px;
   font-weight: bold;
-  font-size: 0.9rem;
   transition: background-color 0.3s ease;
   display: inline-block;
   min-width: 140px;
@@ -102,24 +104,24 @@
 }
 
 /* Logo de la marca */
+.navbar-brand {
+  padding-right: 5vh; 
+}
+
 .navbar-brand img {
   height: 14vh;
 }
-.navbar-brand {
-  padding-right: 5vh;
-}
-
 
 .logoTextStiles {
   display: flex;
   flex-direction: column;
   text-align: left;
+ 
 }
 
 /* -------------------- Media Queries para pantallas pequeñas -------------------- */
 
 @media (max-width: 767px) {
-
 
   /* Mover el botón hamburguesa a la izquierda */
 
@@ -129,8 +131,9 @@
 
   /* Mover el logo a la derecha */
   .navbarStyles .navbar-brand {
-    margin-right: 18vh;
+    margin-right: 22vh;
   }
+ 
 
   /* Asegura que los links estén alineados a la izquierda */
   .navbarStyles .navbar-nav {
@@ -140,6 +143,15 @@
     width: 100%;
     padding-left: 20px; /* Espaciado para que no quede pegado al borde */
   }
+}
+
+/*          FONTS         */
+
+@font-face {
+  font-family: 'New Astro';
+  src: url('/src/assets/fonts/New\ Astro\ Bold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 
