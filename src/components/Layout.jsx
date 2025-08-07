@@ -58,14 +58,14 @@ function Layout() {
   return (
     <>
       <Navbar className="navbarStyles" expand="md" sticky="top" expanded={expanded}>
-        <Container>
+        <div className="container-fluid px-0">
           <Navbar.Toggle aria-controls="main-navbar-nav" onClick={() => setExpanded((prev) => !prev)} className="toggleStyles"/>
 
           <Navbar.Brand as={Link} to="/" onClick={() => setExpanded(false)} className="d-flex align-items-center">
             <img src={logo} alt="Fenix logo" className="me-1" />
             <div className="logoTextStiles">
-              <span className="fw-bold fs-1 text-dark">Fenix</span>
-              {/* <span className="fs-6 text-dark">Brokers</span> */}
+              <h2 className="fw-bold text-dark">Fenix</h2>
+              <h3 className="text-dark">Brokers</h3>
             </div>
           </Navbar.Brand>
 
@@ -73,21 +73,21 @@ function Layout() {
             <Nav className="ms-auto text-center">
 
               {/* Inicio */}
-              <Nav.Link as={Link} to="/" onClick={() => setExpanded(false)} className="mx-2">
+              <Nav.Link as={Link} to="/" onClick={() => setExpanded(false)} className="mx-3">
                 Inicio
               </Nav.Link>
 
               {/* Somos Fenix */}
-              <Nav.Link as={Link} to="/somosfenix" onClick={() => setExpanded(false)} className="mx-2">
+              <Nav.Link as={Link} to="/somosfenix" onClick={() => setExpanded(false)} className="mx-3">
                 SomosFenix
               </Nav.Link>
 
-              {/* SEGUROS */}
+              {/* Seguros */}
               <NavDropdown
                 ref={segurosRef}
                 title="Seguros | Cotizaciones"
                 id="seguros-dropdown"
-                className="mx-2 custom-dropdown"
+                className="mx-3 custom-dropdown"
                 show={showSeguros}
                 onMouseEnter={() => !isMobile && setShowSeguros(true)}
                 onMouseLeave={() => !isMobile && setShowSeguros(false)}
@@ -126,12 +126,12 @@ function Layout() {
                 </NavDropdown.Item>
               </NavDropdown>
 
-              {/* SINIESTROS */}
+              {/* Siniestros */}
               <NavDropdown
                 ref={siniestrosRef}
                 title="Siniestros | Denuncias"
                 id="siniestros-dropdown"
-                className="mx-2 custom-dropdown"
+                className="mx-3 custom-dropdown"
                 show={showSiniestros}
                 onMouseEnter={() => !isMobile && setShowSiniestros(true)}
                 onMouseLeave={() => !isMobile && setShowSiniestros(false)}
@@ -170,19 +170,19 @@ function Layout() {
               </NavDropdown>
 
               {/* Otros enlaces */}
-              <Nav.Link as={Link} to="/novedades" onClick={() => setExpanded(false)} className="mx-2">
+              <Nav.Link as={Link} to="/novedades" onClick={() => setExpanded(false)} className="mx-3">
                 Novedades
               </Nav.Link>
-              <Nav.Link as={Link} to="/contacto" onClick={() => setExpanded(false)} className="mx-2">
+              <Nav.Link as={Link} to="/contacto" onClick={() => setExpanded(false)} className="mx-3">
                 Contacto
               </Nav.Link>
-              <Nav.Link as={Link} to="/cotiza" onClick={() => setExpanded(false)} className="cotiza-cta mx-2">
+              <Nav.Link as={Link} to="/cotiza" onClick={() => setExpanded(false)} className="cotiza-cta mx-3">
                 Cotizá Ahora 📈
               </Nav.Link>
 
             </Nav>
           </Navbar.Collapse>
-        </Container>
+        </div>
       </Navbar>
 
       <Outlet />

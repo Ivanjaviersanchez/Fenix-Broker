@@ -5,7 +5,7 @@
 .navbarStyles {
   background-color: #1F5D89;
   color: white;
-  
+  padding: 1vh 10vh;
 }
 
 .navbarStyles .nav-link {
@@ -41,12 +41,40 @@
 
 .navbarStyles .navbar-brand {
   padding: 0;
+  margin: 0;
+  
 }
+
+/* Logo de la marca */
+
+.navbar-brand img {
+  height: 16vh;
+  margin: -1vh 0;
+}
+
 /* Aplica al texto "FenixBrokers" en el logo */
-.navbarStyles .navbar-brand span {
+.navbarStyles .navbar-brand h2 {
   color: white !important;
-  height: auto;
+  /* height: auto; */
   font-family: 'New Astro', sans-serif;
+  font-size: 6vh;
+  padding-top: 1.5vh;
+  padding-bottom: 0;
+}
+.navbarStyles .navbar-brand h3 {
+  color: white !important;
+  font-family: 'New Astro', sans-serif;
+  font-size: 2.4vh;
+  padding-bottom: 0;
+  
+}
+
+.logoTextStiles {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  
+  height: 13vh;
 }
 
 /* -------------------- BOTÓN HAMBURGUESA EN BLANCO -------------------- */
@@ -82,10 +110,9 @@
   font-weight: bold;
 }
 
-
 /* Botón "Cotizá Ahora" */
 .cotiza-cta {
-  background-color: #023173;
+  background-color: #3353d3;
   color: rgb(255, 255, 255) !important;
   border: solid blue 1px; 
   border-radius: 10px;
@@ -103,21 +130,9 @@
   text-decoration: none; */
 }
 
-/* Logo de la marca */
-.navbar-brand {
-  padding-right: 5vh; 
-}
 
-.navbar-brand img {
-  height: 14vh;
-}
 
-.logoTextStiles {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
- 
-}
+
 
 /* -------------------- Media Queries para pantallas pequeñas -------------------- */
 
@@ -131,9 +146,9 @@
 
   /* Mover el logo a la derecha */
   .navbarStyles .navbar-brand {
-    margin-right: 22vh;
+    margin-right: 12vh;
+    
   }
- 
 
   /* Asegura que los links estén alineados a la izquierda */
   .navbarStyles .navbar-nav {
@@ -141,7 +156,7 @@
     flex-direction: column; /* Los enlaces estarán en columna */
     align-items: flex-start; /* Los enlaces estarán alineados a la izquierda */
     width: 100%;
-    padding-left: 20px; /* Espaciado para que no quede pegado al borde */
+    
   }
 }
 
