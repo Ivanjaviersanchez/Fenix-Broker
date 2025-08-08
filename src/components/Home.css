@@ -1,7 +1,7 @@
 /*        ESTILOS CARRUSEL HOME         */
 
 .ContainerCarruselHome {
-  background-color: white
+  background-color: white;
   /* padding: 2rem; */
 }
 
@@ -9,8 +9,8 @@
   object-fit: cover; /* Mantiene relación de aspecto sin deformar */
   height: 85vh;
   width: 100%;
-  
 }
+
 /*        ESTILOS CONTADORES HOME        */
 
 .ContainerContadoresHome {
@@ -23,7 +23,6 @@
 }
 
 .ContainerContadoresHome h2 {
-  
   font-size: 6vh;
   margin-bottom: 10px;
   font-family: 'New Astro', sans-serif;
@@ -77,3 +76,99 @@
   color: #879ae6 !important;
   background-color: #0051b3;
 }
+
+/*        ESTILOS REDES SOCIALES        */
+
+.containerRedesHome {
+  text-align: center;
+  margin: 90px 0;
+  font-family: 'New Astro', sans-serif;
+}
+
+.tituloRedes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.tituloRedes h2 {
+  font-size: 6vh;
+  font-weight: 400;
+  color: #879ae6;
+  padding: 0 5vh;
+}
+
+.tituloRedes h2 span {
+  font-weight: bold;
+}
+
+.tituloRedes .linea {
+  flex: 1;
+  height: 2px;
+  background-color: #879ae6;
+  
+}
+
+.redesIcons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease forwards;
+  animation-delay: 0.4s;
+  padding-top: 3vh;
+}
+
+.redesIcons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  width: 45px;
+  height: 45px;
+  color: white; /* texto/blanco */
+  transition: all 0.3s ease;
+}
+
+.redesIcons a.facebook {
+  background-color: #1877F2;
+}
+
+.redesIcons a.twitter {
+  background-color: #000000;
+}
+
+.redesIcons a.instagram {
+  background: radial-gradient(circle at 30% 107%, 
+              #fdf497 0%, #fdf497 5%, #fd5949 45%, 
+              #d6249f 60%, #285AEB 90%);
+}
+
+.redesIcons a.youtube {
+  background-color: #FF0000;
+}
+
+.redesIcons a.linkedin {
+  background-color: #0077B5;
+}
+
+.redesIcons a:hover {
+  transform: scale(1.1);
+}
+
+/* Animación suave */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+

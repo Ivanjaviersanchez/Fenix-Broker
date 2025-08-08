@@ -186,6 +186,17 @@ function Layout() {
       </Navbar>
 
       <Outlet />
+
+      {/* WhatsApp Floating Button */}
+      <a href="https://wa.me/5491123456789?text=Hola%20quiero%20hablar%20con%20un%20asesor%20de%20seguros" className="whatsapp-float" target="_blank" rel="noopener noreferrer">
+        <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp"/>
+      </a>
+
+      {/* Instagram Floating Button */}
+      <a href="https://www.instagram.com/tuusuario" className="instagram-float" target="_blank" rel="noopener noreferrer">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"/>
+      </a>
+      
       <Footer />
     </>
   );

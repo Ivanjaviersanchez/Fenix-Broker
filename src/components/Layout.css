@@ -5,7 +5,7 @@
 .navbarStyles {
   background-color: #1F5D89;
   color: white;
-  padding: 1vh 10vh;
+  padding: 1vh 6vh;
 }
 
 .navbarStyles .nav-link {
@@ -130,8 +130,50 @@
   text-decoration: none; */
 }
 
+/* -------------------- Logo Whatsapp flotante -------------------- */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
 
+.whatsapp-float img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 30px;
+}
 
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+/* -------------------- Logo Instagram flotante -------------------- */
+.instagram-float {
+  position: fixed;
+  bottom: 90px; /* más alto que WhatsApp */
+  right: 20px;
+  z-index: 1000;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.instagram-float img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.instagram-float:hover {
+  transform: scale(1.1);
+}
 
 
 /* -------------------- Media Queries para pantallas pequeñas -------------------- */
@@ -146,7 +188,7 @@
 
   /* Mover el logo a la derecha */
   .navbarStyles .navbar-brand {
-    margin-right: 12vh;
+    margin-right: 22vh;
     
   }
 

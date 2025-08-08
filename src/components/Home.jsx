@@ -1,6 +1,8 @@
 import CountUp from 'react-countup';
 import { useNavigate } from 'react-router-dom';
 import { useInView } from 'react-intersection-observer';
+import { FaFacebookF, FaInstagram, FaYoutube, FaLinkedinIn } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6'; // para el nuevo logo de Twitter
 import "./Home.css";
 import Carousel from 'react-bootstrap/Carousel';
 import CarouselImage1 from '../assets/SeguroAutos.png';
@@ -76,6 +78,33 @@ function Home() {
         </div>
 
         <button className="BtnConocenos" onClick={handleConocenosClick}>Conocenos</button>
+      </div>
+
+      {/* Redes sociales */}
+      <div className='containerRedesHome'>
+        <div className="tituloRedes">
+          <span className="linea"></span>
+          <h2>Seguinos en nuestras <span>Redes Sociales</span></h2>
+          <span className="linea"></span>
+        </div>
+
+        <div className="redesIcons">
+          <a className="facebook" href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+            <FaFacebookF />
+          </a>
+          <a className="twitter" href="https://x.com" target="_blank" rel="noopener noreferrer">
+            <FaXTwitter />
+          </a>
+          <a className="instagram" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+            <FaInstagram />
+          </a>
+          <a className="youtube" href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+            <FaYoutube />
+          </a>
+          <a className="linkedin" href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+            <FaLinkedinIn />
+          </a>
+        </div>
       </div>
 
     </div>
