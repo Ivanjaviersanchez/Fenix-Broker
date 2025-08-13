@@ -4,6 +4,7 @@ import { useInView } from 'react-intersection-observer';
 import { FaFacebookF, FaInstagram, FaYoutube, FaLinkedinIn } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6'; // para el nuevo logo de Twitter
 import "./Home.css";
+import '../colors.css';
 import Carousel from 'react-bootstrap/Carousel';
 import CarouselImage1 from '../assets/SeguroAutos.png';
 import CarouselImage2 from '../assets/SeguroAutos.png';

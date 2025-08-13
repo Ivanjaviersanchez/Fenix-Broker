@@ -1,10 +1,13 @@
 import { useState, useEffect, useRef } from "react";
 import { Link, Outlet } from "react-router-dom";
 import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
-/* import logo from "../assets/LogoFenixBlanco.png"; */
-import logo from "../assets/LogoFinal.png"; 
+import logo from "../assets/LogoFenixBlanco.png";
+/* import logo from "../assets/LogoFinal.png";  */
+import { FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+
 import Footer from "./Footer";
 import "./Layout.css";
+import '../colors.css';
 
 function Layout() {
   const [expanded, setExpanded] = useState(false);
@@ -57,6 +60,18 @@ function Layout() {
 
   return (
     <>
+      <div className="navbarTop">
+          <a className="facebook" href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+            <FaFacebookF />
+          </a>
+          <a className="instagram" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+            <FaInstagram />
+          </a>
+          <a className="linkedin" href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+            <FaLinkedinIn />
+          </a>
+      </div>
+        
       <Navbar className="navbarStyles" expand="md" sticky="top" expanded={expanded}>
         <div className="container-fluid px-0">
           <Navbar.Toggle aria-controls="main-navbar-nav" onClick={() => setExpanded((prev) => !prev)} className="toggleStyles"/>
@@ -65,7 +80,7 @@ function Layout() {
             <img src={logo} alt="Fenix logo" className="me-1" />
             <div className="logoTextStiles">
               <h2 className="fw-bold text-dark">Fenix</h2>
-              <h3 className="text-dark">Brokers</h3>
+              {/* <h3 className="text-dark">Brokers</h3> */}
             </div>
           </Navbar.Brand>
 
@@ -193,9 +208,9 @@ function Layout() {
       </a>
 
       {/* Instagram Floating Button */}
-      <a href="https://www.instagram.com/tuusuario" className="instagram-float" target="_blank" rel="noopener noreferrer">
+     {/*  <a href="https://www.instagram.com/tuusuario" className="instagram-float" target="_blank" rel="noopener noreferrer">
         <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"/>
-      </a>
+      </a> */}
       
       <Footer />
     </>

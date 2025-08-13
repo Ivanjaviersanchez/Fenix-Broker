@@ -2,7 +2,7 @@
 
 .ContainerCarruselHome {
   background-color: white;
-  /* padding: 2rem; */
+   /* padding: 2rem;  */
 }
 
 .ContainerCarruselHome img {
@@ -15,7 +15,7 @@
 
 .ContainerContadoresHome {
   background-color: #111;
-  color: #879ae6;
+  color: #78b6fc;
   text-align: center;
   padding: 50px 20px;
   border-radius: 50px;
@@ -44,7 +44,7 @@
 }
 
 .ContadorItem {
-  border: 2px solid #0b5ed7;
+  border: 2px solid #78b6fc;
   border-radius: 50%;
   width: 180px;
   height: 180px;
@@ -61,9 +61,9 @@
 }
 
 .BtnConocenos {
-  background-color: #023173;
+  background-color: #ff980d;
   color: rgb(255, 255, 255) !important;
-  border: solid blue 1px; 
+  /* border: solid blue 1px;  */
   border-radius: 10px;
   font-weight: bold;
   transition: background-color 0.3s ease;
@@ -73,8 +73,8 @@
 }
 
 .BtnConocenos:hover {
-  color: #879ae6 !important;
-  background-color: #0051b3;
+  color: white !important;
+  background-color: #e86d1d; 
 }
 
 /*        ESTILOS REDES SOCIALES        */
@@ -99,7 +99,7 @@
 .tituloRedes h2 {
   font-size: 6vh;
   font-weight: 400;
-  color: #879ae6;
+  color: #78b6fc;
   padding: 0 5vh;
 }
 
@@ -110,7 +110,7 @@
 .tituloRedes .linea {
   flex: 1;
   height: 2px;
-  background-color: #879ae6;
+  background-color: #78b6fc;
   
 }
 
