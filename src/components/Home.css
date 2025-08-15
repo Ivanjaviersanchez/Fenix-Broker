@@ -7,7 +7,7 @@
 
 .ContainerCarruselHome img {
   object-fit: cover; /* Mantiene relación de aspecto sin deformar */
-  height: 85vh;
+  height: 81vh;
   width: 100%;
 }
 
@@ -56,25 +56,34 @@
 }
 
 .ContadorItem h3 {
-  font-size: 2rem;
+  font-size: 5vh;
+  font-weight: bold;
   margin: 0;
 }
 
+.ContadorItem p {
+  font-size: 2.8vh;
+  padding: 0vh 1vh;
+  font-family: 'New Astro', sans-serif;
+}
+
 .BtnConocenos {
-  background-color: #ff980d;
-  color: rgb(255, 255, 255) !important;
-  /* border: solid blue 1px;  */
-  border-radius: 10px;
+  background: linear-gradient(to bottom, #fbc296,#fbc296,#f8992e);
+  color: var(--color-6);
+  border: solid var(--color-6) 1px;
+  border-radius: 12px;
   font-weight: bold;
   transition: background-color 0.3s ease;
   display: inline-block;
   min-width: 140px;
   font-size: 3vh;
+  
 }
 
 .BtnConocenos:hover {
+  background: linear-gradient(to bottom, #89b1df, #358ae9, #358ae9);
+  border: solid var(--color-3) 1px; 
   color: white !important;
-  background-color: #e86d1d; 
 }
 
 /*        ESTILOS REDES SOCIALES        */

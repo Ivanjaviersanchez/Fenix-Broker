@@ -6,9 +6,10 @@ import { FaXTwitter } from 'react-icons/fa6'; // para el nuevo logo de Twitter
 import "./Home.css";
 import '../colors.css';
 import Carousel from 'react-bootstrap/Carousel';
-import CarouselImage1 from '../assets/SeguroAutos.png';
-import CarouselImage2 from '../assets/SeguroAutos.png';
-import CarouselImage3 from '../assets/SeguroAutos.png';
+import CarouselImage1 from '../assets/slideParaComercio.jpeg';
+import CarouselImage2 from '../assets/slideGranizo.jpeg';
+import CarouselImage3 from '../assets/slideTambienEsto.jpeg';
+import CarouselImage4 from '../assets/slideTuMicroseguro.jpeg';
 
 
 function Home() {
@@ -50,6 +51,13 @@ function Home() {
               <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
             </Carousel.Caption>
           </Carousel.Item>
+          <Carousel.Item>
+            <img className="d-block w-100" src={CarouselImage4} alt="Third slide"/>
+            <Carousel.Caption>
+              <h3>Third slide label</h3>
+              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
         </Carousel>
       </div>
 
@@ -78,7 +86,7 @@ function Home() {
           </div>
         </div>
 
-        <button className="BtnConocenos" onClick={handleConocenosClick}>Conocenos</button>
+        <button className="BtnConocenos" onClick={handleConocenosClick}>Conócenos</button>
       </div>
 
       {/* Redes sociales */}

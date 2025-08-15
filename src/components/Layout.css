@@ -3,7 +3,7 @@
 /*   ESTILOS NAVBARTOP     */
 
 .navbarTop {
-  background: linear-gradient(to bottom, #89b1df, #031d3f);
+  background: linear-gradient(to bottom, #031d3f, #89b1df, #031d3f);
   padding: 0.5vh; 
   display: flex;
   justify-content: right;
@@ -25,7 +25,7 @@
   position: relative;
   overflow: hidden;
   transition: color 0.3s ease;
-  color: white !important;
+  color: white;
   font-weight: bold; 
   font-size: 2.4vh;
 }
@@ -46,11 +46,11 @@
 
 .navbarStyles .nav-link:hover::after {
   width: 80%;
-  background-color: var(--color-3) !important; 
+  background-color: var(--color-3); 
 }
 
 .navbarStyles .nav-link:hover {
-  color: var(--color-3) !important;
+  color: var(--color-3);
   
 }
 
@@ -125,10 +125,9 @@
 
 /* Botón "Cotizá Ahora" */
 .cotiza-cta {
-  background-color: var(--color-2);
-  color: rgb(255, 255, 255) !important;
+  background: linear-gradient(to bottom, #89b1df, #358ae9, #358ae9);
   border: solid var(--color-3) 1px; 
-  border-radius: 10px;
+  border-radius: 12px;
   font-weight: bold;
   transition: background-color 0.3s ease;
   display: inline-block;
@@ -137,10 +136,11 @@
 }
 
 .cotiza-cta:hover {
-  background-color: var(--color-4);
-  border: solid var(--color-6) 1px;
- 
+  background: linear-gradient(to bottom, #fbc296,#fbc296,#f8992e);
+  border: solid var(--color-6) 1px; 
+  color: var(--color-6) !important;
 }
+
 
 /* -------------------- Logo Whatsapp flotante -------------------- */
 .whatsapp-float {
@@ -200,7 +200,7 @@
 
   /* Mover el logo a la derecha */
   .navbarStyles .navbar-brand {
-    margin-right: 22vh;
+    margin-right: 24vh;
     
   }
 
