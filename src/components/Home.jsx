@@ -11,6 +11,10 @@ import CarouselImage2 from '../assets/slideGranizo.jpeg';
 import CarouselImage3 from '../assets/slideTambienEsto.jpeg';
 import CarouselImage4 from '../assets/slideTuMicroseguro.jpeg';
 
+import LogoAllianz from '../assets/CarruselLogoAllianz.png';
+import LogoAsociart from '../assets/CarruselLogoAsociart.png';
+import LogoSura from '../assets/CarruselLogoSura.png';
+
 
 function Home() {
 
@@ -88,6 +92,34 @@ function Home() {
 
         <button className="BtnConocenos" onClick={handleConocenosClick}>Conócenos</button>
       </div>
+
+      {/* Carrusel de compañías de seguros */}
+      <div className='containerCompaniasCarrusel'>
+        <h3>Aseguradoras que nos acompañan </h3>
+        <div className="carrusel-track">
+          <div className="carrusel-slide">
+            <img src={LogoAllianz} alt="Allianz" />
+          </div>
+          <div className="carrusel-slide">
+            <img src={LogoAsociart} alt="Asociart ART" />
+          </div>
+          <div className="carrusel-slide">
+            <img src={LogoSura} alt="Sura" />
+          </div>
+
+          {/* Duplicamos los logos para que el loop no corte */}
+          <div className="carrusel-slide">
+            <img src={LogoAllianz} alt="Allianz" />
+          </div>
+          <div className="carrusel-slide">
+            <img src={LogoAsociart} alt="Asociart ART" />
+          </div>
+          <div className="carrusel-slide">
+            <img src={LogoSura} alt="Sura" />
+          </div>
+        </div>
+      </div>
+
 
       {/* Redes sociales */}
       <div className='containerRedesHome'>

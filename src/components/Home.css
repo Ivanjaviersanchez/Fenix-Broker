@@ -15,7 +15,7 @@
 
 .ContainerContadoresHome {
   background-color: #111;
-  color: #78b6fc;
+  color: var(--color-2);
   text-align: center;
   padding: 50px 20px;
   border-radius: 50px;
@@ -86,6 +86,54 @@
   color: white !important;
 }
 
+/*        ESTILOS CARRUSEL DE COMPANIAS (INFINITO)       */
+
+.containerCompaniasCarrusel {
+  overflow: hidden;
+  width: 100%;
+  margin: 60px auto;
+  background: rgb(228, 231, 237);
+  padding: 20px 0;
+  
+}
+
+.containerCompaniasCarrusel h3 {
+  font-family: 'New Astro', sans-serif;
+  color: var(--color-1);
+}
+
+
+.carrusel-track {
+  display: flex;
+  width: calc(200%); /* doble porque duplicamos logos */
+  animation: scroll 20s linear infinite;
+}
+
+.carrusel-slide {
+  flex: 0 0 auto;
+  width: 200px; /* ancho por logo, ajusta según diseño */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.carrusel-slide img {
+  max-height: 100px;
+  object-fit: contain;
+}
+
+/* Animación horizontal infinita */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
 /*        ESTILOS REDES SOCIALES        */
 
 .containerRedesHome {
@@ -108,7 +156,7 @@
 .tituloRedes h2 {
   font-size: 6vh;
   font-weight: 400;
-  color: #78b6fc;
+  color: var(--color-1);
   padding: 0 5vh;
 }
 
@@ -119,7 +167,7 @@
 .tituloRedes .linea {
   flex: 1;
   height: 2px;
-  background-color: #78b6fc;
+  background-color: var(--color-1);
   
 }
 
