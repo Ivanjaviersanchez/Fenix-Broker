@@ -11,6 +11,86 @@
   width: 100%;
 }
 
+/*        ESTILOS PORQUE ELEGIRNOS        */
+
+/* CONTENEDOR PRINCIPAL */
+.ContainerElegirnos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin: 0vh auto;
+  padding: 5vh 5vw;
+  background-color: var(--color-7);
+}
+
+/* CADA CARD */
+.cardElegirnos {
+  position: relative;
+  background-image: url('../assets/LogoFenixBlanco.png'); /* o poné diferentes imágenes si querés */
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  overflow: hidden;
+  min-height: 60vh; 
+  padding: 1vh 2vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+ 
+}
+
+.cardElegirnos:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 15px 30px rgba(0,0,0,0.3);
+}
+
+/* OVERLAY DE CADA CARD */
+.cardOverlayElegirnos {
+  background: rgba(0,0,0,0.6);
+  padding: 2rem;
+  text-align: center;
+  color: white;
+  border-radius: 15px;
+  max-width: 85%;
+}
+
+.cardOverlayElegirnos img {
+  width: 50%;
+}
+
+.cardOverlayElegirnos h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-family: 'New Astro', sans-serif;
+}
+
+.cardOverlayElegirnos p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* BOTÓN */
+.cardLinkButtonElegirnos {
+  background: linear-gradient(to bottom, #fbc296,#fbc296,#f8992e);
+  color: var(--color-6);
+  border: solid var(--color-6) 1px;
+  border-radius: 12px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  min-width: 140px;
+  font-size: 3vh;
+  padding: 1vh;
+}
+
+.cardLinkButtonElegirnos:hover {
+  background: linear-gradient(to bottom, #89b1df, #358ae9, #358ae9);
+  border: solid var(--color-3) 1px; 
+  color: white !important;
+}
+
+
 /*        ESTILOS CONTADORES HOME        */
 
 .ContainerContadoresHome {
