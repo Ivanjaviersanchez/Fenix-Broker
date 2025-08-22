@@ -75,7 +75,7 @@ function Home() {
 
       {/* Porque elegirnos */}
       <div>
-        <h3 className='tituloElegirnos'>Porque elegirnos {">>>"}</h3>
+        <h2 className='tituloElegirnos'>Porque elegirnos {">>>"}</h2>
       <div className="ContainerElegirnos">
         <div className="cardElegirnos">
           <div className="cardOverlayElegirnos">
@@ -107,7 +107,7 @@ function Home() {
 
       {/* Contadores */}
       <div className="ContainerContadoresHome" ref={ref}>
-        <h2>Siempre listos para asesorarte</h2>
+        <h2>Siempre listos para asesorarte {">>>"}</h2>
         <p>El trato personalizado es una característica que nos destaca y posibilita forjar relaciones de largo plazo con nuestros clientes.</p>
 
         <div className="Contadores">
@@ -130,7 +130,7 @@ function Home() {
 
       {/* Carrusel de compañías de seguros */}
       <div className='containerCompaniasCarrusel'>
-        <h3>Aseguradoras que nos acompañan </h3>
+        <h3>Aseguradoras que nos acompañan {">>>"}</h3>
         <div className="carrusel-track">
           <div className="carrusel-slide">
             <img src={LogoAllianz} alt="Allianz" />

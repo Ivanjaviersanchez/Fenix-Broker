@@ -107,8 +107,10 @@
 /*        ESTILOS CONTADORES HOME        */
 
 .ContainerContadoresHome {
-  background-color: #111;
-  color: var(--color-2);
+  /* background-color: rgb(24, 28, 33); */
+  background: linear-gradient(135deg, rgb(15, 23, 51), var(--color-7), var(--color-7), rgb(15, 23, 51));
+
+  color: var(--color-6);
   text-align: center;
   padding: 50px 20px;
   border-radius: 50px;
@@ -119,25 +121,27 @@
   font-size: 6vh;
   margin-bottom: 10px;
   font-family: 'New Astro', sans-serif;
+  color: var(--color-1);
 }
 
 .ContainerContadoresHome p {
   margin-bottom: 40px;
-  color: #ccc;
+  color: var(--color-1);
   font-weight: bold;
-  font-size: 2.4vh;
+  font-size: 3vh;
+  padding: 0 30vh;
 }
 
 .Contadores {
   display: flex;
   justify-content: center;
   gap: 100px;
-  margin-bottom: 40px;
+  margin-bottom: 6vh;
   flex-wrap: wrap;
 }
 
 .ContadorItem {
-  border: 2px solid #78b6fc;
+  border: 3px solid var(--color-5);
   border-radius: 50%;
   width: 180px;
   height: 180px;
@@ -158,6 +162,7 @@
   font-size: 2.8vh;
   padding: 0vh 1vh;
   font-family: 'New Astro', sans-serif;
+  color: var(--color-6);
 }
 
 .BtnConocenos {
@@ -192,8 +197,13 @@
 }
 
 .containerCompaniasCarrusel h3 {
+  margin: 0;
   font-family: 'New Astro', sans-serif;
+  font-size: 6vh;
+  font-weight: 400;
   color: var(--color-1);
+  text-align: center;
+  
 }
 
 
