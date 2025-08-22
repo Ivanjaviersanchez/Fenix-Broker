@@ -13,13 +13,26 @@
 
 /*        ESTILOS PORQUE ELEGIRNOS        */
 
+/* TITULO */
+.tituloElegirnos {
+  margin: 0;
+  padding-top: 7vh;
+  padding-left: 12vh;
+  background-color: var(--color-7);
+  font-family: 'New Astro', sans-serif;
+  font-size: 8vh;
+  font-weight: 400;
+  color: var(--color-1);
+  text-align: left;
+}
+
 /* CONTENEDOR PRINCIPAL */
 .ContainerElegirnos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
   margin: 0vh auto;
-  padding: 5vh 5vw;
+  padding: 5vh 5vh;
   background-color: var(--color-7);
 }
 
@@ -32,7 +45,7 @@
   border-radius: 20px;
   overflow: hidden;
   min-height: 60vh; 
-  padding: 1vh 2vh;
+  padding: 1vh 0vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -171,9 +184,10 @@
 .containerCompaniasCarrusel {
   overflow: hidden;
   width: 100%;
-  margin: 60px auto;
-  background: rgb(228, 231, 237);
-  padding: 20px 0;
+  
+  /* background: rgb(228, 231, 237); */
+  background: linear-gradient(to top, white, white,#89b1df);
+  padding: 8vh 0;
   
 }
 
@@ -218,8 +232,10 @@
 
 .containerRedesHome {
   text-align: center;
-  margin: 90px 0;
+  margin: 0;
+  padding: 8vh 0;
   font-family: 'New Astro', sans-serif;
+  background: linear-gradient(to bottom, white, white,#89b1df);
 }
 
 .tituloRedes {

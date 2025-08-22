@@ -74,12 +74,14 @@ function Home() {
       </div>
 
       {/* Porque elegirnos */}
+      <div>
+        <h3 className='tituloElegirnos'>Porque elegirnos {">>>"}</h3>
       <div className="ContainerElegirnos">
         <div className="cardElegirnos">
           <div className="cardOverlayElegirnos">
             <img src={IconoSolucionesAgiles} alt="Soluciones Agiles" />
             <h3>Soluciones ágiles</h3>
-            <p>Nuestra organización cuenta con asesoria 24/7 ante cualquier situcacion nuestro equipo de acesores se encargaran de darte servicio a la brevedad. </p>
+            <p>Nuestra organización cuenta con asesoria 24/7 ante cualquier situación nuestro equipo de acesores se encargaran de darte servicio a la brevedad. </p>
             <Link to="/seguros/personas" className="cardLinkButtonElegirnos">Conoce mas</Link>
           </div>
         </div>
@@ -99,6 +101,7 @@ function Home() {
             <Link to="/somosfenix" className="cardLinkButtonElegirnos">Conócenos</Link>
           </div>
         </div>
+      </div>
       </div>
 
 
