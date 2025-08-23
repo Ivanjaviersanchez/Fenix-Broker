@@ -20,7 +20,7 @@
   padding-left: 12vh;
   background-color: var(--color-7);
   font-family: 'New Astro', sans-serif;
-  font-size: 8vh;
+  font-size: 7.5vh;
   font-weight: 400;
   color: var(--color-1);
   text-align: left;
@@ -107,10 +107,8 @@
 /*        ESTILOS CONTADORES HOME        */
 
 .ContainerContadoresHome {
-  /* background-color: rgb(24, 28, 33); */
-  background: linear-gradient(135deg, rgb(15, 23, 51), var(--color-7), var(--color-7), rgb(15, 23, 51));
-
-  color: var(--color-6);
+  background: linear-gradient(135deg, var(--color-1), var(--color-7), var(--color-7), var(--color-7), var(--color-1));
+  color: var(--color-5);
   text-align: center;
   padding: 50px 20px;
   border-radius: 50px;
@@ -141,7 +139,8 @@
 }
 
 .ContadorItem {
-  border: 3px solid var(--color-5);
+  border: 1px solid var(--color-4);
+  background: linear-gradient(to bottom, var(--color-4), white, white,var(--color-4));
   border-radius: 50%;
   width: 180px;
   height: 180px;
@@ -162,7 +161,7 @@
   font-size: 2.8vh;
   padding: 0vh 1vh;
   font-family: 'New Astro', sans-serif;
-  color: var(--color-6);
+  color: var(--color-5);
 }
 
 .BtnConocenos {
@@ -334,4 +333,39 @@
   }
 }
 
+@media (max-width: 767px) {
+  
+  /*     ESTILOS PORQUE ELEGIRNOS     */
+  .tituloElegirnos {
+    font-size: 6vh;
+  }
+  .cardOverlayElegirnos img {
+    width: 30%;
+  }
+  .cardOverlayElegirnos h3 {
+    font-size: 4.5vh;
+    
+  }
+  .cardOverlayElegirnos p {
+    font-size: 2.5vh;
+  }
+  .cardLinkButtonElegirnos {
+    font-size: 2.5vh;
+  }
 
+  /*     ESTILOS CONTADORES SIEMPRE LISTOS     */
+  .ContainerContadoresHome h2 {
+    width: 100%;
+    height: auto;
+  }
+  .ContainerContadoresHome p {
+    padding: 0;
+  } 
+  .Contadores {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 6vh;
+    flex-wrap: wrap;
+  }
+}

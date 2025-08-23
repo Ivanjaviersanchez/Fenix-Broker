@@ -104,8 +104,12 @@ function Home() {
       </div>
       </div>
 
+      {/* Seguros de Home */ }
+      <div className='ContainerSegurosHome'>
 
-      {/* Contadores */}
+      </div>
+
+      {/* Contadores Siempre listos para asesorarte */}
       <div className="ContainerContadoresHome" ref={ref}>
         <h2>Siempre listos para asesorarte {">>>"}</h2>
         <p>El trato personalizado es una característica que nos destaca y posibilita forjar relaciones de largo plazo con nuestros clientes.</p>
