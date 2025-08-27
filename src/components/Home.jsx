@@ -1,6 +1,7 @@
 import CountUp from 'react-countup';
 import { Link, useNavigate } from 'react-router-dom';
 import { useInView } from 'react-intersection-observer';
+import { motion } from "framer-motion";
 import { FaFacebookF, FaInstagram, FaYoutube, FaLinkedinIn } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6'; // para el nuevo logo de Twitter
 import "./Home.css";
@@ -18,6 +19,10 @@ import FondoElegirnos from '../assets/LogoNeon.png'
 import IconoSolucionesAgiles from '../assets/IconoSolucionesAgiles.png';
 import IconoSegurosAdaptados from '../assets/IconoSegurosAdaptados.png';
 import IconoResponsabilidad from '../assets/IconoResponsabilidad.png';
+
+import SegurosHomeAuto from '../assets/SegurosHomeAuto5.png';
+import SegurosHomeHogar from '../assets/SegurosHomeHogar5.png';
+import SegurosComercio from '../assets/SegurosHomeComercio5.png';
 
 import LogoAllianz from '../assets/CarruselLogoAllianz.png';
 import LogoAsociart from '../assets/CarruselLogoAsociart.png';
@@ -76,36 +81,54 @@ function Home() {
       {/* Porque elegirnos */}
       <div>
         <h2 className='tituloElegirnos'>Porque elegirnos {">>>"}</h2>
-      <div className="ContainerElegirnos">
-        <div className="cardElegirnos">
-          <div className="cardOverlayElegirnos">
-            <img src={IconoSolucionesAgiles} alt="Soluciones Agiles" />
-            <h3>Soluciones ágiles</h3>
-            <p>Nuestra organización cuenta con asesoria 24/7 ante cualquier situación nuestro equipo de acesores se encargaran de darte servicio a la brevedad. </p>
-            <Link to="/seguros/personas" className="cardLinkButtonElegirnos">Conoce mas</Link>
+        <div className="ContainerElegirnos">
+          <div className="cardElegirnos">
+            <div className="cardOverlayElegirnos">
+              <img src={IconoSolucionesAgiles} alt="Soluciones Agiles" />
+              <h3>Soluciones ágiles</h3>
+              <p>Nuestra organización cuenta con asesoria 24/7 ante cualquier situación nuestro equipo de acesores se encargaran de darte servicio a la brevedad. </p>
+              <Link to="/seguros/personas" className="cardLinkButtonElegirnos">Conoce mas</Link>
+            </div>
+          </div>
+          <div className="cardElegirnos">
+            <div className="cardOverlayElegirnos">
+              <img src={IconoSegurosAdaptados} alt="Seguros Adaptados" />
+              <h3>Seguros adaptados</h3>
+              <p>Diseñados para dar la mejor y mas adecuada cobertura a tus necesidades con un respaldo 100% garantizado con las mejores companias del mercado.</p>
+              <Link to="/seguros" className="cardLinkButtonElegirnos">Ver Seguros</Link>
+            </div>
+          </div>
+          <div className="cardElegirnos">
+            <div className="cardOverlayElegirnos">
+              <img src={IconoResponsabilidad} alt="Responsabilidad y Compromiso" />
+              <h3>Responsabilidad y Compromiso</h3>
+              <p>SomosFenix una organización con más de 30 años en el mercádo brindando confianza y respaldo en nuestros productos.</p>
+              <Link to="/somosfenix" className="cardLinkButtonElegirnos">Conócenos</Link>
+            </div>
           </div>
         </div>
-        <div className="cardElegirnos">
-          <div className="cardOverlayElegirnos">
-            <img src={IconoSegurosAdaptados} alt="Seguros Adaptados" />
-            <h3>Seguros adaptados</h3>
-            <p>Diseñados para dar la mejor y mas adecuada cobertura a tus necesidades con un respaldo 100% garantizado con las mejores companias del mercado.</p>
-            <Link to="/seguros/empresas" className="cardLinkButtonElegirnos">Ver Seguros</Link>
-          </div>
-        </div>
-        <div className="cardElegirnos">
-          <div className="cardOverlayElegirnos">
-            <img src={IconoResponsabilidad} alt="Responsabilidad y Compromiso" />
-            <h3>Responsabilidad y Compromiso</h3>
-            <p>SomosFenix una organización con más de 30 años en el mercádo brindando confianza y respaldo en nuestros productos.</p>
-            <Link to="/somosfenix" className="cardLinkButtonElegirnos">Conócenos</Link>
-          </div>
-        </div>
-      </div>
       </div>
 
       {/* Seguros de Home */ }
-      <div className='ContainerSegurosHome'>
+      <div>
+        <h2 className='tituloSegurosHome'>Protegé todo con Fenix {">>>"}</h2>
+      
+        <div className="containerSegurosHome">
+          <Link to="/seguros/autos" className="seguroItem">
+            <img src={SegurosHomeAuto} alt="Seguro de Auto" />
+            <h3>Seguro de Auto</h3>
+          </Link>
+
+          <Link to="/seguros/hogar" className="seguroItem">
+            <img src={SegurosHomeHogar} alt="Seguro de Hogar" />
+            <h3>Seguro de Hogar</h3>
+          </Link>
+
+          <Link to="/seguros/comercios" className="seguroItem">
+            <img src={SegurosComercio} alt="Seguro de Comercio" />
+            <h3>Integral de Comercio</h3>
+          </Link>
+        </div>
 
       </div>
 

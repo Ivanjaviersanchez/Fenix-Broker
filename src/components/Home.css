@@ -16,7 +16,7 @@
 /* TITULO */
 .tituloElegirnos {
   margin: 0;
-  padding-top: 7vh;
+  padding-top: 10vh;
   padding-left: 12vh;
   background-color: var(--color-7);
   font-family: 'New Astro', sans-serif;
@@ -102,6 +102,80 @@
   border: solid var(--color-3) 1px; 
   color: white !important;
 }
+
+/* ===== SEGUROS HOME ===== */
+.tituloSegurosHome {
+  margin: 0;
+  padding-top: 10vh;
+  padding-left: 12vh;
+  background-color: var(--color-7);
+  font-family: 'New Astro', sans-serif;
+  font-size: 7.5vh;
+  font-weight: 400;
+  color: var(--color-1);
+  text-align: left;
+}
+
+.containerSegurosHome {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 3rem;
+  padding: 8vh 20vh;
+  background: linear-gradient(to bottom, var(--color-7),#89b1df,var(--color-7),white);
+  text-align: center;
+  perspective: 1000px; /* da profundidad */
+  height: auto;
+}
+
+.seguroItem {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
+  background-color: white;
+  transition: transform 0.4s ease, z-index 0.3s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+  
+}
+
+.seguroItem img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.seguroItem h3 {
+  margin: 15px 0;
+  font-size: 1.8rem;
+  color: var(--color-1);
+  
+  font-family: 'New Astro', sans-serif;
+}
+
+/* EFECTO HOVER */
+.containerSegurosHome:hover .seguroItem {
+  /* transform: scale(0.9); */
+  /* opacity: 0.7; */
+  z-index: 0;
+}
+
+.containerSegurosHome .seguroItem:hover {
+  transform: scale(1.15);
+  opacity: 1;
+  z-index: 10;
+  box-shadow: 0px 15px 35px rgba(0,0,0,0.4);
+ /*  background: linear-gradient(to bottom, #fbc296,#fbc296,#f8992e); */
+ background-color: white;
+ color: var(--color-5) !important;
+}
+.containerSegurosHome .seguroItem h3:hover{
+  color: var(--color-5);
+}
+
+
+
+
 
 
 /*        ESTILOS CONTADORES HOME        */
@@ -190,7 +264,7 @@
   width: 100%;
   
   /* background: rgb(228, 231, 237); */
-  background: linear-gradient(to top, white, white,#89b1df);
+  background: linear-gradient(to top,var(--color-7),white);
   padding: 8vh 0;
   
 }
@@ -244,7 +318,7 @@
   margin: 0;
   padding: 8vh 0;
   font-family: 'New Astro', sans-serif;
-  background: linear-gradient(to bottom, white, white,#89b1df);
+  background: linear-gradient(to bottom, var(--color-7),white,#89b1df);
 }
 
 .tituloRedes {
