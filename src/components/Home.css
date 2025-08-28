@@ -120,7 +120,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 3rem;
-  padding: 8vh 20vh;
+  padding: 8vh 10vh;
   background: linear-gradient(to bottom, var(--color-7),#89b1df,var(--color-7),white);
   text-align: center;
   perspective: 1000px; /* da profundidad */
@@ -132,7 +132,7 @@
   overflow: hidden;
   border-radius: 20px;
   box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
-  background-color: white;
+  background-color: var(--color-5);
   transition: transform 0.4s ease, z-index 0.3s ease, box-shadow 0.4s ease;
   cursor: pointer;
   
@@ -145,12 +145,34 @@
   display: block;
 }
 
-.seguroItem h3 {
-  margin: 15px 0;
-  font-size: 1.8rem;
-  color: var(--color-1);
-  
+/* Título sobre la imagen */
+.seguroTitulo {
+  position: absolute;
+  top: 10px;   /* lo pega a la parte superior */
+  left: 50%;   /* lo centra */
+  transform: translateX(-50%);
+  padding: 15px 0px;
+  font-size: 5.2vh;
+  font-weight: bold;
+  color: white !important; 
   font-family: 'New Astro', sans-serif;
+  width: 100%;
+}
+.seguroTituloBajo {
+  position: absolute;
+  top: 290px;
+  color: var(--color-4);
+  padding: 0 28px;
+  font-size: 1.8rem;
+  font-family: 'New Astro', sans-serif;
+}
+
+.seguroItem h3 {
+  margin: 15px 12px;
+  font-size: 1.5rem;
+  color: var(--color-7);
+  font-family: 'New Astro', sans-serif;
+  height: 4vh;
 }
 
 /* EFECTO HOVER */
@@ -165,17 +187,13 @@
   opacity: 1;
   z-index: 10;
   box-shadow: 0px 15px 35px rgba(0,0,0,0.4);
- /*  background: linear-gradient(to bottom, #fbc296,#fbc296,#f8992e); */
- background-color: white;
- color: var(--color-5) !important;
+  background: linear-gradient(to left, #fbc296,var(--color-5),var(--color-5),#fbc296); 
+  color: var(--color-6) !important;
+
 }
 .containerSegurosHome .seguroItem h3:hover{
-  color: var(--color-5);
+  color: var(--color-6);
 }
-
-
-
-
 
 
 /*        ESTILOS CONTADORES HOME        */
@@ -425,6 +443,16 @@
   }
   .cardLinkButtonElegirnos {
     font-size: 2.5vh;
+  }
+
+  /*     ESTILOS SEGUROS HOME     */
+  .containerSegurosHome {
+    padding: 10vh 15vh;
+  }
+  .seguroTituloBajo {
+    top: 270px;
+    font-size: 4vh;
+    padding: 0 3.3vh;
   }
 
   /*     ESTILOS CONTADORES SIEMPRE LISTOS     */

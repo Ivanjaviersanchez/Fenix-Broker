@@ -3,7 +3,7 @@
 /*   ESTILOS NAVBARTOP     */
 
 .navbarTop {
-  background: linear-gradient(to bottom, #031d3f, #89b1df, #031d3f);
+  background: linear-gradient(to bottom, var(--color-1), #89b1df, var(--color-7));
   padding: 0.5vh; 
   display: flex;
   justify-content: right;

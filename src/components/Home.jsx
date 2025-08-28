@@ -116,17 +116,23 @@ function Home() {
         <div className="containerSegurosHome">
           <Link to="/seguros/autos" className="seguroItem">
             <img src={SegurosHomeAuto} alt="Seguro de Auto" />
-            <h3>Seguro de Auto</h3>
+            <h2 className="seguroTitulo">SEGURO DE AUTO</h2>
+            <h2 className='seguroTituloBajo'>Coberturas a tu medida para cada viaje</h2>
+            <h3>Cotíza tu Auto {">>>"}</h3>
           </Link>
 
           <Link to="/seguros/hogar" className="seguroItem">
             <img src={SegurosHomeHogar} alt="Seguro de Hogar" />
-            <h3>Seguro de Hogar</h3>
+            <h2 className="seguroTitulo">SEGURO DE HOGAR</h2>
+            <h2 className='seguroTituloBajo'>Protección para toda tu vivienda</h2>
+            <h3>Cotíza tu Hogar {">>>"}</h3>
           </Link>
 
           <Link to="/seguros/comercios" className="seguroItem">
             <img src={SegurosComercio} alt="Seguro de Comercio" />
-            <h3>Integral de Comercio</h3>
+            <h2 className="seguroTitulo">INTEGRAL DE COMERCIO</h2>
+            <h2 className='seguroTituloBajo'>Tu comercio protegido por Fenix</h2>
+            <h3>Cotíza tu Comercio {">>>"}</h3>
           </Link>
         </div>
 
