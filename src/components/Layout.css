@@ -3,13 +3,19 @@
 /*   ESTILOS NAVBARTOP     */
 
 .navbarTop {
-  background: linear-gradient(to bottom, var(--color-1), #89b1df, var(--color-7));
+  background: linear-gradient(to bottom, var(--color-1), #89b1df, var(--color-1));
   padding: 0.5vh; 
   display: flex;
   justify-content: right;
+  color: black;
 }
 .navbarTop a {
   margin-right: 4vh;
+  color: var(--color-4);
+}
+.navbarTop a:hover {
+  color: var(--color-5);
+  transform: scale(1.45);
 }
 
 
@@ -27,7 +33,8 @@
   transition: color 0.3s ease;
   color: white;
   font-weight: bold; 
-  font-size: 2.4vh;
+  font-size: 2.6vh;
+  
 }
 
 .navbarStyles .nav-link::after {
@@ -199,7 +206,7 @@
 
   /* Mover el logo a la derecha */
   .navbarStyles .navbar-brand {
-    margin-right: 24vh;
+    margin-right: 22vh;
     
   }
 

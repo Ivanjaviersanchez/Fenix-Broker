@@ -132,7 +132,8 @@
   overflow: hidden;
   border-radius: 20px;
   box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
-  background-color: var(--color-5);
+  background-color: var(--color-1);
+  /* background: linear-gradient(to left, #89b1df, #358ae9, #358ae9, #89b1df); */
   transition: transform 0.4s ease, z-index 0.3s ease, box-shadow 0.4s ease;
   cursor: pointer;
   
@@ -151,25 +152,25 @@
   top: 10px;   /* lo pega a la parte superior */
   left: 50%;   /* lo centra */
   transform: translateX(-50%);
-  padding: 15px 0px;
+  padding: 20px 0px;
   font-size: 5.2vh;
   font-weight: bold;
-  color: white !important; 
+  color: var(--color-7) !important; 
   font-family: 'New Astro', sans-serif;
   width: 100%;
 }
 .seguroTituloBajo {
   position: absolute;
   top: 290px;
-  color: var(--color-4);
+  color: var(--color-5);
   padding: 0 28px;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   font-family: 'New Astro', sans-serif;
 }
 
 .seguroItem h3 {
   margin: 15px 12px;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   color: var(--color-7);
   font-family: 'New Astro', sans-serif;
   height: 4vh;
@@ -205,6 +206,7 @@
   padding: 50px 20px;
   border-radius: 50px;
   margin: 6vh;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1); /* Sombra sutil para mayor profundidad */
 }
 
 .ContainerContadoresHome h2 {
@@ -212,6 +214,7 @@
   margin-bottom: 10px;
   font-family: 'New Astro', sans-serif;
   color: var(--color-1);
+  font-weight: 500; /* Negrita ligera */
 }
 
 .ContainerContadoresHome p {
@@ -231,8 +234,8 @@
 }
 
 .ContadorItem {
-  border: 1px solid var(--color-4);
-  background: linear-gradient(to bottom, var(--color-4), white, white,var(--color-4));
+  border: 2px solid var(--color-4);
+  background: linear-gradient(to bottom, var(--color-4), white, white, var(--color-4));
   border-radius: 50%;
   width: 180px;
   height: 180px;
@@ -241,23 +244,36 @@
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
+  position: relative;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Sombra más fuerte */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .ContadorItem h3 {
   font-size: 5vh;
   font-weight: bold;
   margin: 0;
+  color: var(--color-5); /* Naranja para los números */
 }
 
 .ContadorItem p {
   font-size: 2.8vh;
   padding: 0vh 1vh;
   font-family: 'New Astro', sans-serif;
-  color: var(--color-5);
+  color: var(--color-1);
+}
+
+.ContadorItem:hover {
+  transform: scale(1.1); /* Efecto hover */
+  box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.3);
+}
+
+.ContadorItem h3:hover {
+  color: var(--color-2); /* Azul para el hover de los números */
 }
 
 .BtnConocenos {
-  background: linear-gradient(to bottom, #fbc296,#fbc296,#f8992e);
+  background: linear-gradient(to bottom, #fbc296, #fbc296, #f8992e);
   color: var(--color-6);
   border: solid var(--color-6) 1px;
   border-radius: 12px;
@@ -266,12 +282,12 @@
   display: inline-block;
   min-width: 140px;
   font-size: 3vh;
-  
+  margin-top: 20px;
 }
 
 .BtnConocenos:hover {
   background: linear-gradient(to bottom, #89b1df, #358ae9, #358ae9);
-  border: solid var(--color-3) 1px; 
+  border: solid var(--color-3) 1px;
   color: white !important;
 }
 
@@ -447,7 +463,11 @@
 
   /*     ESTILOS SEGUROS HOME     */
   .containerSegurosHome {
-    padding: 10vh 15vh;
+    padding: 10vh 12vh;
+  }
+  .seguroTitulo {
+    padding: 2.5vh 0;
+    font-size: 5vh;
   }
   .seguroTituloBajo {
     top: 270px;

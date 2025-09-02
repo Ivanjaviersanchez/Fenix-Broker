@@ -20,9 +20,9 @@ import IconoSolucionesAgiles from '../assets/IconoSolucionesAgiles.png';
 import IconoSegurosAdaptados from '../assets/IconoSegurosAdaptados.png';
 import IconoResponsabilidad from '../assets/IconoResponsabilidad.png';
 
-import SegurosHomeAuto from '../assets/SegurosHomeAuto5.png';
-import SegurosHomeHogar from '../assets/SegurosHomeHogar5.png';
-import SegurosComercio from '../assets/SegurosHomeComercio5.png';
+import SegurosHomeAuto from '../assets/SegurosHomeAuto6.png';
+import SegurosHomeHogar from '../assets/SegurosHomeHogar6.png';
+import SegurosComercio from '../assets/SegurosHomeComercio6.png';
 
 import LogoAllianz from '../assets/CarruselLogoAllianz.png';
 import LogoAsociart from '../assets/CarruselLogoAsociart.png';

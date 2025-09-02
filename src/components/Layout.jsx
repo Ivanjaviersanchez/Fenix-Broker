@@ -88,12 +88,12 @@ function Layout() {
             <Nav className="ms-auto text-center">
 
               {/* Inicio */}
-              <Nav.Link as={Link} to="/" onClick={() => setExpanded(false)} className="mx-3">
+              <Nav.Link as={Link} to="/" onClick={() => setExpanded(false)} className="mx-2">
                 Inicio
               </Nav.Link>
 
               {/* Somos Fenix */}
-              <Nav.Link as={Link} to="/somosfenix" onClick={() => setExpanded(false)} className="mx-3">
+              <Nav.Link as={Link} to="/somosfenix" onClick={() => setExpanded(false)} className="mx-2">
                 SomosFenix
               </Nav.Link>
 
@@ -102,7 +102,7 @@ function Layout() {
                 ref={segurosRef}
                 title="Seguros | Cotizaciones"
                 id="seguros-dropdown"
-                className="mx-3 custom-dropdown"
+                className="mx-2 custom-dropdown"
                 show={showSeguros}
                 onMouseEnter={() => !isMobile && setShowSeguros(true)}
                 onMouseLeave={() => !isMobile && setShowSeguros(false)}
@@ -146,7 +146,7 @@ function Layout() {
                 ref={siniestrosRef}
                 title="Siniestros | Denuncias"
                 id="siniestros-dropdown"
-                className="mx-3 custom-dropdown"
+                className="mx-2 custom-dropdown"
                 show={showSiniestros}
                 onMouseEnter={() => !isMobile && setShowSiniestros(true)}
                 onMouseLeave={() => !isMobile && setShowSiniestros(false)}
@@ -185,10 +185,10 @@ function Layout() {
               </NavDropdown>
 
               {/* Otros enlaces */}
-              <Nav.Link as={Link} to="/novedades" onClick={() => setExpanded(false)} className="mx-3">
+              <Nav.Link as={Link} to="/novedades" onClick={() => setExpanded(false)} className="mx-2">
                 Novedades
               </Nav.Link>
-              <Nav.Link as={Link} to="/contacto" onClick={() => setExpanded(false)} className="mx-3">
+              <Nav.Link as={Link} to="/contacto" onClick={() => setExpanded(false)} className="mx-2">
                 Contacto
               </Nav.Link>
               <Nav.Link as={Link} to="/cotiza" onClick={() => setExpanded(false)} className="cotiza-cta mx-3">

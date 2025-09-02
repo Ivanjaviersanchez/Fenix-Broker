@@ -1,8 +1,51 @@
 .footerStyles {
-  background: linear-gradient(to bottom, var(--color-1),var(--color-1), #89b1df, var(--color-7));
-  color: #fff;
-  text-align: center;
-  padding: 1.5rem 0;
-  margin: 0;
-  font-size: 0.9rem;
+  background: linear-gradient(to bottom, var(--color-1), #89b1df, var(--color-1));
+  color: var(--color-7);
+  padding: 2rem 5vh;
+  font-size: 2.5vh;
+  
 }
+
+.footerTop {
+  text-align: center;
+  margin-bottom: 3vh;
+}
+
+.footerLogoRow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3vh;
+  gap: 0.5rem;
+}
+
+.footerLogoRow img {
+  height: 40px;
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.footerLeft,
+.footerRight {
+  flex: 1 1 300px;
+  min-width: 280px;
+}
+
+.footerLink {
+  color: #e0f0ff;
+  text-decoration: underline;
+}
+
+.footerBottom {
+  margin-top: 1vh;
+  text-align: center;
+  font-size: 2.2vh;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding-top: 3vh;
+}
+
