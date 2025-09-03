@@ -29,33 +29,34 @@
 /* CONTENEDOR PRINCIPAL */
 .ContainerElegirnos {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
-  margin: 0vh auto;
-  padding: 5vh 5vh;
-  background-color: var(--color-7);
+  margin: 0;
+  padding: 5vh 25vh;
+  /* background-image: url('../assets/LogoFenixBlanco.png'); */
+  perspective: 1000px; /* el rotateX se vea 3D */
+  background: linear-gradient(to bottom, var(--color-7),#89b1df,var(--color-7));
 }
 
 /* CADA CARD */
 .cardElegirnos {
   position: relative;
-  background-image: url('../assets/LogoFenixBlanco.png'); /* o poné diferentes imágenes si querés */
+  background-color: var(--color-1);
   background-size: cover;
   background-position: center;
   border-radius: 20px;
   overflow: hidden;
-  min-height: 60vh; 
-  padding: 1vh 0vh;
+  /* min-height: 60vh;  */
+  padding: 3vh 3vh;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
- 
 }
 
 .cardElegirnos:hover {
   transform: translateY(-10px);
   box-shadow: 0px 15px 30px rgba(0,0,0,0.3);
+  
 }
 
 /* OVERLAY DE CADA CARD */
@@ -65,11 +66,12 @@
   text-align: center;
   color: white;
   border-radius: 15px;
-  max-width: 85%;
+  max-width: 100%;
+  
 }
 
 .cardOverlayElegirnos img {
-  width: 50%;
+  width: 20%;
 }
 
 .cardOverlayElegirnos h3 {
@@ -161,10 +163,10 @@
 }
 .seguroTituloBajo {
   position: absolute;
-  top: 290px;
+  top: 270px;
   color: var(--color-5);
-  padding: 0 28px;
-  font-size: 1.7rem;
+  padding: 0vh 5vh;
+  font-size: 1.5rem;
   font-family: 'New Astro', sans-serif;
 }
 
@@ -188,12 +190,12 @@
   opacity: 1;
   z-index: 10;
   box-shadow: 0px 15px 35px rgba(0,0,0,0.4);
-  background: linear-gradient(to left, #fbc296,var(--color-5),var(--color-5),#fbc296); 
-  color: var(--color-6) !important;
+ /*  background: linear-gradient(to left, #fbc296,var(--color-5),var(--color-5),#fbc296);  */
+  /* color: var(--color-6) !important; */
 
 }
 .containerSegurosHome .seguroItem h3:hover{
-  color: var(--color-6);
+  color: var(--color-4);
 }
 
 
@@ -444,8 +446,14 @@
 @media (max-width: 767px) {
   
   /*     ESTILOS PORQUE ELEGIRNOS     */
+  .ContainerElegirnos {
+    padding: 3vh;
+  }
   .tituloElegirnos {
     font-size: 6vh;
+    padding-left: 15vh;
+    padding-bottom: 2vh;
+    
   }
   .cardOverlayElegirnos img {
     width: 30%;
@@ -462,6 +470,10 @@
   }
 
   /*     ESTILOS SEGUROS HOME     */
+  .tituloSegurosHome {
+    font-size: 6vh;
+    padding-left: 6vh;
+  }
   .containerSegurosHome {
     padding: 10vh 12vh;
   }

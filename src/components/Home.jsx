@@ -39,7 +39,7 @@ function Home() {
   });
 
   const handleConocenosClick = () => {
-    navigate('/somosfenix'); // Asegúrate de que esta ruta esté definida en tu router
+    navigate('/somosfenix'); 
   };
 
   return (
@@ -48,14 +48,23 @@ function Home() {
       <div className="ContainerCarruselHome">
         <Carousel>
           <Carousel.Item>
-            <img className="d-block w-100" src={CarouselImage1} alt="First slide"/>
+            <div className="d-flex">
+              <img className="w-33" src={CarouselImage1} alt="First slide"/>
+              <img className="w-33" src={CarouselImage2} alt="First slide"/>
+              <img className="w-33" src={CarouselImage3} alt="First slide"/>
+            </div>
             <Carousel.Caption>
               <h3>First slide label</h3>
               <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
             </Carousel.Caption>
           </Carousel.Item>
+
           <Carousel.Item>
-            <img className="d-block w-100" src={CarouselImage2} alt="Second slide"/>
+            <div className="d-flex">
+              <img className="w-33" src={CarouselImage2} alt="First slide"/>
+              <img className="w-33" src={CarouselImage3} alt="First slide"/>
+              <img className="w-33" src={CarouselImage1} alt="First slide"/>
+            </div>
             <Carousel.Caption>
               <h3>Second slide label</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -81,33 +90,70 @@ function Home() {
       {/* Porque elegirnos */}
       <div>
         <h2 className='tituloElegirnos'>Porque elegirnos {">>>"}</h2>
+
         <div className="ContainerElegirnos">
-          <div className="cardElegirnos">
+          {/* Card 1 */}
+          <motion.div 
+            className="cardElegirnos"
+            style={{ transformPerspective: "1000px" }}
+            initial={{ opacity: 0, y: 50, rotateX: 15, scale: 0.9 }}
+            whileInView={{ opacity: 1, y: 0, rotateX: 0, scale: 1 }}
+            viewport={{ once: false, amount: 0.3 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
             <div className="cardOverlayElegirnos">
-              <img src={IconoSolucionesAgiles} alt="Soluciones Agiles" />
+              <img src={IconoSolucionesAgiles} alt="Soluciones Ágiles" />
               <h3>Soluciones ágiles</h3>
-              <p>Nuestra organización cuenta con asesoria 24/7 ante cualquier situación nuestro equipo de acesores se encargaran de darte servicio a la brevedad. </p>
-              <Link to="/seguros/personas" className="cardLinkButtonElegirnos">Conoce mas</Link>
+              <p>
+                Nuestra organización cuenta con asesoría 24/7 ante cualquier situación. 
+                Nuestro equipo de asesores se encargará de darte servicio a la brevedad.
+              </p>
+              <Link to="/seguros/personas" className="cardLinkButtonElegirnos">Conoce más</Link>
             </div>
-          </div>
-          <div className="cardElegirnos">
+          </motion.div>
+
+          {/* Card 2 */}
+          <motion.div 
+            className="cardElegirnos"
+            style={{ transformPerspective: "1000px" }}
+            initial={{ opacity: 0, y: 50, rotateX: 15, scale: 0.9 }}
+            whileInView={{ opacity: 1, y: 0, rotateX: 0, scale: 1 }}
+            viewport={{ once: false, amount: 0.3 }}
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+          >
             <div className="cardOverlayElegirnos">
               <img src={IconoSegurosAdaptados} alt="Seguros Adaptados" />
               <h3>Seguros adaptados</h3>
-              <p>Diseñados para dar la mejor y mas adecuada cobertura a tus necesidades con un respaldo 100% garantizado con las mejores companias del mercado.</p>
+              <p>
+                Diseñados para dar la mejor y más adecuada cobertura a tus necesidades 
+                con respaldo garantizado de las mejores compañías del mercado.
+              </p>
               <Link to="/seguros" className="cardLinkButtonElegirnos">Ver Seguros</Link>
             </div>
-          </div>
-          <div className="cardElegirnos">
+          </motion.div>
+
+          {/* Card 3 */}
+          <motion.div 
+            className="cardElegirnos"
+            style={{ transformPerspective: "1000px" }}
+            initial={{ opacity: 0, y: 50, rotateX: 15, scale: 0.9 }}
+            whileInView={{ opacity: 1, y: 0, rotateX: 0, scale: 1 }}
+            viewport={{ once: false, amount: 0.3 }}
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
+          >
             <div className="cardOverlayElegirnos">
               <img src={IconoResponsabilidad} alt="Responsabilidad y Compromiso" />
               <h3>Responsabilidad y Compromiso</h3>
-              <p>SomosFenix una organización con más de 30 años en el mercádo brindando confianza y respaldo en nuestros productos.</p>
+              <p>
+                SomosFenix es una organización con más de 30 años en el mercado 
+                brindando confianza y respaldo en nuestros productos.
+              </p>
               <Link to="/somosfenix" className="cardLinkButtonElegirnos">Conócenos</Link>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
+
 
       {/* Seguros de Home */ }
       <div>
