@@ -10,7 +10,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import Card from 'react-bootstrap/Card';
 
 
-import CarouselImage1 from '../assets/slideParaComercio.jpeg';
+import CarouselImage1 from '../assets/CarruselHome1.jpeg';
 import CarouselImage2 from '../assets/slideGranizo.jpeg';
 import CarouselImage3 from '../assets/slideTambienEsto.jpeg';
 import CarouselImage4 from '../assets/slideTuMicroseguro.jpeg';
@@ -48,14 +48,10 @@ function Home() {
       <div className="ContainerCarruselHome">
         <Carousel>
           <Carousel.Item>
-            <div className="d-flex">
-              <img className="w-33" src={CarouselImage1} alt="First slide"/>
-              <img className="w-33" src={CarouselImage2} alt="First slide"/>
-              <img className="w-33" src={CarouselImage3} alt="First slide"/>
-            </div>
+            <img className="d-block w-100" src={CarouselImage1} alt="Third slide"/>
             <Carousel.Caption>
               <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
             </Carousel.Caption>
           </Carousel.Item>
 
@@ -63,13 +59,14 @@ function Home() {
             <div className="d-flex">
               <img className="w-33" src={CarouselImage2} alt="First slide"/>
               <img className="w-33" src={CarouselImage3} alt="First slide"/>
-              <img className="w-33" src={CarouselImage1} alt="First slide"/>
+              <img className="w-33" src={CarouselImage4} alt="First slide"/>
             </div>
             <Carousel.Caption>
               <h3>Second slide label</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </Carousel.Caption>
           </Carousel.Item>
+
           <Carousel.Item>
             <img className="d-block w-100" src={CarouselImage3} alt="Third slide"/>
             <Carousel.Caption>
@@ -180,6 +177,11 @@ function Home() {
             <h2 className='seguroTituloBajo'>Tu comercio protegido por Fenix</h2>
             <h3>Cotíza tu Comercio {">>>"}</h3>
           </Link>
+        </div>
+
+        <div className="tituloSegurosConBoton">
+          <h2>Conóce todos nuestros seguros {">>>"} </h2>
+          <Link to="/seguros" className="cardLinkButtonConoce">Seguros Fenix</Link>
         </div>
 
       </div>

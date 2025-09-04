@@ -3,11 +3,12 @@
 .ContainerCarruselHome {
   background-color: white;
    /* padding: 2rem;  */
+  height: 90vh;
 }
 
 .ContainerCarruselHome img {
   object-fit: cover; /* Mantiene relación de aspecto sin deformar */
-  height: 81vh;
+  height: 90vh;
   width: 100%;
 }
 
@@ -108,7 +109,7 @@
 /* ===== SEGUROS HOME ===== */
 .tituloSegurosHome {
   margin: 0;
-  padding-top: 10vh;
+  padding-top: 15vh;
   padding-left: 12vh;
   background-color: var(--color-7);
   font-family: 'New Astro', sans-serif;
@@ -122,7 +123,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 3rem;
-  padding: 8vh 10vh;
+  padding: 8vh 15vh;
   background: linear-gradient(to bottom, var(--color-7),#89b1df,var(--color-7),white);
   text-align: center;
   perspective: 1000px; /* da profundidad */
@@ -163,7 +164,7 @@
 }
 .seguroTituloBajo {
   position: absolute;
-  top: 270px;
+  top: 260px;
   color: var(--color-5);
   padding: 0vh 5vh;
   font-size: 1.5rem;
@@ -172,7 +173,7 @@
 
 .seguroItem h3 {
   margin: 15px 12px;
-  font-size: 1.7rem;
+  font-size: 4vh;
   color: var(--color-7);
   font-family: 'New Astro', sans-serif;
   height: 4vh;
@@ -198,6 +199,48 @@
   color: var(--color-4);
 }
 
+/* Contenedor de título + botón */
+
+.tituloSegurosConBoton {
+  display: flex;
+  /* separa h2 a la izq y btn a la der */
+  align-items: center;            /* centra verticalmente */
+  padding: 8vh 40vh;                /* mismo padding que tus títulos */
+  /* background-color: var(--color-7); */
+  background: linear-gradient(to bottom,white, var(--color-7),var(--color-7),var(--color-7));
+
+}
+
+/* Ajusta el h2 para que se vea bien dentro del flex */
+.tituloSegurosConBoton h2 {
+  margin: 0;
+  font-family: 'New Astro', sans-serif;
+  font-size: 5vh;
+  font-weight: 400;
+  color: var(--color-1);
+  padding-right: 20vh;
+}
+
+/* BOTÓN */
+.cardLinkButtonConoce {
+  background: linear-gradient(to bottom, #fbc296,#fbc296,#f8992e);
+  color: var(--color-6);
+  border: solid var(--color-6) 1px;
+  border-radius: 12px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  min-width: 140px;
+  font-size: 3vh;
+  padding: 1vh;
+}
+
+.cardLinkButtonConoce:hover {
+  background: linear-gradient(to bottom, #89b1df, #358ae9, #358ae9);
+  border: solid var(--color-3) 1px; 
+  color: white !important;
+}
+
 
 /*        ESTILOS CONTADORES HOME        */
 
@@ -205,10 +248,11 @@
   background: linear-gradient(135deg, var(--color-1), var(--color-7), var(--color-7), var(--color-7), var(--color-1));
   color: var(--color-5);
   text-align: center;
-  padding: 50px 20px;
+  padding: 20px 20px;
   border-radius: 50px;
-  margin: 6vh;
-  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1); /* Sombra sutil para mayor profundidad */
+  margin: 10vh;
+  box-shadow: 5px 2px 30px var(--color-1); /* Sombra sutil para mayor profundidad */
+  height: auto;
 }
 
 .ContainerContadoresHome h2 {
@@ -231,7 +275,7 @@
   display: flex;
   justify-content: center;
   gap: 100px;
-  margin-bottom: 6vh;
+  margin-bottom: 2vh;
   flex-wrap: wrap;
 }
 
@@ -247,15 +291,15 @@
   align-items: center;
   font-size: 1.2rem;
   position: relative;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Sombra más fuerte */
+  box-shadow: 5px 2px 30px var(--color-2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .ContadorItem h3 {
-  font-size: 5vh;
-  font-weight: bold;
+  font-size: 5.5vh;
   margin: 0;
   color: var(--color-5); /* Naranja para los números */
+  font-family: 'New Astro', sans-serif;
 }
 
 .ContadorItem p {
@@ -268,10 +312,6 @@
 .ContadorItem:hover {
   transform: scale(1.1); /* Efecto hover */
   box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.3);
-}
-
-.ContadorItem h3:hover {
-  color: var(--color-2); /* Azul para el hover de los números */
 }
 
 .BtnConocenos {
@@ -475,26 +515,50 @@
     padding-left: 6vh;
   }
   .containerSegurosHome {
-    padding: 10vh 12vh;
+    padding: 10vh 15vh;
   }
   .seguroTitulo {
     padding: 2.5vh 0;
-    font-size: 5vh;
+    font-size: 4.5vh;
   }
   .seguroTituloBajo {
-    top: 270px;
+    top: 240px;
     font-size: 4vh;
     padding: 0 3.3vh;
   }
 
-  /*     ESTILOS CONTADORES SIEMPRE LISTOS     */
+  .tituloSegurosConBoton {
+    padding: 3vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .tituloSegurosConBoton h2 {
+    padding: 0;
+    padding-bottom: 3vh;
+    font-size: 4.5vh;
+  }
+  .tituloSegurosConBoton button {
+    padding: 0;
+  }
+
+  /*        ESTILOS CONTADORES HOME        */
+
+  .ContainerContadoresHome {
+    margin: 4vh;
+    padding-top: 4vh;
+  }
   .ContainerContadoresHome h2 {
     width: 100%;
     height: auto;
+    font-size: 5.6vh;
   }
   .ContainerContadoresHome p {
     padding: 0;
+    
   } 
+  .ContainerContadoresHome button {
+    margin: 0;
+  }
   .Contadores {
     display: flex;
     justify-content: center;
