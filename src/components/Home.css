@@ -1,16 +1,40 @@
 /*        ESTILOS CARRUSEL HOME         */
-
+ 
 .ContainerCarruselHome {
-  background-color: white;
-   /* padding: 2rem;  */
-  height: 90vh;
+  background: linear-gradient(to bottom,#89b1df, var(--color-7),var(--color-7),var(--color-7));
+  padding: 3rem; 
+}
+
+.ContainerCarruselHome .carousel {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.ContainerCarruselHome h3 {
+  color: var(--color-5);
+  font-family: 'New Astro', sans-serif;
+  font-size: 6.5vh;
+  background: rgba(0,0,0,0.6);
+  padding: 0;
+  border-radius: 20px;
 }
 
 .ContainerCarruselHome img {
-  object-fit: cover; /* Mantiene relación de aspecto sin deformar */
-  height: 90vh;
+  height: 70vh;
+  width: 100%;
+  border-radius: 20px; 
+}
+
+/* 
+.ContainerCarruselHome {
+  background: linear-gradient(to bottom,#89b1df, var(--color-7),var(--color-7),var(--color-7));
+}
+
+.ContainerCarruselHome img {
+  height: 81vh;
   width: 100%;
 }
+ */
 
 /*        ESTILOS PORQUE ELEGIRNOS        */
 
@@ -41,7 +65,7 @@
 /* CADA CARD */
 .cardElegirnos {
   position: relative;
-  background-color: var(--color-1);
+  background-color: var(--color-2);
   background-size: cover;
   background-position: center;
   border-radius: 20px;
@@ -52,6 +76,7 @@
   align-items: center;
   justify-content: center;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: 5px 2px 40px var(--color-1);
 }
 
 .cardElegirnos:hover {
@@ -72,18 +97,20 @@
 }
 
 .cardOverlayElegirnos img {
-  width: 20%;
+  width: 15%;
 }
 
 .cardOverlayElegirnos h3 {
-  font-size: 2rem;
+  font-size: 5vh;
   margin-bottom: 1rem;
   font-family: 'New Astro', sans-serif;
 }
 
 .cardOverlayElegirnos p {
-  font-size: 1.1rem;
-  margin-bottom: 1.5rem;
+  font-size: 2.8vh;
+  margin: 2vh 15vh;
+  padding-bottom: 2vh;
+  font-weight: bold;
 }
 
 /* BOTÓN */
@@ -156,7 +183,7 @@
   left: 50%;   /* lo centra */
   transform: translateX(-50%);
   padding: 20px 0px;
-  font-size: 5.2vh;
+  font-size: 4.8vh;
   font-weight: bold;
   color: var(--color-7) !important; 
   font-family: 'New Astro', sans-serif;
@@ -164,10 +191,10 @@
 }
 .seguroTituloBajo {
   position: absolute;
-  top: 260px;
+  top: 400px;
   color: var(--color-5);
   padding: 0vh 5vh;
-  font-size: 1.5rem;
+  font-size: 3.5vh;
   font-family: 'New Astro', sans-serif;
 }
 
@@ -274,7 +301,7 @@
 .Contadores {
   display: flex;
   justify-content: center;
-  gap: 100px;
+  gap: 150px;
   margin-bottom: 2vh;
   flex-wrap: wrap;
 }
@@ -283,8 +310,8 @@
   border: 2px solid var(--color-4);
   background: linear-gradient(to bottom, var(--color-4), white, white, var(--color-4));
   border-radius: 50%;
-  width: 180px;
-  height: 180px;
+  width: 230px;
+  height: 230px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -503,7 +530,8 @@
     
   }
   .cardOverlayElegirnos p {
-    font-size: 2.5vh;
+    font-size: 2vh;
+    margin: 0;
   }
   .cardLinkButtonElegirnos {
     font-size: 2.5vh;
@@ -519,12 +547,12 @@
   }
   .seguroTitulo {
     padding: 2.5vh 0;
-    font-size: 4.5vh;
+    font-size: 4.3vh;
   }
   .seguroTituloBajo {
-    top: 240px;
-    font-size: 4vh;
-    padding: 0 3.3vh;
+    top: 350px;
+    font-size: 3.5vh;
+    padding: 0 4vh;
   }
 
   .tituloSegurosConBoton {
@@ -550,11 +578,11 @@
   .ContainerContadoresHome h2 {
     width: 100%;
     height: auto;
-    font-size: 5.6vh;
+    font-size: 5.4vh;
   }
   .ContainerContadoresHome p {
     padding: 0;
-    
+    font-size: 2.5vh;
   } 
   .ContainerContadoresHome button {
     margin: 0;
@@ -562,8 +590,8 @@
   .Contadores {
     display: flex;
     justify-content: center;
-    gap: 5px;
-    margin-bottom: 6vh;
+    gap: 40px;
+    margin-bottom: 4vh;
     flex-wrap: wrap;
   }
 }
