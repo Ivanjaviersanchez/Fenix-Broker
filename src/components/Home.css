@@ -1,7 +1,7 @@
 /*        ESTILOS CARRUSEL HOME         */
  
 .ContainerCarruselHome {
-  background: linear-gradient(to bottom,#89b1df, var(--color-7),var(--color-7),var(--color-7));
+  background: linear-gradient(to bottom, var(--color-7),#89b1df,var(--color-7));
   padding: 3rem; 
 }
 
@@ -11,7 +11,7 @@
 }
 
 .ContainerCarruselHome h3 {
-  color: var(--color-5);
+  color: var(--color-4);
   font-family: 'New Astro', sans-serif;
   font-size: 6.5vh;
   background: rgba(0,0,0,0.6);
@@ -23,18 +23,8 @@
   height: 70vh;
   width: 100%;
   border-radius: 20px; 
-}
-
-/* 
-.ContainerCarruselHome {
-  background: linear-gradient(to bottom,#89b1df, var(--color-7),var(--color-7),var(--color-7));
-}
-
-.ContainerCarruselHome img {
-  height: 81vh;
-  width: 100%;
-}
- */
+} 
+ 
 
 /*        ESTILOS PORQUE ELEGIRNOS        */
 
@@ -272,7 +262,8 @@
 /*        ESTILOS CONTADORES HOME        */
 
 .ContainerContadoresHome {
-  background: linear-gradient(135deg, var(--color-1), var(--color-7), var(--color-7), var(--color-7), var(--color-1));
+  /* background: linear-gradient(135deg, var(--color-1), var(--color-7), var(--color-7), var(--color-7), var(--color-1)); */
+  background-color: var(--color-7);
   color: var(--color-5);
   text-align: center;
   padding: 20px 20px;
@@ -367,7 +358,7 @@
   width: 100%;
   
   /* background: rgb(228, 231, 237); */
-  background: linear-gradient(to top,var(--color-7),white);
+  background: linear-gradient(to bottom,white, var(--color-7));
   padding: 8vh 0;
   
 }
@@ -413,6 +404,86 @@
   }
 }
 
+/*        ESTILOS PREGUNTAS FRECUENTES        */
+
+.containerPreguntas {
+  padding: 3vh;
+  background: linear-gradient(to bottom, var(--color-7),#89b1df,white);
+}
+
+.tituloPreguntas {
+  margin: 0;
+  font-family: 'New Astro', sans-serif;
+  font-size: 6vh;
+  font-weight: 400;
+  color: var(--color-1);
+  text-align: left;
+  padding-bottom: 5vh;
+}
+
+.containerAcordion {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.containerAcordion h3 {
+  color: var(--color-1);
+  font-family: 'New Astro', sans-serif;
+  font-size: 4vh;
+  padding-bottom: 4vh;
+}
+
+.acordionLeft {
+  width: 100%;
+}
+.acordionRight {
+  width: 100%;
+}
+
+/* Cada Item del acordeón */
+.accordion-item {
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Encabezado del Accordion */
+.accordion-button {
+  background-color: #5c8ac7;;
+  color: white;
+  font-weight: 600;
+  font-family: 'New Astro', sans-serif;
+  font-size: 2.5vh;
+  padding: 1rem;
+  transition: all 0.3s ease;
+}
+
+/* Hover y focus */
+.accordion-button:hover{
+  background-color: var(--color-4);
+  color: #fff;
+  box-shadow: none;
+}
+
+/* Cuando está abierto */
+.accordion-button:not(.collapsed) {
+  background-color: var(--color-1);
+  color: white;
+}
+
+/* Cuerpo del Accordion */
+.accordion-body {
+  background-color: var(--color-7);
+  color: var(--color-1);
+  font-size: 2.2vh;
+  padding: 1.5rem;
+  line-height: 1.5;
+  font-weight: bold;
+  text-align: left;
+}
+
 
 /*        ESTILOS REDES SOCIALES        */
 
@@ -421,7 +492,7 @@
   margin: 0;
   padding: 8vh 0;
   font-family: 'New Astro', sans-serif;
-  background: linear-gradient(to bottom, var(--color-7),white,#89b1df);
+  background: linear-gradient(to bottom,white, var(--color-7),#89b1df);
 }
 
 .tituloRedes {
@@ -512,6 +583,11 @@
 
 @media (max-width: 767px) {
   
+  /*     ESTILOS CARRUSEL HOME    */
+  .ContainerCarruselHome h3 {
+    font-size: 5vh;
+  }
+
   /*     ESTILOS PORQUE ELEGIRNOS     */
   .ContainerElegirnos {
     padding: 3vh;
@@ -593,5 +669,14 @@
     gap: 40px;
     margin-bottom: 4vh;
     flex-wrap: wrap;
+  }
+
+  /*       ESTILOS PREGUNTAS FRECUENTES      */
+
+  .containerAcordion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
   }
 }
