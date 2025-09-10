@@ -1,7 +1,7 @@
 /*        ESTILOS CARRUSEL HOME         */
  
 .ContainerCarruselHome {
-  background: linear-gradient(to bottom, var(--color-7),#89b1df,var(--color-7));
+  background: linear-gradient(to bottom,#89b1df , var(--color-7),var(--color-7));
   padding: 3rem; 
 }
 
@@ -32,7 +32,7 @@
 .tituloElegirnos {
   margin: 0;
   padding-top: 10vh;
-  padding-left: 12vh;
+  padding-left: 25vh;
   background-color: var(--color-7);
   font-family: 'New Astro', sans-serif;
   font-size: 7.5vh;
@@ -127,7 +127,7 @@
 .tituloSegurosHome {
   margin: 0;
   padding-top: 15vh;
-  padding-left: 12vh;
+  padding-left: 15vh;
   background-color: var(--color-7);
   font-family: 'New Astro', sans-serif;
   font-size: 7.5vh;
@@ -141,7 +141,7 @@
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 3rem;
   padding: 8vh 15vh;
-  background: linear-gradient(to bottom, var(--color-7),#89b1df,var(--color-7),white);
+  background: linear-gradient(to bottom, var(--color-7),#89b1df,var(--color-7),var(--color-7));
   text-align: center;
   perspective: 1000px; /* da profundidad */
   height: auto;
@@ -182,7 +182,7 @@
 .seguroTituloBajo {
   position: absolute;
   top: 400px;
-  color: var(--color-5);
+  color: var(--color-4);
   padding: 0vh 5vh;
   font-size: 3.5vh;
   font-family: 'New Astro', sans-serif;
@@ -213,7 +213,7 @@
 
 }
 .containerSegurosHome .seguroItem h3:hover{
-  color: var(--color-4);
+  color: var(--color-5);
 }
 
 /* Contenedor de título + botón */
@@ -224,7 +224,7 @@
   align-items: center;            /* centra verticalmente */
   padding: 8vh 40vh;                /* mismo padding que tus títulos */
   /* background-color: var(--color-7); */
-  background: linear-gradient(to bottom,white, var(--color-7),var(--color-7),var(--color-7));
+  background: linear-gradient(to bottom,var(--color-7), var(--color-7),white);
 
 }
 
@@ -264,9 +264,10 @@
 .ContainerContadoresHome {
   /* background: linear-gradient(135deg, var(--color-1), var(--color-7), var(--color-7), var(--color-7), var(--color-1)); */
   background-color: var(--color-7);
+  
   color: var(--color-5);
   text-align: center;
-  padding: 20px 20px;
+  padding: 8vh 3vh;
   border-radius: 50px;
   margin: 10vh;
   box-shadow: 5px 2px 30px var(--color-1); /* Sombra sutil para mayor profundidad */
@@ -355,15 +356,14 @@
 
 .containerCompaniasCarrusel {
   overflow: hidden;
-  width: 100%;
-  
-  /* background: rgb(228, 231, 237); */
+  text-align: center;
+  margin: 0;
+  padding: 10vh 0;
+  font-family: 'New Astro', sans-serif;
   background: linear-gradient(to bottom,white, var(--color-7));
-  padding: 8vh 0;
-  
 }
 
-.containerCompaniasCarrusel h3 {
+.containerCompaniasCarrusel h2 {
   margin: 0;
   font-family: 'New Astro', sans-serif;
   font-size: 6vh;
@@ -372,12 +372,41 @@
   text-align: center;
   
 }
+.tituloCompanias {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease forwards;
+}
+.tituloCompanias h2 {
+  font-size: 6vh;
+  font-weight: 400;
+  color: var(--color-1);
+  padding: 0 5vh;
+
+}
+
+.tituloCompanias h2 span {
+  font-weight: bold;
+}
+
+.tituloCompanias .linea {
+  flex: 1;
+  height: 3px;
+  background-color: var(--color-1);
+  margin: 0;
+}
 
 
 .carrusel-track {
   display: flex;
   width: calc(200%); /* doble porque duplicamos logos */
   animation: scroll 20s linear infinite;
+  padding-bottom: 4vh;
 }
 
 .carrusel-slide {
@@ -407,7 +436,8 @@
 /*        ESTILOS PREGUNTAS FRECUENTES        */
 
 .containerPreguntas {
-  padding: 3vh;
+  padding: 3vh 15vh;
+
   background: linear-gradient(to bottom, var(--color-7),#89b1df,white);
 }
 
@@ -500,7 +530,7 @@
   align-items: center;
   justify-content: center;
   gap: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 4vh;
   opacity: 0;
   transform: translateY(20px);
   animation: fadeUp 0.8s ease forwards;
@@ -519,9 +549,8 @@
 
 .tituloRedes .linea {
   flex: 1;
-  height: 2px;
+  height: 3px;
   background-color: var(--color-1);
-  
 }
 
 .redesIcons {
@@ -672,6 +701,10 @@
   }
 
   /*       ESTILOS PREGUNTAS FRECUENTES      */
+
+  .containerPreguntas {
+    padding: 4vh;
+  }
 
   .containerAcordion {
     display: flex;

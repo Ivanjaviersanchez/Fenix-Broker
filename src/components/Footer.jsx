@@ -1,4 +1,5 @@
 import "./Footer.css";
+import LogoSSN from '../assets/LogoSSN.png';
 
 function Footer() {
   return (
@@ -23,11 +24,10 @@ function Footer() {
           rel="noopener noreferrer"
         >
           <img
-            src="https://www.argentina.gob.ar/sites/default/files/2021-07/ssn_logo.png"
+            src={LogoSSN}
             alt="SSN Logo"
           />
         </a>
-        <span>SUPERINTENDENCIA DE SEGUROS DE LA NACIÓN</span>
       </div>
 
       {/* Fila 3 - Textos en 2 columnas */}

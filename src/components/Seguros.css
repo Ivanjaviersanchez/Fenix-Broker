@@ -5,7 +5,7 @@
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 2rem;
   padding: 3rem;
-  background-color: white;
+  background: linear-gradient(to bottom,#89b1df , var(--color-7),var(--color-7),#89b1df );
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
   color: rgb(2, 2, 108);
 }
@@ -15,7 +15,7 @@
   grid-template-columns: repeat(2, 1fr); /* Mobile */
   gap: 2rem;
   padding: 2rem;
-  background-color: #edf2fd;
+  background: linear-gradient(to bottom,#89b1df , var(--color-7),var(--color-7),#89b1df );
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 

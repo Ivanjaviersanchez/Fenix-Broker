@@ -24,7 +24,7 @@ import IconoResponsabilidad from '../assets/IconoResponsabilidad.png';
 
 import SegurosHomeAuto from '../assets/SegurosHomeAuto6.png';
 import SegurosHomeHogar from '../assets/SegurosHomeHogar66.png';
-import SegurosComercio from '../assets/SegurosHomeComercio6.png';
+import SegurosComercio from '../assets/SegurosHomeComercio66.png';
 
 import LogoAllianz from '../assets/CarruselLogoAllianz.png';
 import LogoAsociart from '../assets/CarruselLogoAsociart.png';
@@ -218,7 +218,12 @@ function Home() {
 
       {/* Carrusel de compañías de seguros */}
       <div className='containerCompaniasCarrusel'>
-        <h3>Aseguradoras que nos acompañan {">>>"}</h3>
+        
+        <div className="tituloCompanias">
+          <span className="linea"></span>
+          <h2>Aseguradoras que nos acompañan</h2>
+          <span className="linea"></span>
+        </div>
         <div className="carrusel-track">
           <div className="carrusel-slide">
             <img src={LogoAllianz} alt="Allianz" />
@@ -300,7 +305,7 @@ function Home() {
             </Accordion>
           </div>
           <div className='acordionRight'>
-            <h3>Respuestas rapidas para nuestros asegurados</h3>
+            <h3>Respuestas para nuestros asegurados</h3>
             <Accordion>
               <Accordion.Item eventKey="0">
                 <Accordion.Header>Auxilio Mecánico: ¿Cómo solicito la grúa?</Accordion.Header>
