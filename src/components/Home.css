@@ -35,7 +35,7 @@
   padding-left: 25vh;
   background-color: var(--color-7);
   font-family: 'New Astro', sans-serif;
-  font-size: 7.5vh;
+  font-size: 6vh;
   font-weight: 400;
   color: var(--color-1);
   text-align: left;
@@ -101,6 +101,7 @@
   margin: 2vh 15vh;
   padding-bottom: 2vh;
   font-weight: bold;
+  color: var(--color-4);
 }
 
 /* BOTÓN */
@@ -130,7 +131,7 @@
   padding-left: 15vh;
   background-color: var(--color-7);
   font-family: 'New Astro', sans-serif;
-  font-size: 7.5vh;
+  font-size: 6vh;
   font-weight: 400;
   color: var(--color-1);
   text-align: left;
@@ -181,7 +182,7 @@
 }
 .seguroTituloBajo {
   position: absolute;
-  top: 400px;
+  bottom: 10vh;
   color: var(--color-4);
   padding: 0vh 5vh;
   font-size: 3.5vh;
@@ -213,7 +214,7 @@
 
 }
 .containerSegurosHome .seguroItem h3:hover{
-  color: var(--color-5);
+  color: var(--color-4);
 }
 
 /* Contenedor de título + botón */
@@ -302,8 +303,8 @@
   border: 2px solid var(--color-4);
   background: linear-gradient(to bottom, var(--color-4), white, white, var(--color-4));
   border-radius: 50%;
-  width: 230px;
-  height: 230px;
+  width: 25vh;
+  height: 25vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -437,7 +438,6 @@
 
 .containerPreguntas {
   padding: 3vh 15vh;
-
   background: linear-gradient(to bottom, var(--color-7),#89b1df,white);
 }
 
@@ -610,106 +610,403 @@
   }
 }
 
-@media (max-width: 767px) {
-  
-  /*     ESTILOS CARRUSEL HOME    */
+/*-------------------MEDIA QUERYS--------------------*/
+
+/* === Smartphones chicos (hasta 575px) === */
+@media (max-width: 575px) {
+
+  /* CARRUSEL HOME */
+
+  .ContainerCarruselHome {
+    padding: 3vh 1vh;
+  }
+  .ContainerCarruselHome img {
+    height: 33vh;
+  }
   .ContainerCarruselHome h3 {
-    font-size: 5vh;
+    font-size: 3vh;
   }
 
-  /*     ESTILOS PORQUE ELEGIRNOS     */
+  /* Títulos */
+  .tituloElegirnos,
+  .tituloSegurosHome,
+  .tituloCompanias h2,
+  .tituloPreguntas {
+    padding-left: 3vh;
+    font-size: 4vh;
+    text-align: center;
+  }
+
+  /* Cards "Por qué elegirnos" */
   .ContainerElegirnos {
-    padding: 3vh;
-  }
-  .tituloElegirnos {
-    font-size: 6vh;
-    padding-left: 15vh;
-    padding-bottom: 2vh;
-    
-  }
-  .cardOverlayElegirnos img {
-    width: 30%;
+    grid-template-columns: 1fr;
+    padding: 3vh 2vh;
   }
   .cardOverlayElegirnos h3 {
-    font-size: 4.5vh;
-    
+    font-size: 3vh;
   }
   .cardOverlayElegirnos p {
+    margin: 2vh;
     font-size: 2vh;
+  }
+  .cardLinkButtonElegirnos {
+    font-size: 3vh;
+  }
+
+  /* Seguros */
+  .containerSegurosHome {
+    grid-template-columns: 1fr;
+    
+  }
+  .seguroTitulo {
+    font-size: 4vh;
+  }
+  .seguroTituloBajo {
+    font-size: 3vh;
+    bottom: 11vh;
+  }
+
+  .tituloSegurosConBoton {
+    flex-direction: column;
+    padding: 4vh 2vh;
+    text-align: center;
+  }
+  .tituloSegurosConBoton h2 {
+    padding-right: 0;
+    margin-bottom: 2vh;
+    font-size: 4vh;
+  }
+  .cardLinkButtonConoce {
+    font-size: 3vh;
+  }
+
+  /* Contadores */
+  .ContainerContadoresHome {
+    margin: 2vh;
+    padding: 4vh 2vh;
+  }
+  .ContainerContadoresHome h2 {
+    font-size: 4vh;
+  }
+  .ContainerContadoresHome p {
+    padding: 0 2vh;
+    font-size: 2.5vh;
+  }
+  .Contadores {
+    gap: 20px;
+  }
+  .ContadorItem {
+    width: 20vh;
+    height: 20vh;
+  }
+  .ContadorItem h3 {
+    font-size: 4vh;
+  }
+  .ContadorItem p {
+    font-size: 2.2vh;
+    padding: 0 1vh;
     margin: 0;
+  }
+  .BtnConocenos {
+    font-size: 3vh;
+  }
+
+  /* PREGUNTAS FRECUENTES */
+  .containerPreguntas {
+    padding: 0 4vh;
+  }
+  .containerAcordion {
+    flex-direction: column;
+  }
+  .containerAcordion h3 {
+    font-size: 3vh;
+  }
+
+  /* Redes sociales */
+  .containerRedesHome {
+    padding-top: 10vh;
+  }
+  .tituloRedes h2 {
+    font-size: 3.5vh;
+  }
+  .redesIcons {
+    gap: 30px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  /* ===== CARRUSEL HOME ===== */
+  .ContainerCarruselHome {
+    padding: 1vh;
+  }
+  .ContainerCarruselHome img{
+    height: 34vh;
+  }
+  .ContainerCarruselHome h3 {
+    font-size: 3vh; /* un poco más chico para móviles */
+    padding: 1vh;
+    text-align: center;
+  }
+
+  /* ===== PORQUE ELEGIRNOS ===== */
+  .ContainerElegirnos {
+    width: 100%;
+    padding: 0vh 5vh; /* menos padding lateral */
+    padding-top: 4vh;
+  }
+  .tituloElegirnos {
+    font-size: 4vh !important;
+    padding-top: 10vh;
+    text-align: left; 
+    padding-left: 5vh;
+  }
+  .cardOverlayElegirnos img {
+    width: 20%; /* más grande porque en móvil hay menos espacio */
+  }
+  .cardOverlayElegirnos h3 {
+    font-size: 3.5vh;
+  }
+  .cardOverlayElegirnos p {
+    font-size: 2.2vh !important;
+    margin: 0;
+    padding: 2vh;
+    padding-bottom: 3vh;
   }
   .cardLinkButtonElegirnos {
     font-size: 2.5vh;
   }
 
-  /*     ESTILOS SEGUROS HOME     */
+  /* ===== SEGUROS HOME ===== */
   .tituloSegurosHome {
-    font-size: 6vh;
-    padding-left: 6vh;
+    font-size: 4vh !important;
+    padding-top: 12vh;
+    text-align: left; 
+    padding-left: 5vh;
+    
   }
   .containerSegurosHome {
-    padding: 10vh 15vh;
+    grid-template-columns: 1fr;
+    padding: 5vh 2vh;
+    
+  }
+  .seguroItem {
+    margin: 0 14vh;
+  }
+  .seguroItem h3 {
+    font-size: 3vh;
   }
   .seguroTitulo {
-    padding: 2.5vh 0;
-    font-size: 4.3vh;
+    font-size: 4.5vh;
   }
   .seguroTituloBajo {
-    top: 350px;
-    font-size: 3.5vh;
-    padding: 0 4vh;
+    font-size: 3vh;
+    bottom: 10vh;
+    text-align: center;
   }
 
   .tituloSegurosConBoton {
-    padding: 3vh;
-    display: flex;
     flex-direction: column;
+    padding: 4vh 2vh;
+    text-align: center;
   }
   .tituloSegurosConBoton h2 {
-    padding: 0;
-    padding-bottom: 3vh;
-    font-size: 4.5vh;
+    padding-right: 0;
+    margin-bottom: 2vh;
+    font-size: 4vh;
   }
-  .tituloSegurosConBoton button {
-    padding: 0;
+  .cardLinkButtonConoce {
+    font-size: 2.5vh;
   }
 
-  /*        ESTILOS CONTADORES HOME        */
-
+  /* ===== CONTADORES HOME ===== */
   .ContainerContadoresHome {
-    margin: 4vh;
-    padding-top: 4vh;
+    padding: 3vh;
+    margin: 8vh 2vh;
   }
   .ContainerContadoresHome h2 {
-    width: 100%;
-    height: auto;
-    font-size: 5.4vh;
+    font-size: 4vh;
   }
   .ContainerContadoresHome p {
-    padding: 0;
     font-size: 2.5vh;
-  } 
-  .ContainerContadoresHome button {
-    margin: 0;
+    padding: 0;
   }
   .Contadores {
+    gap: 20px; 
     display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin-bottom: 4vh;
-    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .ContadorItem {
+    width: 20vh !important;
+    height: 20vh !important;
+  }
+  .ContadorItem h3 {
+    font-size: 4.5vh;
+    padding-top: 2vh;
+  }
+  .ContadorItem p {
+    font-size: 2.5vh;
+    padding: 0;
+  }
+  .BtnConocenos {
+    font-size: 2.5vh;
+    padding: 1vh 2vh;
   }
 
-  /*       ESTILOS PREGUNTAS FRECUENTES      */
+  /* ===== ASEGURADORAS ===== */
+  .containerCompaniasCarrusel h2 {
+    font-size: 4vh;
+  }
 
+  /* ===== PREGUNTAS FRECUENTES ===== */
   .containerPreguntas {
-    padding: 4vh;
+    padding: 0 4vh;
+  }
+  .tituloPreguntas {
+    font-size: 4vh;
+    padding: 0 0 2vh 0;
+    text-align: left;
+  }
+  .containerAcordion {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .containerAcordion h3 {
+    font-size: 3vh;
+  }
+  
+
+  /* ===== REDES SOCIALES ===== */
+  .tituloRedes h2 {
+    font-size: 4vh;
+  }
+  .redesIcons {
+    gap: 4vh;
+  }
+}
+
+/* === Tablets horizontales y notebooks chicos (768px - 991px) === */
+@media (min-width: 768px) and (max-width: 991px) {
+  .tituloElegirnos,
+  .tituloSegurosHome,
+  .tituloPreguntas {
+    font-size: 6vh;
+    padding-left: 5vh;
+    text-align: left;
+  }
+  /*   CARRUSEL HOME   */
+  .ContainerCarruselHome {
+    padding: 2vh;
+  }
+  .ContainerCarruselHome img {
+    height: 55vh;
+  }
+  .cardOverlayElegirnos p {
+    margin: 2vh 0;
+    font-size: 3vh;
+  }
+  /*    SEGUROS HOME    */
+  .tituloSegurosHome {
+    padding-bottom: 8vh;
+  }
+  .containerSegurosHome {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    padding: 2vh;
+  }
+  .tituloSegurosConBoton {
+    flex-direction: column;
+    padding: 8vh 0;
+    text-align: center;
+  }
+  .tituloSegurosConBoton h2 {
+    padding-right: 0;
+    margin-bottom: 2vh;
+  }
+
+  .ContainerContadoresHome p {
+    padding: 0 10vh;
+  }
+
+  .Contadores {
+    gap: 60px;
+  }
+  .ContadorItem {
+    width: 25vh !important;
+    height: 25vh !important;
+  }
+  .ContadorItem p {
+    padding: 0;
   }
 
   .containerAcordion {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 2rem;
   }
 }
+
+/* === Notebooks estándar (992px - 1199px) === */
+@media (min-width: 992px) and (max-width: 1199px) {
+  /*    CARRUSEL HOME    */
+  .ContainerCarruselHome {
+    padding: 4vh;
+  }
+  .ContainerCarruselHome img{
+    height: 57vh;
+  }
+  .ContainerCarruselHome h3 {
+    padding: 1vh;
+    text-align: center;
+  }
+
+  /*    PORQUE ELEGIRNOS    */
+  .tituloElegirnos {
+    padding: 8vh 0;
+    padding-left: 8vh;
+  }
+  .ContainerElegirnos {
+    padding: 0 8vh;
+  }
+
+  /*    SEGUROS HOME     */
+  .tituloSegurosHome {
+    padding-left: 5vh;
+
+  }
+  .containerSegurosHome {
+    padding: 6vh 5vh;
+  }
+
+  .tituloSegurosConBoton {
+    padding: 6vh 0vh;
+    justify-content: center;
+  }
+
+  .ContainerContadoresHome {
+    margin: 5vh;
+  }
+
+  .Contadores {
+    gap: 80px;
+  }
+  .ContadorItem {
+    width: 28vh;
+    height: 28vh;
+  }
+
+  .containerPreguntas {
+    padding: 2vh 4vh;
+  }
+  .containerAcordion {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1200px){
+  .tituloSegurosConBoton {
+    padding: 6vh 0vh;
+    justify-content: center;
+  }
+
+}
+
+
+

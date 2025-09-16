@@ -23,7 +23,7 @@ import IconoSegurosAdaptados from '../assets/IconoSegurosAdaptados.png';
 import IconoResponsabilidad from '../assets/IconoResponsabilidad.png';
 
 import SegurosHomeAuto from '../assets/SegurosHomeAuto6.png';
-import SegurosHomeHogar from '../assets/SegurosHomeHogar66.png';
+import SegurosHomeHogar from '../assets/SegurosHomeHogar666.png';
 import SegurosComercio from '../assets/SegurosHomeComercio66.png';
 
 import LogoAllianz from '../assets/CarruselLogoAllianz.png';
@@ -188,7 +188,7 @@ function Home() {
 
         <div className="tituloSegurosConBoton">
           <h2>Conóce todos nuestros seguros {">>>"} </h2>
-          <Link to="/seguros" className="cardLinkButtonConoce">Seguros Fenix</Link>
+          <Link to="/seguros" className="cardLinkButtonConoce">Ver Seguros</Link>
         </div>
 
       </div>
@@ -254,7 +254,6 @@ function Home() {
         <h2 className='tituloPreguntas'>Preguntas frecuentes {">>>"}</h2>
 
         <div className='containerAcordion'>
-          
           <div className='acordionLeft'>
             <h3>¿Que debes saber de tu seguro?</h3>
             <Accordion>
