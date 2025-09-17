@@ -6,27 +6,15 @@ function Footer() {
     <footer className="footerStyles">
       {/* Fila 1 - Link centrado */}
       <div className="footerTop">
-        <a
-          href="https://www.argentina.gob.ar/ssn"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="footerLink"
-        >
+        <a href="https://www.argentina.gob.ar/ssn" target="_blank" rel="noopener noreferrer" className="footerLink">
           www.argentina.gob.ar/ssn
         </a>
       </div>
 
       {/* Fila 2 - Logo centrado */}
       <div className="footerLogoRow">
-        <a
-          href="https://www.argentina.gob.ar/ssn"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src={LogoSSN}
-            alt="SSN Logo"
-          />
+        <a href="https://www.argentina.gob.ar/ssn" target="_blank" rel="noopener noreferrer">
+          <img src={LogoSSN} alt="SSN Logo"/>
         </a>
       </div>
 

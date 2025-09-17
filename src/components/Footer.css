@@ -27,14 +27,13 @@
 .footerContainer {
   display: flex;
   justify-content: space-between;
-  gap: 2rem;
   flex-wrap: wrap;
 }
 
-.footerLeft,
-.footerRight {
+.footerLeft, .footerRight{
   flex: 1 1 300px;
   min-width: 280px;
+  padding-right: 3vh;
 }
 
 .footerLink {
@@ -50,3 +49,18 @@
   padding-top: 3vh;
 }
 
+@media (max-width: 767px) {
+
+  .footerLink{
+    font-size: 2vh;
+  }
+  .footerLogoRow img {
+    height: 6vh;
+  }
+  .footerContainer {
+    flex-direction: column;
+  }
+  .footerLeft, .footerRight {
+    font-size: 2vh;
+  }
+}
