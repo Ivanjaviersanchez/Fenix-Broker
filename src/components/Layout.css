@@ -229,4 +229,59 @@
   font-style: normal;
 }
 
+/* === Tablets horizontales y notebooks chicos (768px - 991px) === */
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbarStyles {
+    padding: 1vh 2vh; /* Reducimos padding horizontal */
+  }
+
+  .navbarStyles .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%; /* Forzar a que no se pase del viewport */
+    overflow-x: hidden;
+  }
+
+  /* El logo más chico para que no empuje */
+  .navbar-brand img {
+    height: 8vh;
+  }
+
+  /* Texto FENIX más compacto */
+  .navbarStyles .navbar-brand h2 {
+    font-size: 4.5vh;
+  }
+
+  /* Links más chicos y con menos margen */
+  .navbarStyles .nav-link {
+    font-size: 2vh;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Botón Cotizá Ahora adaptado */
+  .cotiza-cta {
+    font-size: 0.85rem;
+    padding: 6px 10px;
+    min-width: 120px;
+  }
+
+  /* Forzamos que nada desborde horizontal */
+  body, html {
+    overflow-x: hidden;
+  }
+}
+
+/* === Notebooks estándar (992px - 1199px) === */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* === Pantallas grandes (mas de 1200px) === */
+@media (min-width: 1200px) {
+
+}
+
 

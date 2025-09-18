@@ -293,12 +293,13 @@ function Home() {
                 </Accordion.Body>
               </Accordion.Item>
               <Accordion.Item eventKey="1">
-                <Accordion.Header>¿En qué casos el seguro no cubre?</Accordion.Header>
+                <Accordion.Header>¿Que documentación necesito para circular?</Accordion.Header>
                 <Accordion.Body>
-                  Hay varios motivos por los que el seguro puede no darte cobertura, los más habituales son: <br />
-                  • Si no pagaste la cuota de tu seguro en tiempo y forma, la póliza queda suspendida, sin cobertura financiera. <br />
-                  • Que la situación esté incluida entre las exclusiones detalladas en el contrato, es decir aquellos riesgos que no están cubiertos. <br />
-                  Te mencionamos algunos ejemplos: En el caso de los seguros de vehículos, los siniestros provocados bajo estado de ebriedad no están cubiertos. Si asegurás tu auto o moto como uso particular y lo usas para trabajar, no está cubierto.
+                  Para circular en Argentina necesitás llevar:<br />
+                  -El documento de identidad.<br />
+                  -La licencia de conducir correspondiente.<br />
+                  -La cédula o documento de identificación del vehículo, sea cédula verde o azul.<br />
+                  -El comprobante de seguro vigente, segun resolución Nº 34.225 de la SSN.
                 </Accordion.Body>
               </Accordion.Item>
               <Accordion.Item eventKey="2">
@@ -309,19 +310,13 @@ function Home() {
                 </Accordion.Body>
               </Accordion.Item>
               <Accordion.Item eventKey="3">
-                <Accordion.Header>¿Qué significa sin franquicia en un seguro?</Accordion.Header>
-                <Accordion.Body>
-                  Un seguro sin franquicia significa que la compañía de seguros cubre la indemnización completa en caso de un siniestro, sin que el asegurado deba pagar nada adicional.
-                </Accordion.Body>
-              </Accordion.Item>
-              <Accordion.Item eventKey="4">
                 <Accordion.Header>¿Qué cubre el seguro contra todo riesgo con franquicia?</Accordion.Header>
                 <Accordion.Body>
                   Te cubre ante responsabilidad civil, pérdida total y parcial por incendio, robo y/o hurto y accidente. Es ideal para quienes  quieren reducir el riesgo al valor de la franquicia. <br />
                   Con Fenix, en seguros de automotor los daños parciales se cubren de acuerdo a la franquicia que elijas, puede ser franquicia de 3% o de 6% sobre el valor de 0km.
                 </Accordion.Body>
               </Accordion.Item>
-              <Accordion.Item eventKey="5">
+              <Accordion.Item eventKey="4">
                 <Accordion.Header>¿Qué cubre el seguro contra terceros? ¿Qué cubre el seguro de responsabilidad civil?</Accordion.Header>
                 <Accordion.Body>
                   Para los automóviles y motos que circulan, es  la cobertura de contratación obligatoria para cumplir con las normativas vigentes. <br />
