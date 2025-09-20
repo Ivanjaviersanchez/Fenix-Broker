@@ -80,7 +80,6 @@ function Layout() {
             <img src={logo} alt="Fenix logo" className="me-1" />
             <div className="logoTextStiles">
               <h2 className="fw-bold text-dark">FENIX</h2>
-              {/* <h3 className="text-dark">Brokers</h3> */}
             </div>
           </Navbar.Brand>
 

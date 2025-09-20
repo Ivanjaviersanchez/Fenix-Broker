@@ -302,7 +302,7 @@
 
 .ContadorItem {
   border: 2px solid var(--color-4);
-  background: linear-gradient(to bottom, var(--color-4), white, white, var(--color-4));
+  background: linear-gradient(to bottom, var(--color-4), white, var(--color-4));
   border-radius: 50%;
   width: 25vh;
   height: 25vh;
@@ -327,7 +327,7 @@
   font-size: 2.8vh;
   padding: 0vh 1vh;
   font-family: 'New Astro', sans-serif;
-  color: var(--color-1);
+  color: var(--color-5);
 }
 
 .ContadorItem:hover {

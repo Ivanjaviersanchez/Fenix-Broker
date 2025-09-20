@@ -1,21 +1,100 @@
-/* ===== CONTAINERS ===== */
+/*----------------SECCION PERSONAS Y EMPRESAS--------------*/
 
-.ContainerSeguros {
+.ContainerPersonasEmpresas {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 2rem;
-  padding: 3rem;
-  background: linear-gradient(to bottom,#89b1df , var(--color-7),var(--color-7),#89b1df );
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  color: rgb(2, 2, 108);
+  gap: 3vh;
+  padding: 6vh;
+  background: linear-gradient(to bottom,#89b1df , var(--color-7),var(--color-7) );
 }
+
+/* Cards Personas y Empresas  */
+
+.cardSegurosIntro {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  overflow: hidden;
+  min-height: 30vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 2vh;
+  margin: 0 5vh;
+  height: 55vh;
+}
+.cardOverlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  width: 100%;
+  border-radius: 12px;
+  text-align: center;
+}
+.cardOverlay h3 {
+  color: var(--color-4);
+  font-family: 'New Astro', sans-serif;
+  font-size: 5vh;
+}
+.cardOverlay p {
+  color: var(--color-7);
+  font-size: 2.5vh;
+  font-weight: bold;
+}
+/* BOTÓN */
+.cardLinkButtonVer {
+  background: linear-gradient(to bottom, #fbc296,#fbc296,#f8992e);
+  color: var(--color-6);
+  border: solid var(--color-6) 1px;
+  border-radius: 12px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  min-width: 140px;
+  font-size: 3vh;
+  padding: 0.5vh 2vh;
+}
+
+.cardLinkButtonVer:hover {
+  background: linear-gradient(to bottom, #89b1df, #358ae9, #358ae9);
+  border: solid var(--color-3) 1px; 
+  color: white !important;
+}
+
+
+/* Seguros Fenix Titulos */
+
+.ContainerSegurosFenix {
+  padding: 3vh 11vh;
+  background: linear-gradient(to bottom, var(--color-7),var(--color-7),#89b1df );
+}
+.ContainerSegurosFenix h3{
+  margin: 0;
+  font-family: 'New Astro', sans-serif;
+  font-size: 6vh;
+  font-weight: 400;
+  color: var(--color-1);
+  text-align: left;
+  padding-bottom: 5vh;
+}
+.ContainerSegurosFenix p {
+  margin: 0;
+  font-family: 'New Astro', sans-serif;
+  font-size: 4vh;
+  font-weight: 400;
+  color: var(--color-1);
+  text-align: center;
+  padding-bottom: 5vh;
+}
+
+/* Seguros Grilla de Cards */
 
 .ContainerSegurosGrid5 {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Mobile */
   gap: 2rem;
-  padding: 2rem;
-  background: linear-gradient(to bottom,#89b1df , var(--color-7),var(--color-7),#89b1df );
+  padding: 3vh 11vh;
+  background: linear-gradient(to bottom, #89b1df , var(--color-7), var(--color-7),#89b1df );
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
@@ -25,54 +104,7 @@
   }
 }
 
-
-/* ===== CARDS INTRO ===== */
-
-.cardSegurosIntro {
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  color: white;
-  border-radius: 12px;
-  overflow: hidden;
-  min-height: 30vh;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  padding: 1rem;
-  margin: 0 5vh;
-  height: 55vh;
-}
-
-.cardOverlay {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 1rem;
-  width: 100%;
-  border-radius: 12px;
-  text-align: center;
-}
-
-.cardLinkButton {
-  background-color: #023173;
-  border: solid blue 1px;
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 0.9rem;
-  margin-top: 1rem;
-  display: inline-block;
-  transition: background-color 0.3s ease;
-}
-
-.cardLinkButton:hover {
-  background-color: #0051b3;
-  color: #879ae6;
-}
-
-
-/* ===== CARD SEGUROS ===== */
+/* Cards Seguros */
 
 .cardSeguros {
   position: relative;
@@ -101,7 +133,6 @@
   color: white;
   font-size: 1.3rem;
   padding: 0.5rem 1rem;
-  /* background-color: rgba(0, 0, 0, 0.4); */
   border-radius: 8px;
   margin: 0;
   transition: opacity 0.3s ease;

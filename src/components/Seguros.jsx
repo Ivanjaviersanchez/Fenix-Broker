@@ -36,12 +36,12 @@ function Seguros() {
   return (
     <div>
       {/* Intro: Personas / Empresas */}
-      <section className="ContainerSeguros">
+      <section className="ContainerPersonasEmpresas">
         <div className="cardSegurosIntro" style={{ backgroundImage: `url(${personasBg})` }}>
           <div className="cardOverlay">
             <h3>Personas</h3>
             <p>Contamos con todas las coberturas para vos y tu familia.</p>
-            <Link to="/seguros/personas" className="cardLinkButton">Ver Seguros para Personas</Link>
+            <Link to="/seguros/personas" className="cardLinkButtonVer">Ver Seguros {">>>"}</Link>
           </div>
         </div>
 
@@ -49,13 +49,14 @@ function Seguros() {
           <div className="cardOverlay">
             <h3>Empresas</h3>
             <p>Protegé tu negocio con planes a medida para empresas.</p>
-            <Link to="/seguros/empresas" className="cardLinkButton">Ver Seguros para Empresas</Link>
+            <Link to="/seguros/empresas" className="cardLinkButtonVer">Ver Seguros {">>>"}</Link>
           </div>
         </div>
       </section>
 
-      <div className="ContainerSeguros">
-        <h3>Conocé todas las coberturas y servicios de seguros que tenemos para vos, adaptados a tus necesidades.</h3>
+      <div className="ContainerSegurosFenix">
+        <h3>Seguros Fenix {">>>"}</h3>
+        <p>Conocé todas las coberturas y servicios de seguros que tenemos para vos, adaptados a tus necesidades.</p>
       </div>
 
       {/* Grid de Seguros */}

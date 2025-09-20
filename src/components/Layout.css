@@ -33,7 +33,7 @@
   transition: color 0.3s ease;
   color: white;
   font-weight: bold; 
-  font-size: 2.6vh;
+  font-size: 2.4vh;
   
 }
 
@@ -46,7 +46,6 @@
   height: 1px;
   /* background-color: var(--color-3) !important;  */
   /* color: var(--color-3) !important; */
-
   transition: all 0.3s ease;
   transform: translateX(-50%);
 }
@@ -97,11 +96,11 @@
 
 /* -------------------- BOTÓN HAMBURGUESA EN BLANCO -------------------- */
 .toggleStyles {
-  
 }
 
 .navbarStyles .navbar-toggler {
   border-color: white; /* borde blanco */
+  
 }
 
 .navbarStyles .navbar-toggler-icon {
@@ -193,33 +192,6 @@
   transform: scale(1.1);
 } */
 
-
-/* -------------------- Media Queries para pantallas pequeñas -------------------- */
-
-@media (max-width: 767px) {
-
-  /* Mover el botón hamburguesa a la izquierda */
-
-  .navbarStyles .navbar-toggler {  
-    color: var(--color-2);
-  }
-
-  /* Mover el logo a la derecha */
-  .navbarStyles .navbar-brand {
-    margin-right: 22vh;
-    
-  }
-
-  /* Asegura que los links estén alineados a la izquierda */
-  .navbarStyles .navbar-nav {
-    display: flex;
-    flex-direction: column; /* Los enlaces estarán en columna */
-    align-items: flex-start; /* Los enlaces estarán alineados a la izquierda */
-    width: 100%;
-    
-  }
-}
-
 /*          FONTS         */
 
 @font-face {
@@ -229,59 +201,154 @@
   font-style: normal;
 }
 
-/* === Tablets horizontales y notebooks chicos (768px - 991px) === */
-@media (min-width: 768px) and (max-width: 991px) {
+/* -------------------- Media Queries para pantallas pequeñas -------------------- */
+
+@media (max-width: 767px) {
+
+   /* Mover el logo a la izquierda */
+  .navbarStyles .navbar-brand {
+    margin-right: 30vh; 
+  }
+
+  /* Ajustes de paddings y tamaños */
   .navbarStyles {
-    padding: 1vh 2vh; /* Reducimos padding horizontal */
+    padding: 1vh 2vh;
   }
 
-  .navbarStyles .container-fluid {
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: 0;
-    margin-right: 0;
-    width: 100%; /* Forzar a que no se pase del viewport */
-    overflow-x: hidden;
-  }
-
-  /* El logo más chico para que no empuje */
   .navbar-brand img {
     height: 8vh;
   }
 
-  /* Texto FENIX más compacto */
   .navbarStyles .navbar-brand h2 {
     font-size: 4.5vh;
   }
 
-  /* Links más chicos y con menos margen */
+  body, html {
+    overflow-x: hidden;
+  }
+}
+
+
+/* === Tablets horizontales y notebooks chicos (768px - 991px) === */
+@media (min-width: 768px) and (max-width: 991px) {
+
+   /* Mover el logo a la izquierda */
+  .navbarStyles .navbar-brand {
+    margin-right: 0vh; 
+  }
+  /* Links más chicos y menos margen */
   .navbarStyles .nav-link {
-    font-size: 2vh;
+    font-size: 1.6vh;
     margin: 0;
     padding: 0;
   }
 
   /* Botón Cotizá Ahora adaptado */
   .cotiza-cta {
-    font-size: 0.85rem;
-    padding: 6px 10px;
-    min-width: 120px;
+    padding: 0.2vh 0 !important;
+
   }
 
-  /* Forzamos que nada desborde horizontal */
+  /* Ajustes de paddings y tamaños */
+  .navbarStyles {
+    padding: 1vh 2vh;
+  }
+
+  .navbar-brand img {
+    height: 8vh;
+  }
+
+  .navbarStyles .navbar-brand h2 {
+    font-size: 4.5vh;
+  }
+
+
   body, html {
     overflow-x: hidden;
   }
 }
 
+
 /* === Notebooks estándar (992px - 1199px) === */
 @media (min-width: 992px) and (max-width: 1199px) {
 
+  /* Logo más chico */
+  .navbar-brand img {
+    height: 7vh;
+  }
+
+  /* Texto FENIX más compacto */
+  .navbarStyles .navbar-brand h2 {
+    font-size: 4vh;
+  }
+
+  /* Links más chicos y menos margen */
+  .navbarStyles .nav-link {
+    font-size: 1.8vh;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Botón Cotizá Ahora adaptado */
+  .cotiza-cta {
+    padding: 0.2vh 0 !important;
+  }
+
+  /* Evitar desbordes */
+  .navbarStyles .container-fluid {
+    padding-left: 12px;
+    padding-right: 12px;
+    overflow-x: hidden;
+    overflow: visible !important;
+  }
+  .custom-dropdown .dropdown-menu {
+    position: absolute !important;
+    z-index: 1050; /* sobre el resto */
+  }
+  .custom-dropdown .dropdown-item {
+    font-size: 1.8vh !important;
+  }
 }
 
-/* === Pantallas grandes (mas de 1200px) === */
-@media (min-width: 1200px) {
 
+/* === Pantallas grandes (mas de 1200px) === */
+@media (min-width: 1200px) and (max-width:1400px) {
+
+  /* Logo más chico */
+  .navbar-brand img {
+    height: 8vh; 
+  }
+  /* Texto FENIX más compacto */
+  .navbarStyles .navbar-brand h2 {
+    font-size: 4.5vh;
+  } 
+
+  /* Links más chicos y menos margen */
+  .navbarStyles .nav-link {
+    font-size: 2vh; 
+    margin: 0;
+    padding: 0; 
+  }
+
+  /* Botón Cotizá Ahora adaptado */
+  .cotiza-cta {
+    padding: 0vh 1vh !important;
+  } 
+
+  /* Evitar desbordes */
+  .navbarStyles .container-fluid {
+    padding-left: 12px;
+    padding-right: 12px;
+    overflow-x: hidden;
+    overflow: visible !important;
+  }
+  .custom-dropdown .dropdown-menu {
+    position: absolute !important;
+    z-index: 1050; /* sobre el resto */
+  }
+  .custom-dropdown .dropdown-item {
+    font-size: 1.8vh !important;
+  }
 }
 
 

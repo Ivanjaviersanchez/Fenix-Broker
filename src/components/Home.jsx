@@ -153,8 +153,8 @@ function Home() {
               <img src={IconoResponsabilidad} alt="Responsabilidad y Compromiso" />
               <h3>Responsabilidad y Compromiso</h3>
               <p>
-                SomosFenix es una organización con más de 30 años en el mercado 
-                brindando confianza y respaldo en nuestros productos.
+                Fenix es una organización con más de 30 años en el mercado 
+                brindando confianza y respaldo a cada asegurado.
               </p>
               <Link to="/somosfenix" className="cardLinkButtonElegirnos">Conócenos</Link>
             </div>
