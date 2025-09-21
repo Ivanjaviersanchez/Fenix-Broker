@@ -10,12 +10,12 @@ import logoSeguroCaucionEmpresa from "../assets/LogoSeguroCaucionEmpresa.png"
 
 function Empresas() {
   const segurosList = [
-      { id: "comercios", title: "Seguros para Comercios", img: logoSeguroComercio, list: ["Todo Riezgo Operativo", "Seguro para Incendio","Seguro para Robo"] },
-      { id: "consorcios", title: "Seguros para Consorcios", img: logoSeguroConsorcio, list: ["Responsabilidad Civil", "Daños por incendio", "Cobertura integral"] },
-      { id: "respcivil", title: "Responsabilidad Civil para Empresas", img: logoRespCivilEmpresa, list: ["Responsabilidad Civil General", "Responsabilidad Profesional"] },
-      { id: "buques", title: "Seguros de Buques", img: logoSeguroBuque, list: ["Cobertura Total de Buques", "Responsabilidad Marítima"] },
-      { id: "art", title: "Seguros ART", img: logoSeguroART, list: ["Cobertura por accidente", "Cobertura por enfermedad laboral"] },
-      { id: "caucionempresas", title: "Seguros de Caucion para Empresas", img: logoSeguroCaucionEmpresa, list: ["Caución Contractual", "Caución Judicial"] },
+      { id: "comercios", title: "SEGUROS PARA COMERCIOS", img: logoSeguroComercio, list: ["Todo Riezgo Operativo", "Seguro para Incendio","Seguro para Robo"] },
+      { id: "consorcios", title: "SEGUROS PARA CONSORCIOS", img: logoSeguroConsorcio, list: ["Responsabilidad Civil", "Daños por incendio", "Cobertura integral"] },
+      { id: "respcivil", title: "RESPONSABILIDAD CIVIL PARA EMPRESAS", img: logoRespCivilEmpresa, list: ["Responsabilidad Civil General", "Responsabilidad Profesional"] },
+      { id: "buques", title: "SEGUROS DE BUQUES", img: logoSeguroBuque, list: ["Cobertura Total de Buques", "Responsabilidad Marítima"] },
+      { id: "art", title: "SEGUROS ART", img: logoSeguroART, list: ["Cobertura por accidente", "Cobertura por enfermedad laboral"] },
+      { id: "caucionempresas", title: "SEGUROS DE CAUCION PARA EMPRESAS", img: logoSeguroCaucionEmpresa, list: ["Caución Contractual", "Caución Judicial"] },
     ];
 
   return (

@@ -122,8 +122,8 @@
 }
 
 .custom-dropdown .dropdown-item:hover {
-  background-color: var(--color-2); 
-  color: white;
+  background-color: var(--color-1);
+  color: var(--color-3);
   font-weight: bold;
 }
 
@@ -136,8 +136,9 @@
   font-weight: bold;
   transition: background-color 0.3s ease;
   display: inline-block;
-  min-width: 140px;
-  font-size: 0.95rem;
+  /* min-width: 140px; */
+  width: 15%;
+  
 }
 
 .cotiza-cta:hover {
@@ -208,11 +209,35 @@
    /* Mover el logo a la izquierda */
   .navbarStyles .navbar-brand {
     margin-right: 30vh; 
+
   }
 
   /* Ajustes de paddings y tamaños */
   .navbarStyles {
     padding: 1vh 2vh;
+  }
+
+  /* Alinear el contenido del collapse al inicio */
+  .navbarStyles .navbar-collapse {
+    text-align: left !important; 
+  }
+
+  /* Alinear links a la izquierda */
+  .navbarStyles .nav {
+    align-items: flex-start;
+  }
+
+  .navbarStyles .nav-link {
+    text-align: left;
+    justify-content: flex-start;
+    width: 50%; /* ocupar todo el ancho para que el ::after quede alineado */
+    font-size: 2vh;
+  }
+
+  /* Subrayado (::after) alineado a la izquierda */
+  .navbarStyles .nav-link::after {
+    left: 0;
+    transform: none; /* quitar el centrado */
   }
 
   .navbar-brand img {
@@ -221,6 +246,19 @@
 
   .navbarStyles .navbar-brand h2 {
     font-size: 4.5vh;
+  }
+
+  /* Estilos dropdawn  */
+
+  .custom-dropdown .dropdown-item {
+    font-size: 2vh;
+  }
+
+  .cotiza-cta {
+    padding: 0.5vh 1vh;
+    margin: 1vh 0;
+    width: 30% !important;
+
   }
 
   body, html {
@@ -232,36 +270,32 @@
 /* === Tablets horizontales y notebooks chicos (768px - 991px) === */
 @media (min-width: 768px) and (max-width: 991px) {
 
+  .navbarStyles {
+    padding: 0 2vh !important;
+  }  
    /* Mover el logo a la izquierda */
   .navbarStyles .navbar-brand {
     margin-right: 0vh; 
   }
   /* Links más chicos y menos margen */
   .navbarStyles .nav-link {
-    font-size: 1.6vh;
+    font-size: 1.3vh;
     margin: 0;
     padding: 0;
   }
 
   /* Botón Cotizá Ahora adaptado */
   .cotiza-cta {
-    padding: 0.2vh 0 !important;
-
-  }
-
-  /* Ajustes de paddings y tamaños */
-  .navbarStyles {
-    padding: 1vh 2vh;
+    padding: 0 !important;
   }
 
   .navbar-brand img {
-    height: 8vh;
+    height: 5vh;
   }
 
   .navbarStyles .navbar-brand h2 {
-    font-size: 4.5vh;
+    font-size: 3vh;
   }
-
 
   body, html {
     overflow-x: hidden;
@@ -272,6 +306,9 @@
 /* === Notebooks estándar (992px - 1199px) === */
 @media (min-width: 992px) and (max-width: 1199px) {
 
+  .navbarStyles {
+    padding: 0 2vh;
+  }
   /* Logo más chico */
   .navbar-brand img {
     height: 7vh;
@@ -284,7 +321,7 @@
 
   /* Links más chicos y menos margen */
   .navbarStyles .nav-link {
-    font-size: 1.8vh;
+    font-size: 1.6vh;
     margin: 0;
     padding: 0;
   }
@@ -325,7 +362,7 @@
 
   /* Links más chicos y menos margen */
   .navbarStyles .nav-link {
-    font-size: 2vh; 
+    font-size: 1.7vh; 
     margin: 0;
     padding: 0; 
   }

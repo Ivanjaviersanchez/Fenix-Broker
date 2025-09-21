@@ -98,17 +98,11 @@
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
-@media (min-width: 1024px) {
-  .ContainerSegurosGrid5 {
-    grid-template-columns: repeat(5, 1fr);
-  }
-}
-
 /* Cards Seguros */
 
 .cardSeguros {
   position: relative;
-  height: 32vh;
+  height: 32vh !important;
   background-size: cover;
   background-position: center;
   border-radius: 12px;
@@ -130,9 +124,11 @@
 .cardTitleDefault {
   position: relative;
   z-index: 1;
-  color: white;
-  font-size: 1.3rem;
+  color: var(--color-7) !important;
+  font-family: 'New Astro', sans-serif;
+  font-size: 2.5vh !important;
   padding: 0.5rem 1rem;
+  top: 12vh;
   border-radius: 8px;
   margin: 0;
   transition: opacity 0.3s ease;
@@ -147,7 +143,7 @@
 .cardOverlaySeguro {
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.6) !important;
   opacity: 0;
   transition: opacity 0.3s ease;
   display: flex;
@@ -168,8 +164,9 @@
 
 /* Título dentro del overlay */
 .cardTitleHover {
-  color: white;
-  font-size: 1rem;
+  color: var(--color-4) !important;
+  font-family: 'New Astro', sans-serif;
+  font-size: 2.5vh !important;
   margin-bottom: 0.5rem;
 }
 
@@ -181,35 +178,47 @@
   display: flex;
   flex-direction: column;
   gap: 0.3rem;
-  align-items: flex-start;
-  width: 100%;
+  align-items: center !important;
+  width: 100% !important;
+  
 }
 
 .segurosList li {
   display: list-item;
-  font-size: 0.85rem;
-  color: #abc8f1;
+  font-size: 1.6vh !important;
+  color: var(--color-7) !important;
+  font-weight: bold;
   line-height: 1.4;
   text-align: left;
   width: 100%;
+  text-align: center !important;
 }
 
-
-/* Botón en overlay */
+/* BOTÓN */
 .cardLinkButtonSeguro {
-  background-color: #023173;
-  border: solid blue 1px;
-  color: white;
-  padding: 0.4rem 0.8rem;
-  border-radius: 8px;
-  text-decoration: none;
+  background: linear-gradient(to bottom, #fbc296,#fbc296,#f8992e);
+  color: var(--color-6) !important;
+  border: solid var(--color-6) 1px !important;
+  border-radius: 12px;
   font-weight: bold;
-  font-size: 0.85rem;
-  margin-top: 0.8rem;
   transition: background-color 0.3s ease;
+  display: inline-block;
+  min-width: 140px;
+  font-size: 2.2vh !important;
+  padding: 0.3vh 2vh !important;
+  margin-top: 4vh !important;
+
 }
 
 .cardLinkButtonSeguro:hover {
-  background-color: #0051b3;
+  background: linear-gradient(to bottom, #89b1df, #358ae9, #358ae9);
+  border: solid var(--color-3) 1px !important; 
+  color: white !important;
+}
+
+@media (min-width: 1024px) {
+  .ContainerSegurosGrid5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
 }
 
