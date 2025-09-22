@@ -1,8 +1,9 @@
 /*----------------SECCION PERSONAS Y EMPRESAS--------------*/
 
 .ContainerPersonasEmpresas {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   gap: 3vh;
   padding: 6vh;
   background: linear-gradient(to bottom,#89b1df , var(--color-7),var(--color-7) );
@@ -16,30 +17,34 @@
   background-position: center;
   border-radius: 12px;
   overflow: hidden;
-  min-height: 30vh;
+ /*  min-height: 30vh; */
+  height: 55vh;
   display: flex;
   align-items: flex-end;
   justify-content: center;
   padding: 2vh;
   margin: 0 5vh;
-  height: 55vh;
+
 }
 .cardOverlay {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(49, 54, 58, 0.5);
   padding: 1rem;
   width: 100%;
+  height: auto;
   border-radius: 12px;
   text-align: center;
+ 
 }
 .cardOverlay h3 {
   color: var(--color-4);
   font-family: 'New Astro', sans-serif;
-  font-size: 5vh;
+  font-size: 4vh;
 }
 .cardOverlay p {
   color: var(--color-7);
-  font-size: 2.5vh;
+  font-size: 2.2vh;
   font-weight: bold;
+  
 }
 /* BOTÓN */
 .cardLinkButtonVer {
@@ -51,7 +56,7 @@
   transition: background-color 0.3s ease;
   display: inline-block;
   min-width: 140px;
-  font-size: 3vh;
+  font-size: 2.4vh;
   padding: 0.5vh 2vh;
 }
 
@@ -215,6 +220,42 @@
   border: solid var(--color-3) 1px !important; 
   color: white !important;
 }
+
+/*-------------------MEDIA QUERYS--------------------*/
+
+/* === Smartphones chicos (hasta 575px) === */
+@media (max-width: 575px) {
+  /* Personas y Empresas Cards */
+  .ContainerPersonasEmpresas {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* === Smartphones grandes (hasta 767px) === */
+@media (min-width: 576px) and (max-width: 767px) {
+
+  /* Personas y Empresas Cards */
+  .ContainerPersonasEmpresas {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+/* === Tablets horizontales y notebooks chicos (768px - 991px) === */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+/* === Notebooks estándar (992px - 1199px) === */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+/* === Monitores grandes (992px - 1199px) === */
+@media (min-width: 1200px) {
+
+}
+
 
 @media (min-width: 1024px) {
   .ContainerSegurosGrid5 {

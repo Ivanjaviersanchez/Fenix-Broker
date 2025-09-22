@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "./Seguros.css";
-import personasBg from "../assets/PersonasBG.png";  
-import empresasBg from "../assets/EmpresasBG.png"; 
+import personasBg from "../assets/CardPersonas.png";  
+import empresasBg from "../assets/CardEmpresas.png"; 
 import logoSeguroAuto from "../assets/LogoSeguroAuto.png"
 import logoSeguroMoto from "../assets/LogoSeguroMoto.png"
 import logoSeguroHogar from "../assets/LogoSeguroHogar.png"
