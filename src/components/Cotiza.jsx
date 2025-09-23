@@ -16,7 +16,7 @@ function Cotiza() {
   const schema = yup.object().shape({
     firstName: yup.string().required(),
     lastName: yup.string().required(),
-    username: yup.string().required(),
+    direccion: yup.string().required(),
     city: yup.string().required(),
     state: yup.string().required(),
     zip: yup.string().required(),
@@ -30,14 +30,14 @@ function Cotiza() {
 
   return (
     <div>
-      <div className='ContainerFormCotizacion'>
+      <div className='ContainerTitulosCotizacion'>
         <h3>Solicitud de Cotizacion</h3>
         <p>Procesaremos tu solicitud con nuestros acesores para ofrecerte la mejor opcion ajustada a tu necesidad</p>
         
         {seguro && cobertura && (
           <div className="CotizacionResumen">
-            <p>Estás solicitando una cotización para: <strong>{seguro}</strong></p>
-            <p>Cobertura seleccionada: <strong>{cobertura}</strong></p>
+            <p>ESTAS SOLICITANDO UNA COTIZACION PARA {">>>"} <strong>{seguro}</strong></p>
+            <p>COBERTURA SELECCIONADA {">>>"} <strong>{cobertura}</strong></p>
           </div>
         )}
       </div>
@@ -49,7 +49,7 @@ function Cotiza() {
           initialValues={{
             firstName: 'Mark',
             lastName: 'Otto',
-            username: '',
+            direccion: 'Av SinNombre 1234',
             city: '',
             state: '',
             zip: '',
@@ -66,7 +66,7 @@ function Cotiza() {
                   controlId="validationFormik101"
                   className="position-relative"
                 >
-                  <Form.Label>First name</Form.Label>
+                  <Form.Label>Nombres</Form.Label>
                   <Form.Control
                     type="text"
                     name="firstName"
@@ -82,7 +82,7 @@ function Cotiza() {
                   controlId="validationFormik102"
                   className="position-relative"
                 >
-                  <Form.Label>Last name</Form.Label>
+                  <Form.Label>Apellido</Form.Label>
                   <Form.Control
                     type="text"
                     name="lastName"
@@ -93,24 +93,24 @@ function Cotiza() {
 
                   <Form.Control.Feedback tooltip>Looks good!</Form.Control.Feedback>
                 </Form.Group>
-                <Form.Group as={Col} md="4" controlId="validationFormikUsername2">
-                  <Form.Label>Username</Form.Label>
-                  <InputGroup hasValidation>
-                    <InputGroup.Text id="inputGroupPrepend">@</InputGroup.Text>
-                    <Form.Control
-                      type="text"
-                      placeholder="Username"
-                      aria-describedby="inputGroupPrepend"
-                      name="username"
-                      value={values.username}
-                      onChange={handleChange}
-                      isInvalid={!!errors.username}
-                    />
-                    <Form.Control.Feedback type="invalid" tooltip>
-                      {errors.username}
-                    </Form.Control.Feedback>
-                  </InputGroup>
+                <Form.Group
+                  as={Col}
+                  md="4"
+                  controlId="validationFormik102"
+                  className="position-relative"
+                >
+                  <Form.Label>Dirección</Form.Label>
+                  <Form.Control
+                    type="text"
+                    name="direccion"
+                    value={values.direccion}
+                    onChange={handleChange}
+                    isValid={touched.direccion && !errors.direccion}
+                  />
+
+                  <Form.Control.Feedback tooltip>Looks good!</Form.Control.Feedback>
                 </Form.Group>
+                
               </Row>
               <Row className="mb-3">
                 <Form.Group
@@ -119,7 +119,7 @@ function Cotiza() {
                   controlId="validationFormik103"
                   className="position-relative"
                 >
-                  <Form.Label>City</Form.Label>
+                  <Form.Label>Ciudad</Form.Label>
                   <Form.Control
                     type="text"
                     placeholder="City"
@@ -139,7 +139,7 @@ function Cotiza() {
                   controlId="validationFormik104"
                   className="position-relative"
                 >
-                  <Form.Label>State</Form.Label>
+                  <Form.Label>Provincia</Form.Label>
                   <Form.Control
                     type="text"
                     placeholder="State"
@@ -158,7 +158,7 @@ function Cotiza() {
                   controlId="validationFormik105"
                   className="position-relative"
                 >
-                  <Form.Label>Zip</Form.Label>
+                  <Form.Label>CP</Form.Label>
                   <Form.Control
                     type="text"
                     placeholder="Zip"
@@ -173,32 +173,30 @@ function Cotiza() {
                   </Form.Control.Feedback>
                 </Form.Group>
               </Row>
-              <Form.Group className="position-relative mb-3">
-                <Form.Label>File</Form.Label>
-                <Form.Control
-                  type="file"
-                  required
-                  name="file"
-                  onChange={handleChange}
-                  isInvalid={!!errors.file}
-                />
-                <Form.Control.Feedback type="invalid" tooltip>
-                  {errors.file}
-                </Form.Control.Feedback>
-              </Form.Group>
-              <Form.Group className="position-relative mb-3">
-                <Form.Check
-                  required
-                  name="terms"
-                  label="Agree to terms and conditions"
-                  onChange={handleChange}
-                  isInvalid={!!errors.terms}
-                  feedback={errors.terms}
-                  feedbackType="invalid"
-                  id="validationFormik106"
-                  feedbackTooltip
-                />
-              </Form.Group>
+              
+              <fieldset>
+                <Form.Group as={Col} className="mb-4 d-flex flex-column align-items-center">
+                  <Form.Label as="legend" className="mb-3 text-center">
+                    ¿Cómo preferís que nos contactemos?
+                  </Form.Label>
+                  <div className="d-flex gap-4">
+                    <Form.Check
+                      type="radio"
+                      label="WhatsApp"
+                      name="contactMethod"
+                      id="contactWhatsApp"
+                    />
+                    <Form.Check
+                      type="radio"
+                      label="E-mail"
+                      name="contactMethod"
+                      id="contactEmail"
+                    />
+                  </div>
+                </Form.Group>
+              </fieldset>
+
+
               <Button type="submit">Submit form</Button>
             </Form>
           )}

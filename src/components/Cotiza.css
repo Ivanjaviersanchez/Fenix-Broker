@@ -1,24 +1,111 @@
-.ContainerFormCotizacion {
-  margin: 0;
-  padding: 2rem;
-  padding-left: 15vh;
-  padding-right: 15vh;
-  background-color: #edf2fd;
-  height: auto;
-  color: rgb(2, 2, 108);
-  font-size: 3vh;
+.ContainerTitulosCotizacion {
+  background: linear-gradient(to bottom,#89b1df , var(--color-7),var(--color-7));
+  padding: 8vh; 
 }
-.ContainerFormCotizacion h3 {
-  font-size: 4.5vh;
-
+.ContainerTitulosCotizacion h3 {
+  margin: 0;
+  padding-bottom: 3vh;
+  text-align: center;
+  font-family: 'New Astro', sans-serif;
+  font-size: 6vh;
+  font-weight: 400;
+  color: var(--color-1);
+}
+.ContainerTitulosCotizacion p {
+  margin: 0;
+  font-family: 'New Astro', sans-serif;
+  font-size: 4vh;
+  font-weight: 400;
+  color: var(--color-1);
+  text-align: center;
+  padding-bottom: 5vh;
 }
 
 .CotizacionResumen {
-  background-color: #e9f1ff;
-  border: 1px solid #b1c9f8;
-  padding: 1rem;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-  font-size: 1.1rem;
-  color: rgb(1, 1, 144);
+  background-color: var(--color-7);
+  padding: 2vh;
+  border-radius: 20px;
+  border: solid 2px var(--color-5);
+  margin: 0;
+  box-shadow: 5px 2px 30px var(--color-5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.CotizacionResumen p {
+  color: var(--color-5);
+  font-size: 2vh;
+  padding: 0;
+}
+.CotizacionResumen strong {
+  color: var(--color-5);
+  padding-left: 1vh;
+}
+
+.ContainerFormCotizacion {
+  background: linear-gradient(to bottom, var(--color-7),#89b1df,#89b1df );
+  padding: 1vh 5vh;
+  padding-bottom: 8vh;
+  color: var(--color-1);
+  font-family: 'New Astro', sans-serif;
+  
+}
+
+/*-------------------MEDIA QUERYS--------------------*/
+
+/* === Smartphones chicos (hasta 575px) === */
+@media (max-width: 575px) {
+  .ContainerTitulosCotizacion {
+    padding: 6vh 1vh;
+  }
+  .ContainerTitulosCotizacion h3 {
+    font-size: 3.5vh;
+  }
+  .ContainerTitulosCotizacion p {
+    font-size: 2vh;
+  }
+  .CotizacionResumen {
+    margin: 0;
+  }
+  .CotizacionResumen p {
+    font-size: 1.3vh;
+
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .ContainerTitulosCotizacion {
+    padding: 6vh 2vh;
+  }
+  .ContainerTitulosCotizacion h3 {
+    font-size: 5vh;
+  }
+  .ContainerTitulosCotizacion p {
+    font-size: 3vh;
+  }
+  .CotizacionResumen {
+    margin: 0;
+  }
+  .CotizacionResumen p {
+    font-size: 1.5vh;
+
+  }
+}
+
+/* === Tablets horizontales y notebooks chicos (768px - 991px) === */
+@media (min-width: 768px) and (max-width: 991px) {
+  .CotizacionResumen {
+    margin: 0;
+  }
+}
+
+/* === Notebooks estándar (992px - 1199px) === */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .CotizacionResumen {
+    margin: 0 10vh;
+  }
+}
+
+@media (min-width: 1200px) {
+  .CotizacionResumen {
+    margin: 0 15vh;
+  }
 }
