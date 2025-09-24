@@ -41,12 +41,29 @@
 }
 
 .ContainerFormCotizacion {
-  background: linear-gradient(to bottom, var(--color-7),#89b1df,#89b1df );
+  background: linear-gradient(to bottom, var(--color-7),#89b1df );
   padding: 1vh 5vh;
   padding-bottom: 8vh;
   color: var(--color-1);
   font-family: 'New Astro', sans-serif;
-  
+}
+
+/* Botón "Cotizá Ahora" */
+.cotiza-btn {
+  background: linear-gradient(to bottom, #89b1df, #358ae9, #358ae9);
+  border: solid var(--color-1) 1px; 
+  border-radius: 12px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  width: 30%;
+  font-size: 3vh;
+}
+
+.cotiza-btn:hover {
+  background: linear-gradient(to bottom, #fbc296,#fbc296,#f8992e);
+  border: solid var(--color-6) 1px; 
+  color: var(--color-6) !important;
 }
 
 /*-------------------MEDIA QUERYS--------------------*/
@@ -57,17 +74,19 @@
     padding: 6vh 1vh;
   }
   .ContainerTitulosCotizacion h3 {
-    font-size: 3.5vh;
+    font-size: 4vh;
   }
   .ContainerTitulosCotizacion p {
-    font-size: 2vh;
+    font-size: 2.5vh;
   }
   .CotizacionResumen {
     margin: 0;
   }
   .CotizacionResumen p {
     font-size: 1.3vh;
-
+  }
+  .cotiza-btn {
+    width: 50%;
   }
 }
 
@@ -86,7 +105,9 @@
   }
   .CotizacionResumen p {
     font-size: 1.5vh;
-
+  }
+  .cotiza-btn {
+    width: 50%;
   }
 }
 

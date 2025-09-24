@@ -18,7 +18,7 @@
   border-radius: 12px;
   overflow: hidden;
  /*  min-height: 30vh; */
-  height: 55vh;
+  height:   º55vh;
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -144,7 +144,7 @@
   opacity: 0;
 }
 
-/* Overlay oculto por defecto */
+/* Overlay de las cards */
 .cardOverlaySeguro {
   position: absolute;
   inset: 0;
@@ -159,33 +159,22 @@
   border-radius: 12px;
 }
 .cardOverlaySeguro h3 {
-  font-size: 3vh;
-}
-
-/* Mostrar overlay en hover */
-.cardSeguros:hover .cardOverlaySeguro {
-  opacity: 1;
-}
-
-/* Título dentro del overlay */
-.cardTitleHover {
   color: var(--color-4) !important;
   font-family: 'New Astro', sans-serif;
-  font-size: 2.5vh !important;
+  font-size: 2vh !important;
   margin-bottom: 0.5rem;
 }
 
 /* Lista de seguros */
+
 .segurosList {
   list-style-position: inside; /* Asegura que el punto quede junto al texto */
-  padding: 0;                  /* Eliminamos padding para evitar saltos */
+  padding: 0vh 0 !important;                  /* Eliminamos padding para evitar saltos */
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 0.3rem;
   align-items: center !important;
   width: 100% !important;
-  
 }
 
 .segurosList li {
@@ -200,7 +189,7 @@
 }
 
 /* BOTÓN */
-.cardLinkButtonSeguro {
+.ButtonSeguro {
   background: linear-gradient(to bottom, #fbc296,#fbc296,#f8992e);
   color: var(--color-6) !important;
   border: solid var(--color-6) 1px !important;
@@ -208,14 +197,14 @@
   font-weight: bold;
   transition: background-color 0.3s ease;
   display: inline-block;
-  min-width: 140px;
+  min-width: 140px; 
   font-size: 2.2vh !important;
-  padding: 0.3vh 2vh !important;
-  margin-top: 4vh !important;
+  padding: 0.3vh 1.5vh;
+  margin-top: 1vh;
 
 }
 
-.cardLinkButtonSeguro:hover {
+.ButtonSeguro:hover {
   background: linear-gradient(to bottom, #89b1df, #358ae9, #358ae9);
   border: solid var(--color-3) 1px !important; 
   color: white !important;

@@ -71,7 +71,7 @@ function Seguros() {
                   <li key={i}>{text}</li>
                 ))}
               </ul>
-              <Link to={`/seguros/${item.id}`} className="cardLinkButtonSeguro">Ver Seguros {">>>"}</Link>
+              <Link to={`/seguros/${item.id}`} className="ButtonSeguro">Ver Seguros {">>>"}</Link>
             </div>
           </div>
         ))}
