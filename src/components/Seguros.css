@@ -1,12 +1,28 @@
+/* Container Segurso titulo */
+
+.ContainerSegurosH3 {
+  background: linear-gradient(to bottom, #89b1df , var(--color-7), var(--color-7) );
+  padding: 5vh 11vh;
+}
+.ContainerSegurosH3 h3{
+  margin: 0;
+  font-family: 'New Astro', sans-serif;
+  font-size: 6vh;
+  font-weight: 400;
+  color: var(--color-1);
+  text-align: left;
+  padding-bottom: 5vh;
+}
+
 /*----------------SECCION PERSONAS Y EMPRESAS--------------*/
 
 .ContainerPersonasEmpresas {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 3vh;
-  padding: 6vh;
-  background: linear-gradient(to bottom,#89b1df , var(--color-7),var(--color-7) );
+  gap: 7vh;
+  padding-bottom: 5vh;
+  background: linear-gradient(to bottom , var(--color-7),var(--color-7),#89b1df );
 }
 
 /* Cards Personas y Empresas  */
@@ -17,8 +33,8 @@
   background-position: center;
   border-radius: 12px;
   overflow: hidden;
- /*  min-height: 30vh; */
-  height:   º55vh;
+  
+  height: 55vh;
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -66,30 +82,21 @@
   color: white !important;
 }
 
+/* Container seguros Parrafo */
 
-/* Seguros Fenix Titulos */
+.ContainerSegurosP {
+  background: linear-gradient(to bottom,#89b1df , var(--color-7), var(--color-7) );
+  padding-top: 10vh;
+}
 
-.ContainerSegurosFenix {
-  padding: 3vh 11vh;
-  background: linear-gradient(to bottom, var(--color-7),var(--color-7),#89b1df );
-}
-.ContainerSegurosFenix h3{
-  margin: 0;
-  font-family: 'New Astro', sans-serif;
-  font-size: 6vh;
-  font-weight: 400;
-  color: var(--color-1);
-  text-align: left;
-  padding-bottom: 5vh;
-}
-.ContainerSegurosFenix p {
+.ContainerSegurosP p {
   margin: 0;
   font-family: 'New Astro', sans-serif;
   font-size: 4vh;
   font-weight: 400;
   color: var(--color-1);
   text-align: center;
-  padding-bottom: 5vh;
+  padding-bottom: 3vh;
 }
 
 /* Seguros Grilla de Cards */
@@ -98,8 +105,8 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Mobile */
   gap: 2rem;
-  padding: 3vh 11vh;
-  background: linear-gradient(to bottom, #89b1df , var(--color-7), var(--color-7),#89b1df );
+  padding: 8vh 11vh;
+  background: linear-gradient(to bottom, var(--color-7), var(--color-7),#89b1df );
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 

@@ -35,6 +35,10 @@ function Seguros() {
 
   return (
     <div>
+      <div className="ContainerSegurosH3">
+        <h3>Seguros Fenix {">>>"}</h3>
+      </div>
+
       {/* Intro: Personas / Empresas */}
       <section className="ContainerPersonasEmpresas">
         <div className="cardSegurosIntro" style={{ backgroundImage: `url(${personasBg})` }}>
@@ -54,8 +58,7 @@ function Seguros() {
         </div>
       </section>
 
-      <div className="ContainerSegurosFenix">
-        <h3>Seguros Fenix {">>>"}</h3>
+      <div className="ContainerSegurosP">
         <p>Conocé todas las coberturas y servicios de seguros que tenemos para vos, adaptados a tus necesidades.</p>
       </div>
 
