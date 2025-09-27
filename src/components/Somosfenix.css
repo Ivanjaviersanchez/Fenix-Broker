@@ -45,7 +45,7 @@
 .cardTitle {
   margin: 0;
   font-family: 'New Astro', sans-serif;
-  font-size: 6vh !important;
+  font-size: 6.5vh !important;
   font-weight: 400;
   color: var(--color-7);
   text-align: center;
@@ -55,7 +55,7 @@
 .cardText {
   margin: 0 12vh;
   font-family: 'New Astro', sans-serif;
-  font-size: 3vh !important;
+  font-size: 3.5vh !important;
   font-weight: 400;
   color: var(--color-4) !important;
   text-align: center;
@@ -64,14 +64,14 @@
 /*        CONTENEDOR CARD SUCURSAL      */
 
 /* Contenedor principal de la card */
-.sucursal-container {
-  max-width: 1100px;
-  margin: 20px auto;
-  padding: 10px;
+.ContainerSucursal {
+  margin: 0;
+  padding: 5vh;
+  background: linear-gradient(to bottom, var(--color-7), var(--color-7), #89b1df  );
 }
 
 /* Estilos de la tarjeta */
-.sucursal-card {
+.SucursalCard {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -81,58 +81,65 @@
 }
 
 /* Contenedor del texto */
-.sucursal-text {
-  padding: 20px;
+.SucursalText {
+  padding: 0;
   flex: 1;
+  width: 100%;
 }
 
 /* Título de la card */
-.sucursal-title {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #283b5c;
-  margin-bottom: 15px;
+.SucursalTitle {
+  margin: 0;
+  font-family: 'New Astro', sans-serif;
+  font-size: 5vh !important;
+  font-weight: 400;
+  color: var(--color-1);
+  text-align: center;
+  padding: 5vh 0;
 }
 
 /* Descripción de la card */
-.sucursal-description {
-  font-size: 1rem;
-  color: #4a4a4a;
-  margin-bottom: 20px;
+.SucursalDescription {
+  margin: 0 12vh;
+  font-family: 'New Astro', sans-serif;
+  font-size: 2.5vh !important;
+  font-weight: 400;
+  color: var(--color-1) !important;
+  text-align: center;
+  padding-bottom: 5vh;
 }
 
 /* Botón */
-.sucursal-btn {
-  background-color: #4c8bf5;
-  border: none;
-  color: white;
+.SucursalBTN {
+  background: linear-gradient(to bottom, #fbc296,#fbc296,#f8992e);
+  color: var(--color-6);
+  border: solid var(--color-6) 1px;
+  border-radius: 12px;
   font-weight: bold;
-  padding: 10px 20px;
-  border-radius: 25px;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  min-width: 140px;
+  font-size: 3vh;
+  padding: 1vh;
   transition: all 0.3s ease;
 }
 
-.sucursal-btn:hover {
-  background-color: #2a64d0;
-  transform: translateX(5px);
+.SucursalBTN:hover {
+  background: linear-gradient(to bottom, #89b1df, #358ae9, #358ae9);
+  border: solid var(--color-3) 1px; 
+  color: white !important;
+  transform: translateX(7px);
 }
 
-/* Estilos para la imagen */
-.sucursal-image {
+/*        Mapa de la oficina       */  
+.SucursalMap {
   flex-shrink: 0;
-  width: 350px;
-  height: 350px;
-  border: solid;
-}
-
-.sucursal-image {
-  
-  top: 0;
-  left: 0;
   width: 40%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  filter: brightness(0.6);
-  z-index: 1;
+  height: 400px;
+  border: none;
+  overflow: hidden;
+  border-radius: 20px /* 0 22px 22px 0 */;
+  margin: 6vh;
+  box-shadow: 5px 2px 30px var(--color-2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }

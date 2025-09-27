@@ -20,21 +20,32 @@ function Somosfenix() {
         </Card>
       </div>
 
-      <div className="sucursal-container">
-        <Card className="sucursal-card">
-          <div className="sucursal-text">
+      <div className="ContainerSucursal">
+        <Card className="SucursalCard">
+          <div className="SucursalText">
             <Card.Body>
-              <Card.Title className="sucursal-title">Sucursales</Card.Title>
-              <Card.Text className="sucursal-description">
-                San Cristóbal Seguros logra estar cerca de sus asegurados a través de una amplia estructura en el país, conformada por 23 oficinas propias y una red de más de 6.000 productores asesores, que brindan atención personalizada a más de medio millón de asegurados.
+              <Card.Title className="SucursalTitle">Sucursal Fenix Mar del plata</Card.Title>
+              <Card.Text className="SucursalDescription">
+                En Fénix Broker de Seguros ofrecemos atención personalizada en nuestra oficina de Mar del Plata, acompañando a nuestros clientes con soluciones integrales en seguros para personas, empresas e instituciones. <br />
+                Como parte de una red nacional con respaldo y trayectoria, brindamos asesoramiento profesional, cotizaciones a medida y gestión eficiente de pólizas y siniestros, trabajando con las principales compañías aseguradoras del país.
               </Card.Text>
-              <Button className="sucursal-btn" variant="primary">
-                → Ver más
+              <Button className="SucursalBTN" variant="primary">
+                Contacta con nosotros {">>>"}
               </Button>
             </Card.Body>
           </div>
-          <div className="sucursal-image">
-            <Card.Img style={{ backgroundImage: `url(${CardImg})` }} alt="Sucursal" />
+          {/* Mapa en lugar de imagen */}
+          <div className="SucursalMap">
+            <iframe
+              width="100%"
+              height="100%"
+              frameBorder="0"
+              scrolling="no"
+              marginHeight="0"
+              marginWidth="0"
+              title="Mapa Sucursal Fenix Mar del Plata"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3143.5072351804265!2d-57.56905661008187!3d-38.01195277299547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584dc212bdd81eb%3A0xee36ea205b2a9d2e!2sORGANIZACION%20FENIX!5e0!3m2!1ses!2sus!4v1758943836092!5m2!1ses!2sus"
+            ></iframe>
           </div>
         </Card>
       </div>
