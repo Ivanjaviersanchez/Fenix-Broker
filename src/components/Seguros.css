@@ -32,14 +32,13 @@
   background-size: cover;
   background-position: center;
   border-radius: 12px;
-  overflow: hidden;
-  
   height: 55vh;
   display: flex;
   align-items: flex-end;
   justify-content: center;
   padding: 2vh;
   margin: 0 5vh;
+  
 
 }
 .cardOverlay {
@@ -70,16 +69,18 @@
   border-radius: 12px;
   font-weight: bold;
   transition: background-color 0.3s ease;
-  display: inline-block;
-  min-width: 140px;
+  display: inline-block; 
   font-size: 2.4vh;
-  padding: 0.5vh 2vh;
+  padding: 0.5vh 0;
+  margin: 0 12vh;
+  transition: all 0.3s ease;
 }
 
 .cardLinkButtonVer:hover {
   background: linear-gradient(to bottom, #89b1df, #358ae9, #358ae9);
   border: solid var(--color-3) 1px; 
   color: white !important;
+  transform: translateX(7px);
 }
 
 /* Container seguros Parrafo */
@@ -133,12 +134,14 @@
 }
 
 /* Título visible por defecto */
+.cardSeguros h3 {
+  color: var(--color-4) !important;
+  font-size: 2.5vh !important;
+  font-family: 'New Astro', sans-serif;
+}
 .cardTitleDefault {
   position: relative;
   z-index: 1;
-  color: var(--color-7) !important;
-  font-family: 'New Astro', sans-serif;
-  font-size: 2.5vh !important;
   padding: 0.5rem 1rem;
   top: 12vh;
   border-radius: 8px;
@@ -221,39 +224,109 @@
 
 /* === Smartphones chicos (hasta 575px) === */
 @media (max-width: 575px) {
+
+  /* Container Segurso titulo */
+  .ContainerSegurosH3 h3{
+    margin: 0;
+    font-size: 4.5vh;
+    padding-bottom: 0;
+  }
   /* Personas y Empresas Cards */
   .ContainerPersonasEmpresas {
     display: flex;
     flex-direction: column;
+  }
+  /* Personas y Empresas Cards */
+  .ContainerPersonasEmpresas {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Container seguros Parrafo */
+  .ContainerSegurosP {
+    padding-top: 5vh;
+  }
+  .ContainerSegurosP p {
+    margin: 0;
+    font-family: 'New Astro', sans-serif;
+    font-size: 3.5vh;
+    font-weight: 400;
+    color: var(--color-1);
+    text-align: center;
+    padding-bottom: 0;
+  }
+
+  .ContainerSegurosGrid5 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+    padding: 3vh !important;
   }
 }
 
 /* === Smartphones grandes (hasta 767px) === */
 @media (min-width: 576px) and (max-width: 767px) {
 
+  /* Container Segurso titulo */
+  .ContainerSegurosH3 h3{
+    margin: 0;
+    font-size: 4.5vh;
+    padding-bottom: 0;
+  }
+
   /* Personas y Empresas Cards */
   .ContainerPersonasEmpresas {
     display: flex;
     flex-direction: column;
   }
 
+  /* Container seguros Parrafo */
+  .ContainerSegurosP {
+    padding-top: 5vh;
+  }
+  .ContainerSegurosP p {
+    margin: 0;
+    font-family: 'New Astro', sans-serif;
+    font-size: 3.5vh;
+    font-weight: 400;
+    color: var(--color-1);
+    text-align: center;
+    padding-bottom: 0;
+  }
+
+  .ContainerSegurosGrid5 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    padding: 3vh !important;
+  }
 }
 
 /* === Tablets horizontales y notebooks chicos (768px - 991px) === */
 @media (min-width: 768px) and (max-width: 991px) {
+  /* Personas y Empresas Cards */
+  .ContainerPersonasEmpresas {
+    display: flex;
+    flex-direction: column;
+  }
 
+  .ContainerSegurosGrid5 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    padding: 3vh 10vh !important;
+  }
 }
 /* === Notebooks estándar (992px - 1199px) === */
 @media (min-width: 992px) and (max-width: 1199px) {
+  .cardLinkButtonVer {
+    margin: 0 6vh;
+  }
 
+  .ContainerSegurosGrid5 {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3vh 2vh !important;
+  }
 }
 /* === Monitores grandes (992px - 1199px) === */
 @media (min-width: 1200px) {
-
-}
-
-
-@media (min-width: 1024px) {
   .ContainerSegurosGrid5 {
     grid-template-columns: repeat(5, 1fr);
   }

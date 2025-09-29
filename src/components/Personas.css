@@ -32,12 +32,6 @@
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
-@media (min-width: 1024px) {
-  .ContainerSegurosGrid4 {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
 /* ===== CARD SEGUROS ===== */
 
 .cardSeguros {
@@ -155,7 +149,100 @@
   color: white !important;
 }
 
-@media (min-width: 1024px) {
+/*-------------------MEDIA QUERYS--------------------*/
+
+/* === Smartphones chicos (hasta 575px) === */
+@media (max-width: 575px) {
+
+  .ContainerPersonas {
+    padding: 5vh;
+  }
+  .ContainerPersonas h2 {
+    margin: 0;
+    font-size: 3.5vh;
+    padding-bottom: 5vh;
+  }
+  .ContainerPersonas p {
+    margin: 0;
+    font-size: 2vh;
+    padding-bottom: 0;
+  }
+
+  .ContainerSegurosGrid4 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+    padding: 3vh !important;
+  }
+}
+
+/* === Smartphones grandes (hasta 767px) === */
+@media (min-width: 576px) and (max-width: 767px) {
+  .ContainerPersonas {
+    padding: 5vh;
+  }
+  .ContainerPersonas h2 {
+    margin: 0;
+    font-size: 4vh;
+    padding-bottom: 5vh;
+  }
+  .ContainerPersonas p {
+    margin: 0;
+    font-size: 3vh;
+    padding-bottom: 0;
+  }
+
+  .ContainerSegurosGrid4 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    padding: 3vh !important;
+  }
+}
+
+/* === Tablets horizontales y notebooks chicos (768px - 991px) === */
+@media (min-width: 768px) and (max-width: 991px) {
+  .ContainerPersonas {
+    padding: 5vh;
+  }
+  .ContainerPersonas h2 {
+    margin: 0;
+    font-size: 4vh;
+    padding-bottom: 5vh;
+  }
+  .ContainerPersonas p {
+    margin: 0;
+    font-size: 3vh;
+    padding-bottom: 0;
+  }
+
+  .ContainerSegurosGrid4 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    padding: 3vh 10vh !important;
+  }
+}
+/* === Notebooks estándar (992px - 1199px) === */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .ContainerPersonas {
+    padding: 5vh;
+  }
+  .ContainerPersonas h2 {
+    margin: 0;
+    font-size: 4vh;
+    padding-bottom: 5vh;
+  }
+  .ContainerPersonas p {
+    margin: 0;
+    font-size: 3vh;
+    padding-bottom: 0;
+  }
+
+  .ContainerSegurosGrid4 {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3vh 2vh !important;
+  }
+}
+/* === Monitores grandes (992px - 1199px) === */
+@media (min-width: 1200px) {
   .ContainerSegurosGrid4 {
     grid-template-columns: repeat(4, 1fr);
   }
