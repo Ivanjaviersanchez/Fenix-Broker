@@ -1,4 +1,5 @@
 import { useParams, useNavigate } from "react-router-dom";
+import { CheckCircle, Shield, Home, Car, Bike, Briefcase } from "lucide-react";
 import "./DetalleSeguro.css";
 
 const segurosData = {
@@ -364,7 +365,7 @@ function DetalleSeguro() {
               ))}
             </ul>
             <button className="CotizaButton" onClick={() => handleCotizar(seguro.title, item.nombre)}>
-              Cotizá ahora →
+              Cotizá ahora {">>>"}
             </button>
           </div>
         ))}
@@ -372,7 +373,7 @@ function DetalleSeguro() {
 
       {seguro.incluyen && seguro.incluyen.length > 0 && (
         <div className="ContainerIncluyen">
-          <h4>Todos los planes incluyen:</h4>
+          <h4>Todos los planes incluyen {">>>"}</h4>
           <div className="IncluyenGrid">
             {seguro.incluyen.map((item, index) => (
               <div className="IncluyenItem" key={index}>

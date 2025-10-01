@@ -1,3 +1,6 @@
+/*          SECCIONES DE HOME         */
+import HomeCarruselSeguros from "./HomeCarruselSeguros";
+
 import CountUp from 'react-countup';
 import { Link, useNavigate } from 'react-router-dom';
 import { useInView } from 'react-intersection-observer';
@@ -196,6 +199,9 @@ function Home() {
         </div>
 
       </div>
+
+      {/*           SECCIONES DE HOME           */}
+      <HomeCarruselSeguros />
 
       {/* Contadores Siempre listos para asesorarte */}
       <div className="ContainerContadoresHome" ref={ref}>

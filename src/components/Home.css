@@ -114,15 +114,17 @@
   font-weight: bold;
   transition: background-color 0.3s ease;
   display: inline-block;
-  min-width: 140px;
   font-size: 3vh;
   padding: 1vh;
+  margin: 0;
+  transition: all 0.3s ease;
 }
 
 .cardLinkButtonElegirnos:hover {
   background: linear-gradient(to bottom, #89b1df, #358ae9, #358ae9);
   border: solid var(--color-3) 1px; 
   color: white !important;
+  transform: translateX(7px);
 }
 
 /* ===== SEGUROS HOME ===== */
@@ -226,7 +228,7 @@
   align-items: center;            /* centra verticalmente */
   padding: 8vh 40vh;                /* mismo padding que tus títulos */
   /* background-color: var(--color-7); */
-  background: linear-gradient(to bottom,var(--color-7), var(--color-7),white);
+  background: linear-gradient(to bottom,var(--color-7), #89b1df);
 
 }
 

@@ -21,7 +21,7 @@ function Empresas() {
   return (
     <div>
       <div className="ContainerEmpresas">
-        <h2>Seguros para Empresas</h2>
+        <h2>Seguros para Empresas {">>>"}</h2>
         <p>Conocé las coberturas y servicios de seguros para Empresas que tenemos para vos, adaptados a tus necesidades.</p>
       </div>
 

@@ -1,0 +1,130 @@
+.CarruselSegurosSection {
+   /*  background-color: var(--color-1); */
+    padding: 5vh;
+    margin: 0;
+    overflow: hidden;
+    background: linear-gradient(to bottom,#89b1df ,white );
+
+}
+
+.slick-track {
+  display: flex !important;
+  gap: 20px; /* separación entre cards */
+}
+
+/* asegúrate de quitar el style inline backgroundImage del div */
+
+.cardSegurosHome {
+  position: relative;
+  height: 35vh;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: transparent; /* si antes tenías background-image, eliminarlo */
+}
+
+/* logo centrado y responsivo */
+.cardLogo {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;          /* ajustar al gusto */
+  max-width: 410px;
+  height: auto;
+  object-fit: contain;
+  z-index: 0;
+  pointer-events: none; /* que no interfiera con hover */
+}
+
+/* títulos y overlay por encima del logo */
+.cardTitleDefault { z-index: 2; position: relative; }
+.cardOverlaySeguro { z-index: 3; }
+
+
+.cardSegurosHome h3 {
+  color: var(--color-4) !important;
+  font-size: 2.5vh !important;
+  font-family: 'New Astro', sans-serif;
+  top: 27vh !important;
+  
+}
+
+/* Título visible por defecto */
+.cardTitleDefault {
+  position: relative;
+  z-index: 1;
+  padding: 0.5rem 1rem;
+  
+  border-radius: 8px;
+  margin: 0;
+  transition: opacity 0.3s ease;
+}
+
+.cardSegurosHome:hover .cardTitleDefault {
+  opacity: 0;
+}
+
+/* Overlay */
+.cardOverlaySeguro {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+.cardSegurosHome:hover .cardOverlaySeguro {
+  opacity: 1;
+}
+
+.cardOverlaySeguro h3 {
+  color: var(--color-4);
+  font-family: 'New Astro', sans-serif;
+  font-size: 2vh;
+  margin-bottom: 0.5rem;
+}
+
+.segurosList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.segurosList li {
+  font-size: 1.6vh;
+  color: var(--color-7);
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Botón */
+.ButtonSeguro {
+  background: linear-gradient(to bottom, #fbc296,#fbc296,#f8992e);
+  color: var(--color-6);
+  border: solid var(--color-6) 1px;
+  border-radius: 12px;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 2.2vh;
+  padding: 0.3vh 1.5vh;
+  margin-top: 1vh;
+  transition: all 0.3s ease;
+}
+
+.ButtonSeguro:hover {
+  background: linear-gradient(to bottom, #89b1df, #358ae9, #358ae9);
+  border: solid var(--color-3) 1px; 
+  color: white;
+}
+

@@ -1,24 +1,29 @@
 /* ===== CONTAINERS ===== */
 
 .ContainerDetalleSeguro {
-  background-color: #edf2fd;
-  padding: 2rem;
+  background: linear-gradient(to bottom,#89b1df, white,var(--color-7),#89b1df );
+  padding: 5vh; 
 }
 
 .ContainerDetalleSeguro h3 {
-  color: rgb(2, 2, 108);
-  font-size: 5vh;
-  font-weight: bold;
+  margin: 0;
+  padding-bottom: 3vh;
   text-align: center;
+  font-family: 'New Astro', sans-serif;
+  font-size: 6vh;
+  font-weight: 400;
+  color: var(--color-1);
 }
 
 .ContainerDetalleSeguro p,
 .ContainerDetalleSeguro h4 {
-  color: rgb(2, 2, 108);
-  margin-top: 3.2vh;
+  margin: 0;
+  font-family: 'New Astro', sans-serif;
   font-size: 3vh;
-  padding: 0 15%;
+  font-weight: 400;
+  color: var(--color-2);
   text-align: center;
+  padding-bottom: 5vh;
 }
 
 
@@ -34,14 +39,14 @@
 }
 
 .DetalleCard {
-  background-color: #ffffff;
+  background-color: var(--color-7);
   color: #333;
   padding: 1.5rem;
-  border: 2px solid rgb(1, 1, 144);
+  border: 1px solid var(--color-2);
   border-radius: 20px;
   width: 25%;
   text-align: left;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+   box-shadow: 5px 2px 30px var(--color-1); 
   transition: transform 0.2s ease-in-out;
   justify-content: space-between;
 }
@@ -53,11 +58,11 @@
 .DetalleCard h4 {
   font-size: 3vh;
   font-weight: 700;
-  color: rgb(1, 1, 144);
-  margin-bottom: 1rem;
+  color: var(--color-1);
 }
 .DetalleCard h5 {
-  color: rgb(1, 1, 144);
+  color: var(--color-1);
+  font-family: 'New Astro', sans-serif;
   margin-bottom: 1rem;
 }
 
@@ -67,53 +72,56 @@
   margin-bottom: 1rem;
   display: flex;
   flex-direction: column;
+  
 }
 
 .BeneficiosList li {
   margin-bottom: 0.5rem;
-  color: #333;
+  color: var(--color-2) !important;
   font-size: 0.95rem;
-  
+  font-weight: bold;
 }
 
 /* ===== BOTÓN COTIZA AHORA ===== */
 
 .CotizaButton {
-  background-color: #023173; 
-  color: rgb(255, 255, 255);
-  border: solid blue 1px;
-  border-radius: 10px;
+  background: linear-gradient(to bottom, #89b1df, #358ae9, #358ae9);
+  color: white !important;
+  border: solid var(--color-3) 1px; 
+  
+  border-radius: 12px;
   font-weight: bold;
-  font-size: 0.9rem;
   transition: background-color 0.3s ease;
   display: inline-block;
-  min-width: 160px;
-  font-size: 0.95rem;
+  font-size: 2.2vh;
+  padding: 0.5vh;
+  margin: 0;
+  transition: all 0.3s ease;
 }
 
 .CotizaButton:hover {
-  
-  color: #879ae6;
-  border: solid blue 1px;
-  
+  background: linear-gradient(to bottom, #fbc296,#fbc296,#f8992e);
+  color: var(--color-6) !important;
+  border: solid var(--color-6) 1px;
+  transform: translateX(7px);
 }
 
 /* ===== TODOS LOS PLANES INCLUYEN ===== */
 
 .ContainerIncluyen {
   margin-top: 4rem;
-  background-color: #899abd;
-  padding: 2rem 3%;
-  margin: 5vh 5vh;
+  background: linear-gradient(to bottom, var(--color-1),var(--color-2),var(--color-2), var(--color-1));
+  padding: 3vh;
   border-radius: 20px;
   text-align: center;
 
 }
 
 .ContainerIncluyen h4 {
-  font-size: 3.5vh;
+  font-size: 4vh;
   font-weight: bold;
-  margin-bottom: 2rem;
+  margin-bottom: 0;
+  color: var(--color-7);
 }
 
 .IncluyenGrid {
@@ -136,12 +144,13 @@
 }
 .IncluyenItem p {
   font-size: 3vh;
+  color: var(--color-4);
 }
 
 .IconPlaceholder {
   font-size: 2rem;
   margin-bottom: 0.5rem;
-  color: #99004d;
+  
 }
 
 /* Estilo responsive para pantallas pequeñas */
