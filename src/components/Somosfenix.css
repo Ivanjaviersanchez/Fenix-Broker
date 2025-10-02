@@ -81,6 +81,7 @@
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   background-color: transparent;
+  padding: 5vh 0;
 }
 
 /* Contenedor del texto */
@@ -98,7 +99,15 @@
   font-weight: 400;
   color: var(--color-1);
   text-align: center;
-  padding: 5vh 0;
+}
+.SucursalSubTitle {
+  margin: 0;
+  font-family: 'New Astro', sans-serif;
+  font-size: 2.5vh !important;
+  font-weight: 400;
+  color: var(--color-1);
+  text-align: center;
+  padding-bottom: 5vh;
 }
 
 /* Descripción de la card */
@@ -162,14 +171,14 @@
 }
 
 .SucursalContactContainer {
-  padding: 3vh;
+  padding: 5vh 0;
   flex: 1;
   color: var(--color-1);
 }
 
 .SucursalContactTitle {
   font-size: 4vh;
-  margin-bottom: 2vh;
+  padding-bottom: 4vh;
   font-family: 'New Astro', sans-serif;
 }
 .SucursalContactContainer h4 {
@@ -178,10 +187,10 @@
 }
 
 .SucursalDivider {
-  margin: 5vh 0;
+  margin: 8vh 0;
   border: 0;
-  height: 1px;
-  background: var(--color-3);
+  height: 2px;
+  background: var(--color-1);
 }
 
 .TelefonosTitle h3 {

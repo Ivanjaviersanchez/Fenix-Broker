@@ -25,12 +25,24 @@ function Somosfenix() {
         <Card className="SucursalCard">
           <div className="SucursalText">
             <Card.Body>
-              <Card.Title className="SucursalTitle">Sucursal Fenix Mar del plata</Card.Title>
+              <Card.Title className="SucursalTitle">Sucursal Fenix </Card.Title>
+              <Card.Title className="SucursalSubTitle">Mar del plata </Card.Title>
+              
               <Card.Text className="SucursalDescription">
                 En Fénix Broker de Seguros ofrecemos atención personalizada en nuestra oficina de Mar del Plata, acompañando a nuestros clientes con soluciones integrales en seguros para personas, empresas e instituciones. <br />
                 Como parte de una red nacional con respaldo y trayectoria, brindamos asesoramiento profesional, cotizaciones a medida y gestión eficiente de pólizas y siniestros, trabajando con las principales compañías aseguradoras del país.
               </Card.Text>
-              <Button className="SucursalBTN" variant="primary">
+
+              <Button
+                className="SucursalBTN"
+                variant="primary"
+                onClick={() => {
+                  const phoneNumber = "549223555555"; // tu número de WhatsApp en formato internacional
+                  const message = "Hola, quiero contactar con un asesor para consultar sobre seguros.";
+                  const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+                  window.open(url, "_blank");
+                }}
+              >
                 Contacta con nosotros {">>>"}
               </Button>
             </Card.Body>
