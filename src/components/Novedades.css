@@ -1,0 +1,30 @@
+.novedades-container {
+    background: linear-gradient(to bottom,#89b1df , var(--color-7),var(--color-7),#89b1df);
+    text-align: center;
+    padding: 5vh;
+}
+
+.novedades-title {
+    margin: 0;
+    padding-bottom: 4vh;
+    text-align: center;
+    font-family: 'New Astro', sans-serif;
+    font-size: 6vh;
+    font-weight: 400;
+    color: var(--color-1);
+}
+
+.novedades-carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.novedades-flyer {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.2);
+}

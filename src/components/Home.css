@@ -60,9 +60,7 @@
   background-position: center;
   border-radius: 20px;
   overflow: hidden;
-  /* min-height: 60vh;   */
   padding: 3vh;
-  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -88,7 +86,7 @@
 }
 
 .cardOverlayElegirnos img {
-  width: 15%;
+  width: 13%;
 }
 
 .cardOverlayElegirnos h3 {
@@ -640,20 +638,32 @@
     text-align: center;
   }
 
-  /* Cards "Por qué elegirnos" */
+  /* ===== PORQUE ELEGIRNOS ===== */
   .ContainerElegirnos {
-    grid-template-columns: 1fr;
-    padding: 3vh 2vh;
+    width: 100%;
+    padding: 0vh 5vh; /* menos padding lateral */
+    padding-top: 4vh;
+  }
+  .tituloElegirnos {
+    font-size: 4vh !important;
+    padding-top: 10vh;
+    text-align: left; 
+    padding-left: 5vh;
+  }
+  .cardOverlayElegirnos img {
+    width: 20%;
   }
   .cardOverlayElegirnos h3 {
-    font-size: 3vh;
+    font-size: 2.8vh;
   }
   .cardOverlayElegirnos p {
-    margin: 2vh;
-    font-size: 2vh;
+    font-size: 1.8vh !important;
+    margin: 0;
+    padding: 2vh 4vh;
+    padding-bottom: 3vh;
   }
   .cardLinkButtonElegirnos {
-    font-size: 3vh;
+    font-size: 1.8vh;
   }
 
   /* Seguros */
@@ -764,19 +774,19 @@
     padding-left: 5vh;
   }
   .cardOverlayElegirnos img {
-    width: 20%; /* más grande porque en móvil hay menos espacio */
+    width: 15%;
   }
   .cardOverlayElegirnos h3 {
-    font-size: 3.5vh;
+    font-size: 3vh;
   }
   .cardOverlayElegirnos p {
-    font-size: 2.2vh !important;
+    font-size: 2vh !important;
     margin: 0;
-    padding: 2vh;
+    padding: 2vh 4vh;
     padding-bottom: 3vh;
   }
   .cardLinkButtonElegirnos {
-    font-size: 2.5vh;
+    font-size: 2vh;
   }
 
   /* ===== SEGUROS HOME ===== */
@@ -907,14 +917,50 @@
     margin: 2vh 0;
     font-size: 3vh;
   }
+
+  /*    PORQUE ELEGIRNOS    */
+  .tituloElegirnos {
+    padding: 8vh 0;
+    padding-left: 8vh;
+  }
+  .ContainerElegirnos {
+    padding: 0 8vh;
+  }
+
+  .cardOverlayElegirnos img {
+    width: 15%;
+  }
+
+  .cardOverlayElegirnos h3 {
+    font-size: 4.5vh;
+  }
+
+  .cardOverlayElegirnos p {
+    font-size: 2.4vh;
+  }
+  .cardLinkButtonElegirnos {
+    font-size: 2.8vh;
+  }
+
   /*    SEGUROS HOME    */
   .tituloSegurosHome {
     padding-bottom: 8vh;
   }
   .containerSegurosHome {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     padding: 2vh;
+  }
+  /* Título sobre la imagen */
+  .seguroTitulo {
+    font-size: 3.2vh;
+  }
+  .seguroTituloBajo {
+    padding: 0vh 3vh;
+    font-size: 2.4vh;
+  }
+  .seguroItem h3 {
+    font-size: 3vh;
   }
   .tituloSegurosConBoton {
     flex-direction: column;
@@ -969,6 +1015,22 @@
     padding: 0 8vh;
   }
 
+  .cardOverlayElegirnos img {
+    width: 15%;
+  }
+
+  .cardOverlayElegirnos h3 {
+    font-size: 4.5vh;
+  }
+
+  .cardOverlayElegirnos p {
+    font-size: 2.4vh;
+  }
+  .cardLinkButtonElegirnos {
+    font-size: 2.8vh;
+  }
+  
+
   /*    SEGUROS HOME     */
   .tituloSegurosHome {
     padding-left: 5vh;
@@ -976,6 +1038,18 @@
   }
   .containerSegurosHome {
     padding: 6vh 5vh;
+  }
+
+  /* Título sobre la imagen */
+  .seguroTitulo {
+    font-size: 4vh;
+  }
+  .seguroTituloBajo {
+    padding: 0vh 3vh;
+    font-size: 2.8vh;
+  }
+  .seguroItem h3 {
+    font-size: 3.5vh;
   }
 
   .tituloSegurosConBoton {
@@ -1003,12 +1077,42 @@
   }
 }
 
-@media (min-width: 1200px){
+@media (min-width: 1200px) and (max-width: 1400px){
+
+  /*   SEGUROS HOME    */
+  /* Título sobre la imagen */
+  .seguroTitulo {
+    font-size: 4vh;
+  }
+  .seguroTituloBajo {
+    padding: 0vh 3vh;
+    font-size: 2.8vh;
+  }
+  .seguroItem h3 {
+    font-size: 3.5vh;
+  }
+
   .tituloSegurosConBoton {
     padding: 6vh 0vh;
     justify-content: center;
   }
 
+  /*     PORQUE ELEGIRNOS    */
+  .cardOverlayElegirnos img {
+    width: 18%;
+  }
+
+  .cardOverlayElegirnos h3 {
+    font-size: 4.5vh;
+  }
+
+  .cardOverlayElegirnos p {
+    font-size: 2.4vh;
+    padding: 2vh 0;
+  }
+  .cardLinkButtonElegirnos {
+    font-size: 2.8vh;
+  }
 }
 
 

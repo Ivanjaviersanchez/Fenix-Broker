@@ -16,10 +16,15 @@ import Cotiza from './components/Cotiza';
 import Error from './components/Error';
 import DetalleSeguro from './components/DetalleSeguro';
 
+import ScrollToTop from './ScrollToTop';
+
 function App() {
   return (
     <>
       <BrowserRouter>
+
+        <ScrollToTop />     
+
         <Routes>
           <Route path='/' element={<Layout/>}>
             <Route index element={<Home/>}/>
