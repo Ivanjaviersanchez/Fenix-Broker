@@ -1,0 +1,111 @@
+.containerCompaniasCarrusel {
+  overflow: hidden;
+  text-align: center;
+  margin: 0;
+  padding: 10vh 0;
+  font-family: 'New Astro', sans-serif;
+  background: linear-gradient(to bottom,white, var(--color-7));
+}
+
+.containerCompaniasCarrusel h2 {
+  margin: 0;
+  font-family: 'New Astro', sans-serif;
+  font-size: 6vh;
+  font-weight: 400;
+  color: var(--color-1);
+  text-align: center;
+  
+}
+.tituloCompanias {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease forwards;
+}
+.tituloCompanias h2 {
+  font-size: 6vh;
+  font-weight: 400;
+  color: var(--color-1);
+  padding: 0 5vh;
+}
+
+.tituloCompanias h2 span {
+  font-weight: bold;
+}
+
+.tituloCompanias .linea {
+  flex: 1;
+  height: 3px;
+  background-color: var(--color-1);
+  margin: 0;
+}
+
+.carrusel-track {
+  display: flex;
+  width: calc(200%); /* doble porque duplicamos logos */
+  animation: scroll 20s linear infinite;
+  padding-bottom: 4vh;
+}
+
+.carrusel-slide {
+  flex: 0 0 auto;
+  width: 200px; /* ancho por logo, ajusta según diseño */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.carrusel-slide img {
+  max-height: 130px;
+  object-fit: contain;
+}
+
+/* Animación horizontal infinita */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/*-------------------MEDIA QUERYS--------------------*/
+
+/* === Smartphones chicos (hasta 575px) === */
+@media (max-width: 575px) {
+    .tituloCompanias h2 {
+        font-size: 3.5vh;
+        text-align: center;
+    }
+}  
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .containerCompaniasCarrusel h2 {
+        font-size: 3.5vh;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .containerCompaniasCarrusel h2 {
+        font-size: 4vh;
+    }
+}
+
+/* === Notebooks estándar (992px - 1199px) === */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .containerCompaniasCarrusel h2 {
+        font-size: 4vh;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px){
+    .containerCompaniasCarrusel h2 {
+        font-size: 4.5vh;
+    }
+}

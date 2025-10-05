@@ -28,3 +28,18 @@
     border-radius: 12px;
     box-shadow: 0px 5px 20px rgba(0,0,0,0.2);
 }
+
+/*-------------------MEDIA QUERYS--------------------*/
+
+/* === Smartphones chicos (hasta 575px) === */
+@media (max-width: 575px) {
+    .novedades-title {
+        font-size: 3vh;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .novedades-title {
+        font-size: 4vh;
+    }
+}

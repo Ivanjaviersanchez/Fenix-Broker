@@ -1,0 +1,88 @@
+/*        ESTILOS CARRUSEL HOME         */
+ 
+.ContainerCarruselHome {
+  background: linear-gradient(to bottom,#89b1df , var(--color-7),var(--color-7));
+  padding: 5vh; 
+}
+
+.ContainerCarruselHome .carousel {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.ContainerCarruselHome h3 {
+  color: var(--color-4);
+  font-family: 'New Astro', sans-serif;
+  font-size: 6.5vh;
+  background: rgba(0,0,0,0.6);
+  padding: 0;
+  border-radius: 20px;
+}
+
+.ContainerCarruselHome img {
+  height: 70vh;
+  width: 100%;
+  border-radius: 20px; 
+} 
+
+/*-------------------MEDIA QUERYS--------------------*/
+
+/* === Smartphones chicos (hasta 575px) === */
+@media (max-width: 575px) {
+  .ContainerCarruselHome {
+    padding: 3vh 1vh;
+  }
+  .ContainerCarruselHome img {
+    height: 33vh;
+  }
+  .ContainerCarruselHome h3 {
+    font-size: 3vh;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .ContainerCarruselHome {
+    padding: 1vh;
+  }
+  .ContainerCarruselHome img{
+    height: 34vh;
+  }
+  .ContainerCarruselHome h3 {
+    font-size: 3vh; /* un poco más chico para móviles */
+    padding: 1vh;
+    text-align: center;
+  }
+}
+
+/* === Tablets horizontales y notebooks chicos (768px - 991px) === */
+@media (min-width: 768px) and (max-width: 991px) {
+  /*   CARRUSEL HOME   */
+  .ContainerCarruselHome {
+    padding: 2vh;
+  }
+  .ContainerCarruselHome img {
+    height: 55vh;
+  }
+  .cardOverlayElegirnos p {
+    margin: 2vh 0;
+    font-size: 3vh;
+  }
+}
+
+/* === Notebooks estándar (992px - 1199px) === */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .ContainerCarruselHome {
+    padding: 4vh;
+  }
+  .ContainerCarruselHome img{
+    height: 57vh;
+  }
+  .ContainerCarruselHome h3 {
+    padding: 1vh;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+    
+}

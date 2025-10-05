@@ -1,0 +1,300 @@
+/* ===== SEGUROS HOME ===== */
+.tituloSegurosHome {
+  margin: 0;
+  padding-top: 15vh;
+  padding-left: 15vh;
+  background-color: var(--color-7);
+  font-family: 'New Astro', sans-serif;
+  font-size: 6vh;
+  font-weight: 400;
+  color: var(--color-1);
+  text-align: left;
+}
+
+.containerSegurosHome {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 3rem;
+  padding: 8vh 15vh;
+  background: linear-gradient(to bottom, var(--color-7),#89b1df,var(--color-7),var(--color-7));
+  text-align: center;
+  perspective: 1000px; /* da profundidad */
+  height: auto;
+}
+
+.seguroItem {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
+  background-color: var(--color-1);
+  /* background: linear-gradient(to left, #89b1df, #358ae9, #358ae9, #89b1df); */
+  transition: transform 0.4s ease, z-index 0.3s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+  
+}
+
+.seguroItem img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+/* Título sobre la imagen */
+.seguroTitulo {
+  position: absolute;
+  top: 10px;   /* lo pega a la parte superior */
+  left: 50%;   /* lo centra */
+  transform: translateX(-50%);
+  padding: 20px 0px;
+  font-size: 4.8vh;
+  font-weight: bold;
+  color: var(--color-7) !important; 
+  font-family: 'New Astro', sans-serif;
+  width: 100%;
+}
+.seguroTituloBajo {
+  position: absolute;
+  bottom: 10vh;
+  color: var(--color-4);
+  padding: 0vh 5vh;
+  font-size: 3.5vh;
+  font-family: 'New Astro', sans-serif;
+}
+
+.seguroItem h3 {
+  margin: 15px 12px;
+  font-size: 4vh;
+  color: var(--color-7);
+  font-family: 'New Astro', sans-serif;
+  height: 4vh;
+}
+
+/* EFECTO HOVER */
+.containerSegurosHome:hover .seguroItem {
+  /* transform: scale(0.9); */
+  /* opacity: 0.7; */
+  z-index: 0;
+}
+
+.containerSegurosHome .seguroItem:hover {
+  transform: scale(1.15);
+  opacity: 1;
+  z-index: 10;
+  box-shadow: 0px 15px 35px rgba(0,0,0,0.4);
+ /*  background: linear-gradient(to left, #fbc296,var(--color-5),var(--color-5),#fbc296);  */
+  /* color: var(--color-6) !important; */
+
+}
+.containerSegurosHome .seguroItem h3:hover{
+  color: var(--color-4);
+}
+
+/* Contenedor de título + botón */
+
+.tituloSegurosConBoton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;            /* centra verticalmente */
+  padding: 6vh 0;                /* mismo padding que tus títulos */
+  background: linear-gradient(to bottom,var(--color-7), #89b1df);
+
+}
+
+/* Ajusta el h2 para que se vea bien dentro del flex */
+.tituloSegurosConBoton h2 {
+  margin: 0;
+  font-family: 'New Astro', sans-serif;
+  font-size: 5vh;
+  font-weight: 400;
+  color: var(--color-1);
+  padding-right: 20vh;
+}
+
+/* BOTÓN */
+.cardLinkButtonConoce {
+  background: linear-gradient(to bottom, #fbc296,#fbc296,#f8992e);
+  color: var(--color-6);
+  border: solid var(--color-6) 1px;
+  border-radius: 12px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  min-width: 140px;
+  font-size: 3vh;
+  padding: 1vh;
+}
+
+.cardLinkButtonConoce:hover {
+  background: linear-gradient(to bottom, #89b1df, #358ae9, #358ae9);
+  border: solid var(--color-3) 1px; 
+  color: white !important;
+}
+
+/*-------------------MEDIA QUERYS--------------------*/
+
+/* === Smartphones chicos (hasta 575px) === */
+@media (max-width: 575px) {
+    .tituloSegurosHome {
+        padding-left: 3vh;
+        font-size: 4vh;
+        text-align: center;
+    }
+    .containerSegurosHome {
+        grid-template-columns: 1fr;
+        padding: 8vh;
+    }
+    .seguroTitulo {
+        font-size: 3.5vh;
+    }
+    .seguroTituloBajo {
+        font-size: 2.5vh;
+        bottom: 11vh;
+    }
+    .seguroItem h3 {
+        font-size: 3vh;
+    }
+
+    .tituloSegurosConBoton {
+        flex-direction: column;
+        padding: 4vh 2vh;
+        text-align: center;
+    }
+    .tituloSegurosConBoton h2 {
+        padding-right: 0;
+        margin-bottom: 2vh;
+        font-size: 3vh;
+    }
+    .cardLinkButtonConoce {
+        font-size: 2.5vh;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .tituloSegurosHome {
+        font-size: 4vh !important;
+        padding-top: 12vh;
+        padding-bottom: 4vh;
+        text-align: left; 
+        padding-left: 5vh;
+        
+    }
+    .containerSegurosHome {
+        grid-template-columns: 1fr;
+        padding: 5vh 2vh;
+    }
+    .seguroItem {
+        margin: 0 14vh;
+    }
+    .seguroItem h3 {
+        font-size: 3vh;
+    }
+    .seguroTitulo {
+        font-size: 4vh;
+    }
+    .seguroTituloBajo {
+        font-size: 3vh;
+        bottom: 10vh;
+        text-align: center;
+    }
+
+    .tituloSegurosConBoton {
+        flex-direction: column;
+        padding: 4vh 2vh;
+        text-align: center;
+    }
+    .tituloSegurosConBoton h2 {
+        padding-right: 0;
+        margin-bottom: 2vh;
+        font-size: 3.5vh;
+    }
+    .cardLinkButtonConoce {
+        font-size: 2.5vh;
+    }
+}
+
+/* === Tablets horizontales y notebooks chicos (768px - 991px) === */
+@media (min-width: 768px) and (max-width: 991px) {
+    .tituloSegurosHome {
+        font-size: 6vh;
+        padding-left: 5vh;
+        text-align: left;
+    }
+    .tituloSegurosHome {
+        padding-bottom: 8vh;
+    }
+    .containerSegurosHome {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        padding: 2vh;
+    }
+    /* Título sobre la imagen */
+    .seguroTitulo {
+        font-size: 3.2vh;
+    }
+    .seguroTituloBajo {
+        padding: 0vh 3vh;
+        font-size: 2.4vh;
+    }
+    .seguroItem h3 {
+        font-size: 3vh;
+    }
+    .tituloSegurosConBoton {
+        flex-direction: row;
+        padding: 8vh 0;
+        text-align: center;
+    }
+    .tituloSegurosConBoton h2 {
+        margin-bottom: 2vh;
+        font-size: 4vh;
+    }
+    .cardLinkButtonConoce {
+        font-size: 2.5vh;
+    }
+
+}
+
+/* === Notebooks estándar (992px - 1199px) === */
+@media (min-width: 992px) and (max-width: 1199px) {
+   .tituloSegurosHome {
+        padding-left: 5vh;
+    }
+    .containerSegurosHome {
+        padding: 6vh 5vh;
+    }
+    .seguroTitulo {
+        font-size: 4vh;
+    }
+    .seguroTituloBajo {
+        padding: 0vh 3vh;
+        font-size: 2.8vh;
+    }
+    .seguroItem h3 {
+        font-size: 3.5vh;
+    }
+
+    .tituloSegurosConBoton {
+        padding: 6vh 0vh;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+    .seguroTitulo {
+        font-size: 4vh;
+    }
+    .seguroTituloBajo {
+        padding: 0vh 3vh;
+        font-size: 2.8vh;
+    }
+    .seguroItem h3 {
+        font-size: 3.5vh;
+    }
+
+    .tituloSegurosConBoton {
+        padding: 6vh 0vh;
+        justify-content: center;
+    }
+}

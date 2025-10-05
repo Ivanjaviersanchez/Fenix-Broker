@@ -1,0 +1,162 @@
+.containerRedesHome {
+  text-align: center;
+  margin: 0;
+  padding: 8vh 0;
+  font-family: 'New Astro', sans-serif;
+  background: linear-gradient(to bottom,white, var(--color-7),#89b1df);
+}
+
+.tituloRedes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 4vh;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.tituloRedes h2 {
+  font-size: 5vh;
+  font-weight: 400;
+  color: var(--color-1);
+  padding: 0 5vh;
+}
+
+.tituloRedes h2 span {
+  font-weight: bold;
+}
+
+.tituloRedes .linea {
+  flex: 1;
+  height: 3px;
+  background-color: var(--color-1);
+}
+
+.redesIcons {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease forwards;
+  animation-delay: 0.4s;
+  padding-top: 3vh;
+}
+
+.redesIcons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  width: 50px;
+  height: 50px;
+  color: white; /* texto/blanco */
+  transition: all 0.3s ease;
+}
+
+.redesIcons a.facebook {
+  background-color: #1877F2;
+}
+
+.redesIcons a.twitter {
+  background-color: #000000;
+}
+
+.redesIcons a.instagram {
+  background: radial-gradient(circle at 30% 107%, 
+              #fdf497 0%, #fdf497 5%, #fd5949 45%, 
+              #d6249f 60%, #285AEB 90%);
+}
+
+.redesIcons a.youtube {
+  background-color: #FF0000;
+}
+
+.redesIcons a.linkedin {
+  background-color: #0077B5;
+}
+
+.redesIcons a:hover {
+  transform: scale(1.1);
+}
+
+/* Animación suave */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*-------------------MEDIA QUERYS--------------------*/
+
+/* === Smartphones chicos (hasta 575px) === */
+@media (max-width: 575px) {
+  .containerRedesHome {
+    padding-top: 10vh;
+  }
+  .tituloRedes h2 {
+    font-size: 3vh;
+    padding: 0;
+  }
+  .redesIcons {
+    gap: 30px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .containerRedesHome {
+        padding-top: 10vh;
+    }
+    .tituloRedes h2 {
+        font-size: 3.5vh;
+        padding: 0;
+    }
+    .redesIcons {
+        gap: 50px;
+    }
+}
+
+/* === Tablets horizontales y notebooks chicos (768px - 991px) === */
+@media (min-width: 768px) and (max-width: 991px) {
+    .containerRedesHome {
+        padding-top: 10vh;
+    }
+    .tituloRedes h2 {
+        font-size: 3.5vh;
+        padding: 0;
+    }
+    .redesIcons {
+        gap: 50px;
+    }
+}
+
+/* === Notebooks estándar (992px - 1199px) === */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .containerRedesHome {
+        padding-top: 10vh;
+    }
+    .tituloRedes h2 {
+        font-size: 4vh;
+        padding: 0;
+    }
+    .redesIcons {
+        gap: 60px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px){
+    .containerRedesHome {
+        padding-top: 10vh;
+    }
+    .tituloRedes h2 {
+        font-size: 5vh;
+        padding: 0;
+    }
+    .redesIcons {
+        gap: 60px;
+    }
+}

@@ -1,0 +1,201 @@
+.containerPreguntas {
+  padding: 3vh 15vh;
+  background: linear-gradient(to bottom, var(--color-7),#89b1df,white);
+}
+
+.tituloPreguntas {
+  margin: 0;
+  font-family: 'New Astro', sans-serif;
+  font-size: 5.5vh;
+  font-weight: 400;
+  color: var(--color-1);
+  text-align: left;
+  padding-bottom: 5vh;
+}
+
+.containerAcordion {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.containerAcordion h3 {
+  color: var(--color-1);
+  font-family: 'New Astro', sans-serif;
+  font-size: 4vh;
+  padding-bottom: 4vh;
+}
+
+.acordionLeft {
+  width: 100%;
+}
+.acordionRight {
+  width: 100%;
+}
+
+/* Cada Item del acordeón */
+.accordion-item {
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Encabezado del Accordion */
+.accordion-button {
+  background-color: #5c8ac7;;
+  color: white;
+  font-weight: 600;
+  font-family: 'New Astro', sans-serif;
+  font-size: 2.5vh;
+  padding: 1rem;
+  transition: all 0.3s ease;
+}
+
+/* Hover y focus */
+.accordion-button:hover{
+  background-color: var(--color-4);
+  color: #fff;
+  box-shadow: none;
+}
+
+/* Cuando está abierto */
+.accordion-button:not(.collapsed) {
+  background-color: var(--color-1);
+  color: white;
+}
+
+/* Cuerpo del Accordion */
+.accordion-body {
+  background-color: var(--color-7);
+  color: var(--color-1);
+  font-size: 2vh;
+  padding: 1.5rem;
+  line-height: 1.5;
+  font-weight: bold;
+  text-align: left;
+}
+
+/*-------------------MEDIA QUERYS--------------------*/
+
+/* === Smartphones chicos (hasta 575px) === */
+@media (max-width: 575px) {
+    .containerPreguntas {
+        padding: 0 2vh;
+    }
+    .tituloPreguntas {
+        padding-left: 3vh;
+        font-size: 4vh;
+        text-align: center;
+    }
+  
+    .containerAcordion {
+        flex-direction: column;
+    }
+    .containerAcordion h3 {
+        font-size: 3vh;
+    }
+    .accordion-button {
+        font-size: 2vh;
+    }
+    .accordion-body {
+        font-size: 2vh;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .containerPreguntas {
+        padding: 0 3vh;
+    }
+    .tituloPreguntas {
+        padding-left: 3vh;
+        font-size: 4vh;
+        text-align: center;
+    }
+  
+    .containerAcordion {
+        flex-direction: column;
+    }
+    .containerAcordion h3 {
+        font-size: 3vh;
+    }
+    .accordion-button {
+        font-size: 2vh;
+    }
+    .accordion-body {
+        font-size: 2vh;
+    }
+}
+
+/* === Tablets horizontales y notebooks chicos (768px - 991px) === */
+@media (min-width: 768px) and (max-width: 991px) {
+    .containerPreguntas {
+        padding: 0 6vh;
+    }
+    .tituloPreguntas {
+        padding-left: 3vh;
+        font-size: 4vh;
+        text-align: center;
+    }
+  
+    .containerAcordion {
+        flex-direction: column;
+    }
+    .containerAcordion h3 {
+        font-size: 3vh;
+    }
+    .accordion-button {
+        font-size: 2vh;
+    }
+    .accordion-body {
+        font-size: 2vh;
+    }
+}
+
+/* === Notebooks estándar (992px - 1199px) === */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .containerPreguntas {
+        padding: 0 2vh;
+    }
+    .tituloPreguntas {
+        padding-left: 3vh;
+        font-size: 4vh;
+        text-align: left;
+    }
+  
+    .containerAcordion {
+        flex-direction: row;
+    }
+    .containerAcordion h3 {
+        font-size: 3vh;
+    }
+    .accordion-button {
+        font-size: 2vh;
+    }
+    .accordion-body {
+        font-size: 2vh;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px){
+    .containerPreguntas {
+        padding: 0 8vh;
+    }
+    .tituloPreguntas {
+        font-size: 5vh;
+        text-align: left;
+    }
+  
+    .containerAcordion {
+        flex-direction: row;
+    }
+    .containerAcordion h3 {
+        font-size: 4vh;
+    }
+    .accordion-button {
+        font-size: 2.3vh;
+    }
+    .accordion-body {
+        font-size: 2vh;
+    }
+}
