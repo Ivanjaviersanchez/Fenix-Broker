@@ -68,7 +68,7 @@
 .ContainerSucursal {
   margin: 0;
   padding: 5vh;
-  background: linear-gradient(to bottom, var(--color-7), var(--color-7) );
+  background: linear-gradient(to bottom, var(--color-7), var(--color-7), #89b1df );
 }
 
 /* Estilos de la tarjeta */
@@ -112,7 +112,7 @@
 
 /* Descripción de la card */
 .SucursalDescription {
-  margin: 0 12vh;
+  margin: 0 4vh;
   font-family: 'New Astro', sans-serif;
   font-size: 2.5vh !important;
   font-weight: 400;
@@ -156,81 +156,178 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/*    Telefonos de contacto      */
+/*-------------------MEDIA QUERYS--------------------*/
 
-.ContainerContacto {
-  margin: 0;
-  padding: 5vh;
-  background: linear-gradient(to bottom, var(--color-7), var(--color-7), #89b1df  );
+/* === Smartphones chicos (hasta 575px) === */
+@media (max-width: 575px) {
 
+  /*       SOMOS FENIX        */
+  .ContainerCardSomosFenix {
+    padding: 1vh 1vh;
+  }  
+  .cardSomosFenix {
+    height: 35vh;
+  }
+  .cardTitle {
+    font-size: 3.5vh !important;
+   }
+  .cardText {
+    font-size: 2vh !important;
+    margin: 0;
+  } 
+
+  /*     SUCURSAL FENIX      */
+  .ContainerSucursal {
+    padding: 2vh 1vh;
+  }
+  .SucursalCard {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  .SucursalDescription {
+    margin: 0vh;
+    font-size: 2vh !important;
+  }
+  .SucursalBTN {
+    font-size: 2vh;
+  }
+  .SucursalMap {
+    width: 90%;
+  }
 }
 
-.SucursalCard {
-  background-size: cover;
-  background-position: center;
+@media (min-width: 576px) and (max-width: 767px) {
+  
+  /*       SOMOS FENIX        */
+  .ContainerCardSomosFenix {
+    padding: 1vh 1vh;
+  }  
+  .cardTitle {
+    font-size: 4vh !important;
+   }
+  .cardText {
+    font-size: 2.2vh !important;
+    margin: 0;
+  } 
+
+  /*     SUCURSAL FENIX      */
+  .SucursalCard {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  .SucursalDescription {
+    margin: 0vh;
+    font-size: 2.2vh !important;
+  }
+  .SucursalBTN {
+    font-size: 2vh;
+  }
+  .SucursalMap {
+    width: 90%;
+  }
 }
 
-.SucursalContactContainer {
-  padding: 5vh 0;
-  flex: 1;
-  color: var(--color-1);
+/* === Tablets horizontales y notebooks chicos (768px - 991px) === */
+@media (min-width: 768px) and (max-width: 991px) {
+  
+  /*       SOMOS FENIX        */
+  .ContainerCardSomosFenix {
+    padding: 5vh 5vh;
+  }  
+  .cardTitle {
+    font-size: 4vh !important;
+   }
+  .cardText {
+    font-size: 2.2vh !important;
+    margin: 0;
+  }  
+
+  /*     SUCURSAL FENIX      */
+  .SucursalCard {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  .SucursalDescription {
+    margin: 0vh;
+    font-size: 2.2vh !important;
+  }
+  .SucursalBTN {
+    font-size: 2vh;
+  }
+  .SucursalMap {
+    width: 90%;
+  }
 }
 
-.SucursalContactTitle {
-  font-size: 4vh;
-  padding-bottom: 4vh;
-  font-family: 'New Astro', sans-serif;
-}
-.SucursalContactContainer h4 {
-  font-weight: bold;
-  color: var(--color-2);
+/* === Notebooks estándar (992px - 1199px) === */
+@media (min-width: 992px) and (max-width: 1199px) {
+  
+  /*       SOMOS FENIX        */
+  .ContainerCardSomosFenix {
+    padding: 5vh 5vh;
+  }  
+  .cardTitle {
+    font-size: 5vh !important;
+   }
+   .cardText {
+    font-size: 2.5vh !important;
+   }
+
+   /*     SUCURSAL FENIX      */
+  .SucursalCard {
+    display: flex;
+    flex-direction: row;
+  }
+  .SucursalSubTitle {
+    padding-bottom: 2vh;
+  }
+  .SucursalDescription {
+    margin: 0;
+    padding: 3vh 1vh;
+    font-size: 2.2vh !important;
+  }
+  .SucursalBTN {
+    font-size: 2vh;
+  }
+  .SucursalMap {
+    width: 40%;
+  }
 }
 
-.SucursalDivider {
-  margin: 8vh 0;
-  border: 0;
-  height: 2px;
-  background: var(--color-1);
+@media (min-width: 1200px) and (max-width: 1400px) {
+  
+  /*       SOMOS FENIX        */
+  .ContainerCardSomosFenix {
+    padding: 5vh 10vh;
+  }  
+  .cardTitle {
+    font-size: 5vh !important;
+  }
+  .cardText {
+    font-size: 2.5vh !important;
+  }
+
+  /*     SUCURSAL FENIX      */
+  .SucursalCard {
+    display: flex;
+    flex-direction: row;
+  }
+  .SucursalSubTitle {
+    padding-bottom: 2vh;
+  }
+  .SucursalDescription {
+    margin: 0;
+    padding: 2vh;
+    font-size: 2.2vh !important;
+  }
+  .SucursalBTN {
+    font-size: 2vh;
+  }
+  .SucursalMap {
+    width: 40%;
+  }
 }
 
-.TelefonosTitle h3 {
-  font-size: 4vh;
-  font-family: 'New Astro', sans-serif;
-  color: var(--color-1);
-  margin: 5vh 0;
-}
-
-.TelefonosUtiles {
-  margin-top: 2vh;
-  font-size: 4vh;
-  margin-bottom: 2vh;
-  font-family: 'New Astro', sans-serif;
-  display: flex;
-  flex-direction: row;
-}
-
-.TelefonosBlock {
-  margin-bottom: 2vh;
-  width: 100%;
-}
-
-.TelefonosBlock h5 {
-  margin-bottom: 2vh;
-  font-size: 3vh;
-  color: var(--color-1);
-}
-
-.TelefonosBlock ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-size: 2vh;
-  line-height: 1.6;
-  display: flex;
-  flex-direction: column;
-}
-
-.TelefonosBlock li::before {
-  content: "• ";
-  color: var(--color-4);
-}

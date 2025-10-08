@@ -17,7 +17,7 @@
 .cardSegurosHome {
   position: relative;
   height: 35vh;
-  border-radius: 12px;
+  border-radius: 20px;
   overflow: hidden;
   margin: 0;
   display: flex;
@@ -30,10 +30,10 @@
 /* logo centrado y responsivo */
 .cardLogo {
   position: absolute;
-  top: 48%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100%;          /* ajustar al gusto */
+  width: 100%;        /* ajustar al gusto */
   max-width: 410px;
   height: auto;
   object-fit: contain;
@@ -50,7 +50,7 @@
   color: var(--color-4) !important;
   font-size: 2.5vh !important;
   font-family: 'New Astro', sans-serif;
-  top: 27vh !important;
+  top: 25vh;
   
 }
 
@@ -106,10 +106,11 @@
   color: var(--color-7);
   font-weight: bold;
   text-align: center;
+  
 }
 
 /* Botón */
-.ButtonSeguro {
+.ButtonSeguroCarrusel {
   background: linear-gradient(to bottom, #fbc296,#fbc296,#f8992e);
   color: var(--color-6);
   border: solid var(--color-6) 1px;
@@ -128,3 +129,39 @@
   color: white;
 }
 
+/*-------------------MEDIA QUERYS--------------------*/
+
+/* === Smartphones chicos (hasta 575px) === */
+@media (max-width: 575px) {
+  .cardSegurosHome {
+    height: 30vh;
+  }
+  .cardSegurosHome h3 {
+    top: 22vh !important;
+    font-size: 2vh !important;
+    
+  }
+  .ButtonSeguroCarrusel {
+    font-size: 1.8vh;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .cardSegurosHome {
+    height: 28vh;
+  }
+  .cardSegurosHome h3 {
+    top: 17vh !important;
+    
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .cardSegurosHome {
+    height: 32vh;
+  }
+  .cardSegurosHome h3 {
+    top: 23vh !important;
+    
+  }
+}

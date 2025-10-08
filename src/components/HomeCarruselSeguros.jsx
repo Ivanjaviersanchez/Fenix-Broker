@@ -71,7 +71,7 @@ function CarruselSeguros() {
                   <li key={i}>{text}</li>
                 ))}
               </ul>
-              <Link to={`/seguros/${item.id}`} className="ButtonSeguro">Ver Seguros {">>>"}</Link>
+              <Link to={`/seguros/${item.id}`} className="ButtonSeguroCarrusel">Ver Seguros {">>>"}</Link>
             </div>
           </div>
         ))}
