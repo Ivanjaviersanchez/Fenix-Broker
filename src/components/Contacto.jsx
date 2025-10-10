@@ -1,5 +1,5 @@
 import Card from 'react-bootstrap/Card';
-import fondoContacto from "../assets/logoFenixBlanco.png"
+import logo from "../assets/LogoFenixBlanco.png";
 import "./Contacto.css";
 
 function Contacto() {
@@ -8,7 +8,7 @@ function Contacto() {
       
       <div className='ContainerContacto'  >
         <Card className="SucursalCard" style={{ 
-          backgroundImage: `url(${fondoContacto})`,
+          backgroundImage: `url(${logo})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat"
