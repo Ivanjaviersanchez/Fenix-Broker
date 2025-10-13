@@ -32,14 +32,12 @@
   background-size: cover;
   background-position: center;
   border-radius: 12px;
-  height: 55vh;
+  height: 40vh;
   display: flex;
   align-items: flex-end;
   justify-content: center;
   padding: 2vh;
   margin: 0 5vh;
-  
-
 }
 .cardOverlay {
   background-color: rgba(49, 54, 58, 0.5);
@@ -59,7 +57,6 @@
   color: var(--color-7);
   font-size: 2.2vh;
   font-weight: bold;
-  
 }
 /* BOTÓN */
 .cardLinkButtonVer {
@@ -72,7 +69,7 @@
   display: inline-block; 
   font-size: 2.4vh;
   padding: 0.5vh 0;
-  margin: 0 12vh;
+  margin: 0 15vh;
   transition: all 0.3s ease;
 }
 
@@ -228,13 +225,8 @@
   /* Container Segurso titulo */
   .ContainerSegurosH3 h3{
     margin: 0;
-    font-size: 4.5vh;
+    font-size: 3.5vh;
     padding-bottom: 0;
-  }
-  /* Personas y Empresas Cards */
-  .ContainerPersonasEmpresas {
-    display: flex;
-    flex-direction: column;
   }
   /* Personas y Empresas Cards */
   .ContainerPersonasEmpresas {
@@ -249,11 +241,23 @@
   .ContainerSegurosP p {
     margin: 0;
     font-family: 'New Astro', sans-serif;
-    font-size: 3.5vh;
+    font-size: 3vh;
     font-weight: 400;
     color: var(--color-1);
     text-align: center;
     padding-bottom: 0;
+  }
+
+  .cardOverlay h3 {
+    font-size: 3.5vh;
+  }
+  .cardOverlay p {
+    font-size: 1.8vh;
+  }
+  .cardLinkButtonVer {
+    font-size: 1.8vh;
+    padding: 0.5vh 2vh;
+    margin: 0 auto;
   }
 
   .ContainerSegurosGrid5 {
@@ -286,12 +290,28 @@
   .ContainerSegurosP p {
     margin: 0;
     font-family: 'New Astro', sans-serif;
-    font-size: 3.5vh;
+    font-size: 3vh;
     font-weight: 400;
     color: var(--color-1);
     text-align: center;
     padding-bottom: 0;
   }
+   .cardOverlay h3 {
+      font-size: 3.5vh;
+    }
+    .cardOverlay p {
+      font-size: 1.8vh;
+    }
+    .cardLinkButtonVer {
+      font-size: 1.8vh;
+      padding: 0.5vh 2vh;
+      margin: 0 auto;
+    }
+  .cardLinkButtonVer {
+    padding: 0.5vh 2vh;
+    margin: 0 auto;
+  }
+
 
   .ContainerSegurosGrid5 {
     display: grid;
@@ -302,12 +322,18 @@
 
 /* === Tablets horizontales y notebooks chicos (768px - 991px) === */
 @media (min-width: 768px) and (max-width: 991px) {
-  /* Personas y Empresas Cards */
+  
   .ContainerPersonasEmpresas {
     display: flex;
     flex-direction: column;
   }
-
+  .cardSegurosIntro {
+    margin: 0 15vh;
+  }
+  .cardLinkButtonVer {
+    padding: 0.5vh 2vh;
+    margin: 0 auto;
+  }
   .ContainerSegurosGrid5 {
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
@@ -317,7 +343,8 @@
 /* === Notebooks estándar (992px - 1199px) === */
 @media (min-width: 992px) and (max-width: 1199px) {
   .cardLinkButtonVer {
-    margin: 0 6vh;
+    padding: 0.5vh 2vh;
+    margin: 0 auto;
   }
 
   .ContainerSegurosGrid5 {
@@ -327,6 +354,25 @@
 }
 /* === Monitores grandes (992px - 1199px) === */
 @media (min-width: 1200px) {
+
+  /* .cardSegurosIntro {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    height: auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 2vh;
+    margin: 0 5vh;
+  } */
+
+  .cardLinkButtonVer {
+    padding: 0.5vh 2vh;
+    margin: 0 auto;
+  }
+
   .ContainerSegurosGrid5 {
     grid-template-columns: repeat(5, 1fr);
   }

@@ -1,4 +1,3 @@
-// src/components/Novedades.jsx
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import "./Novedades.css";
@@ -25,11 +24,32 @@ function Novedades() {
   }, [flyers.length]);
 
   return (
-    <div>
+    <div className="novedades-container">
 
-      <div className="novedades-container">
-        <h2 className="novedades-title">Novedades y Promociones {">>>"}</h2>
+      <div className="novedades-instagram">
+        <div className="novedades-carousel">
+          <AnimatePresence mode="wait">
+            <motion.img
+              key={index}
+              src={flyers[index]}
+              alt={`Flyer ${index + 1}`}
+              className="novedades-flyer"
+              initial={{ opacity: 0, x: 100 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -100 }}
+              transition={{ duration: 0.8 }}
+            />
+          </AnimatePresence>
+        </div>
+        <div className="novedades-title">
+          <h2>Novedades Instagram {">>>"}</h2>
+        </div>
+      </div>
 
+      <div className="novedades-instagram">
+        <div className="novedades-title">
+          <h2>Novedades Instagram {">>>"}</h2>
+        </div>        
         <div className="novedades-carousel">
           <AnimatePresence mode="wait">
             <motion.img

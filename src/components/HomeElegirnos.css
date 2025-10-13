@@ -125,10 +125,10 @@
         font-size: 2.8vh;
     }
     .cardOverlayElegirnos p {
-        font-size: 1.8vh !important;
+        font-size: 1.5vh !important;
         margin: 0;
-        padding: 2vh 4vh;
-        padding-bottom: 3vh;
+        padding: 1vh;
+        padding-bottom: 2vh;
     }
     .cardLinkButtonElegirnos {
         font-size: 1.8vh;
@@ -154,7 +154,7 @@
         font-size: 3vh;
     }
     .cardOverlayElegirnos p {
-        font-size: 2vh !important;
+        font-size: 1.8vh !important;
         margin: 0;
         padding: 2vh 4vh;
         padding-bottom: 3vh;
@@ -189,6 +189,8 @@
 
     .cardOverlayElegirnos p {
         font-size: 2.4vh;
+        padding: 2vh 0vh;
+        margin: 0 8vh;
     }
     .cardLinkButtonElegirnos {
         font-size: 2.8vh;
@@ -215,6 +217,8 @@
 
     .cardOverlayElegirnos p {
         font-size: 2.4vh;
+        padding: 2vh 0vh;
+        margin: 0 8vh;
     }
     .cardLinkButtonElegirnos {
         font-size: 2.8vh;
@@ -222,6 +226,13 @@
 }
 
 @media (min-width: 1200px) and (max-width: 1400px) {
+    .tituloElegirnos {
+        padding: 8vh 20vh;
+        
+    }
+    .ContainerElegirnos {
+        padding: 5vh 20vh; 
+    }
     .cardOverlayElegirnos img {
         width: 18%;
     }
@@ -229,10 +240,11 @@
     .cardOverlayElegirnos h3 {
         font-size: 4.5vh;
     }
-
+    
     .cardOverlayElegirnos p {
         font-size: 2.4vh;
-        padding: 2vh 0;
+        padding: 2vh 0vh;
+        margin: 0 5vh;
     }
     .cardLinkButtonElegirnos {
         font-size: 2.8vh;

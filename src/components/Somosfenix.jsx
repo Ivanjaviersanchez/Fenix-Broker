@@ -25,10 +25,10 @@ function Somosfenix() {
           <div className="SucursalText">
             <Card.Body>
               <Card.Title className="SucursalTitle">Sucursal Fenix </Card.Title>
-              <Card.Title className="SucursalSubTitle">Mar del plata </Card.Title>
+              <Card.Title className="SucursalSubTitle">Mar del Plata </Card.Title>
               
               <Card.Text className="SucursalDescription">
-                En Fénix Broker de Seguros ofrecemos atención personalizada en nuestra oficina de Mar del Plata, acompañando a nuestros clientes con soluciones integrales en seguros para personas, empresas e instituciones. <br />
+                Organización Fenix ofrece atención personalizada en nuestra oficina de Mar del Plata, acompañando a nuestros clientes con soluciones integrales en seguros para personas, empresas e instituciones. <br />
                 Como parte de una red nacional con respaldo y trayectoria, brindamos asesoramiento profesional, cotizaciones a medida y gestión eficiente de pólizas y siniestros, trabajando con las principales compañías aseguradoras del país.
               </Card.Text>
 

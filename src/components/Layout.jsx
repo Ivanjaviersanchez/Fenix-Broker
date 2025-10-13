@@ -3,7 +3,7 @@ import { Link, Outlet } from "react-router-dom";
 import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
 import logo from "../assets/LogoFenixBlanco.png";
 /* import logo from "../assets/LogoFinal.png";  */
-import { FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaMapMarkerAlt } from 'react-icons/fa';
 
 import Footer from "./Footer";
 import "./Layout.css";
@@ -61,15 +61,18 @@ function Layout() {
   return (
     <>
       <div className="navbarTop">
-          <a className="facebook" href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-            <FaFacebookF />
-          </a>
-          <a className="instagram" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-            <FaInstagram />
-          </a>
-          <a className="linkedin" href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-            <FaLinkedinIn />
-          </a>
+        <a className="location" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3143.5072351804265!2d-57.56905661008187!3d-38.01195277299547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584dc212bdd81eb%3A0xee36ea205b2a9d2e!2sORGANIZACION%20FENIX!5e0!3m2!1ses!2sus!4v1758943836092!5m2!1ses!2sus" target="_blank" rel="noopener noreferrer">
+          <FaMapMarkerAlt />
+        </a>
+        <a className="facebook" href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+          <FaFacebookF />
+        </a>
+        <a className="instagram" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+          <FaInstagram />
+        </a>
+        <a className="linkedin" href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+          <FaLinkedinIn />
+        </a>
       </div>
         
       <Navbar className="navbarStyles" expand="md" sticky="top" expanded={expanded}>

@@ -10,13 +10,17 @@
   overflow: hidden;
 }
 
-.ContainerCarruselHome h3 {
-  color: var(--color-4);
+.TextoCarrusel {
+  color: var(--color-7);
   font-family: 'New Astro', sans-serif;
-  font-size: 6.5vh;
+  font-size: 5vh;
   background: rgba(0,0,0,0.6);
-  padding: 0;
-  border-radius: 20px;
+  padding: 2vh 6vh;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+.TextoCarrusel:hover {
+  color: var(--color-4) !important;
 }
 
 .ContainerCarruselHome img {
@@ -30,13 +34,14 @@
 /* === Smartphones chicos (hasta 575px) === */
 @media (max-width: 575px) {
   .ContainerCarruselHome {
-    padding: 3vh 1vh;
+    padding: 1vh;
   }
   .ContainerCarruselHome img {
-    height: 33vh;
+    height: auto;
   }
-  .ContainerCarruselHome h3 {
-    font-size: 3vh;
+  .TextoCarrusel {
+    font-size: 2vh;
+    padding: 1vh;
   }
 }
 
@@ -44,45 +49,47 @@
   .ContainerCarruselHome {
     padding: 1vh;
   }
-  .ContainerCarruselHome img{
-    height: 34vh;
+  .ContainerCarruselHome img {
+    height: auto;
   }
-  .ContainerCarruselHome h3 {
-    font-size: 3vh; /* un poco más chico para móviles */
+  .TextoCarrusel {
+    font-size: 2vh;
     padding: 1vh;
-    text-align: center;
   }
 }
 
 /* === Tablets horizontales y notebooks chicos (768px - 991px) === */
 @media (min-width: 768px) and (max-width: 991px) {
-  /*   CARRUSEL HOME   */
   .ContainerCarruselHome {
-    padding: 2vh;
+    padding: 1vh;
   }
   .ContainerCarruselHome img {
-    height: 55vh;
+    height: auto;
   }
-  .cardOverlayElegirnos p {
-    margin: 2vh 0;
+  .TextoCarrusel {
     font-size: 3vh;
+    padding: 1vh;
   }
 }
 
 /* === Notebooks estándar (992px - 1199px) === */
 @media (min-width: 992px) and (max-width: 1199px) {
-  .ContainerCarruselHome {
-    padding: 4vh;
+
+  .ContainerCarruselHome img {
+    height: auto;
   }
-  .ContainerCarruselHome img{
-    height: 57vh;
-  }
-  .ContainerCarruselHome h3 {
-    padding: 1vh;
-    text-align: center;
+  .TextoCarrusel {
+    font-size: 4vh;
+    padding: 1vh 4vh;
   }
 }
 
 @media (min-width: 1200px) and (max-width: 1400px) {
-    
+  .ContainerCarruselHome img {
+    height: auto;
+  }
+  .TextoCarrusel {
+    font-size: 5vh;
+    padding: 1vh 4vh;
+  }
 }

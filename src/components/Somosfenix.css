@@ -46,7 +46,7 @@
 .cardTitle {
   margin: 0;
   font-family: 'New Astro', sans-serif;
-  font-size: 6.5vh !important;
+  font-size: 7vh !important;
   font-weight: 400;
   color: var(--color-7);
   text-align: center;
@@ -56,9 +56,9 @@
 .cardText {
   margin: 0 12vh;
   font-family: 'New Astro', sans-serif;
-  font-size: 3.5vh !important;
+  font-size: 3vh !important;
   font-weight: 400;
-  color: var(--color-4) !important;
+  color: var(--color-7) !important;
   text-align: center;
 }
 
@@ -68,7 +68,7 @@
 .ContainerSucursal {
   margin: 0;
   padding: 5vh;
-  background: linear-gradient(to bottom, var(--color-7), var(--color-7), #89b1df );
+  background: linear-gradient(to bottom , var(--color-7), var(--color-7), var(--color-7), #89b1df );
 }
 
 /* Estilos de la tarjeta */
@@ -102,9 +102,9 @@
 }
 .SucursalSubTitle {
   margin: 0;
-  font-family: 'New Astro', sans-serif;
+  /* font-family: 'New Astro', sans-serif; */
   font-size: 2.5vh !important;
-  font-weight: 400;
+  font-weight: bold;
   color: var(--color-1);
   text-align: center;
   padding-bottom: 5vh;
@@ -113,10 +113,9 @@
 /* Descripción de la card */
 .SucursalDescription {
   margin: 0 4vh;
-  font-family: 'New Astro', sans-serif;
   font-size: 2.5vh !important;
-  font-weight: 400;
   color: var(--color-1) !important;
+  
   text-align: center;
   padding-bottom: 5vh;
 }

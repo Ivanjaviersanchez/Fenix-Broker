@@ -80,13 +80,6 @@
   padding-top: 1vh;
 }
 
-/* .navbarStyles .navbar-brand h3 {
-  color: white !important;
-  font-family: 'New Astro', sans-serif;
-  font-size: 2.4vh;
-  padding-bottom: 0;
-} */
-
 .logoTextStiles {
   display: flex;
   flex-direction: column;
@@ -208,8 +201,9 @@
 
    /* Mover el logo a la izquierda */
   .navbarStyles .navbar-brand {
-    margin-right: 30vh; 
-
+    padding: 0 ;
+    width: 85%;
+    justify-content: center;
   }
 
   /* Ajustes de paddings y tamaños */
