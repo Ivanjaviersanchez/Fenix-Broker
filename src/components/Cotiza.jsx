@@ -6,6 +6,7 @@ import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import * as formik from 'formik';
 import * as yup from 'yup';
+import emailjs from "@emailjs/browser";
 import "./Cotiza.css";
 
 function Cotiza() {
@@ -16,7 +17,7 @@ function Cotiza() {
   const navigate = useNavigate();
   const { seguro, cobertura } = location.state || {};
 
-  // 👉 inicializamos con state si existe
+  // Valores iniciales
   const [initialValues, setInitialValues] = useState({
     firstName: '',
     lastName: '',
@@ -32,14 +33,15 @@ function Cotiza() {
     seguro: seguro || '',
     cobertura: cobertura || ''
   });
-  
-  // 👉 consumir y limpiar el state después de montado
+
+  // Limpia el state
   useEffect(() => {
     if (seguro || cobertura) {
-      navigate(location.pathname, { replace: true }); // borra el state
+      navigate(location.pathname, { replace: true });
     }
   }, [seguro, cobertura, navigate, location.pathname]);
 
+  // Validación
   const schema = yup.object().shape({
     firstName: yup.string().required(),
     lastName: yup.string().required(),
@@ -50,27 +52,55 @@ function Cotiza() {
     telefono: yup
       .string()
       .matches(/^\d+$/, "El teléfono solo debe contener números")
-      .required("Completa el numero de telefono"),
+      .required("Completa el número de teléfono"),
     email: yup
       .string()
       .email("Debe ser un email válido")
       .required("Completa el E-mail"),
-    contactMethod: yup
-      .string()
-      .required("Completa un método de contacto"),
+    contactMethod: yup.string().required("Selecciona un método de contacto"),
     producto: yup.string().required("Completa con un producto"),
     terms: yup.bool().required().oneOf([true], 'Debes aceptar los términos'),
   });
 
+  // Función para enviar correo
+  const sendEmail = (values) => {
+    const templateParams = {
+      from_name: `${values.firstName} ${values.lastName}`,
+      from_email: values.email,
+      telefono: values.telefono || "No especificado",
+      direccion: values.direccion || "No especificada",
+      city: values.city || "No especificada",
+      state: values.state || "No especificada",
+      zip: values.zip || "N/A",
+      producto: values.producto || "No especificado",
+      contactMethod: values.contactMethod || "No especificado",
+      seguro: values.seguro || "No especificado",
+      cobertura: values.cobertura || "No especificada",
+    };
+
+    emailjs
+      .send("service_ijxymrf", "template_rmpvrba", templateParams, "BH9MhPm4A2CJaADQ1") // PUBLIC KEY de EmailJS
+      .then(
+        (response) => {
+          console.log("✅ CORREO ENVIADO", response.status, response.text);
+          alert("Tu solicitud fue enviada con éxito. Te contactaremos pronto.");
+        },
+        (error) => {
+          console.error("❌ ERROR AL ENVIAR CORREO:", error);
+          alert("Hubo un problema al enviar el correo. Intenta nuevamente.");
+        }
+      );
+  };
+
   return (
     <div>
       <div className='ContainerTitulosCotizacion'>
-        <h3>Solicitud de Cotizacion</h3>
-        <p>Procesaremos tu solicitud con nuestros acesores para ofrecerte la mejor opcion ajustada a tu necesidad</p>
+        <h3>Solicitud de Cotización</h3>
+        <p>Procesaremos tu solicitud con nuestros asesores para ofrecerte la mejor opción ajustada a tu necesidad.</p>
 
         {initialValues.seguro && initialValues.cobertura && (
           <div className="CotizacionResumen">
-            <p>ESTAS SOLICITANDO UNA COTIZACION PARA {">>>"} <strong>{initialValues.seguro}</strong></p>
+            <p>ESTÁS SOLICITANDO UNA COTIZACIÓN PARA {">>>"} <strong>{initialValues.seguro}</strong></p>
             <p>COBERTURA SELECCIONADA {">>>"} <strong>{initialValues.cobertura}</strong></p>
           </div>
         )}
@@ -80,7 +110,7 @@ function Cotiza() {
         <Formik
           validationSchema={schema}
           initialValues={initialValues}
-          enableReinitialize={true} // 👉 permite refrescar initialValues
+          enableReinitialize={true}
           onSubmit={(values, actions) => {
             setFormSubmitted(true);
 
@@ -100,81 +130,72 @@ function Cotiza() {
               ${values.cobertura ? `📌 Cobertura elegida: ${values.cobertura}` : ""}
 
               ✅ Aceptó Términos y Condiciones
-              `;
+            `;
 
-            setTimeout(() => {
-              // Abrir WhatsApp si corresponde
-              if (values.contactMethod === "whatsapp") {
-                const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-                window.open(url, "_blank");
-              }
+            // Si eligió E-mail → enviar con EmailJS
+            if (values.contactMethod === "email") {
+              sendEmail(values);
+            }
 
-              // Resetear formulario
-              actions.resetForm();
+            // Si eligió WhatsApp → abrir chat
+            if (values.contactMethod === "whatsapp") {
+              const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+              window.open(url, "_blank");
+            }
 
-              // Limpiar estado del componente
-              setFormSubmitted(false);
-              setInitialValues({
-                firstName: '',
-                lastName: '',
-                direccion: '',
-                city: '',
-                state: '',
-                zip: '',
-                telefono: '',
-                email: '',
-                contactMethod: '',
-                producto: '',
-                terms: false,
-                seguro: '',
-                cobertura: ''
-              });
-            }, 7000);
-
+            // Reset
+            actions.resetForm();
+            setTimeout(() => setFormSubmitted(false), 5000);
           }}
         >
           {({ handleSubmit, handleChange, values, touched, errors }) => (
             <Form noValidate onSubmit={handleSubmit}>
               <Row className="mb-3">
-                <Form.Group as={Col} md="4" controlId="validationFormik101" className="position-relative">
+                <Form.Group as={Col} md="4">
                   <Form.Label>Nombres</Form.Label>
                   <Form.Control
                     type="text"
                     name="firstName"
                     value={values.firstName}
                     onChange={handleChange}
-                    isValid={touched.firstName && !errors.firstName}
+                    isInvalid={!!errors.firstName}
                   />
-                  <Form.Control.Feedback tooltip>Looks good!</Form.Control.Feedback>
+                  <Form.Control.Feedback type="invalid">
+                    {errors.firstName}
+                  </Form.Control.Feedback>
                 </Form.Group>
 
-                <Form.Group as={Col} md="4" controlId="validationFormik102" className="position-relative">
+                <Form.Group as={Col} md="4">
                   <Form.Label>Apellido</Form.Label>
                   <Form.Control
                     type="text"
                     name="lastName"
                     value={values.lastName}
                     onChange={handleChange}
-                    isValid={touched.lastName && !errors.lastName}
+                    isInvalid={!!errors.lastName}
                   />
-                  <Form.Control.Feedback tooltip>Looks good!</Form.Control.Feedback>
+                  <Form.Control.Feedback type="invalid">
+                    {errors.lastName}
+                  </Form.Control.Feedback>
                 </Form.Group>
 
-                <Form.Group as={Col} md="4" controlId="validationFormik103" className="position-relative">
+                <Form.Group as={Col} md="4">
                   <Form.Label>Dirección</Form.Label>
                   <Form.Control
                     type="text"
                     name="direccion"
                     value={values.direccion}
                     onChange={handleChange}
-                    isValid={touched.direccion && !errors.direccion}
+                    isInvalid={!!errors.direccion}
                   />
-                  <Form.Control.Feedback tooltip>Looks good!</Form.Control.Feedback>
+                  <Form.Control.Feedback type="invalid">
+                    {errors.direccion}
+                  </Form.Control.Feedback>
                 </Form.Group>
               </Row>
 
               <Row className="mb-3">
-                <Form.Group as={Col} md="6" controlId="validationFormik104" className="position-relative">
+                <Form.Group as={Col} md="6">
                   <Form.Label>Ciudad</Form.Label>
                   <Form.Control
                     type="text"
@@ -183,12 +204,12 @@ function Cotiza() {
                     onChange={handleChange}
                     isInvalid={!!errors.city}
                   />
-                  <Form.Control.Feedback type="invalid" tooltip>
+                  <Form.Control.Feedback type="invalid">
                     {errors.city}
                   </Form.Control.Feedback>
                 </Form.Group>
 
-                <Form.Group as={Col} md="3" controlId="validationFormik105" className="position-relative">
+                <Form.Group as={Col} md="3">
                   <Form.Label>Provincia</Form.Label>
                   <Form.Control
                     type="text"
@@ -197,12 +218,12 @@ function Cotiza() {
                     onChange={handleChange}
                     isInvalid={!!errors.state}
                   />
-                  <Form.Control.Feedback type="invalid" tooltip>
+                  <Form.Control.Feedback type="invalid">
                     {errors.state}
                   </Form.Control.Feedback>
                 </Form.Group>
 
-                <Form.Group as={Col} md="3" controlId="validationFormik106" className="position-relative">
+                <Form.Group as={Col} md="3">
                   <Form.Label>CP</Form.Label>
                   <Form.Control
                     type="text"
@@ -211,44 +232,44 @@ function Cotiza() {
                     onChange={handleChange}
                     isInvalid={!!errors.zip}
                   />
-                  <Form.Control.Feedback type="invalid" tooltip>
+                  <Form.Control.Feedback type="invalid">
                     {errors.zip}
                   </Form.Control.Feedback>
                 </Form.Group>
               </Row>
 
               <Row className="mb-3">
-                <Form.Group as={Col} md="6" controlId="validationFormik107" className="position-relative">
+                <Form.Group as={Col} md="6">
                   <Form.Label>Teléfono</Form.Label>
                   <Form.Control
                     type="text"
                     name="telefono"
                     value={values.telefono}
                     onChange={handleChange}
-                    isInvalid={touched.telefono && !!errors.telefono}
+                    isInvalid={!!errors.telefono}
                   />
-                  <Form.Control.Feedback type="invalid" tooltip>
+                  <Form.Control.Feedback type="invalid">
                     {errors.telefono}
                   </Form.Control.Feedback>
                 </Form.Group>
 
-                <Form.Group as={Col} md="6" controlId="validationFormik108" className="position-relative">
+                <Form.Group as={Col} md="6">
                   <Form.Label>E-mail</Form.Label>
                   <Form.Control
                     type="email"
                     name="email"
                     value={values.email}
                     onChange={handleChange}
-                    isInvalid={touched.email && !!errors.email}
+                    isInvalid={!!errors.email}
                   />
-                  <Form.Control.Feedback type="invalid" tooltip>
+                  <Form.Control.Feedback type="invalid">
                     {errors.email}
                   </Form.Control.Feedback>
                 </Form.Group>
               </Row>
 
               <Row className="mb-3">
-                <Form.Group as={Col} md="12" controlId="validationFormik109" className="position-relative">
+                <Form.Group as={Col} md="12">
                   <Form.Label>¿Qué producto te interesa asegurar?</Form.Label>
                   <Form.Control
                     as="textarea"
@@ -256,9 +277,9 @@ function Cotiza() {
                     name="producto"
                     value={values.producto}
                     onChange={handleChange}
-                    isInvalid={touched.producto && !!errors.producto}
+                    isInvalid={!!errors.producto}
                   />
-                  <Form.Control.Feedback type="invalid" tooltip>
+                  <Form.Control.Feedback type="invalid">
                     {errors.producto}
                   </Form.Control.Feedback>
                 </Form.Group>
@@ -274,21 +295,17 @@ function Cotiza() {
                       type="radio"
                       label="WhatsApp"
                       name="contactMethod"
-                      id="contactWhatsApp"
                       value="whatsapp"
                       onChange={handleChange}
                       checked={values.contactMethod === "whatsapp"}
-                      isInvalid={touched.contactMethod && !!errors.contactMethod}
                     />
                     <Form.Check
                       type="radio"
                       label="E-mail"
                       name="contactMethod"
-                      id="contactEmail"
                       value="email"
                       onChange={handleChange}
                       checked={values.contactMethod === "email"}
-                      isInvalid={touched.contactMethod && !!errors.contactMethod}
                     />
                   </div>
                   {touched.contactMethod && errors.contactMethod && (
@@ -296,7 +313,7 @@ function Cotiza() {
                   )}
                 </Form.Group>
               </fieldset>
-              
+
               <Form.Group className="mb-3 d-flex justify-content-center align-items-center ">
                 <Form.Check
                   required
@@ -304,9 +321,7 @@ function Cotiza() {
                   label="Acepto los términos y condiciones"
                   onChange={handleChange}
                   checked={values.terms}
-                  isInvalid={touched.terms && !!errors.terms}
-                  feedback={errors.terms}
-                  feedbackType="invalid"
+                  isInvalid={!!errors.terms}
                 />
               </Form.Group>
 
@@ -326,3 +341,4 @@ function Cotiza() {
 }
 
 export default Cotiza;
+
