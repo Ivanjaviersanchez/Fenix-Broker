@@ -13,7 +13,7 @@ function Layout() {
   const [expanded, setExpanded] = useState(false);
   const [showSeguros, setShowSeguros] = useState(false);
   const [showSiniestros, setShowSiniestros] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 992);
 
   const segurosRef = useRef(null);
   const siniestrosRef = useRef(null);
@@ -21,7 +21,7 @@ function Layout() {
   // Detecta si es mobile
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 768);
+      setIsMobile(window.innerWidth < 992);
     };
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
@@ -75,7 +75,7 @@ function Layout() {
         </a>
       </div>
         
-      <Navbar className="navbarStyles" expand="md" sticky="top" expanded={expanded}>
+      <Navbar className="navbarStyles" expand="lg" sticky="top" expanded={expanded}>
         <div className="container-fluid px-0">
           <Navbar.Toggle aria-controls="main-navbar-nav" onClick={() => setExpanded((prev) => !prev)} className="toggleStyles"/>
 
@@ -205,7 +205,7 @@ function Layout() {
       <Outlet />
 
       {/* WhatsApp Floating Button */}
-      <a href="https://wa.me/5491123456789?text=Hola%20quiero%20hablar%20con%20un%20asesor%20de%20seguros" className="whatsapp-float" target="_blank" rel="noopener noreferrer">
+      <a href="https://wa.me/5492235059018?text=Hola%20quiero%20hablar%20con%20un%20asesor%20de%20seguros" className="whatsapp-float" target="_blank" rel="noopener noreferrer">
         <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp"/>
       </a>
 

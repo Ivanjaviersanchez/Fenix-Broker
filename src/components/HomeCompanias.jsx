@@ -10,7 +10,7 @@ import "./HomeCompanias.css";
 
 function HomeCompanias() {
   return (
-    <div>
+    <div id="companias">
         
         {/* Carrusel de compañías de seguros */}
         <div className='containerCompaniasCarrusel'>

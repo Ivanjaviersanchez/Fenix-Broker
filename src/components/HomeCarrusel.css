@@ -76,7 +76,7 @@
 @media (min-width: 992px) and (max-width: 1199px) {
 
   .ContainerCarruselHome img {
-    height: auto;
+    height: 50vh;
   }
   .TextoCarrusel {
     font-size: 4vh;
@@ -86,7 +86,7 @@
 
 @media (min-width: 1200px) and (max-width: 1400px) {
   .ContainerCarruselHome img {
-    height: auto;
+    height: 60vh;
   }
   .TextoCarrusel {
     font-size: 5vh;

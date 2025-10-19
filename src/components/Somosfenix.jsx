@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import CardImg from "../assets/Oficina1.jpeg";
@@ -12,7 +13,7 @@ function Somosfenix() {
         <Card className="cardSomosFenix">
           <div className="cardImageBackground" style={{ backgroundImage: `url(${CardImg})` }} />
           <Card.ImgOverlay className="cardOverlay">
-            <Card.Title className="cardTitle">Somos Fenix {">>>"}</Card.Title>
+            <Card.Title className="cardTitle">Somos FENIX {">>>"}</Card.Title>
             <Card.Text className="cardText">
               Con más de 30 años en el mercado, brindamos protección a personas, empresas e instituciones con coberturas que se adaptan a sus necesidades.
             </Card.Text>
@@ -24,19 +25,25 @@ function Somosfenix() {
         <Card className="SucursalCard">
           <div className="SucursalText">
             <Card.Body>
-              <Card.Title className="SucursalTitle">Sucursal Fenix </Card.Title>
+              <Card.Title className="SucursalTitle">Sucursal FENIX </Card.Title>
               <Card.Title className="SucursalSubTitle">Mar del Plata </Card.Title>
               
               <Card.Text className="SucursalDescription">
-                Organización Fenix ofrece atención personalizada en nuestra oficina de Mar del Plata, acompañando a nuestros clientes con soluciones integrales en seguros para personas, empresas e instituciones. <br />
+                Organización FENIX ofrece atención personalizada en nuestra oficina de Mar del Plata, acompañando a nuestros clientes con soluciones integrales en seguros para personas, empresas e instituciones. <br />
                 Como parte de una red nacional con respaldo y trayectoria, brindamos asesoramiento profesional, cotizaciones a medida y gestión eficiente de pólizas y siniestros, trabajando con las principales compañías aseguradoras del país.
               </Card.Text>
+
+              <Link to="/#companias">
+                <Button className="SucursalBTN">
+                  Aseguradoras que nos acompañan {">>>"}
+                </Button>
+              </Link>
 
               <Button
                 className="SucursalBTN"
                 variant="primary"
                 onClick={() => {
-                  const phoneNumber = "549223555555"; // tu número de WhatsApp en formato internacional
+                  const phoneNumber = "5492235059018"; // tu número de WhatsApp en formato internacional
                   const message = "Hola, quiero contactar con un asesor para consultar sobre seguros.";
                   const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
                   window.open(url, "_blank");

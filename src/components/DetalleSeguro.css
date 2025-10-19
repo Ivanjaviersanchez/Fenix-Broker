@@ -21,7 +21,7 @@
   font-family: 'New Astro', sans-serif;
   font-size: 3vh;
   font-weight: 400;
-  color: var(--color-2);
+  color: var(--color-1);
   text-align: center;
   padding-bottom: 5vh;
 }
@@ -110,7 +110,9 @@
 
 .ContainerIncluyen {
   margin-top: 4rem;
-  background: linear-gradient(to bottom, var(--color-1),var(--color-2),var(--color-2), var(--color-1));
+  border: 2px solid var(--color-4);
+  background-color: var(--color-7);
+  box-shadow: 5px 2px 30px var(--color-5);
   padding: 3vh;
   border-radius: 20px;
   text-align: center;
@@ -121,7 +123,7 @@
   font-size: 4vh;
   font-weight: bold;
   margin-bottom: 0;
-  color: var(--color-7);
+  color: var(--color-5);
 }
 
 .IncluyenGrid {
@@ -144,13 +146,12 @@
 }
 .IncluyenItem p {
   font-size: 3vh;
-  color: var(--color-4);
+  color: var(--color-5);
 }
 
 .IconPlaceholder {
   font-size: 2rem;
   margin-bottom: 0.5rem;
-  
 }
 
 /* Estilo responsive para pantallas pequeñas */

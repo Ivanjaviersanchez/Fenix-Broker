@@ -1,5 +1,5 @@
 import Card from 'react-bootstrap/Card';
-import logo from "../assets/LogoFenixBlanco.png";
+/* import logo from "../assets/gotaFondo.png"; */
 import "./Contacto.css";
 
 function Contacto() {
@@ -8,16 +8,24 @@ function Contacto() {
       
       <div className='ContainerContacto'  >
         <Card className="SucursalCard" style={{ 
-          backgroundImage: `url(${logo})`,
+          /* backgroundImage: `url(${logo})`, */
+          
           backgroundSize: "cover",
           backgroundPosition: "center",
-          backgroundRepeat: "no-repeat"
+          backgroundRepeat: "no-repeat",
         }}>
             <div className="SucursalContactContainer" > 
               <h3 className="SucursalContactTitle">Contacto Fenix {">>>"}</h3> 
               <h4>Saavedra 3107 Piso 9</h4> <h4>Mar del Plata - Buenos Aires</h4> 
-              <h4>Tel: 223555555</h4> 
-              <h4>info@brokerfenix.com.ar</h4> 
+                <p>
+                  <strong>EMAIL:</strong>{" "}
+                  <a href="mailto:info@organizacionfenix.com" className="LinkMail">
+                    info@organizacionfenix.com
+                  </a>
+                </p>
+                <p>
+                  <strong>TELÉFONO:</strong> INGRESAR TELEFONO
+                </p>
               
               <hr className="SucursalDivider" /> 
 

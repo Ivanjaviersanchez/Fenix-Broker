@@ -17,6 +17,7 @@ import Error from './components/Error';
 import DetalleSeguro from './components/DetalleSeguro';
 
 import ScrollToTop from './ScrollToTop';
+import ScrollToHashElement from './ScrollToHashElement'; 
 
 function App() {
   return (
@@ -24,7 +25,8 @@ function App() {
       <BrowserRouter>
 
         <ScrollToTop />     
-
+        <ScrollToHashElement />
+        
         <Routes>
           <Route path='/' element={<Layout/>}>
             <Route index element={<Home/>}/>

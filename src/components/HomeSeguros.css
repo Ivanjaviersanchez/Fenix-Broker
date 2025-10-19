@@ -31,7 +31,6 @@
   /* background: linear-gradient(to left, #89b1df, #358ae9, #358ae9, #89b1df); */
   transition: transform 0.4s ease, z-index 0.3s ease, box-shadow 0.4s ease;
   cursor: pointer;
-  
 }
 
 .seguroItem img {

@@ -1,7 +1,7 @@
 .novedades-container {
     background: linear-gradient(to bottom,#89b1df , var(--color-7),var(--color-7),#89b1df);
     text-align: center;
-    padding: 10vh;
+    padding: 5vh;
     display: flex;
     flex-direction: column;
 }
@@ -10,35 +10,80 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    
 }
 
 .novedades-title {
     width: 100%;
     margin: 0;
-    padding-bottom: 4vh;
+    padding: 4vh 0 ;
     text-align: center;
     font-family: 'New Astro', sans-serif;
-    font-size: 6vh;
     font-weight: 400;
+}
+.novedades-title h2 {
+    font-size: 5vh;
+    color: var(--color-1);
+    margin: 5vh 0;
+}
+.novedades-title p {
+    font-size: 2.5vh;
     color: var(--color-1);
 }
+.novedades-title h3 {
+    font-size: 3vh;
+    color: var(--color-1);
+}
+
+/*     LOGO INSTAGRAM    */
+.instagram-float {
+  bottom: 90px; 
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.instagram-float img {
+  width: 20%;
+  height: 20%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  margin: 5vh 0;
+}
+
+.instagram-float img:hover {
+  transform: scale(1.1) !important;
+} 
 
 .novedades-carousel {
     position: relative;
     width: 100%;
     /* max-width: 600px; */
     margin: auto;
+    padding: 2vh 0 ;
     overflow: hidden;
     border-radius: 20px;
 }
 
 .novedades-flyer {
-    width: 100%;
-    height: auto;
+    width: 60vh;
+    height: 70vh;
     border-radius: 20px;
     box-shadow: 0px 5px 20px rgba(0,0,0,0.2);
 }
+
+/*      VIDEO     */
+
+.novedades-video {
+  width: 100%;
+  height: 70vh;
+  max-width: 400px; /* ajusta según tu diseño */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  object-fit: cover;
+}
+
+
 
 /*-------------------MEDIA QUERYS--------------------*/
 

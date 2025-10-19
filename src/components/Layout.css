@@ -24,7 +24,7 @@
 .navbarStyles {
   background-color: var(--color-1);
   color: white;
-  padding: 1vh 6vh;
+  padding: 1vh 1vh;
 }
 
 .navbarStyles .nav-link {
@@ -110,7 +110,6 @@
 .custom-dropdown .dropdown-item {
   color: white;
   font-weight: bold;
-  transition: background-color 0.3s ease, color 0.3s ease;
   font-size: 2.4vh;
 }
 
@@ -197,41 +196,72 @@
 
 /* -------------------- Media Queries para pantallas pequeñas -------------------- */
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
 
-   /* Mover el logo a la izquierda */
-  .navbarStyles .navbar-brand {
-    padding: 0 ;
-    width: 85%;
-    justify-content: center;
-  }
-
-  /* Ajustes de paddings y tamaños */
+  /* Contenedor principal del navbar */
   .navbarStyles {
+    position: relative;
     padding: 1vh 2vh;
   }
 
-  /* Alinear el contenido del collapse al inicio */
-  .navbarStyles .navbar-collapse {
-    text-align: left !important; 
+  .navbarStyles .container-fluid {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* centra el logo */
   }
 
-  /* Alinear links a la izquierda */
+  /* Logo centrado */
+  .navbarStyles .navbar-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: auto;
+    padding: 0;
+  }
+
+  /* Botón hamburguesa fijo en la parte superior izquierda */
+  .navbarStyles .navbar-toggler {
+    position: absolute;
+    top: 1.5vh;
+    left: 2vh;
+    border-color: white;
+    z-index: 2000; /* por encima del menú */
+  }
+
+  /* El menú desplegable */
+  .navbar-collapse {
+    background-color: var(--color-1);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+  }
+
+  /* Ajustes de los enlaces */
   .navbarStyles .nav {
+    flex-direction: column;
     align-items: flex-start;
   }
 
   .navbarStyles .nav-link {
     text-align: left;
     justify-content: flex-start;
-    width: 50%; /* ocupar todo el ancho para que el ::after quede alineado */
+    width: 80%;
     font-size: 2vh;
   }
+  .navbarStyles .nav-link:hover::after {
+    width: 30%;
+    background-color: var(--color-3); 
+  }
 
-  /* Subrayado (::after) alineado a la izquierda */
   .navbarStyles .nav-link::after {
     left: 0;
-    transform: none; /* quitar el centrado */
+    transform: none;
   }
 
   .navbar-brand img {
@@ -242,8 +272,6 @@
     font-size: 4.5vh;
   }
 
-  /* Estilos dropdawn  */
-
   .custom-dropdown .dropdown-item {
     font-size: 2vh;
   }
@@ -251,8 +279,7 @@
   .cotiza-cta {
     padding: 0.5vh 1vh;
     margin: 1vh 0;
-    width: 30% !important;
-
+    width: 40% !important;
   }
 
   body, html {
@@ -261,40 +288,6 @@
 }
 
 
-/* === Tablets horizontales y notebooks chicos (768px - 991px) === */
-@media (min-width: 768px) and (max-width: 991px) {
-
-  .navbarStyles {
-    padding: 0 2vh !important;
-  }  
-   /* Mover el logo a la izquierda */
-  .navbarStyles .navbar-brand {
-    margin-right: 0vh; 
-  }
-  /* Links más chicos y menos margen */
-  .navbarStyles .nav-link {
-    font-size: 1.3vh;
-    margin: 0;
-    padding: 0;
-  }
-
-  /* Botón Cotizá Ahora adaptado */
-  .cotiza-cta {
-    padding: 0 !important;
-  }
-
-  .navbar-brand img {
-    height: 5vh;
-  }
-
-  .navbarStyles .navbar-brand h2 {
-    font-size: 3vh;
-  }
-
-  body, html {
-    overflow-x: hidden;
-  }
-}
 
 
 /* === Notebooks estándar (992px - 1199px) === */
@@ -315,7 +308,7 @@
 
   /* Links más chicos y menos margen */
   .navbarStyles .nav-link {
-    font-size: 1.6vh;
+    font-size: 1.5vh;
     margin: 0;
     padding: 0;
   }

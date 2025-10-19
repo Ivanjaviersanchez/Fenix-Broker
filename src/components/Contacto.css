@@ -4,12 +4,12 @@
   margin: 0;
   padding: 0vh;
   background: linear-gradient(to bottom, #89b1df , var(--color-7), var(--color-7), #89b1df  );
-
 }
 
 .SucursalCard {
   background-size: cover;
   background-position: center;
+  
 }
 
 .SucursalContactContainer {
@@ -23,9 +23,13 @@
   padding-bottom: 4vh;
   font-family: 'New Astro', sans-serif;
 }
-.SucursalContactContainer h4 {
+.SucursalContactContainer p, h4 {
   font-weight: bold;
   color: var(--color-2);
+}
+.LinkMail {
+  color: var(--color-2);
+  text-decoration: underline;
 }
 
 .SucursalDivider {

@@ -50,17 +50,17 @@ function Footer() {
             integrado por:
           </p>
           <p>
-            <strong>RESPONSABLE:</strong> Fernando Rodríguez <br />
-            <strong>SUPLENTE:</strong> Paola Candia
+            <strong>RESPONSABLE:</strong> Supervisor <br />
+            <strong>SUPLENTE:</strong> Supervisor
           </p>
           <p>
             <strong>EMAIL:</strong>{" "}
-            <a href="mailto:saa@atmseguros.com.ar" className="footerLink">
-              saa@atmseguros.com.ar
+            <a href="mailto:info@organizacionfenix.com" className="footerLink">
+              info@organizacionfenix.com
             </a>
           </p>
           <p>
-            <strong>TELÉFONO:</strong> 1152390230
+            <strong>TELÉFONO:</strong> INGRESAR TELEFONO
           </p>
         </div>
       </div>

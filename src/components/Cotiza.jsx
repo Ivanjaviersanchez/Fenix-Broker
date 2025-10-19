@@ -79,7 +79,7 @@ function Cotiza() {
     };
 
     emailjs
-      .send("service_ijxymrf", "template_rmpvrba", templateParams, "BH9MhPm4A2CJaADQ1") // PUBLIC KEY de EmailJS
+      .send("service_zpbnedd", "template_pjcy7ut", templateParams, "kaDszLJVswMaI_-WI") // PUBLIC KEY de EmailJS
       .then(
         (response) => {
           console.log("✅ CORREO ENVIADO", response.status, response.text);
@@ -114,7 +114,7 @@ function Cotiza() {
           onSubmit={(values, actions) => {
             setFormSubmitted(true);
 
-            const phoneNumber = "5492235380741";
+            const phoneNumber = "5492235059018";
 
             const message = `
               📋 *Nueva Solicitud de Cotización*
