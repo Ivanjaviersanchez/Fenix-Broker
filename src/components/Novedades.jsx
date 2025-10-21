@@ -79,7 +79,6 @@ function Novedades() {
         <div className="novedades-title">
           <h2>Conocé Fénix {">>>"}</h2>
           <p>Descubrí quiénes somos y cómo trabajamos para vos</p>
-          <h3>Video Institucional</h3>
         </div>
         <div className="novedades-carousel">
           <video

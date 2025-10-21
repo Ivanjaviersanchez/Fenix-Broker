@@ -39,7 +39,7 @@ function HomeContadores() {
               </div>
             </div>
         
-            <button className="BtnConocenos" onClick={handleConocenosClick}>Conócenos</button>
+            <button className="BtnConocenos" onClick={handleConocenosClick}>Conóce FENIX</button>
         </div>
 
     </div>
