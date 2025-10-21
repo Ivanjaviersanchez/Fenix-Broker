@@ -55,7 +55,7 @@ function Somosfenix() {
           </div>
 
           {/* Mapa en lugar de imagen */}
-          <div className="SucursalMap">
+          <div className="SucursalMap" id="mapaSucursal">
             <iframe
               width="100%"
               height="100%"

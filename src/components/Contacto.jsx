@@ -1,4 +1,6 @@
 import Card from 'react-bootstrap/Card';
+import { Link } from "react-router-dom";
+import Button from 'react-bootstrap/Button';
 /* import logo from "../assets/gotaFondo.png"; */
 import "./Contacto.css";
 
@@ -26,6 +28,12 @@ function Contacto() {
                 <p>
                   <strong>TELÉFONO:</strong> INGRESAR TELEFONO
                 </p>
+
+                <Link to="/somosfenix">
+                  <Button className="SucursalBTN">
+                    Sucursal FENIX {">>>"}
+                  </Button>
+                </Link>
               
               <hr className="SucursalDivider" /> 
 
