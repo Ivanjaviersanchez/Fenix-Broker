@@ -13,6 +13,7 @@
 .TextoCarrusel {
   color: var(--color-7);
   font-family: 'New Astro', sans-serif;
+  font-weight: bold;
   font-size: 5vh;
   background: rgba(0,0,0,0.6);
   padding: 2vh 6vh;

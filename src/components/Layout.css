@@ -185,14 +185,7 @@
   transform: scale(1.1);
 } */
 
-/*          FONTS         */
 
-@font-face {
-  font-family: 'New Astro';
-  src: url('/src/assets/fonts/New\ Astro\ Bold.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-}
 
 /* -------------------- Media Queries para pantallas pequeñas -------------------- */
 

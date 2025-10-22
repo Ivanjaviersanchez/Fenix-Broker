@@ -78,4 +78,21 @@ button:focus-visible {
   }
 }
 
+/*          FONTS         */
+
+@font-face {
+  font-family: 'New Astro';
+  src: url('/fonts/NewAstro-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'New Astro Regular';
+  src: url('/fonts/NewAstro-Regular.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
 
