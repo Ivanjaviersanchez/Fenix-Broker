@@ -1,0 +1,168 @@
+.siniestros-container {
+  padding: 3rem 10%;
+  background: linear-gradient(to bottom, #89b1df , var(--color-7), var(--color-7), #89b1df  );
+}
+
+/* Header */
+.siniestros-header {
+  background-color: var(--color-7);
+  padding: 1.5rem 2rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+.siniestros-header h3 {
+  font-size: 4vh;
+  color: var(--color-1);
+  font-family: 'New Astro', sans-serif;
+}
+.siniestros-header p {
+  font-size: 2vh;
+  color: var(--color-1);
+  font-family: 'New Astro', sans-serif;
+  margin-top: .5rem;
+  
+}
+
+/* Tarjetas principales */
+.siniestros-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.siniestro-card {
+  flex: 1 1 30%;
+  border: 1.5px solid var(--color-1);
+  border-radius: 15px;
+  padding: 2rem 1.5rem;
+  background-color: var(--color-7);
+  text-align: left;
+  transition: all 0.3s ease;
+}
+.siniestro-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+.siniestro-card.destacado {
+  background-color: var(--color-7);
+  border: 1.5px solid var(--color-1);
+}
+.siniestro-card h4 {
+  font-size: 3vh;
+  color: var(--color-1);
+  font-family: 'New Astro', sans-serif;
+  margin-top: 1rem;
+}
+.siniestro-card p {
+  font-size: 2vh;
+  color: var(--color-2);
+  font-family: 'New Astro', sans-serif;
+  margin: 0.5rem 0 1rem;
+}
+.icon {
+  font-size: 2.5rem;
+  color: var(--color-2);
+}
+
+/* Botones */
+.btn-vermas, .btn-conocer, .btn-ingresar {
+  background: linear-gradient(to bottom, #89b1df, #358ae9, #358ae9);
+  border: solid var(--color-3) 1px; 
+  border-radius: 12px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+.btn-vermas:hover, .btn-conocer:hover, .btn-ingresar:hover {
+  background: linear-gradient(to bottom, #fbc296,#fbc296,#f8992e);
+  border: solid var(--color-6) 1px; 
+  color: var(--color-6) !important;
+}
+.btns {
+  display: flex;
+  align-items: center;
+}
+
+/* Documentación */
+.siniestros-docs {
+  background-color: var(--color-7);
+  border: 1.5px solid var(--color-1);
+  border-radius: 15px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+.siniestros-docs h4 {
+  font-size: 3.5vh;
+  color: var(--color-1);
+  font-family: 'New Astro', sans-serif;
+}
+.siniestros-docs p {
+  font-size: 2vh;
+  color: var(--color-2);
+  font-family: 'New Astro', sans-serif;
+}
+.docs-fields {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.docs-fields div {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+}
+.docs-fields label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.3rem;
+}
+.docs-fields select {
+  border: 1.5px solid #ccc;
+  border-radius: 6px;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* Sección terceros */
+.siniestros-tercero {
+  background-color: var(--color-1);
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.siniestros-tercero h4 {
+  font-size: 3.5vh;
+  color: var(--color-7);
+  font-family: 'New Astro', sans-serif;
+  margin: 0;
+}
+.siniestros-tercero p {
+  font-size: 3vh;
+  color: var(--color-7);
+  font-family: 'New Astro Regular', sans-serif;
+  flex: 1;
+  margin: 0 1rem;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .siniestros-cards {
+    flex-direction: column;
+  }
+  .siniestro-card {
+    flex: 1 1 100%;
+  }
+  .docs-fields {
+    flex-direction: column;
+  }
+  .siniestros-tercero {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
+

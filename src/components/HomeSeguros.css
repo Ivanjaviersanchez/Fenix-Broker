@@ -146,14 +146,14 @@
         padding: 8vh;
     }
     .seguroTitulo {
-        font-size: 3.5vh;
+        font-size: 3.2vh;
     }
     .seguroTituloBajo {
-        font-size: 2.5vh;
+        font-size: 2vh;
         bottom: 11vh;
     }
     .seguroItem h3 {
-        font-size: 3vh;
+        font-size: 2.5vh;
     }
 
     .tituloSegurosConBoton {
@@ -182,10 +182,10 @@
     }
     .containerSegurosHome {
         grid-template-columns: 1fr;
-        padding: 5vh 2vh;
+        padding: 5vh;
     }
     .seguroItem {
-        margin: 0 14vh;
+        margin: 0 10vh;
     }
     .seguroItem h3 {
         font-size: 3vh;
@@ -194,11 +194,11 @@
         font-size: 4vh;
     }
     .seguroTituloBajo {
-        font-size: 3vh;
+        font-size: 2.5vh;
         bottom: 10vh;
-        text-align: center;
+        text-align: center ;
+        padding: 0 5vh;
     }
-
     .tituloSegurosConBoton {
         flex-direction: column;
         padding: 4vh 2vh;
@@ -217,7 +217,7 @@
 /* === Tablets horizontales y notebooks chicos (768px - 991px) === */
 @media (min-width: 768px) and (max-width: 991px) {
     .tituloSegurosHome {
-        font-size: 6vh;
+        font-size: 4vh;
         padding-left: 5vh;
         text-align: left;
     }
@@ -231,14 +231,14 @@
     }
     /* Título sobre la imagen */
     .seguroTitulo {
-        font-size: 3.2vh;
+        font-size: 3vh;
     }
     .seguroTituloBajo {
         padding: 0vh 3vh;
-        font-size: 2.4vh;
+        font-size: 2vh;
     }
     .seguroItem h3 {
-        font-size: 3vh;
+        font-size: 2.5vh;
     }
     .tituloSegurosConBoton {
         flex-direction: row;

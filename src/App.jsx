@@ -6,15 +6,20 @@ import {BrowserRouter,Routes,Route} from "react-router-dom";
 import Layout from './components/Layout';
 import Home from './components/Home';
 import Somosfenix from './components/Somosfenix';
+
 import Seguros from './components/Seguros';
 import Personas from './components/Personas';
 import Empresas from './components/Empresas';
-import Siniestros from './components/Siniestros';
+import DetalleSeguro from './components/DetalleSeguro';
+
+import SiniestrosAsegurados from './components/SiniestrosAsegurados';
+import SiniestrosTerceros from './components/SiniestrosTerceros';
+
 import Novedades from './components/Novedades';
 import Contacto from './components/Contacto';
 import Cotiza from './components/Cotiza';
 import Error from './components/Error';
-import DetalleSeguro from './components/DetalleSeguro';
+
 
 import ScrollToTop from './ScrollToTop';
 import ScrollToHashElement from './ScrollToHashElement'; 
@@ -30,14 +35,17 @@ function App() {
         <Routes>
           <Route path='/' element={<Layout/>}>
             <Route index element={<Home/>}/>
+
             <Route path='/somosfenix' element={<Somosfenix/>} />
+
             <Route path='/seguros' element={<Seguros />} />
             <Route path='/seguros/personas' element={<Personas />} />
             <Route path='/seguros/empresas' element={<Empresas />} />
-
             <Route path='/seguros/:id' element={<DetalleSeguro />} />
             
-            <Route path='/siniestros' element={<Siniestros/>} />
+            <Route path='/siniestros/asegurados' element={<SiniestrosAsegurados/>} />
+            <Route path='/siniestros/terceros' element={<SiniestrosTerceros/>} />
+            
             <Route path='/novedades' element={<Novedades/>} />
             <Route path='/contacto' element={<Contacto/>} />
             <Route path='/cotiza' element={<Cotiza key={location.key} />} />

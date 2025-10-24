@@ -156,34 +156,26 @@ function Layout() {
               >
                 <NavDropdown.Item
                   as={Link}
-                  to="/siniestros/asistencia"
+                  to="/siniestros/asegurados"
                   onClick={() => {
                     setExpanded(false);
                     setShowSiniestros(false);
                   }}
                 >
-                  Asistencia mecánica
+                  Asegurados
                 </NavDropdown.Item>
+
                 <NavDropdown.Item
                   as={Link}
-                  to="/siniestros/art"
+                  to="/siniestros/terceros"
                   onClick={() => {
                     setExpanded(false);
                     setShowSiniestros(false);
                   }}
                 >
-                  ART Denuncias
+                  Terceros
                 </NavDropdown.Item>
-                <NavDropdown.Item
-                  as={Link}
-                  to="/siniestros/urgencias"
-                  onClick={() => {
-                    setExpanded(false);
-                    setShowSiniestros(false);
-                  }}
-                >
-                  Urgencias
-                </NavDropdown.Item>
+
               </NavDropdown>
 
               {/* Otros enlaces */}

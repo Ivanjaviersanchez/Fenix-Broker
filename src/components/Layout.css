@@ -1,7 +1,6 @@
 /* -------------------- PERSONALIZACIÓN NAVBAR -------------------- */
 
 /*   ESTILOS NAVBARTOP     */
-
 .navbarTop {
   background: linear-gradient(to bottom, var(--color-1), #89b1df, var(--color-1));
   padding: 0.5vh; 
@@ -9,22 +8,24 @@
   justify-content: right;
   color: black;
 }
+
 .navbarTop a {
   margin-right: 4vh;
   color: var(--color-4);
+  transition: transform 0.3s ease, color 0.3s ease;
 }
+
 .navbarTop a:hover {
   color: var(--color-5);
   transform: scale(1.45);
 }
 
 
-/*   FONDO Y LETRAS DEL NAVBAR     */
-
+/*   FONDO Y LETRAS DEL NAVBAR (Base: +1400px)     */
 .navbarStyles {
   background-color: var(--color-1);
   color: white;
-  padding: 1vh 1vh;
+  padding: 1vh 3vh; /* aire lateral */
 }
 
 .navbarStyles .nav-link {
@@ -33,8 +34,8 @@
   transition: color 0.3s ease;
   color: white;
   font-weight: bold; 
-  font-size: 2.4vh;
-  
+  font-size: 2vh;
+  margin: 0;
 }
 
 .navbarStyles .nav-link::after {
@@ -44,8 +45,6 @@
   left: 50%;
   width: 0;
   height: 1px;
-  /* background-color: var(--color-3) !important;  */
-  /* color: var(--color-3) !important; */
   transition: all 0.3s ease;
   transform: translateX(-50%);
 }
@@ -57,26 +56,21 @@
 
 .navbarStyles .nav-link:hover {
   color: var(--color-3);
-  
 }
 
 .navbarStyles .navbar-brand {
   padding: 0;
   margin: 0;
-  
 }
-
-/* Logo de la marca */
 
 .navbar-brand img {
-  height: 12vh;
+  height: 9vh;
 }
 
-/* Aplica al texto "Fenix" en el logo */
 .navbarStyles .navbar-brand h2 {
   color: white !important;
   font-family: 'New Astro', sans-serif;
-  font-size: 6.5vh;
+  font-size: 5vh;
   padding-top: 1vh;
 }
 
@@ -87,21 +81,20 @@
   height: auto;
 }
 
+
 /* -------------------- BOTÓN HAMBURGUESA EN BLANCO -------------------- */
-.toggleStyles {
-}
+.toggleStyles {}
 
 .navbarStyles .navbar-toggler {
   border-color: white; /* borde blanco */
-  
 }
 
 .navbarStyles .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
-/* Botón "drop-down" */
 
+/* -------------------- Dropdown -------------------- */
 .custom-dropdown .dropdown-menu {
   background-color: var(--color-1);
   border: none;
@@ -110,7 +103,7 @@
 .custom-dropdown .dropdown-item {
   color: white;
   font-weight: bold;
-  font-size: 2.4vh;
+  font-size: 2vh;
 }
 
 .custom-dropdown .dropdown-item:hover {
@@ -120,7 +113,7 @@
 }
 
 
-/* Botón "Cotizá Ahora" */
+/* -------------------- Botón "Cotizá Ahora" -------------------- */
 .cotiza-cta {
   background: linear-gradient(to bottom, #89b1df, #358ae9, #358ae9);
   border: solid var(--color-3) 1px; 
@@ -128,9 +121,9 @@
   font-weight: bold;
   transition: background-color 0.3s ease;
   display: inline-block;
-  /* min-width: 140px; */
-  width: 15%;
-  
+  padding: 0.7vh 1.8vh;
+  font-size: 2vh;
+  width: auto;
 }
 
 .cotiza-cta:hover {
@@ -163,35 +156,86 @@
   transform: scale(1.1);
 }
 
-/* -------------------- Logo Instagram flotante -------------------- */
-/* .instagram-float {
-  position: fixed;
-  bottom: 90px; 
-  right: 20px;
-  z-index: 1000;
-  width: 60px;
-  height: 60px;
-  cursor: pointer;
-  transition: transform 0.3s ease;
+
+/* -------------------- Media Queries -------------------- */
+
+/* === Pantallas grandes (1200px - 1399px) === */
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .navbarStyles {
+    padding: 0.5vh 2vh;
+  }
+
+  .navbar-brand img {
+    height: 7.5vh; 
+  }
+
+  .navbarStyles .navbar-brand h2 {
+    font-size: 4.2vh;
+  }
+
+  .navbarStyles .nav-link {
+    font-size: 1.6vh;
+    margin: 0;
+  }
+
+  .cotiza-cta {
+    padding: 0.5vh 1.2vh !important;
+    font-size: 1.6vh;
+    width: auto;
+  }
+
+  .custom-dropdown .dropdown-item {
+    font-size: 1.7vh !important;
+  }
+
+  .navbarStyles .container-fluid {
+    padding-left: 1.5vh;
+    padding-right: 1.5vh;
+    overflow-x: hidden;
+  }
 }
 
-.instagram-float img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+
+/* === Notebooks estándar (992px - 1199px) === */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .navbarStyles {
+    padding: 0.5vh 2vh;
+  }
+
+  .navbar-brand img {
+    height: 6vh;
+  }
+
+  .navbarStyles .navbar-brand h2 {
+    font-size: 3.3vh;
+  }
+
+  .navbarStyles .nav-link {
+    font-size: 1.3vh;
+    margin: 0 0vh;
+  }
+
+  .cotiza-cta {
+    padding: 0.4vh 0.2vh !important;
+    font-size: 1.3vh !important;
+    width: auto;
+  }
+
+  .custom-dropdown .dropdown-item {
+    font-size: 1.6vh !important;
+  }
+
+  .navbarStyles .container-fluid {
+    padding-left: 1.5vh;
+    padding-right: 1.5vh;
+    overflow-x: hidden;
+  }
 }
 
-.instagram-float:hover {
-  transform: scale(1.1);
-} */
 
-
-
-/* -------------------- Media Queries para pantallas pequeñas -------------------- */
-
+/* === Pantallas móviles (max-width: 991px) === */
+/* ✅ Esta parte NO SE TOCÓ: ya era perfecta y responsiva */
 @media (max-width: 991px) {
-
-  /* Contenedor principal del navbar */
   .navbarStyles {
     position: relative;
     padding: 1vh 2vh;
@@ -204,7 +248,6 @@
     justify-content: center; /* centra el logo */
   }
 
-  /* Logo centrado */
   .navbarStyles .navbar-brand {
     display: flex;
     justify-content: center;
@@ -214,16 +257,14 @@
     padding: 0;
   }
 
-  /* Botón hamburguesa fijo en la parte superior izquierda */
   .navbarStyles .navbar-toggler {
     position: absolute;
     top: 1.5vh;
     left: 2vh;
     border-color: white;
-    z-index: 2000; /* por encima del menú */
+    z-index: 2000;
   }
 
-  /* El menú desplegable */
   .navbar-collapse {
     background-color: var(--color-1);
     position: absolute;
@@ -235,7 +276,6 @@
     padding-bottom: 2vh;
   }
 
-  /* Ajustes de los enlaces */
   .navbarStyles .nav {
     flex-direction: column;
     align-items: flex-start;
@@ -247,6 +287,7 @@
     width: 80%;
     font-size: 2vh;
   }
+
   .navbarStyles .nav-link:hover::after {
     width: 30%;
     background-color: var(--color-3); 
@@ -277,94 +318,6 @@
 
   body, html {
     overflow-x: hidden;
-  }
-}
-
-
-
-
-/* === Notebooks estándar (992px - 1199px) === */
-@media (min-width: 992px) and (max-width: 1199px) {
-
-  .navbarStyles {
-    padding: 0 2vh;
-  }
-  /* Logo más chico */
-  .navbar-brand img {
-    height: 7vh;
-  }
-
-  /* Texto FENIX más compacto */
-  .navbarStyles .navbar-brand h2 {
-    font-size: 4vh;
-  }
-
-  /* Links más chicos y menos margen */
-  .navbarStyles .nav-link {
-    font-size: 1.5vh;
-    margin: 0;
-    padding: 0;
-  }
-
-  /* Botón Cotizá Ahora adaptado */
-  .cotiza-cta {
-    padding: 0.2vh 0 !important;
-  }
-
-  /* Evitar desbordes */
-  .navbarStyles .container-fluid {
-    padding-left: 12px;
-    padding-right: 12px;
-    overflow-x: hidden;
-    overflow: visible !important;
-  }
-  .custom-dropdown .dropdown-menu {
-    position: absolute !important;
-    z-index: 1050; /* sobre el resto */
-  }
-  .custom-dropdown .dropdown-item {
-    font-size: 1.8vh !important;
-  }
-}
-
-
-/* === Pantallas grandes (mas de 1200px) === */
-@media (min-width: 1200px) and (max-width:1400px) {
-
-  /* Logo más chico */
-  .navbar-brand img {
-    height: 8vh; 
-  }
-  /* Texto FENIX más compacto */
-  .navbarStyles .navbar-brand h2 {
-    font-size: 4.5vh;
-  } 
-
-  /* Links más chicos y menos margen */
-  .navbarStyles .nav-link {
-    font-size: 1.9vh; 
-    margin: 0;
-    padding: 0; 
-  }
-
-  /* Botón Cotizá Ahora adaptado */
-  .cotiza-cta {
-    padding: 0vh 1vh !important;
-  } 
-
-  /* Evitar desbordes */
-  .navbarStyles .container-fluid {
-    padding-left: 12px;
-    padding-right: 12px;
-    overflow-x: hidden;
-    overflow: visible !important;
-  }
-  .custom-dropdown .dropdown-menu {
-    position: absolute !important;
-    z-index: 1050; /* sobre el resto */
-  }
-  .custom-dropdown .dropdown-item {
-    font-size: 1.8vh !important;
   }
 }
 
