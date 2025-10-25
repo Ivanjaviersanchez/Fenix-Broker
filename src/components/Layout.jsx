@@ -186,7 +186,7 @@ function Layout() {
                 Contacto
               </Nav.Link>
               <Nav.Link as={Link} to="/cotiza" onClick={() => setExpanded(false)} className="cotiza-cta mx-3">
-                Cotizá Ahora 📈
+                Cotizá Ahora 
               </Nav.Link>
 
             </Nav>

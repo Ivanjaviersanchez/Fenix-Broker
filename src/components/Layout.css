@@ -43,14 +43,14 @@
   position: absolute;
   bottom: 0;
   left: 50%;
-  width: 0;
+  width: 5%;
   height: 1px;
   transition: all 0.3s ease;
   transform: translateX(-50%);
 }
 
 .navbarStyles .nav-link:hover::after {
-  width: 80%;
+  width: 50%;
   background-color: var(--color-3); 
 }
 
@@ -185,14 +185,15 @@
   }
 
   .custom-dropdown .dropdown-item {
-    font-size: 1.7vh !important;
+    font-size: 1.6vh !important;
   }
 
   .navbarStyles .container-fluid {
     padding-left: 1.5vh;
     padding-right: 1.5vh;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
   }
+  
 }
 
 
@@ -216,19 +217,19 @@
   }
 
   .cotiza-cta {
-    padding: 0.4vh 0.2vh !important;
+    /* padding: 0.4vh 0.2vh !important; */
     font-size: 1.3vh !important;
     width: auto;
   }
 
   .custom-dropdown .dropdown-item {
-    font-size: 1.6vh !important;
+    font-size: 1.3vh !important;
   }
 
   .navbarStyles .container-fluid {
     padding-left: 1.5vh;
     padding-right: 1.5vh;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
   }
 }
 
@@ -313,7 +314,7 @@
   .cotiza-cta {
     padding: 0.5vh 1vh;
     margin: 1vh 0;
-    width: 40% !important;
+    width: 35% !important;
   }
 
   body, html {
