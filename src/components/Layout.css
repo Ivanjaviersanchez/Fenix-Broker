@@ -43,7 +43,7 @@
   position: absolute;
   bottom: 0;
   left: 50%;
-  width: 5%;
+  width: 0%;
   height: 1px;
   transition: all 0.3s ease;
   transform: translateX(-50%);
@@ -239,7 +239,8 @@
 @media (max-width: 991px) {
   .navbarStyles {
     position: relative;
-    padding: 1vh 2vh;
+    padding: 1vh 0vh;
+    margin: 0vh;
   }
 
   .navbarStyles .container-fluid {
@@ -285,8 +286,8 @@
   .navbarStyles .nav-link {
     text-align: left;
     justify-content: flex-start;
-    width: 80%;
     font-size: 2vh;
+    padding-left: 2vh;
   }
 
   .navbarStyles .nav-link:hover::after {
@@ -295,7 +296,7 @@
   }
 
   .navbarStyles .nav-link::after {
-    left: 0;
+    left: 2vh;
     transform: none;
   }
 
@@ -313,8 +314,10 @@
 
   .cotiza-cta {
     padding: 0.5vh 1vh;
-    margin: 1vh 0;
-    width: 35% !important;
+    margin: 1.5vh 0 !important;
+    margin-left: 2vh !important;
+    width: 20vh !important; 
+
   }
 
   body, html {
