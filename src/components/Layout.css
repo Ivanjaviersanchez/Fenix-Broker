@@ -161,6 +161,11 @@
 
 /* === Pantallas grandes (1200px - 1399px) === */
 @media (min-width: 1200px) and (max-width: 1399px) {
+  .navbarTop a {
+    font-size: 2vh;
+    margin-right: 2vh;
+  }
+
   .navbarStyles {
     padding: 0.5vh 2vh;
   }
@@ -199,6 +204,11 @@
 
 /* === Notebooks estándar (992px - 1199px) === */
 @media (min-width: 992px) and (max-width: 1199px) {
+  .navbarTop a {
+    font-size: 2vh;
+    margin-right: 2vh;
+  }
+
   .navbarStyles {
     padding: 0.5vh 2vh;
   }
@@ -237,6 +247,11 @@
 /* === Pantallas móviles (max-width: 991px) === */
 /* ✅ Esta parte NO SE TOCÓ: ya era perfecta y responsiva */
 @media (max-width: 991px) {
+  .navbarTop a {
+    font-size: 2vh;
+    margin-right: 2vh;
+  }
+
   .navbarStyles {
     position: relative;
     padding: 1vh 0vh;
@@ -310,6 +325,7 @@
 
   .custom-dropdown .dropdown-item {
     font-size: 2vh;
+    padding-left: 3vh;
   }
 
   .cotiza-cta {
