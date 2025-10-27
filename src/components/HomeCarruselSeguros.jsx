@@ -49,8 +49,9 @@ function CarruselSeguros() {
         autoplaySpeed: 3000,
         responsive: [
         { breakpoint: 1200, settings: { slidesToShow: 3 } },
+        { breakpoint: 991, settings: { slidesToShow: 2 } },
         { breakpoint: 768, settings: { slidesToShow: 2 } },
-        { breakpoint: 480, settings: { slidesToShow: 1 } }
+        { breakpoint: 575, settings: { slidesToShow: 1 } }
         ]
     };
 

@@ -31,7 +31,7 @@ function HomeElegirnos() {
                         Nuestra organización cuenta con asesoría 24/7 ante cualquier situación. 
                         Nuestro equipo de asesores se encargará de darte servicio a la brevedad.
                     </p>
-                    <Link to="/seguros/personas" className="cardLinkButtonElegirnos">Conoce más</Link>
+                    <Link to="/seguros/personas" className="cardLinkButtonElegirnos">Conoce más {">>"}</Link>
                     </div>
                 </motion.div>
 
@@ -51,7 +51,7 @@ function HomeElegirnos() {
                         Diseñados para dar la mejor y más adecuada cobertura a tus necesidades 
                         con respaldo garantizado de las mejores compañías del mercado.
                     </p>
-                    <Link to="/seguros" className="cardLinkButtonElegirnos">Ver Seguros</Link>
+                    <Link to="/seguros" className="cardLinkButtonElegirnos">Ver Seguros {">>"}</Link>
                     </div>
                 </motion.div>
 
@@ -71,7 +71,7 @@ function HomeElegirnos() {
                         Fenix es una organización con más de 30 años en el mercado 
                         brindando confianza y respaldo a cada asegurado.
                     </p>
-                    <Link to="/somosfenix" className="cardLinkButtonElegirnos">Conócenos</Link>
+                    <Link to="/somosfenix" className="cardLinkButtonElegirnos">Conócenos {">>"}</Link>
                     </div>
                 </motion.div>
             </div>

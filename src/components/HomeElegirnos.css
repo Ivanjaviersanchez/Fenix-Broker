@@ -5,7 +5,7 @@
 .tituloElegirnos {
   margin: 0;
   padding-top: 10vh;
-  padding-left: 30vh;
+  padding-left: 5vh;
   background-color: var(--color-7);
   font-family: 'New Astro', sans-serif;
   font-size: 6vh;
@@ -17,9 +17,10 @@
 /* CONTENEDOR PRINCIPAL */
 .ContainerElegirnos {
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Auto-ajuste de columnas */
   gap: 2rem;
   margin: 0;
-  padding: 7vh 30vh; 
+  padding: 7vh 5vh; 
   /* background-image: url('../assets/LogoFenixBlanco.png'); */
   perspective: 1000px; /* el rotateX se vea 3D */
   background: linear-gradient(to bottom, var(--color-7),#89b1df,var(--color-7));
@@ -59,19 +60,19 @@
 }
 
 .cardOverlayElegirnos img {
-  width: 13%;
+  width: 10vh;
 }
 
 .cardOverlayElegirnos h3 {
-  font-size: 5vh;
+  font-size: 4vh;
   font-family: 'New Astro', sans-serif;
 }
 
 .cardOverlayElegirnos p {
-  font-size: 2.8vh;
-  margin: 2vh 15vh;
+  font-size: 2.2vh;
+  margin: 2vh 0vh;
   /* padding-bottom: 2vh; */
-  padding: 1vh 8vh; 
+  padding: 1vh 2vh; 
   font-weight: bold;
   color: var(--color-4);
 }
@@ -85,7 +86,7 @@
   font-weight: bold;
   transition: background-color 0.3s ease;
   display: inline-block;
-  font-size: 3vh;
+  font-size: 2.5vh;
   padding: 1vh;
   margin: 0;
   transition: all 0.3s ease;
@@ -108,9 +109,10 @@
         text-align: center;
     }
     .ContainerElegirnos {
-        width: 100%;
-        padding: 0vh 5vh; /* menos padding lateral */
-        padding-top: 4vh;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)); 
+        margin: 0;
+        padding: 5vh; 
     }
     .tituloElegirnos {
         font-size: 4vh !important;
@@ -137,9 +139,10 @@
 
 @media (min-width: 576px) and (max-width: 767px) {
     .ContainerElegirnos {
-        width: 100%;
-        padding: 0vh 5vh; /* menos padding lateral */
-        padding-top: 4vh;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)); 
+        margin: 0;
+        padding: 7vh 5vh; 
     }
     .tituloElegirnos {
         font-size: 4vh !important;
@@ -166,8 +169,14 @@
 
 /* === Tablets horizontales y notebooks chicos (768px - 991px) === */
 @media (min-width: 768px) and (max-width: 991px) {
+    .ContainerElegirnos {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)); 
+        margin: 0;
+        padding: 7vh 5vh; 
+    }
     .tituloElegirnos {
-        font-size: 6vh;
+        font-size: 4.5vh;
         padding-left: 5vh;
         text-align: left;
     }
@@ -200,53 +209,52 @@
 /* === Notebooks estándar (992px - 1199px) === */
 @media (min-width: 992px) and (max-width: 1199px) {
     .tituloElegirnos {
-        padding: 8vh 0;
-        padding-left: 8vh;
+        font-size: 4.5vh;
+        
     }
     .ContainerElegirnos {
-        padding: 0 8vh;
+        
     }
-
     .cardOverlayElegirnos img {
-        width: 15%;
+        width: 8vh;
     }
 
     .cardOverlayElegirnos h3 {
-        font-size: 4.5vh;
+        font-size: 3vh;
     }
-
+    
     .cardOverlayElegirnos p {
-        font-size: 2.4vh;
-        padding: 2vh 0vh;
-        margin: 0 8vh;
+        font-size: 1.6vh;
+        padding: 1vh 0.5vh;
+        margin: 0vh;
     }
     .cardLinkButtonElegirnos {
-        font-size: 2.8vh;
+        font-size: 1.6vh;
     }
 }
 
 @media (min-width: 1200px) and (max-width: 1400px) {
     .tituloElegirnos {
-        padding: 8vh 20vh;
+        font-size: 5vh;
         
     }
     .ContainerElegirnos {
-        padding: 5vh 20vh; 
+        
     }
     .cardOverlayElegirnos img {
-        width: 18%;
+        width: 8vh;
     }
 
     .cardOverlayElegirnos h3 {
-        font-size: 4.5vh;
+        font-size: 3.5vh;
     }
     
     .cardOverlayElegirnos p {
-        font-size: 2.4vh;
-        padding: 2vh 0vh;
-        margin: 0 5vh;
+        font-size: 1.8vh;
+        padding: 1vh 0.5vh;
+        margin: 0vh;
     }
     .cardLinkButtonElegirnos {
-        font-size: 2.8vh;
+        font-size: 1.8vh;
     }
 }

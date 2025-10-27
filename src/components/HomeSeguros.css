@@ -143,17 +143,17 @@
     }
     .containerSegurosHome {
         grid-template-columns: 1fr;
-        padding: 8vh;
+        padding: 7vh 15vh;
     }
     .seguroTitulo {
-        font-size: 3.2vh;
+        font-size: 3.5vh;
     }
     .seguroTituloBajo {
-        font-size: 2vh;
+        font-size: 2.2vh;
         bottom: 11vh;
     }
     .seguroItem h3 {
-        font-size: 2.5vh;
+        font-size: 3.5vh;
     }
 
     .tituloSegurosConBoton {
@@ -164,7 +164,7 @@
     .tituloSegurosConBoton h2 {
         padding-right: 0;
         margin-bottom: 2vh;
-        font-size: 3vh;
+        font-size: 3.5vh;
     }
     .cardLinkButtonConoce {
         font-size: 2.5vh;
@@ -182,10 +182,10 @@
     }
     .containerSegurosHome {
         grid-template-columns: 1fr;
-        padding: 5vh;
+        padding: 7vh 15vh;
     }
     .seguroItem {
-        margin: 0 10vh;
+        margin: 0vh;
     }
     .seguroItem h3 {
         font-size: 3vh;
@@ -217,7 +217,7 @@
 /* === Tablets horizontales y notebooks chicos (768px - 991px) === */
 @media (min-width: 768px) and (max-width: 991px) {
     .tituloSegurosHome {
-        font-size: 4vh;
+        font-size: 4.5vh;
         padding-left: 5vh;
         text-align: left;
     }
@@ -258,6 +258,7 @@
 /* === Notebooks estándar (992px - 1199px) === */
 @media (min-width: 992px) and (max-width: 1199px) {
    .tituloSegurosHome {
+        font-size: 4.5vh;
         padding-left: 5vh;
     }
     .containerSegurosHome {
@@ -281,6 +282,9 @@
 }
 
 @media (min-width: 1200px) and (max-width: 1400px) {
+    .tituloSegurosHome {
+        font-size: 5vh;
+    }
     .seguroTitulo {
         font-size: 4vh;
     }

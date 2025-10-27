@@ -9,7 +9,7 @@ function HomeSeguros() {
   return (
     <div>
         
-        <h2 className='tituloSegurosHome'>Protegé todo con Fenix {">>>"}</h2>
+        <h2 className='tituloSegurosHome'>Protegé todo con FENIX {">>>"}</h2>
       
         <div className="containerSegurosHome">
           <Link to="/seguros/autos" className="seguroItem">
@@ -36,7 +36,7 @@ function HomeSeguros() {
 
         <div className="tituloSegurosConBoton">
           <h2>Conóce todos nuestros seguros {">>>"} </h2>
-          <Link to="/seguros" className="cardLinkButtonConoce">Ver Seguros</Link>
+          <Link to="/seguros" className="cardLinkButtonConoce">Seguros FENIX</Link>
         </div>
 
     </div>

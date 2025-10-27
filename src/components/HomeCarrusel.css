@@ -38,7 +38,7 @@
     padding: 1vh;
   }
   .ContainerCarruselHome img {
-    height: auto;
+    height: 22vh;
   }
   .TextoCarrusel {
     font-size: 2vh;
@@ -51,7 +51,7 @@
     padding: 1vh;
   }
   .ContainerCarruselHome img {
-    height: auto;
+    height: 30vh;
   }
   .TextoCarrusel {
     font-size: 2vh;
@@ -65,10 +65,10 @@
     padding: 1vh;
   }
   .ContainerCarruselHome img {
-    height: auto;
+    height: 38vh;
   }
   .TextoCarrusel {
-    font-size: 3vh;
+    font-size: 2.5vh;
     padding: 1vh;
   }
 }
@@ -77,20 +77,20 @@
 @media (min-width: 992px) and (max-width: 1199px) {
 
   .ContainerCarruselHome img {
-    height: 50vh;
+    height: 40vh;
   }
   .TextoCarrusel {
-    font-size: 4vh;
+    font-size: 3vh;
     padding: 1vh 4vh;
   }
 }
 
 @media (min-width: 1200px) and (max-width: 1400px) {
   .ContainerCarruselHome img {
-    height: 60vh;
+    height: 50vh;
   }
   .TextoCarrusel {
-    font-size: 5vh;
+    font-size: 4vh;
     padding: 1vh 4vh;
   }
 }
