@@ -114,22 +114,21 @@
 
 /* BOTÓN */
 .cardLinkButtonConoce {
-  background: linear-gradient(to bottom, #fbc296,#fbc296,#f8992e);
-  color: var(--color-6);
-  border: solid var(--color-6) 1px;
+  background: linear-gradient(to bottom, #89b1df, #358ae9, #358ae9);
+  border: solid var(--color-3) 1px; 
   border-radius: 12px;
   font-weight: bold;
   transition: background-color 0.3s ease;
   display: inline-block;
-  min-width: 140px;
-  font-size: 3vh;
-  padding: 1vh;
+  padding: 0.7vh 1.8vh;
+  font-size: 3.5vh;
+  width: auto;
 }
 
 .cardLinkButtonConoce:hover {
-  background: linear-gradient(to bottom, #89b1df, #358ae9, #358ae9);
-  border: solid var(--color-3) 1px; 
-  color: white !important;
+  background: linear-gradient(to bottom, #fbc296,#fbc296,#f8992e);
+  border: solid var(--color-6) 1px; 
+  color: var(--color-6) !important;
 }
 
 /*-------------------MEDIA QUERYS--------------------*/
@@ -138,22 +137,22 @@
 @media (max-width: 575px) {
     .tituloSegurosHome {
         padding-left: 3vh;
-        font-size: 4vh;
+        font-size: 3.5vh;
         text-align: center;
     }
     .containerSegurosHome {
         grid-template-columns: 1fr;
-        padding: 7vh 15vh;
+        padding: 7vh 10vh;
     }
     .seguroTitulo {
-        font-size: 3.5vh;
+        font-size: 3vh;
     }
     .seguroTituloBajo {
         font-size: 2.2vh;
         bottom: 11vh;
     }
     .seguroItem h3 {
-        font-size: 3.5vh;
+        font-size: 2.8vh;
     }
 
     .tituloSegurosConBoton {
@@ -164,7 +163,7 @@
     .tituloSegurosConBoton h2 {
         padding-right: 0;
         margin-bottom: 2vh;
-        font-size: 3.5vh;
+        font-size: 3vh;
     }
     .cardLinkButtonConoce {
         font-size: 2.5vh;
@@ -241,13 +240,14 @@
         font-size: 2.5vh;
     }
     .tituloSegurosConBoton {
-        flex-direction: row;
-        padding: 8vh 0;
+        flex-direction: column;
+        padding: 8vh 2vh;
         text-align: center;
     }
     .tituloSegurosConBoton h2 {
+        padding-right: 0;
         margin-bottom: 2vh;
-        font-size: 4vh;
+        font-size: 3.5vh;
     }
     .cardLinkButtonConoce {
         font-size: 2.5vh;
@@ -279,6 +279,12 @@
         padding: 6vh 0vh;
         justify-content: center;
     }
+    .tituloSegurosConBoton h2 {
+        font-size: 4vh;
+    }
+    .cardLinkButtonConoce {
+        font-size: 2.5vh;
+    }
 }
 
 @media (min-width: 1200px) and (max-width: 1400px) {
@@ -299,5 +305,11 @@
     .tituloSegurosConBoton {
         padding: 6vh 0vh;
         justify-content: center;
+    }
+    .tituloSegurosConBoton h2 {
+        font-size: 4vh;
+    }
+    .cardLinkButtonConoce {
+        font-size: 2.5vh;
     }
 }

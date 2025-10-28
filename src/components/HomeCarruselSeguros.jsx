@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
+import { useState, useEffect } from "react";
+
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css"; 
 import "./HomeCarruselSeguros.css";
@@ -19,11 +21,26 @@ import logoSeguroBuque from "../assets/LogoSeguroBuques.png";
 import logoSeguroART from "../assets/LogoSeguroART.png";
 import logoSeguroCaucionEmpresa from "../assets/LogoSeguroCaucionEmpresa.png";
 
-
 function CarruselSeguros() {
+  const [slidesToShow, setSlidesToShow] = useState(4);
 
-    // Lista de seguros (misma que en Seguros.jsx)
-    const segurosList = [
+  const handleResize = () => {
+    const width = window.innerWidth;
+    if (width < 575) setSlidesToShow(1);
+    else if (width < 768) setSlidesToShow(2);
+    else if (width < 991) setSlidesToShow(2);
+    else if (width < 1200) setSlidesToShow(3);
+    else if (width < 1400) setSlidesToShow(3);
+    else setSlidesToShow(4);
+  };
+
+  useEffect(() => {
+    handleResize(); // Ajusta al montar
+    window.addEventListener("resize", handleResize); // Ajusta al redimensionar
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const segurosList = [
     { id: "autos", title: "SEGUROS PARA AUTOS", img: logoSeguroAuto, list: ["Responsabilidad Civil", "Terceros Completo", "Todo Riesgo"] },
     { id: "motos", title: "SEGUROS PARA MOTOS", img: logoSeguroMoto, list: ["Seguro Moto Base", "Seguro Moto Plus", "Seguro Moto Premium"] },
     { id: "hogar", title: "SEGUROS PARA EL HOGAR", img: logoSeguroHogar, list: ["Seguro Hogar Premium", "Seguro de Caución"] },
@@ -37,34 +54,25 @@ function CarruselSeguros() {
     { id: "buques", title: "SEGUROS DE BUQUES", img: logoSeguroBuque, list: ["Cobertura Total de Buques", "Responsabilidad Marítima"] },
     { id: "art", title: "SEGUROS ART", img: logoSeguroART, list: ["Cobertura por accidente", "Cobertura por enfermedad laboral"] },
     { id: "caucionempresas", title: "SEGUROS DE CAUCION PARA EMPRESAS", img: logoSeguroCaucionEmpresa, list: ["Caución Contractual", "Caución Judicial"] },
-    ];
+  ];
 
-    const settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        responsive: [
-        { breakpoint: 1200, settings: { slidesToShow: 3 } },
-        { breakpoint: 991, settings: { slidesToShow: 2 } },
-        { breakpoint: 768, settings: { slidesToShow: 2 } },
-        { breakpoint: 575, settings: { slidesToShow: 1 } }
-        ]
-    };
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: slidesToShow,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+  };
 
   return (
     <section className="CarruselSegurosSection">
       <Slider {...settings}>
         {segurosList.map((item, index) => (
           <div className="cardSegurosHome" key={index}>
-            {/* Logo como imagen (fallback robusto) */}
             <img src={item.img} alt={item.title} className="cardLogo" />
-
             <h3 className="cardTitleDefault">{item.title}</h3>
-
             <div className="cardOverlaySeguro">
               <h3 className="cardTitleHover">{item.title}</h3>
               <ul className="segurosList">

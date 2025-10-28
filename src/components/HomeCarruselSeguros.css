@@ -12,6 +12,8 @@
   gap: 20px; /* separación entre cards */
 }
 
+
+
 /* asegúrate de quitar el style inline backgroundImage del div */
 
 .cardSegurosHome {
@@ -81,6 +83,7 @@
   justify-content: center;
   padding: 1rem;
   border-radius: 12px;
+  
 }
 
 .cardSegurosHome:hover .cardOverlaySeguro {
@@ -92,6 +95,7 @@
   font-family: 'New Astro', sans-serif;
   font-size: 2vh;
   margin-bottom: 0.5rem;
+  
 }
 
 .segurosList {
@@ -162,5 +166,20 @@
   .cardSegurosHome h3 {
     top: 23vh !important;
     
+  }
+}
+
+@media (min-width: 1200px) and(max-width: 1399px) {
+  .cardSegurosHome {
+    position: relative;
+    height: 35vh;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: transparent; /* si antes tenías background-image, eliminarlo */
   }
 }
