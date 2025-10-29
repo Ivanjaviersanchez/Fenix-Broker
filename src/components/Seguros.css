@@ -227,6 +227,7 @@
     margin: 0;
     font-size: 3.5vh;
     padding-bottom: 0;
+    text-align: center;
   }
   /* Personas y Empresas Cards */
   .ContainerPersonasEmpresas {
@@ -273,7 +274,7 @@
   /* Container Segurso titulo */
   .ContainerSegurosH3 h3{
     margin: 0;
-    font-size: 4.5vh;
+    font-size: 3.5vh;
     padding-bottom: 0;
   }
 
@@ -322,7 +323,11 @@
 
 /* === Tablets horizontales y notebooks chicos (768px - 991px) === */
 @media (min-width: 768px) and (max-width: 991px) {
-  
+  .ContainerSegurosH3 h3{
+    margin: 0;
+    font-size: 4vh;
+    padding-bottom: 0;
+  }
   .ContainerPersonasEmpresas {
     display: flex;
     flex-direction: column;

@@ -123,9 +123,9 @@
 
 /* Botón */
 .SucursalBTN {
-  background: linear-gradient(to bottom, #fbc296,#fbc296,#f8992e);
-  color: var(--color-6);
-  border: solid var(--color-6) 1px;
+  background: linear-gradient(to bottom, #89b1df, #358ae9, #358ae9);
+  color: white !important;
+  border: solid var(--color-3) 1px; 
   border-radius: 12px;
   font-weight: bold;
   transition: background-color 0.3s ease;
@@ -138,9 +138,9 @@
 }
 
 .SucursalBTN:hover {
-  background: linear-gradient(to bottom, #89b1df, #358ae9, #358ae9);
-  border: solid var(--color-3) 1px; 
-  color: white !important;
+  background: linear-gradient(to bottom, #fbc296,#fbc296,#f8992e);
+  color: var(--color-6) !important;
+  border: solid var(--color-6) 1px;
   transform: translateX(7px);
 }
 
