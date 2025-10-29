@@ -104,9 +104,9 @@
 /* === Smartphones chicos (hasta 575px) === */
 @media (max-width: 575px) {
     .tituloElegirnos {
-        padding-left: 3vh;
-        font-size: 4vh;
-        text-align: center;
+        padding-left: 5vh;
+        font-size: 3.5vh;
+        text-align: left;
     }
     .ContainerElegirnos {
         display: grid;
@@ -114,12 +114,12 @@
         margin: 0;
         padding: 5vh; 
     }
-    .tituloElegirnos {
+    /* .tituloElegirnos {
         font-size: 4vh !important;
         padding-top: 10vh;
         text-align: left; 
         padding-left: 5vh;
-    }
+    } */
     .cardOverlayElegirnos img {
         width: 20%;
     }
@@ -145,7 +145,7 @@
         padding: 7vh 5vh; 
     }
     .tituloElegirnos {
-        font-size: 4vh !important;
+        font-size: 3.5vh;
         padding-top: 10vh;
         text-align: left; 
         padding-left: 5vh;

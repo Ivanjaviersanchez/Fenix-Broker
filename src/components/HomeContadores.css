@@ -3,9 +3,7 @@
 /*        ESTILOS CONTADORES HOME        */
 
 .ContainerContadoresHome {
-  /* background: linear-gradient(135deg, var(--color-1), var(--color-7), var(--color-7), var(--color-7), var(--color-1)); */
   background-color: var(--color-7);
-  
   color: var(--color-5);
   text-align: center;
   padding: 5vh 3vh;
@@ -20,7 +18,7 @@
   margin-bottom: 3vh;
   font-family: 'New Astro', sans-serif;
   color: var(--color-1);
-  font-weight: 500; /* Negrita ligera */
+  font-weight: 500; 
 }
 
 .ContainerContadoresHome p {
@@ -137,10 +135,10 @@
         margin: 8vh 2vh;
     }
     .ContainerContadoresHome h2 {
-        font-size: 3.5vh;
+        font-size: 3vh;
     }
     .ContainerContadoresHome p {
-        font-size: 2vh;
+        font-size: 1.8vh;
         padding: 0;
         margin: 2vh 0;
     }
