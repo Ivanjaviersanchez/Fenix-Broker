@@ -2,7 +2,7 @@
 
 .ContainerSegurosH3 {
   background: linear-gradient(to bottom, #89b1df , var(--color-7), var(--color-7) );
-  padding: 5vh 11vh;
+  padding: 5vh 15vh;
 }
 .ContainerSegurosH3 h3{
   margin: 0;
@@ -223,6 +223,9 @@
 @media (max-width: 575px) {
 
   /* Container Segurso titulo */
+  .ContainerSegurosH3 {
+    padding: 5vh 0vh;
+  }
   .ContainerSegurosH3 h3{
     margin: 0;
     font-size: 3.5vh;
@@ -272,10 +275,13 @@
 @media (min-width: 576px) and (max-width: 767px) {
 
   /* Container Segurso titulo */
+  .ContainerSegurosH3 {
+    padding: 5vh 0vh;
+  }
   .ContainerSegurosH3 h3{
     margin: 0;
     font-size: 3.5vh;
-    padding-bottom: 0;
+    padding-left: 5vh;
   }
 
   /* Personas y Empresas Cards */
