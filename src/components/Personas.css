@@ -155,12 +155,13 @@
 @media (max-width: 575px) {
 
   .ContainerPersonas {
-    padding: 5vh;
+    padding: 5vh 0vh;
   }
   .ContainerPersonas h2 {
     margin: 0;
     font-size: 3.5vh;
     padding-bottom: 5vh;
+    text-align: center;
   }
   .ContainerPersonas p {
     margin: 0;
@@ -178,12 +179,13 @@
 /* === Smartphones grandes (hasta 767px) === */
 @media (min-width: 576px) and (max-width: 767px) {
   .ContainerPersonas {
-    padding: 5vh;
+    padding: 5vh 0vh;
   }
   .ContainerPersonas h2 {
     margin: 0;
-    font-size: 4vh;
+    font-size: 3.5vh;
     padding-bottom: 5vh;
+    text-align: center;
   }
   .ContainerPersonas p {
     margin: 0;
