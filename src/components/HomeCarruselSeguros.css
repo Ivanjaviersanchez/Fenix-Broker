@@ -3,18 +3,13 @@
     padding: 5vh;
     margin: 0;
     overflow: hidden;
-    background: linear-gradient(to bottom,#89b1df ,white );
-    
+    background: linear-gradient(to bottom,#89b1df ,white ); 
 }
 
 .slick-track {
   display: flex !important;
   gap: 20px; /* separación entre cards */
 }
-
-
-
-/* asegúrate de quitar el style inline backgroundImage del div */
 
 .cardSegurosHome {
   position: relative;

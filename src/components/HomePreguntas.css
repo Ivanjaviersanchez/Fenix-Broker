@@ -84,8 +84,8 @@
         padding: 0 2vh;
     }
     .tituloPreguntas {
-        padding-left: 3vh;
-        font-size: 4vh;
+        padding-left: 0;
+        font-size: 3.5vh;
         text-align: center;
     }
   
@@ -93,13 +93,13 @@
         flex-direction: column;
     }
     .containerAcordion h3 {
-        font-size: 3vh;
+        font-size: 2.5vh;
     }
     .accordion-button {
-        font-size: 2vh;
+        font-size: 1.8vh;
     }
     .accordion-body {
-        font-size: 2vh;
+        font-size: 1.8vh;
     }
 }
 
@@ -108,8 +108,8 @@
         padding: 0 3vh;
     }
     .tituloPreguntas {
-        padding-left: 3vh;
-        font-size: 4vh;
+        padding-left: 0vh;
+        font-size: 3.5vh;
         text-align: center;
     }
   
@@ -117,13 +117,13 @@
         flex-direction: column;
     }
     .containerAcordion h3 {
-        font-size: 3vh;
+        font-size: 2.5vh;
     }
     .accordion-button {
-        font-size: 2vh;
+        font-size: 1.8vh;
     }
     .accordion-body {
-        font-size: 2vh;
+        font-size: 1.8vh;
     }
 }
 

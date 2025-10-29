@@ -14,7 +14,6 @@
   font-weight: 400;
   color: var(--color-1);
   text-align: center;
-  
 }
 .tituloCompanias {
   display: flex;
@@ -80,14 +79,15 @@
 /* === Smartphones chicos (hasta 575px) === */
 @media (max-width: 575px) {
     .tituloCompanias h2 {
-        font-size: 3.5vh;
+        font-size: 3.3vh;
         text-align: center;
     }
 }  
 
 @media (min-width: 576px) and (max-width: 767px) {
-    .containerCompaniasCarrusel h2 {
-        font-size: 3.5vh;
+    .tituloCompanias h2 {
+        font-size: 3.3vh;
+        text-align: center;
     }
 }
 
