@@ -35,7 +35,7 @@ function Somosfenix() {
 
               <Link to="/#companias">
                 <Button className="SucursalBTN">
-                  Aseguradoras que nos acompañan {">>>"}
+                  Nos acompañan {">>>"}
                 </Button>
               </Link>
 
