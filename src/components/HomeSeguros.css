@@ -136,8 +136,8 @@
 /* === Smartphones chicos (hasta 575px) === */
 @media (max-width: 575px) {
     .tituloSegurosHome {
-        padding-left: 3vh;
-        font-size: 3.5vh;
+        padding: 4vh 0;
+        font-size: 3.3vh;
         text-align: center;
     }
     .containerSegurosHome {
@@ -145,58 +145,56 @@
         padding: 7vh 10vh;
     }
     .seguroTitulo {
-        font-size: 3vh;
+        font-size: 2.5vh;
     }
     .seguroTituloBajo {
-        font-size: 2.2vh;
-        bottom: 11vh;
+        font-size: 1.8vh;
+        bottom: 10vh;
     }
     .seguroItem h3 {
-        font-size: 2.8vh;
+        font-size: 2.3vh;
     }
 
     .tituloSegurosConBoton {
         flex-direction: column;
-        padding: 4vh 2vh;
+        padding: 4vh 1vh;
         text-align: center;
     }
     .tituloSegurosConBoton h2 {
         padding-right: 0;
         margin-bottom: 2vh;
-        font-size: 3vh;
+        font-size: 2.5vh;
     }
     .cardLinkButtonConoce {
-        font-size: 2.5vh;
+        font-size: 2.2vh;
     }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
     .tituloSegurosHome {
-        font-size: 4vh !important;
-        padding-top: 12vh;
-        padding-bottom: 4vh;
-        text-align: left; 
-        padding-left: 5vh;
-        
+        padding: 4vh 0;
+        font-size: 3.5vh;
+        text-align: center;
     }
     .containerSegurosHome {
         grid-template-columns: 1fr;
-        padding: 7vh 15vh;
+        padding: 7vh 0vh;
     }
     .seguroItem {
-        margin: 0vh;
+        margin: 0vh 15vh;
+
     }
     .seguroItem h3 {
-        font-size: 3vh;
+        font-size: 2.3vh;
     }
     .seguroTitulo {
-        font-size: 4vh;
+        font-size: 3vh;
     }
     .seguroTituloBajo {
-        font-size: 2.5vh;
+        font-size: 2vh;
         bottom: 10vh;
-        text-align: center ;
-        padding: 0 5vh;
+        text-align: center;
+        padding: 0 8vh;
     }
     .tituloSegurosConBoton {
         flex-direction: column;
