@@ -131,11 +131,11 @@
 
 @media (min-width: 576px) and (max-width: 767px) {
     .ContainerContadoresHome {
-        padding: 3vh;
+        padding: 2vh;
         margin: 8vh 2vh;
     }
     .ContainerContadoresHome h2 {
-        font-size: 3vh;
+        font-size: 2.6vh;
     }
     .ContainerContadoresHome p {
         font-size: 1.8vh;
@@ -148,15 +148,15 @@
         flex-direction: row;
     }
     .ContadorItem {
-        width: 17vh !important;
-        height: 17vh !important;
+        width: 15vh !important;
+        height: 15vh !important;
     }
     .ContadorItem h3 {
-        font-size: 3.5vh;
+        font-size: 3vh;
         padding-top: 0vh;
     }
     .ContadorItem p {
-        font-size: 2vh;
+        font-size: 1.8vh;
         padding: 0;
         margin: 0;
     }
@@ -167,13 +167,17 @@
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+    .ContainerContadoresHome {
+        padding: 2vh;
+        margin: 8vh 2vh;
+    }
     .ContainerContadoresHome h2 {
         font-size: 4vh;
     }
     .ContainerContadoresHome p {
         font-weight: bold;
         font-size: 2.2vh;
-        padding: 0 5vh;
+        padding: 0 2vh;
     }
     .Contadores {
         gap: 4vh;
