@@ -1,8 +1,8 @@
 /* ===== CONTAINERS ===== */
 
 .ContainerDetalleSeguro {
-  background: linear-gradient(to bottom,#89b1df, white,var(--color-7),#89b1df );
-  padding: 5vh; 
+  background: linear-gradient(to bottom, #89b1df, white, var(--color-7), #89b1df);
+  padding: 5vh 4vw;
 }
 
 .ContainerDetalleSeguro h3 {
@@ -10,22 +10,22 @@
   padding-bottom: 3vh;
   text-align: center;
   font-family: 'New Astro', sans-serif;
-  font-size: 6vh;
+  font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: 400;
   color: var(--color-1);
 }
 
 .ContainerDetalleSeguro p,
 .ContainerDetalleSeguro h4 {
-  margin: 0;
+  margin: 0 auto;
   font-family: 'New Astro', sans-serif;
-  font-size: 3vh;
+  font-size: clamp(1rem, 2.5vw, 1.6rem);
   font-weight: 400;
   color: var(--color-1);
   text-align: center;
-  padding-bottom: 5vh;
+  padding-bottom: 4vh;
+  max-width: 1000px;
 }
-
 
 /* ===== CARDS DE COBERTURAS ===== */
 
@@ -33,37 +33,38 @@
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  margin-top: 2rem;
   justify-content: center;
-
 }
 
 .DetalleCard {
   background-color: var(--color-7);
   color: #333;
-  padding: 1.5rem;
+  padding: 1.8rem;
   border: 1px solid var(--color-2);
   border-radius: 20px;
-  width: 25%;
+  width: 27%;
   text-align: left;
-   box-shadow: 5px 2px 30px var(--color-1); 
-  transition: transform 0.2s ease-in-out;
+  box-shadow: 5px 2px 30px var(--color-1);
+  transition: transform 0.25s ease-in-out;
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
 .DetalleCard:hover {
-  transform: scale(1.03);
+  transform: scale(1.04);
 }
 
 .DetalleCard h4 {
-  font-size: 3vh;
+  font-size: clamp(1.1rem, 2.8vw, 2rem);
   font-weight: 700;
   color: var(--color-1);
 }
+
 .DetalleCard h5 {
   color: var(--color-1);
   font-family: 'New Astro', sans-serif;
-  margin-bottom: 1rem;
+  margin: 1rem 0 0.5rem;
 }
 
 .BeneficiosList {
@@ -72,13 +73,12 @@
   margin-bottom: 1rem;
   display: flex;
   flex-direction: column;
-  
+  gap: 0.5rem;
 }
 
 .BeneficiosList li {
-  margin-bottom: 0.5rem;
   color: var(--color-2) !important;
-  font-size: 0.95rem;
+  font-size: clamp(0.9rem, 2vw, 1rem);
   font-weight: bold;
 }
 
@@ -87,20 +87,17 @@
 .CotizaButton {
   background: linear-gradient(to bottom, #89b1df, #358ae9, #358ae9);
   color: white !important;
-  border: solid var(--color-3) 1px; 
-  
+  border: solid var(--color-3) 1px;
   border-radius: 12px;
   font-weight: bold;
-  transition: background-color 0.3s ease;
-  display: inline-block;
-  font-size: 2.2vh;
-  padding: 0.5vh;
-  margin: 0;
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
+  padding: 0.8rem 1.5rem;
+  align-self: center;
   transition: all 0.3s ease;
 }
 
 .CotizaButton:hover {
-  background: linear-gradient(to bottom, #fbc296,#fbc296,#f8992e);
+  background: linear-gradient(to bottom, #fbc296, #f8992e);
   color: var(--color-6) !important;
   border: solid var(--color-6) 1px;
   transform: translateX(7px);
@@ -113,26 +110,24 @@
   border: 2px solid var(--color-4);
   background-color: var(--color-7);
   box-shadow: 5px 2px 30px var(--color-5);
-  padding: 3vh;
+  padding: 3vh 2vw;
   border-radius: 20px;
   text-align: center;
-
 }
 
 .ContainerIncluyen h4 {
-  font-size: 4vh;
+  font-size: clamp(1.5rem, 3vw, 2rem);
   font-weight: bold;
-  margin-bottom: 0;
+  margin-bottom: 2rem;
   color: var(--color-5);
 }
 
 .IncluyenGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 2rem;
   justify-items: center;
   align-items: start;
-  
 }
 
 .IncluyenItem {
@@ -140,12 +135,11 @@
   flex-direction: column;
   align-items: center;
   color: #5a0c38;
-  font-size: 0.95rem;
   text-align: center;
-  /* max-width: 220px;  */
 }
+
 .IncluyenItem p {
-  font-size: 3vh;
+  font-size: clamp(1rem, 2.5vw, 1.3rem);
   color: var(--color-5);
 }
 
@@ -154,25 +148,87 @@
   margin-bottom: 0.5rem;
 }
 
-/* Estilo responsive para pantallas pequeñas */
-@media (max-width: 768px) {
+/* ===================== MEDIA QUERIES ===================== */
+
+/* === Smartphones chicos (hasta 575px) === */
+@media (max-width: 575px) {
+  .ContainerDetalleSeguro {
+    padding: 4vh 2vw;
+  }
+  .ContainerDetalleSeguro h3 {
+    font-size: 3.5vh;
+  }
+
   .DetalleCardsContainer {
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    gap: 1.5rem;
   }
 
   .DetalleCard {
-    width: 60%; /* o 100%, según tu diseño */
+    width: 90%;
+    padding: 1.2rem;
   }
 
-  .ContainerIncluyen {
-    margin: 0;
-    padding: 0;
+  .CotizaButton {
+    width: 100%;
   }
 
   .IncluyenGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .ContainerIncluyen {
+    padding: 2vh 1vw;
+  }
+}
+
+/* === Tablets verticales (576px a 767px) === */
+@media (min-width: 576px) and (max-width: 767px) {
+  .ContainerDetalleSeguro h3 {
+    font-size: 3.5vh;
+  }
+  .DetalleCard {
+    width: 80%;
+  }
+
+  .IncluyenGrid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+/* === Tablets horizontales (768px a 991px) === */
+@media (min-width: 768px) and (max-width: 991px) {
   
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  .DetalleCard {
+    width: 45%;
+  }
+
+  .IncluyenGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* === Laptops (992px a 1199px) === */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .ContainerDetalleSeguro h3 {
+    font-size: 4vh;
+  }
+  .DetalleCard {
+    width: 30%;
+  }
+}
+
+/* === Monitores grandes (1200px a 1400px) === */
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .DetalleCard {
+    width: 25%;
+  }
+}
+
+/* === Ultra wide (más de 1400px) === */
+@media (min-width: 1401px) {
+  .DetalleCard {
+    width: 20%;
   }
 }
