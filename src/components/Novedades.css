@@ -4,7 +4,7 @@
   padding: 5vh 5vh;
   display: flex;
   flex-direction: column;
-  gap: 6vh;
+  gap: 0vh;
 }
 
 /* --- Bloques principales --- */
@@ -67,12 +67,12 @@
   position: relative;
   flex: 1;
   width: 100%;
-  max-width: 530px;
+  max-width: 630px;
   margin: auto;
   padding: 2vh 0;
   overflow: hidden;
   border-radius: 20px;
-  min-height: 70vh; /* 👈 asegura que no cambie el alto durante transiciones */
+  min-height: 75vh; /* 👈 asegura que no cambie el alto durante transiciones */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -108,7 +108,7 @@
   }
   .novedades-instagram {
     flex-direction: column;
-    gap: 3vh;
+    gap: 0vh;
   }
 
   .novedades-title {
