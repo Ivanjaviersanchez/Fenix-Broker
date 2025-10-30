@@ -35,6 +35,7 @@ function Novedades() {
 
       {/* === BLOQUE 1: FLYERS === */}
       <div className="novedades-instagram">
+        
         <div className="novedades-carousel">
           <AnimatePresence mode="wait">
             <motion.img
@@ -42,10 +43,10 @@ function Novedades() {
               src={flyers[index]}
               alt={`Flyer ${index + 1}`}
               className="novedades-flyer"
-              initial={{ opacity: 0, x: 100 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: -100 }}
-              transition={{ duration: 0.8 }}
+              initial={{ opacity: 0, scale: 1.05 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.95 }}
+              transition={{ duration: 0.8, ease: "easeInOut" }}
             />
           </AnimatePresence>
         </div>

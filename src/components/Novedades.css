@@ -1,7 +1,7 @@
 .novedades-container {
   background: linear-gradient(to bottom, #89b1df, var(--color-7), var(--color-7), #89b1df);
   text-align: center;
-  padding: 5vh 5vw;
+  padding: 5vh 5vh;
   display: flex;
   flex-direction: column;
   gap: 6vh;
@@ -32,7 +32,8 @@
 }
 
 .novedades-title h2 {
-  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-size: clamp(2rem, 4vw, 3.3rem);
+  padding: 0;
   color: var(--color-1);
   margin-bottom: 2vh;
 }
@@ -66,20 +67,27 @@
   position: relative;
   flex: 1;
   width: 100%;
-  max-width: 600px;
+  max-width: 530px;
   margin: auto;
   padding: 2vh 0;
   overflow: hidden;
   border-radius: 20px;
+  min-height: 70vh; /* 👈 asegura que no cambie el alto durante transiciones */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .novedades-flyer {
+  position: absolute; /* 👈 las imágenes se superponen sin empujar el layout */
   width: 100%;
   max-width: 60vh;
   height: auto;
   border-radius: 20px;
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
 }
+
 
 /* --- Video institucional --- */
 .novedades-video {
@@ -95,6 +103,9 @@
 
 /* === Smartphones chicos (hasta 575px) === */
 @media (max-width: 575px) {
+  .novedades-container {
+    padding: 0;
+  }
   .novedades-instagram {
     flex-direction: column;
     gap: 3vh;
@@ -115,22 +126,26 @@
 
 /* === Tablets verticales (576px a 767px) === */
 @media (min-width: 576px) and (max-width: 767px) {
-  .novedades-instagram {
-    flex-direction: column;
-  }
+    .novedades-title h2 {
+        font-size: clamp(2rem, 4vw, 2.2rem) !important;
+    }
+    .novedades-instagram {
+        flex-direction: column;
+    }
 
-  .novedades-flyer,
-  .novedades-video {
-    max-width: 80vw;
-  }
+    .novedades-flyer,
+    .novedades-video {
+        max-width: 80vw;
+    }
 
-  .novedades-title h2 {
-    font-size: 2.5rem;
-  }
+    .novedades-title h2 {
+        font-size: 2.5rem;
+    }
 }
 
 /* === Tablets horizontales (768px a 991px) === */
 @media (min-width: 768px) and (max-width: 991px) {
+    
   .novedades-instagram {
     flex-direction: column;
   }
@@ -143,18 +158,24 @@
 
 /* === Laptops (992px a 1199px) === */
 @media (min-width: 992px) and (max-width: 1199px) {
-  .novedades-flyer {
-    max-width: 55vh;
-  }
+    .novedades-title h2 {
+        font-size: clamp(2rem, 4vw, 2.2rem) !important;
+    }
+    .novedades-flyer {
+        max-width: 55vh;
+    }
 
-  .novedades-video {
-    max-width: 400px;
-  }
+    .novedades-video {
+        max-width: 400px;
+    }
 }
 
 /* === Monitores grandes (1200px a 1400px) === */
 @media (min-width: 1200px) and (max-width: 1400px) {
-  .novedades-flyer {
-    max-width: 60vh;
-  }
+    .novedades-title h2 {
+        font-size: clamp(2rem, 4vw, 2.8rem) !important;
+    }
+    .novedades-flyer {
+        max-width: 60vh;
+    }
 }
