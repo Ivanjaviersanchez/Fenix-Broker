@@ -17,7 +17,6 @@ function Novedades() {
 
   const videoRef = useRef(null);
 
-  // Cambia el flyer cada 8 segundos
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prev) => (prev + 1) % flyers.length);
@@ -25,22 +24,16 @@ function Novedades() {
     return () => clearInterval(interval);
   }, [flyers.length]);
 
-  // Ajustamos la velocidad de reproducción
   useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.playbackRate = 0.7;
-    }
+    if (videoRef.current) videoRef.current.playbackRate = 0.7;
   }, []);
 
-  // Cuando el video termina, muestra los controles
-  const handleVideoEnd = () => {
-    setShowControls(true);
-  };
+  const handleVideoEnd = () => setShowControls(true);
 
   return (
     <div className="novedades-container">
 
-      {/* Primer bloque: flyers */}
+      {/* === BLOQUE 1: FLYERS === */}
       <div className="novedades-instagram">
         <div className="novedades-carousel">
           <AnimatePresence mode="wait">
@@ -56,10 +49,12 @@ function Novedades() {
             />
           </AnimatePresence>
         </div>
+
         <div className="novedades-title">
           <h2>Seguinos en Instagram {">>>"}</h2>
           <p>Conocé todas las novedades, beneficios y coberturas actuales de FENIX</p>
           <h3>@fenix.brokerseguros</h3>
+
           <a
             href="https://www.instagram.com/fenix.brokerseguros?igsh=M20zajJ0bmVlaXpy"
             className="instagram-float"
@@ -74,12 +69,13 @@ function Novedades() {
         </div>
       </div>
 
-      {/* Segundo bloque: video institucional */}
-      <div className="novedades-instagram">
+      {/* === BLOQUE 2: VIDEO === */}
+      <div className="novedades-instagram reverse">
         <div className="novedades-title">
           <h2>Conocé Fénix {">>>"}</h2>
           <p>Descubrí quiénes somos y cómo trabajamos para vos</p>
         </div>
+
         <div className="novedades-carousel">
           <video
             ref={videoRef}
@@ -88,8 +84,8 @@ function Novedades() {
             autoPlay
             muted
             playsInline
-            onEnded={handleVideoEnd}   // 👈 ahora sí se ejecuta al terminar
-            controls={showControls}    // 👈 controles se muestran solo al final
+            onEnded={handleVideoEnd}
+            controls={showControls}
           />
         </div>
       </div>
@@ -98,3 +94,4 @@ function Novedades() {
 }
 
 export default Novedades;
+
