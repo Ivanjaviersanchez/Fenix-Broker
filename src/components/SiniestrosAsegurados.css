@@ -65,16 +65,74 @@
   color: var(--color-2);
 }
 
+.contact-icons {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.2rem;
+  justify-content: center;
+}
+
+.contact-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+  font-family: 'New Astro', sans-serif;
+}
+
+.contact-icon svg {
+  font-size: 2.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.contact-icon span {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-1);
+}
+
+.contact-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Colores específicos */
+.contact-icon.phone svg {
+  color: #007bff; /* Azul */
+}
+
+.contact-icon.whatsapp svg {
+  color: #25D366; /* Verde WhatsApp */
+}
+
+/* Hover con sombra sutil */
+.contact-icon.phone:hover svg {
+  filter: drop-shadow(0 0 6px rgba(0, 123, 255, 0.6));
+}
+
+.contact-icon.whatsapp:hover svg {
+  filter: drop-shadow(0 0 6px rgba(37, 211, 102, 0.6));
+}
+
+.contact-icon.email svg {
+  color: #007bff;
+}
+
+.contact-icon.email:hover svg {
+  filter: drop-shadow(0 0 6px rgba(0, 123, 255, 0.6));
+}
+
 /* Botones */
-.btn-vermas, .btn-conocer, .btn-ingresar {
+.btn-vermas {
   background: linear-gradient(to bottom, #89b1df, #358ae9, #358ae9);
   border: solid var(--color-3) 1px; 
   border-radius: 12px;
   font-weight: bold;
   transition: background-color 0.3s ease;
   display: inline-block;
+  padding: 0 1vh;
 }
-.btn-vermas:hover, .btn-conocer:hover, .btn-ingresar:hover {
+.btn-vermas:hover {
   background: linear-gradient(to bottom, #fbc296,#fbc296,#f8992e);
   border: solid var(--color-6) 1px; 
   color: var(--color-6) !important;
