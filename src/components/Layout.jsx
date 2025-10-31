@@ -2,9 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { Link, Outlet } from "react-router-dom";
 import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
 import logo from "../assets/LogoFenixBlanco.png";
-/* import logo from "../assets/LogoFinal.png";  */
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaMapMarkerAlt } from 'react-icons/fa';
-
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 import Footer from "./Footer";
 import "./Layout.css";
 import '../colors.css';
@@ -61,19 +59,33 @@ function Layout() {
   return (
     <>
       <div className="navbarTop">
-        <a className="location"  href="https://maps.app.goo.gl/a2mYtVHF3Js284DXA" target="_blank" rel="noopener noreferrer">
-          <FaMapMarkerAlt />
-        </a>
-        <a className="facebook" href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-          <FaFacebookF />
-        </a>
-        <a className="instagram" href="https://www.instagram.com/fenix.brokerseguros?igsh=M20zajJ0bmVlaXpy" target="_blank" rel="noopener noreferrer">
-          <FaInstagram />
-        </a>
-        <a className="linkedin" href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-          <FaLinkedinIn />
-        </a>
+        {/* Lado izquierdo: Teléfono + Email */}
+        <div className="navbarTop-left">
+          <a className="phone" href="tel:+542235059018" target="_blank" rel="noopener noreferrer">
+            <FaPhoneAlt /> 
+          </a>
+          <a className="email" href="mailto:info@organizacionfenix.com" target="_blank" rel="noopener noreferrer">
+            <FaEnvelope /> 
+          </a>
+        </div>
+
+        {/* Lado derecho: ubicación + redes */}
+        <div className="navbarTop-right">
+          <a className="location" href="https://maps.app.goo.gl/a2mYtVHF3Js284DXA" target="_blank" rel="noopener noreferrer">
+            <FaMapMarkerAlt />
+          </a>
+          <a className="facebook" href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+            <FaFacebookF />
+          </a>
+          <a className="instagram" href="https://www.instagram.com/fenix.brokerseguros?igsh=M20zajJ0bmVlaXpy" target="_blank" rel="noopener noreferrer">
+            <FaInstagram />
+          </a>
+          <a className="linkedin" href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+            <FaLinkedinIn />
+          </a>
+        </div>
       </div>
+
         
       <Navbar className="navbarStyles" expand="lg" sticky="top" expanded={expanded}>
         <div className="container-fluid px-0">

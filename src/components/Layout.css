@@ -5,21 +5,34 @@
   background: linear-gradient(to bottom, var(--color-1), #89b1df, var(--color-1));
   padding: 0.5vh; 
   display: flex;
-  justify-content: right;
+  justify-content: space-between; /* separa izquierda y derecha */
+  align-items: center;
   color: black;
 }
 
-.navbarTop a {
-  margin-right: 4vh;
+/* === Contenedores izquierdo y derecho === */
+.navbarTop-left,
+.navbarTop-right {
+  display: flex;
+  align-items: center;
+}
+
+/* === Estilos base para los íconos === */
+.navbarTop-left a,
+.navbarTop-right a {
+  margin: 0 2vh;
   color: var(--color-4);
   transition: transform 0.3s ease, color 0.3s ease;
+  font-size: 2.5vh;
 }
 
-.navbarTop a:hover {
+.navbarTop-left a:hover,
+.navbarTop-right a:hover {
   color: var(--color-5);
-  transform: scale(1.45);
+  transform: scale(1.4);
 }
 
+/*   ESTILOS NAVBAR     */
 
 /*   FONDO Y LETRAS DEL NAVBAR (Base: +1400px)     */
 .navbarStyles {
@@ -161,9 +174,10 @@
 
 /* === Pantallas grandes (1200px - 1399px) === */
 @media (min-width: 1200px) and (max-width: 1399px) {
-  .navbarTop a {
-    font-size: 2vh;
+  .navbarTop-left a,
+  .navbarTop-right a {
     margin-right: 2vh;
+    font-size: 2.5vh;
   }
 
   .navbarStyles {
@@ -198,13 +212,13 @@
     padding-right: 1.5vh;
     /* overflow-x: hidden; */
   }
-  
-}
-
+}  
 
 /* === Notebooks estándar (992px - 1199px) === */
 @media (min-width: 992px) and (max-width: 1199px) {
-  .navbarTop a {
+ 
+  .navbarTop-left a,
+  .navbarTop-right a {
     font-size: 2vh;
     margin-right: 2vh;
   }
@@ -247,9 +261,11 @@
 /* === Pantallas móviles (max-width: 991px) === */
 /* ✅ Esta parte NO SE TOCÓ: ya era perfecta y responsiva */
 @media (max-width: 991px) {
-  .navbarTop a {
+
+  .navbarTop-left a,
+  .navbarTop-right a {
     font-size: 2vh;
-    margin-right: 2vh;
+    margin-right: 0.5vh;
   }
 
   .navbarStyles {
