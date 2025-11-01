@@ -7,7 +7,8 @@ function SiniestrosAsegurados() {
     <div className="siniestros-container">
       {/* Encabezado */}
       <div className="siniestros-header">
-        <h3>Informar un siniestro</h3>
+        <h2>Informar un siniestro</h2>
+        <h3>ASEGURADOS FENIX</h3>
         <p>
           Si tuviste un siniestro, notificanos dentro de las 72h de ocurrido el hecho,
           a través de los siguientes medios.
@@ -63,7 +64,7 @@ function SiniestrosAsegurados() {
                 <span>E-mail</span>
               </a>
               <a
-                href="https://wa.me/5492235059018?text=URGENTE!!%20Necesito%20asistencia%20por%20un%20siniestro"
+                href="https://wa.me/5492235059018?text=Hola!%20Necesito%20informar%20un%20siniestro"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="contact-icon whatsapp"
@@ -133,7 +134,7 @@ function SiniestrosAsegurados() {
       {/* Sección final */}
       <div className="siniestros-tercero">
         <h4>¿Sos tercero?</h4>
-        <p>Conocé cómo iniciar o consultar el estado de un reclamo.</p>
+        <p>Conocé cómo iniciar un reclamo ante un siniestro.</p>
         <Link to="/siniestros/terceros" className="btn-vermas">
           Ver más {">>"}
         </Link>

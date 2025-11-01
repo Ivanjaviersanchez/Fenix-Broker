@@ -10,16 +10,21 @@
   border-radius: 10px;
   margin-bottom: 2rem;
 }
+.siniestros-header h2 {
+  font-size: 4.5vh;
+  color: var(--color-1);
+  font-family: 'New Astro', sans-serif;
+}
 .siniestros-header h3 {
-  font-size: 4vh;
+  font-size: 2.5vh;
   color: var(--color-1);
   font-family: 'New Astro', sans-serif;
 }
 .siniestros-header p {
-  font-size: 2vh;
+  font-size: 2.5vh;
   color: var(--color-1);
   font-family: 'New Astro', sans-serif;
-  margin-top: .5rem;
+  margin-top: 3vh;
   
 }
 

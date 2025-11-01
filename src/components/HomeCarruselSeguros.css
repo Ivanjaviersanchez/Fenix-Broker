@@ -13,7 +13,7 @@
 
 .cardSegurosHome {
   position: relative;
-  height: 35vh;
+  height: 32vh;
   border-radius: 20px;
   overflow: hidden;
   margin: 0;
@@ -146,11 +146,11 @@
 
 @media (min-width: 576px) and (max-width: 767px) {
   .cardSegurosHome {
-    height: 28vh;
+    height: 25vh;
   }
   .cardSegurosHome h3 {
-    top: 17vh !important;
-    
+    top: 15vh !important;
+    font-size: 2vh !important;
   }
 }
 
@@ -160,11 +160,19 @@
   }
   .cardSegurosHome h3 {
     top: 23vh !important;
-    
   }
 }
 
-@media (min-width: 1200px) and(max-width: 1399px) {
+@media (min-width: 992px) and (max-width: 1199px) {
+   .cardSegurosHome {
+    height: 30vh;
+  }
+  .cardSegurosHome h3 {
+    top: 23vh !important;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
   .cardSegurosHome {
     position: relative;
     height: 35vh;
