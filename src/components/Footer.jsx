@@ -71,7 +71,7 @@ function Footer() {
 
         {/* Logo de tu empresa */}
         <a
-          href="https://www.isdevs.com" // 👈 tu dominio
+          /* href="https://www.isdevs.com"  */// Dominio
           target="_blank"
           rel="noopener noreferrer"
           className="isdevsLink"
