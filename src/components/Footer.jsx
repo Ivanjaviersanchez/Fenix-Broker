@@ -1,5 +1,6 @@
 import "./Footer.css";
 import LogoSSN from '../assets/LogoSSN.png';
+import LogoISdevs from "../assets/LogoISdevs.png";
 
 function Footer() {
   return (
@@ -67,7 +68,20 @@ function Footer() {
 
       {/* Línea inferior */}
       <div className="footerBottom">
-        © 2025 Organización Fenix. Todos los derechos reservados.
+
+        {/* Logo de tu empresa */}
+        <a
+          href="https://www.isdevs.com" // 👈 tu dominio
+          target="_blank"
+          rel="noopener noreferrer"
+          className="isdevsLink"
+        >
+          <img src={LogoISdevs} alt="ISdevs Logo" className="isdevsLogo" />
+        </a>
+
+        <span>© 2025 Organización Fenix. Todos los derechos reservados.</span>
+
+        
       </div>
     </footer>
   );
