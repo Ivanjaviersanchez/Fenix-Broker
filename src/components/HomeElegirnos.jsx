@@ -31,7 +31,7 @@ function HomeElegirnos() {
                         Nuestra organización cuenta con asesoría 24/7 ante cualquier situación. 
                         Nuestro equipo de asesores se encargará de darte servicio a la brevedad.
                     </p>
-                    <Link to="/seguros/personas" className="cardLinkButtonElegirnos">Conoce más {">>"}</Link>
+                    <Link to="/contacto" className="cardLinkButtonElegirnos">Conoce más {">>"}</Link>
                     </div>
                 </motion.div>
 
