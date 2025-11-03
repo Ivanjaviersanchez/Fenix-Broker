@@ -101,7 +101,7 @@
 
 .ContainerSegurosGrid5 {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Mobile */
+  grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
   padding: 8vh 11vh;
   background: linear-gradient(to bottom, var(--color-7), var(--color-7),#89b1df );
@@ -245,7 +245,7 @@
   .ContainerSegurosP p {
     margin: 0;
     font-family: 'New Astro', sans-serif;
-    font-size: 3vh;
+    font-size: 2.5vh;
     font-weight: 400;
     color: var(--color-1);
     text-align: center;
@@ -267,7 +267,7 @@
   .ContainerSegurosGrid5 {
     display: grid;
     grid-template-columns: repeat(1, 1fr); 
-    padding: 3vh !important;
+    padding: 5vh !important;
   }
 }
 
@@ -282,6 +282,7 @@
     margin: 0;
     font-size: 3.5vh;
     padding-left: 5vh;
+    text-align: center;
   }
 
   /* Personas y Empresas Cards */
@@ -297,7 +298,7 @@
   .ContainerSegurosP p {
     margin: 0;
     font-family: 'New Astro', sans-serif;
-    font-size: 3vh;
+    font-size: 2.5vh;
     font-weight: 400;
     color: var(--color-1);
     text-align: center;
@@ -333,6 +334,7 @@
     margin: 0;
     font-size: 4vh;
     padding-bottom: 0;
+    text-align: center;
   }
   .ContainerPersonasEmpresas {
     display: flex;
@@ -345,6 +347,9 @@
     padding: 0.5vh 2vh;
     margin: 0 auto;
   }
+  .ContainerSegurosP p {
+    font-size: 3vh;
+  }
   .ContainerSegurosGrid5 {
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
@@ -353,39 +358,37 @@
 }
 /* === Notebooks estándar (992px - 1199px) === */
 @media (min-width: 992px) and (max-width: 1199px) {
+  .ContainerSegurosH3 h3{
+    margin: 0;
+    font-size: 5vh;
+    padding-bottom: 0;
+   
+  }
   .cardLinkButtonVer {
     padding: 0.5vh 2vh;
     margin: 0 auto;
   }
-
+  .ContainerSegurosP p {
+    font-size: 3vh;
+  }
   .ContainerSegurosGrid5 {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     padding: 3vh 2vh !important;
   }
 }
-/* === Monitores grandes (992px - 1199px) === */
-@media (min-width: 1200px) {
 
-  /* .cardSegurosIntro {
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    border-radius: 12px;
-    height: auto;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    padding: 2vh;
-    margin: 0 5vh;
-  } */
-
+@media (min-width: 1200px) and (max-width: 1399px){
   .cardLinkButtonVer {
     padding: 0.5vh 2vh;
     margin: 0 auto;
   }
+  .ContainerSegurosP p {
+    margin: 0vh 5vh;
+    font-size: 4vh;
+  }
 
   .ContainerSegurosGrid5 {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 

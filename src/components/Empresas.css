@@ -25,7 +25,7 @@
 
 .ContainerSegurosGrid4 {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Mobile */
+  grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
   padding: 3vh 10vh !important;
   background: linear-gradient(to bottom, var(--color-7), var(--color-7),#89b1df );
@@ -238,7 +238,7 @@
   }
 
   .ContainerSegurosGrid4 {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr) !important;
     padding: 3vh 2vh !important;
   }
 }
