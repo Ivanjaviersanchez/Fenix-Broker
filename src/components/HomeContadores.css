@@ -1,5 +1,3 @@
-
-
 /*        ESTILOS CONTADORES HOME        */
 
 .ContainerContadoresHome {
@@ -83,12 +81,14 @@
   min-width: 140px;
   font-size: 3vh;
   margin-top: 20px;
+  transition: all 0.3s ease;
 }
 
 .BtnConocenos:hover {
   background: linear-gradient(to bottom, #89b1df, #358ae9, #358ae9);
   border: solid var(--color-3) 1px;
   color: white !important;
+  transform: translateX(7px);
 }
 
 

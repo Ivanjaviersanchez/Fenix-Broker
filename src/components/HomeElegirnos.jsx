@@ -68,7 +68,7 @@ function HomeElegirnos() {
                     <img src={IconoResponsabilidad} alt="Responsabilidad y Compromiso" />
                     <h3>Responsabilidad y Compromiso</h3>
                     <p>
-                        Fenix es una organización con más de 30 años en el mercado 
+                        FENIX es una organización con más de 30 años en el mercado 
                         brindando confianza y respaldo a cada asegurado.
                     </p>
                     <Link to="/somosfenix" className="cardLinkButtonElegirnos">Conócenos {">>"}</Link>

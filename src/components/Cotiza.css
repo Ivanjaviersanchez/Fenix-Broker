@@ -56,14 +56,17 @@
   font-weight: bold;
   transition: background-color 0.3s ease;
   display: inline-block;
-  width: 30%;
+  width: auto;
+  padding: 1vh 4vh;
   font-size: 3vh;
+  transition: all 0.3s ease;
 }
 
 .cotiza-btn:hover {
   background: linear-gradient(to bottom, #fbc296,#fbc296,#f8992e);
   border: solid var(--color-6) 1px; 
   color: var(--color-6) !important;
+  transform: translateX(7px);
 }
 
 /*-------------------MEDIA QUERYS--------------------*/
@@ -78,6 +81,7 @@
   }
   .ContainerTitulosCotizacion p {
     font-size: 2.5vh;
+    padding-bottom: 0;
   }
   .CotizacionResumen {
     margin: 0;
@@ -86,7 +90,8 @@
     font-size: 1.3vh;
   }
   .cotiza-btn {
-    width: 50%;
+    width: auto;
+    font-size: 2.5vh;
   }
 }
 
@@ -107,25 +112,48 @@
     font-size: 1.5vh;
   }
   .cotiza-btn {
-    width: 50%;
+    width: auto;
+    font-size: 2.5vh;
   }
 }
 
 /* === Tablets horizontales y notebooks chicos (768px - 991px) === */
 @media (min-width: 768px) and (max-width: 991px) {
+  .ContainerTitulosCotizacion h3 {
+    font-size: 5vh;
+  }
+  .ContainerTitulosCotizacion p {
+    font-size: 3vh;
+  }
   .CotizacionResumen {
     margin: 0;
+  }
+  .cotiza-btn {
+    width: auto;
+    font-size: 2.5vh;
   }
 }
 
 /* === Notebooks estándar (992px - 1199px) === */
 @media (min-width: 992px) and (max-width: 1199px) {
+  .ContainerTitulosCotizacion h3 {
+    font-size: 5vh;
+  }
+  .ContainerTitulosCotizacion p {
+    font-size: 3vh;
+  }
   .CotizacionResumen {
     margin: 0 10vh;
   }
 }
 
 @media (min-width: 1200px) {
+    .ContainerTitulosCotizacion h3 {
+    font-size: 5vh;
+  }
+  .ContainerTitulosCotizacion p {
+    font-size: 3vh;
+  }
   .CotizacionResumen {
     margin: 0 15vh;
   }

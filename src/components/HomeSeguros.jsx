@@ -29,7 +29,7 @@ function HomeSeguros() {
           <Link to="/seguros/comercios" className="seguroItem">
             <img src={SegurosComercio} alt="Seguro de Comercio" />
             <h2 className="seguroTitulo">INTEGRAL DE COMERCIO</h2>
-            <h2 className='seguroTituloBajo'>Tu comercio protegido por Fenix</h2>
+            <h2 className='seguroTituloBajo'>Tu comercio protegido por FENIX</h2>
             <h3>Cotíza tu Comercio {">>>"}</h3>
           </Link>
         </div>
