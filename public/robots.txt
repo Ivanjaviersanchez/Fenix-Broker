@@ -1,0 +1,11 @@
+# robots.txt para https://www.organizacionfenix.com/
+# Controla cómo los motores de búsqueda rastrean tu sitio
+
+User-agent: *
+Allow: /
+
+# Bloquear carpetas internas si las hubiera (ejemplo: /admin/)
+# Disallow: /admin/
+
+# Ubicación del sitemap
+Sitemap: https://www.organizacionfenix.com/sitemap.xml
