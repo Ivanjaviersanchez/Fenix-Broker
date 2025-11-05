@@ -4,10 +4,16 @@ import Button from 'react-bootstrap/Button';
 import CardImg from "../assets/Oficina1.jpeg";
 import "./Somosfenix.css";
 import { div } from 'framer-motion/client';
+import SEO from "./SEO";
 
 function Somosfenix() {
   return (
     <div>
+      <SEO 
+        title="Somos Fenix | Mas de 30 años en el mercado"
+        description="Conocé nuestra trayectoria, compromiso y la experiencia que nos respalda en Organización Fenix."
+        url="https://www.organizacionfenix.com/somosfenix"
+      />
 
       <div className="ContainerCardSomosFenix">
         <Card className="cardSomosFenix">

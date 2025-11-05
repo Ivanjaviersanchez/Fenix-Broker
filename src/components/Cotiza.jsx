@@ -8,6 +8,7 @@ import * as formik from 'formik';
 import * as yup from 'yup';
 import emailjs from "@emailjs/browser";
 import "./Cotiza.css";
+import SEO from "./SEO";
 
 function Cotiza() {
   const { Formik } = formik;
@@ -94,6 +95,15 @@ function Cotiza() {
 
   return (
     <div>
+
+      <SEO
+        title="Cotizá tu Seguro Online | Organización Fénix"
+        description="Completá el formulario y recibí una cotización personalizada de Organización Fénix. Asesoramiento sin compromiso para autos, hogar, ART, vida y más."
+        keywords="cotizar seguros, cotización online, presupuesto seguro auto, seguro hogar, organización fenix, cotiza fenix, solicitar seguro, asesores de seguros"
+        canonical="https://www.organizacionfenix.com/cotiza"
+        ogImage="https://www.organizacionfenix.com/og-cotiza.jpg"
+      />
+
       <div className='ContainerTitulosCotizacion'>
         <h3>Solicitud de Cotización</h3>
         <p>Procesaremos tu solicitud con nuestros asesores para ofrecerte la mejor opción ajustada a tu necesidad.</p>

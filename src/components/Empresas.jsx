@@ -1,5 +1,6 @@
 import { Outlet, Link } from "react-router-dom";
 import "./Empresas.css";
+import SEO from "./SEO";
 
 import logoSeguroComercio from "../assets/LogoSeguroComercio.png"
 import logoSeguroConsorcio from "../assets/LogoSeguroConsorcio.png"
@@ -20,6 +21,15 @@ function Empresas() {
 
   return (
     <div>
+
+      <SEO
+        title="Seguros para Empresas | Fénix Broker"
+        description="Protegé tu empresa con nuestras coberturas diseñadas para negocios, consorcios y profesionales. Descubrí las mejores opciones de seguros empresariales."
+        keywords="seguros empresas, seguros comercio, seguros consorcio, seguros art, seguros responsabilidad civil, seguros caución, seguros buques"
+        url="https://www.organizacionfenix.com/seguros/empresas"
+        type="website"
+      />
+
       <div className="ContainerEmpresas">
         <h2>Seguros para Empresas {">>>"}</h2>
         <p>Conocé las coberturas y servicios de seguros para Empresas que tenemos para vos, adaptados a tus necesidades.</p>

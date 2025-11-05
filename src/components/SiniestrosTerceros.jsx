@@ -1,10 +1,18 @@
 import { Link } from "react-router-dom";
 import { FaUserInjured, FaPhoneAlt, FaWhatsapp, FaEnvelope, FaUserTie, FaRegHandshake, FaExternalLinkAlt } from "react-icons/fa";
 import "./SiniestrosTerceros.css";
+import SEO from "./SEO";
 
 function SiniestrosTerceros() {
   return (
     <div className="siniestros-container">
+
+      <SEO
+        title="Siniestros de Terceros"
+        description="Iniciá un reclamo como tercero afectado. Organización Fénix te guía paso a paso para reportar tu siniestro."
+        url="https://www.organizacionfenix.com/siniestros/terceros"
+      />
+
       {/* Encabezado */}
       <div className="siniestros-header">
         <h2>Informar un siniestro</h2>

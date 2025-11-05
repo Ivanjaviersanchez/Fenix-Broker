@@ -6,6 +6,7 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn, FaMapMarkerAlt, FaPhoneAlt, FaE
 import Footer from "./Footer";
 import "./Layout.css";
 import '../colors.css';
+import SEO from "./SEO";
 
 function Layout() {
   const [expanded, setExpanded] = useState(false);
@@ -58,6 +59,12 @@ function Layout() {
 
   return (
     <>
+      <SEO
+        title="Fénix Broker Seguros | Coberturas para Personas y Empresas"
+        description="Fénix Broker Seguros ofrece soluciones integrales para personas y empresas. Descubrí nuestros seguros de autos, motos, hogar, vida, ART y más."
+        keywords="seguros, broker, seguros argentina, fenix broker, seguros autos, seguros hogar, seguros empresas, seguros vida, seguros retiro"
+      />
+
       <div className="navbarTop">
         {/* Lado izquierdo: Teléfono + Email */}
         <div className="navbarTop-left">

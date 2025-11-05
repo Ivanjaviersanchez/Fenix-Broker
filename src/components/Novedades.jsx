@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import "./Novedades.css";
+import SEO from "./SEO";
 
 import flyer1 from "../assets/FlyerMoto.jpeg";
 import flyer2 from "../assets/FlyerMimoAuto.jpeg";
@@ -32,6 +33,14 @@ function Novedades() {
 
   return (
     <div className="novedades-container">
+
+      <SEO
+        title="Novedades y Beneficios | Organización Fénix"
+        description="Conocé las últimas novedades, coberturas y beneficios de Organización Fénix. Seguinos en Instagram y mirá nuestro video institucional."
+        keywords="seguros, novedades, beneficios, organización fenix, promociones, seguros autos, seguros motos, seguros hogar"
+        canonical="https://www.organizacionfenix.com/novedades"
+        ogImage="https://www.organizacionfenix.com/og-novedades.jpg"
+      />
 
       {/* === BLOQUE 1: FLYERS === */}
       <div className="novedades-instagram">

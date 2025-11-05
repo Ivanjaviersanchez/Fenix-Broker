@@ -1,10 +1,20 @@
 import { Link } from "react-router-dom";
 import { FaUserInjured, FaPhoneAlt, FaWhatsapp, FaEnvelope, FaUserTie, FaRegHandshake, FaExternalLinkAlt } from "react-icons/fa";
 import "./SiniestrosAsegurados.css";
+import SEO from "./SEO";
 
 function SiniestrosAsegurados() {
   return (
     <div className="siniestros-container">
+
+      <SEO
+        title="Siniestros Asegurados | Organización FENIX"
+        description="Informá tu siniestro con Organización FENIX. Si sos asegurado, denunciá accidentes, robos o daños fácilmente por teléfono, WhatsApp o correo electrónico."
+        keywords="denunciar siniestro, seguros fenix, asegurados fenix, accidente de auto, denuncia de siniestro, contacto seguros fenix, asistencia de seguros"
+        url="https://www.organizacionfenix.com/siniestros/asegurados"
+        image="https://www.organizacionfenix.com/assets/LogoFinal.png"
+      />
+
       {/* Encabezado */}
       <div className="siniestros-header">
         <h2>Informar un siniestro</h2>

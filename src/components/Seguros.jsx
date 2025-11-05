@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import "./Seguros.css";
+import SEO from "./SEO";
+
 import personasBg from "../assets/CardPersonas.png";  
 import empresasBg from "../assets/CardEmpresas.png"; 
 import logoSeguroAuto from "../assets/LogoSeguroAuto.png"
@@ -35,6 +37,14 @@ function Seguros() {
 
   return (
     <div>
+      <SEO
+        title="Seguros | Organización FENIX"
+        description="Conoce todos los seguros disponibles en Organización FENIX: autos, motos, hogar, vida, retiro, empresas y más. Encontrá la cobertura ideal para vos o tu negocio."
+        keywords="seguros, organización fenix, broker de seguros, auto, hogar, vida, retiro, motos, empresas, pólizas"
+        url="https://www.organizacionfenix.com/seguros"
+        image="https://www.organizacionfenix.com/assets/LogoFinal.png"
+      />
+
       <div className="ContainerSegurosH3">
         <h3>Seguros Fenix {">>>"}</h3>
       </div>

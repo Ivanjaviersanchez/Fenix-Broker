@@ -1,5 +1,7 @@
 import { Outlet, Link } from "react-router-dom";
 import "./Personas.css";
+import SEO from "./SEO";
+
 import logoSeguroAuto from "../assets/LogoSeguroAuto.png"
 import logoSeguroMoto from "../assets/LogoSeguroMoto.png"
 import logoSeguroHogar from "../assets/LogoSeguroHogar.png"
@@ -21,6 +23,15 @@ function Personas() {
 
   return (
     <div>
+
+      <SEO
+        title="Seguros para Personas | Fenix Broker Seguros"
+        description="Descubrí nuestros seguros para personas: autos, motos, hogar, vida, retiro y más. Elegí la cobertura ideal y protegé lo que más te importa con Fenix Broker Seguros."
+        keywords="seguros para personas, seguros de vida, seguros de hogar, seguros para autos, seguros para motos, seguros de retiro, Fenix Broker Seguros"
+        url="https://www.organizacionfenix.com/seguros/personas"
+        type="website"
+      />
+
       <div className="ContainerPersonas">
         <h2>Seguros para Personas {">>>"}</h2>
         <p>Conocé las coberturas y servicios de seguros para Personas que tenemos para vos, adaptados a tus necesidades.</p>

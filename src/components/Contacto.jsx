@@ -10,10 +10,19 @@ import {
   FaEnvelope,
 } from "react-icons/fa";
 import "./Contacto.css";
+import SEO from "./SEO";
 
 function Contacto() {
   return (
     <div className="ContainerContacto">
+
+      <SEO
+        title="Contacto y Asistencia | Organización Fénix"
+        description="Contactate con Organización Fénix. Encontrá nuestros teléfonos, WhatsApp, correo electrónico y números útiles de asistencia. Atención personalizada las 24 horas."
+        keywords="contacto fenix, seguros, teléfono fenix, whatsapp fenix, asistencia, siniestros, urgencias, organización fenix, seguros autos, seguros hogar"
+        canonical="https://www.organizacionfenix.com/contacto"
+        ogImage="https://www.organizacionfenix.com/og-contacto.jpg"
+      />
       
       {/* === SECCIÓN 1: CONTACTO FENIX === */}
       <Card className="SucursalCard">
