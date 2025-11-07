@@ -38,12 +38,12 @@ function SiniestrosAsegurados() {
 
           <div className="contact-icons">
             <div className="contact-icons">
-              <a href="tel:+542235059018" className="contact-icon phone" aria-label="Llamar">
+              <a href="tel:+542235059024" className="contact-icon phone" aria-label="Llamar">
                 <FaPhoneAlt />
                 <span>Llamar</span>
               </a>
               <a
-                href="https://wa.me/5492235059018?text=URGENTE!!%20Necesito%20asistencia%20por%20un%20siniestro"
+                href="https://wa.me/5492235059024?text=URGENTE!!%20Necesito%20asistencia%20por%20un%20siniestro"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="contact-icon whatsapp"
@@ -66,7 +66,7 @@ function SiniestrosAsegurados() {
           <div className="contact-icons">
             <div className="contact-icons">
               <a
-                href="mailto:info@organizacionfenix.com?subject=Denuncia%20de%20Siniestro&body=Hola%2C%20quiero%20informar%20un%20siniestro."
+                href="mailto:siniestros@organizacionfenix.com?subject=Denuncia%20de%20Siniestro&body=Hola%2C%20quiero%20informar%20un%20siniestro."
                 className="contact-icon email"
                 aria-label="Enviar correo"
               >
@@ -74,7 +74,7 @@ function SiniestrosAsegurados() {
                 <span>E-mail</span>
               </a>
               <a
-                href="https://wa.me/5492235059018?text=Hola!%20Necesito%20informar%20un%20siniestro"
+                href="https://wa.me/5492235059024?text=Hola!%20Necesito%20informar%20un%20siniestro"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="contact-icon whatsapp"
@@ -95,12 +95,12 @@ function SiniestrosAsegurados() {
           </p>
           <div className="contact-icons">
             <div className="contact-icons">
-            <a href="tel:+542235059018" className="contact-icon phone" aria-label="Llamar">
+            <a href="tel:+542235059024" className="contact-icon phone" aria-label="Llamar">
               <FaPhoneAlt />
               <span>Llamar</span>
             </a>
             <a
-              href="https://wa.me/5492235059018?text=Hola!%20Necesito%20contactar%20con%20un%20asesor%20para%20informar%20un%20siniestro"
+              href="https://wa.me/5492235059024?text=Hola!%20Necesito%20contactar%20con%20un%20asesor%20para%20informar%20un%20siniestro"
               target="_blank"
               rel="noopener noreferrer"
               className="contact-icon whatsapp"

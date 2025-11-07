@@ -35,11 +35,11 @@ function Contacto() {
           <p className="ContactoItem">
             <FaWhatsapp className="IconoContacto whatsapp" />
             <a
-              href="https://wa.me/5492235059018?text=Hola!%20Quisiera%20contactar%20con%20un%20asesor%20de%20FENIX.%20Gracias!"              target="_blank"
+              href="https://wa.me/5492233420530?text=Hola!%20Quisiera%20contactar%20con%20un%20asesor%20de%20FENIX.%20Gracias!"              target="_blank"
               rel="noopener noreferrer"
               className="LinkContacto"
             >
-              +54 9 223 5059018
+              223 3420530
             </a>
           </p>
 
@@ -61,30 +61,36 @@ function Contacto() {
       </Card>
 
 
-      {/* === SECCIÓN 2: NÚMEROS ÚTILES === */}
+      {/* === SECCIÓN 2: LINEAS DE CONTACTO FENIX === */}
       <Card className="NumerosUtilesCard">
         <div className="NumerosUtilesContainer">
-          <h3 className="NumerosUtilesTitle">Números útiles {">>>"}</h3>
+          <h3 className="NumerosUtilesTitle">Lineas de contacto FENIX {">>>"}</h3>
 
           <div className="NumerosGrid">
             <div className="NumeroCard">
               <FaWhatsapp className="NumeroIcon whatsapp" />
               <h3>Whatsapp FENIX</h3>
               <a
-                href="https://wa.me/5492235059018?text=Hola!%20Quisiera%20contactar%20con%20un%20asesor%20de%20FENIX.%20Gracias!"              target="_blank"
+                href="https://wa.me/5492233420530?text=Hola!%20Quisiera%20contactar%20con%20un%20asesor%20de%20FENIX.%20Gracias!"              target="_blank"
                 rel="noopener noreferrer"
                 className="numero"
               >
-                +54 9 223 5059018
+                223 3420530
               </a>
-              <p>Disponible las 24 h.</p>
+              <p>Lunes a Viernes de 9 a 15hs.</p>
             </div>
 
             <div className="NumeroCard">
               <FaCarCrash className="NumeroIcon" />
-              <h3>Siniestros Automotor</h3>
-              <p className="numero">0800 777 4643</p>
-              <p>Disponible las 24 h.</p>
+              <h3>Siniestros</h3>
+              <a
+                href="https://wa.me/5492235059024?text=Hola!%20Quisiera%20contactar%20con%20un%20asesor%20para%20informar%20un%20siniestro."              target="_blank"
+                rel="noopener noreferrer"
+                className="numero"
+              >
+                223 5059024
+              </a>
+              <p>Lunes a Viernes de 9 a 15hs.</p>
             </div>
 
             <div className="NumeroCard">

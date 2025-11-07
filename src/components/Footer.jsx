@@ -47,13 +47,9 @@ function Footer() {
         {/* Columna Derecha */}
         <div className="footerRight">
           <p>
-            <strong>El Servicio de Atención al Asegurado (SAA)</strong> está
-            integrado por:
+            <strong>El Servicio de Atención al Asegurado (SAA)</strong>
           </p>
-          <p>
-            <strong>RESPONSABLE:</strong> Supervisor <br />
-            <strong>SUPLENTE:</strong> Supervisor
-          </p>
+          
           <p>
             <strong>EMAIL:</strong>{" "}
             <a href="mailto:info@organizacionfenix.com" className="footerLink">
@@ -61,7 +57,10 @@ function Footer() {
             </a>
           </p>
           <p>
-            <strong>TELÉFONO:</strong> INGRESAR TELEFONO
+            <strong>TELÉFONO:</strong> 223-5059018
+          </p>
+          <p>
+            <strong>DIRECCIÓN:</strong> SAAVEDRA 3107 Piso 9
           </p>
         </div>
       </div>

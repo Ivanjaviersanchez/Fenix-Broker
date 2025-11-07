@@ -91,12 +91,10 @@ function HomePreguntas() {
                             </Accordion.Body>
                         </Accordion.Item>
                         <Accordion.Item eventKey="3">
-                            <Accordion.Header>¿Cómo accedo a mi póliza digital en el celular?</Accordion.Header>
+                            <Accordion.Header>¿Cómo accedo a mi póliza?</Accordion.Header>
                             <Accordion.Body>
                             Como asegurado podés visualizar tu seguro en la APP Mi Argentina. <br />
-                            Como asegurado de Fenix, podés descargar la App móvil o ingresar al portal del asegurado y bajar tu póliza, tarjeta de circulación, certificado de cobertura y de Mercosur, entre otros documentos que necesites. <br />
-                            • APP de Fenix Seguros <br />
-                            • Portal de asegurados de Fenix Seguros
+                            Ingresa a Contacto desde la nuestra Web y solicita tu póliza mediante un asesor
                             </Accordion.Body>
                         </Accordion.Item>
                         <Accordion.Item eventKey="4">

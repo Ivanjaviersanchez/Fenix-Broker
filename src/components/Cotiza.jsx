@@ -124,7 +124,7 @@ function Cotiza() {
           onSubmit={(values, actions) => {
             setFormSubmitted(true);
 
-            const phoneNumber = "5492235059018";
+            const phoneNumber = "5492233420530";
 
             const message = `
               📋 *Nueva Solicitud de Cotización*

@@ -68,7 +68,7 @@ function Layout() {
       <div className="navbarTop">
         {/* Lado izquierdo: Teléfono + Email */}
         <div className="navbarTop-left">
-          <a className="phone" href="tel:+542235059018" target="_blank" rel="noopener noreferrer">
+          <a className="phone" href="tel:+542233420530" target="_blank" rel="noopener noreferrer">
             <FaPhoneAlt /> 
           </a>
           <a className="email" href="mailto:info@organizacionfenix.com" target="_blank" rel="noopener noreferrer">
@@ -81,7 +81,7 @@ function Layout() {
           <a className="location" href="https://maps.app.goo.gl/a2mYtVHF3Js284DXA" target="_blank" rel="noopener noreferrer">
             <FaMapMarkerAlt />
           </a>
-          <a className="facebook" href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+          <a className="facebook" href="https://www.facebook.com/people/Organizaci%C3%B3n-Fenix-Seguros/61579139764288/?rdid=rDQVNJjt5TQ1zFPs&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F14PX7gAXXy5%2F" target="_blank" rel="noopener noreferrer">
             <FaFacebookF />
           </a>
           <a className="instagram" href="https://www.instagram.com/fenix.brokerseguros?igsh=M20zajJ0bmVlaXpy" target="_blank" rel="noopener noreferrer">
@@ -216,14 +216,9 @@ function Layout() {
       <Outlet />
 
       {/* WhatsApp Floating Button */}
-      <a href="https://wa.me/5492235059018?text=Hola%20quiero%20hablar%20con%20un%20asesor%20de%20seguros" className="whatsapp-float" target="_blank" rel="noopener noreferrer">
+      <a href="https://wa.me/5492233420530?text=Hola%20quiero%20hablar%20con%20un%20asesor%20de%20seguros" className="whatsapp-float" target="_blank" rel="noopener noreferrer">
         <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp"/>
       </a>
-
-      {/* Instagram Floating Button */}
-     {/*  <a href="https://www.instagram.com/tuusuario" className="instagram-float" target="_blank" rel="noopener noreferrer">
-        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"/>
-      </a> */}
       
       <Footer />
     </>
