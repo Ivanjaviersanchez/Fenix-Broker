@@ -8,8 +8,9 @@ function SiniestrosTerceros() {
     <div className="siniestros-container">
 
       <SEO
-        title="Siniestros de Terceros"
-        description="Iniciá un reclamo como tercero afectado. Organización Fénix te guía paso a paso para reportar tu siniestro."
+        title="Siniestros para Terceros | Organización FENIX"
+        description="Si sufriste un accidente con un asegurado de FENIX, podés realizar tu denuncia de siniestro fácilmente. Te asistimos en cada paso."
+        keywords="siniestros terceros, denuncia siniestro, accidentes, organización fenix, seguro auto"
         url="https://www.organizacionfenix.com/siniestros/terceros"
       />
 

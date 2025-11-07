@@ -38,12 +38,12 @@ function Seguros() {
   return (
     <div>
       <SEO
-        title="Seguros | Organización FENIX"
-        description="Conoce todos los seguros disponibles en Organización FENIX: autos, motos, hogar, vida, retiro, empresas y más. Encontrá la cobertura ideal para vos o tu negocio."
-        keywords="seguros, organización fenix, broker de seguros, auto, hogar, vida, retiro, motos, empresas, pólizas"
+        title="Seguros | Coberturas integrales para personas y empresas"
+        description="Descubrí todos los tipos de seguros disponibles en Organización FENIX: autos, motos, hogar, vida, empresas, ART y más. Cotizá fácil y rápido."
+        keywords="seguros, coberturas, cotizaciones, auto, moto, hogar, empresa, vida, ART, mar del plata, fenix"
         url="https://www.organizacionfenix.com/seguros"
-        image="https://www.organizacionfenix.com/assets/LogoFinal.png"
       />
+
 
       <div className="ContainerSegurosH3">
         <h3>Seguros Fenix {">>>"}</h3>

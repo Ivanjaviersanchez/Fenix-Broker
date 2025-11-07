@@ -9,9 +9,10 @@ import SEO from "./SEO";
 function Somosfenix() {
   return (
     <div>
-      <SEO 
-        title="Somos Fenix | Mas de 30 años en el mercado"
-        description="Conocé nuestra trayectoria, compromiso y la experiencia que nos respalda en Organización Fenix."
+      <SEO
+        title="Somos FENIX | Más de 30 años de experiencia en seguros"
+        description="Conocé la historia y valores de Organización FENIX. Más de 30 años brindando confianza, asesoramiento y soluciones a medida en seguros."
+        keywords="somos fenix, quienes somos, historia fenix, broker de seguros, mar del plata, seguros personalizados"
         url="https://www.organizacionfenix.com/somosfenix"
       />
 

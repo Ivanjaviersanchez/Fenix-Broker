@@ -35,12 +35,12 @@ function Novedades() {
     <div className="novedades-container">
 
       <SEO
-        title="Novedades y Beneficios | Organización Fénix"
-        description="Conocé las últimas novedades, coberturas y beneficios de Organización Fénix. Seguinos en Instagram y mirá nuestro video institucional."
-        keywords="seguros, novedades, beneficios, organización fenix, promociones, seguros autos, seguros motos, seguros hogar"
-        canonical="https://www.organizacionfenix.com/novedades"
-        ogImage="https://www.organizacionfenix.com/og-novedades.jpg"
+        title="Novedades | Noticias Instagram "
+        description="Enterate de las últimas novedades, consejos y noticias del mundo de los seguros con Organización FENIX. Actualidad, prevención y tips útiles."
+        keywords="novedades, noticias, seguros, consejos, organización fenix, mar del plata"
+        url="https://www.organizacionfenix.com/novedades"
       />
+
 
       {/* === BLOQUE 1: FLYERS === */}
       <div className="novedades-instagram">

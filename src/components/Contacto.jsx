@@ -17,12 +17,12 @@ function Contacto() {
     <div className="ContainerContacto">
 
       <SEO
-        title="Contacto y Asistencia | Organización Fénix"
-        description="Contactate con Organización Fénix. Encontrá nuestros teléfonos, WhatsApp, correo electrónico y números útiles de asistencia. Atención personalizada las 24 horas."
-        keywords="contacto fenix, seguros, teléfono fenix, whatsapp fenix, asistencia, siniestros, urgencias, organización fenix, seguros autos, seguros hogar"
-        canonical="https://www.organizacionfenix.com/contacto"
-        ogImage="https://www.organizacionfenix.com/og-contacto.jpg"
+        title="Contacto | Conoce nuestra Sucursal en Mar del plata, habla con un asesor de Organización FENIX"
+        description="¿Tenés dudas o querés cotizar un seguro? Contactanos por WhatsApp, mail o completá el formulario y un asesor de FENIX te responderá enseguida."
+        keywords="contacto, asesor, seguros, organización fenix, mar del plata, cotización, whatsapp"
+        url="https://www.organizacionfenix.com/contacto"
       />
+
       
       {/* === SECCIÓN 1: CONTACTO FENIX === */}
       <Card className="SucursalCard">

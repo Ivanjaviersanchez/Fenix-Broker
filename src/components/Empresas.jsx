@@ -23,12 +23,12 @@ function Empresas() {
     <div>
 
       <SEO
-        title="Seguros para Empresas | Fénix Broker"
-        description="Protegé tu empresa con nuestras coberturas diseñadas para negocios, consorcios y profesionales. Descubrí las mejores opciones de seguros empresariales."
-        keywords="seguros empresas, seguros comercio, seguros consorcio, seguros art, seguros responsabilidad civil, seguros caución, seguros buques"
+        title="Seguros para Empresas | ART, Comercio, Flota y más"
+        description="Soluciones de seguros empresariales: ART, comercio, flota vehicular y más. Organización FENIX protege tu negocio con asesoramiento profesional."
+        keywords="seguros empresas, ART, comercio, flota, responsabilidad civil, seguros corporativos, mar del plata"
         url="https://www.organizacionfenix.com/seguros/empresas"
-        type="website"
       />
+
 
       <div className="ContainerEmpresas">
         <h2>Seguros para Empresas {">>>"}</h2>

@@ -25,12 +25,12 @@ function Personas() {
     <div>
 
       <SEO
-        title="Seguros para Personas | Fenix Broker Seguros"
-        description="Descubrí nuestros seguros para personas: autos, motos, hogar, vida, retiro y más. Elegí la cobertura ideal y protegé lo que más te importa con Fenix Broker Seguros."
-        keywords="seguros para personas, seguros de vida, seguros de hogar, seguros para autos, seguros para motos, seguros de retiro, Fenix Broker Seguros"
+        title="Seguros para Personas | Autos, Motos, Hogar y Vida"
+        description="Protegé lo que más querés. Organización FENIX ofrece seguros para personas: autos, motos, hogar, accidentes personales, vida y más."
+        keywords="seguros personas, autos, motos, hogar, vida, seguros individuales, fenix, mar del plata"
         url="https://www.organizacionfenix.com/seguros/personas"
-        type="website"
       />
+
 
       <div className="ContainerPersonas">
         <h2>Seguros para Personas {">>>"}</h2>

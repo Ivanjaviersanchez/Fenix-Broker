@@ -97,12 +97,12 @@ function Cotiza() {
     <div>
 
       <SEO
-        title="Cotizá tu Seguro Online | Organización Fénix"
-        description="Completá el formulario y recibí una cotización personalizada de Organización Fénix. Asesoramiento sin compromiso para autos, hogar, ART, vida y más."
-        keywords="cotizar seguros, cotización online, presupuesto seguro auto, seguro hogar, organización fenix, cotiza fenix, solicitar seguro, asesores de seguros"
-        canonical="https://www.organizacionfenix.com/cotiza"
-        ogImage="https://www.organizacionfenix.com/og-cotiza.jpg"
+        title="Cotizá tu Seguro | Organización FENIX"
+        description="Completá el formulario y recibí una cotización personalizada para tu seguro de auto, moto, hogar o empresa. Rápido, simple y sin compromiso."
+        keywords="cotizar seguro, cotización online, seguro auto, seguro hogar, fenix, mar del plata"
+        url="https://www.organizacionfenix.com/cotiza"
       />
+
 
       <div className='ContainerTitulosCotizacion'>
         <h3>Solicitud de Cotización</h3>

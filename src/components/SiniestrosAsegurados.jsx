@@ -8,12 +8,12 @@ function SiniestrosAsegurados() {
     <div className="siniestros-container">
 
       <SEO
-        title="Siniestros Asegurados | Organización FENIX"
-        description="Informá tu siniestro con Organización FENIX. Si sos asegurado, denunciá accidentes, robos o daños fácilmente por teléfono, WhatsApp o correo electrónico."
-        keywords="denunciar siniestro, seguros fenix, asegurados fenix, accidente de auto, denuncia de siniestro, contacto seguros fenix, asistencia de seguros"
+        title="Siniestros para Asegurados | Organización FENIX"
+        description="Denunciá y gestioná tus siniestros como asegurado con Organización FENIX. Asistencia rápida, clara y personalizada para resolver tu caso."
+        keywords="siniestros asegurados, denuncia de siniestros, asistencia seguro, organización fenix"
         url="https://www.organizacionfenix.com/siniestros/asegurados"
-        image="https://www.organizacionfenix.com/assets/LogoFinal.png"
       />
+
 
       {/* Encabezado */}
       <div className="siniestros-header">

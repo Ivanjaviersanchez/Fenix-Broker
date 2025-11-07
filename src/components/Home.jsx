@@ -16,11 +16,11 @@ function Home() {
   return (
     <div>
       <SEO 
-        title="Inicio | Organización FENIX"
-        description="Seguros para autos, hogar, empresas y más. Cotizá tu póliza con Organización FENIX, asesoramiento integral en Mar del Plata."
+        title="Organización FENIX - Seguros para Autos, Hogar y Empresas en Mar del Plata"
+        description="Cotizá tu seguro con Organización FENIX. Asesoramiento profesional en seguros para autos, motos, hogar y empresas en Mar del Plata."
+        keywords="seguros, mar del plata, broker, autos, motos, hogar, empresas, cotizar seguro, fenix"
         url="https://www.organizacionfenix.com/"
       />
-
       {/*      SECCIONES DE HOME      */}
       <HomeCarrusel />
       <HomeElegirnos />
