@@ -50,7 +50,7 @@ function Somosfenix() {
                 className="SucursalBTN"
                 variant="primary"
                 onClick={() => {
-                  const phoneNumber = "5492235059018"; // tu número de WhatsApp en formato internacional
+                  const phoneNumber = "5492233420530"; // tu número de WhatsApp en formato internacional
                   const message = "Hola, quiero contactar con un asesor para consultar sobre seguros.";
                   const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
                   window.open(url, "_blank");

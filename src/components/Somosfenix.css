@@ -47,7 +47,7 @@
 .cardTitle {
   margin: 0;
   font-family: 'New Astro', sans-serif;
-  font-size: 7vh !important;
+  font-size: 6vh !important;
   font-weight: 400;
   color: var(--color-7);
   text-align: center;

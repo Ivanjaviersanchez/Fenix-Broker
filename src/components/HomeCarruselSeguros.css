@@ -121,7 +121,7 @@
   transition: all 0.3s ease;
 }
 
-.ButtonSeguro:hover {
+.ButtonSeguroCarrusel:hover {
   background: linear-gradient(to bottom, #89b1df, #358ae9, #358ae9);
   border: solid var(--color-3) 1px; 
   color: white;
