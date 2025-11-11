@@ -4,9 +4,9 @@ import Button from "react-bootstrap/Button";
 import {
   FaWhatsapp,
   FaCarCrash,
-  FaAmbulance,
-  FaTruckPickup,
-  FaPhoneAlt,
+  FaExclamationTriangle,
+  FaFileInvoiceDollar,
+  FaRegFileAlt,
   FaEnvelope,
 } from "react-icons/fa";
 import "./Contacto.css";
@@ -75,7 +75,7 @@ function Contacto() {
                 rel="noopener noreferrer"
                 className="numero"
               >
-                223 3420530
+                223-3420530
               </a>
               <p>Lunes a Viernes de 9 a 15hs.</p>
             </div>
@@ -88,39 +88,50 @@ function Contacto() {
                 rel="noopener noreferrer"
                 className="numero"
               >
-                223 5059024
+                223-5059024
               </a>
               <p>Lunes a Viernes de 9 a 15hs.</p>
             </div>
 
             <div className="NumeroCard">
-              <FaAmbulance className="NumeroIcon" />
-              <h3>Emergencias Médicas Íntegro</h3>
-              <p className="numero">0800 555 2850</p>
-              <p>Disponible las 24 h.</p>
+              <FaExclamationTriangle className="NumeroIcon" />
+              <h3>Urgencias</h3>
+              <a
+                href="https://wa.me/5492235814952?text=Hola!%20Quisiera%20contactar%20con%20un%20asesor%20para%20informar%20un%20siniestro."              target="_blank"
+                rel="noopener noreferrer"
+                className="numero"
+              >
+                223-5814952
+              </a>
+              
             </div>
 
             <div className="NumeroCard">
-              <FaTruckPickup className="NumeroIcon" />
-              <h3>Asistencia al vehículo y las personas</h3>
-              <p className="numero">0800 333 2766</p>
-              <p className="numero">+54 0342 410 3221</p>
-              <p>Disponible las 24 h.</p>
+              <FaFileInvoiceDollar className="NumeroIcon" />
+              <h3>Cobranzas FENIX</h3>
+              <a
+                href="https://wa.me/5492235289395?text=Hola!%20Quisiera%20contactar%20con%20Cobranzas%20por%20el%20pago%20del%20seguro."              target="_blank"
+                rel="noopener noreferrer"
+                className="numero"
+              >
+                223-5289395
+              </a>
+              <p>Lunes a Viernes de 9 a 15hs.</p>
             </div>
 
             <div className="NumeroCard">
-              <FaWhatsapp className="NumeroIcon whatsapp" />
-              <h3>Whatsapp asistencia</h3>
-              <p className="numero">+54 3493 520 650</p>
-              <p>Disponible las 24 h.</p>
+              <FaRegFileAlt className="NumeroIcon" />
+              <h3>Solicitud de Pólizas</h3>
+              <a
+                href="https://wa.me/5492234002377?text=Hola!%20Quisiera%20contactar%20con%20un%20asesor%20para%20solicitar%20una%20póliza."              target="_blank"
+                rel="noopener noreferrer"
+                className="numero"
+              >
+                223-4002377
+              </a>
+              <p>Lunes a Viernes de 9 a 15hs.</p>
             </div>
 
-            <div className="NumeroCard">
-              <FaPhoneAlt className="NumeroIcon" />
-              <h3>Consultas generales</h3>
-              <p className="numero">0800 444 2850</p>
-              <p>Lunes a viernes de 8 a 20 h.</p>
-            </div>
           </div>
         </div>
       </Card>

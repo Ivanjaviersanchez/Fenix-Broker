@@ -35,7 +35,7 @@ function HomeSeguros() {
         </div>
 
         <div className="tituloSegurosConBoton">
-          <h2>Conóce todos nuestros seguros {">>>"} </h2>
+          <h2>Conóce todas nuestras coberturas {">>>"} </h2>
           <Link to="/seguros" className="cardLinkButtonConoce">Seguros FENIX</Link>
         </div>
 
