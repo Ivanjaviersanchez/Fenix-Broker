@@ -38,7 +38,7 @@
     padding: 1vh;
   }
   .ContainerCarruselHome img {
-    height: 30vh;
+    height: 25vh;
   }
   .TextoCarrusel {
     font-size: 2vh;
@@ -51,7 +51,7 @@
     padding: 1vh;
   }
   .ContainerCarruselHome img {
-    height: 35vh;
+    height: 30vh;
   }
   .TextoCarrusel {
     font-size: 2vh;
@@ -65,7 +65,7 @@
     padding: 1vh;
   }
   .ContainerCarruselHome img {
-    height: 50vh;
+    height: 40vh;
   }
   .TextoCarrusel {
     font-size: 2.5vh;
@@ -77,7 +77,7 @@
 @media (min-width: 992px) and (max-width: 1199px) {
 
   .ContainerCarruselHome img {
-    height: 60vh;
+    height: 55vh;
   }
   .TextoCarrusel {
     font-size: 3vh;
