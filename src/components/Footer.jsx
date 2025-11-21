@@ -47,7 +47,7 @@ function Footer() {
         {/* Columna Derecha */}
         <div className="footerRight">
           <p>
-            <strong>El Servicio de Atención al Asegurado (SAA)</strong>
+            <strong>Servicio de Atención al Asegurado (SAA)</strong>
           </p>
           
           <p>
@@ -60,7 +60,7 @@ function Footer() {
             <strong>TELÉFONO:</strong> 223-5059018
           </p>
           <p>
-            <strong>DIRECCIÓN:</strong> SAAVEDRA 3107 Piso 9
+            <strong>DIRECCIÓN:</strong> Saavedra 3107 Piso 9
           </p>
         </div>
       </div>
