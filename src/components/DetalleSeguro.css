@@ -10,7 +10,7 @@
   padding-bottom: 3vh;
   text-align: center;
   font-family: 'New Astro', sans-serif;
-  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-size: 6vh;
   font-weight: 400;
   color: var(--color-1);
 }
