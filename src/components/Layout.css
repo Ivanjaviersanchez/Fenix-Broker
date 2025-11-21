@@ -23,7 +23,7 @@
   margin: 0 2vh;
   color: var(--color-4);
   transition: transform 0.3s ease, color 0.3s ease;
-  font-size: 2.5vh;
+  font-size: 3vh;
 }
 
 .navbarTop-left a:hover,
@@ -84,7 +84,7 @@
   color: white !important;
   font-family: 'New Astro', sans-serif;
   font-size: 5vh;
-  padding-top: 1vh;
+  padding-top: 2vh;
 }
 
 .logoTextStiles {
@@ -100,6 +100,7 @@
 
 .navbarStyles .navbar-toggler {
   border-color: white; /* borde blanco */
+  font-size: 2vh;
 }
 
 .navbarStyles .navbar-toggler-icon {
@@ -177,7 +178,7 @@
   .navbarTop-left a,
   .navbarTop-right a {
     margin-right: 2vh;
-    font-size: 2.5vh;
+    font-size: 3vh;
   }
 
   .navbarStyles {
@@ -193,18 +194,18 @@
   }
 
   .navbarStyles .nav-link {
-    font-size: 1.6vh;
+    font-size: 2vh;
     margin: 0;
   }
 
   .cotiza-cta {
     padding: 0.5vh 1.2vh !important;
-    font-size: 1.6vh;
+    font-size: 2vh;
     width: auto;
   }
 
   .custom-dropdown .dropdown-item {
-    font-size: 1.6vh !important;
+    font-size: 2vh !important;
   }
 
   .navbarStyles .container-fluid {
@@ -219,7 +220,7 @@
  
   .navbarTop-left a,
   .navbarTop-right a {
-    font-size: 2vh;
+    font-size: 2.5vh;
     margin-right: 2vh;
   }
 
@@ -228,26 +229,26 @@
   }
 
   .navbar-brand img {
-    height: 6vh;
+    height: 7.5vh; 
   }
 
   .navbarStyles .navbar-brand h2 {
-    font-size: 3.3vh;
+    font-size: 4.2vh;
   }
 
   .navbarStyles .nav-link {
-    font-size: 1.3vh;
+    font-size: 2vh;
     margin: 0 0vh;
   }
 
   .cotiza-cta {
     /* padding: 0.4vh 0.2vh !important; */
-    font-size: 1.3vh !important;
+    font-size: 2vh !important;
     width: auto;
   }
 
   .custom-dropdown .dropdown-item {
-    font-size: 1.3vh !important;
+    font-size: 2vh !important;
   }
 
   .navbarStyles .container-fluid {
@@ -332,11 +333,11 @@
   }
 
   .navbar-brand img {
-    height: 8vh;
+    height: 7.5vh;
   }
 
   .navbarStyles .navbar-brand h2 {
-    font-size: 4.5vh;
+    font-size: 4.2vh;
   }
 
   .custom-dropdown .dropdown-item {
@@ -349,6 +350,7 @@
     margin: 1.5vh 0 !important;
     margin-left: 2vh !important;
     width: 20vh !important; 
+    font-size: 2vh !important;
 
   }
 

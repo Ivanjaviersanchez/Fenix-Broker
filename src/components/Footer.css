@@ -1,5 +1,5 @@
 .footerStyles {
-  background: linear-gradient(to bottom, var(--color-1), #89b1df, var(--color-1));
+  background: var(--color-1);
   color: var(--color-7);
   padding: 2rem 5vh;
   font-size: 2.5vh;
@@ -40,6 +40,9 @@
   color: #e0f0ff;
   text-decoration: underline;
 }
+.footerLink:hover {
+  color: var(--color-3);
+}
 
 .footerBottom {
   margin-top: 1vh;
@@ -67,16 +70,16 @@
 }
 
 .isdevsLogo {
-  height: 7vh;
+  height: 12vh;
   transition: transform 0.3s ease;
 }
 
 .isdevsLogo:hover {
-  transform: scale(1.05);
+  transform: scale(1.3);
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
 
   .footerLink{
     font-size: 2vh;
@@ -98,6 +101,6 @@
     text-align: center; /* centrado en móvil */
   }
   .isdevsLogo {
-    height: 7vh;
+    height: 12vh;
   }
 }
