@@ -1,0 +1,23 @@
+.siniestros-form-container {
+  background: var(--color-7);
+  padding: 3rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.15);
+  margin-top: 2rem;
+  font-family: 'New Astro', sans-serif;
+}
+
+.siniestros-btn {
+  background: linear-gradient(to bottom, #89b1df, #358ae9);
+  border: solid 1px var(--color-1);
+  padding: 1rem 2.5rem;
+  font-size: 2.5vh;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.siniestros-btn:hover {
+  background: linear-gradient(to bottom, #fbc296, #f8992e);
+  color: var(--color-6);
+  transform: translateX(5px);
+}

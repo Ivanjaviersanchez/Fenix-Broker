@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { FaUserInjured, FaPhoneAlt, FaWhatsapp, FaEnvelope, FaUserTie, FaRegHandshake, FaExternalLinkAlt } from "react-icons/fa";
+import SiniestrosForm from "./SiniestrosForm";
 import "./SiniestrosAsegurados.css";
 import SEO from "./SEO";
 
@@ -110,31 +111,14 @@ function SiniestrosAsegurados() {
         </div>
       </div>
 
-      {/* Documentación */}
+      {/* Formulario de siniestros */}
       <div className="siniestros-docs">
-        <h4>Documentación a presentar</h4>
-        <p>Conocé cómo iniciar o consultar el estado de un reclamo.</p>
+        <h4>Informá un siniestro por nuestra web {">>"}</h4>
+        <p>Completa el formulario y adjunta la documentación, tu solicitud sera procesada a la brebedad por nuestros asesores.</p>
 
-        <div className="docs-fields">
-          <div>
-            <label>Producto</label>
-            <select>
-              <option>Automotores y Motovehículos</option>
-              <option>Hogar</option>
-              <option>Comercio</option>
-            </select>
-          </div>
-          <div>
-            <label>Tipo de siniestro</label>
-            <select>
-              <option>Responsabilidad Civil por Daños a Terceros</option>
-              <option>Robo o Hurto</option>
-              <option>Incendio</option>
-            </select>
-          </div>
-        </div>
-
-        <button className="btn-vermas">Ver más</button>
+        {/* Llamado a Componente de Formulario */}
+        <SiniestrosForm />
+       
       </div>
 
       {/* Sección final */}
