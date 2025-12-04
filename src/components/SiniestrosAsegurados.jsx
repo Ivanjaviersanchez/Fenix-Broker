@@ -114,7 +114,7 @@ function SiniestrosAsegurados() {
       {/* Formulario de siniestros */}
       <div className="siniestros-docs">
         <h4>Informá un siniestro por nuestra web {">>"}</h4>
-        <p>Completa el formulario y adjunta la documentación, tu solicitud sera procesada a la brebedad por nuestros asesores.</p>
+        <p>Completa el siguiente formulario, tu solicitud sera procesada a la brebedad por nuestros asesores.</p>
 
         {/* Llamado a Componente de Formulario */}
         <SiniestrosForm />
