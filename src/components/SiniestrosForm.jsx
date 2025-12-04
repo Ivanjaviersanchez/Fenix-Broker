@@ -23,6 +23,9 @@ function SiniestrosForm() {
     email: yup.string().email("Email inválido").required("Ingresá tu email"),
     producto: yup.string().required("Seleccioná un producto"),
     tipoSiniestro: yup.string().required("Seleccioná el tipo de siniestro"),
+    detalleSiniestro: yup
+      .string()
+      .required("Ingresá una descripción del siniestro"),
   });
 
   const sendEmail = (values) => {
@@ -33,13 +36,15 @@ function SiniestrosForm() {
       email: values.email,
       producto: values.producto,
       tipoSiniestro: values.tipoSiniestro,
+      detalleSiniestro: values.detalleSiniestro,
     };
 
-    emailjs.send(
-        "service_siniestros",        // 🔧 tu SERVICE ID
-        "template_50kaamg", // 🔧 tu TEMPLATE ID
+    emailjs
+      .send(
+        "service_siniestros", // SERVICE ID
+        "template_50kaamg",   // TEMPLATE ID
         templateParams,
-        "RVMaHQ_u9uEMK3kWF"       // 🔧 tu PUBLIC KEY
+        "RVMaHQ_u9uEMK3kWF"   // PUBLIC KEY
       )
       .then(() => {
         alert("Tu denuncia fue enviada correctamente.");
@@ -62,6 +67,7 @@ function SiniestrosForm() {
           email: "",
           producto: "",
           tipoSiniestro: "",
+          detalleSiniestro: "",
         }}
         onSubmit={(values, actions) => {
           sendEmail(values);
@@ -185,6 +191,22 @@ function SiniestrosForm() {
               </Form.Group>
             </Row>
 
+            {/* TEXTAREA NUEVO */}
+            <Form.Group className="mb-3">
+              <Form.Label>Detallá cómo ocurrió el siniestro</Form.Label>
+              <Form.Control
+                as="textarea"
+                rows={5}
+                name="detalleSiniestro"
+                value={values.detalleSiniestro}
+                onChange={handleChange}
+                isInvalid={!!errors.detalleSiniestro}
+              />
+              <Form.Control.Feedback type="invalid">
+                {errors.detalleSiniestro}
+              </Form.Control.Feedback>
+            </Form.Group>
+
             <Button type="submit" className="siniestros-btn">
               Enviar Información
             </Button>
@@ -202,6 +224,7 @@ function SiniestrosForm() {
 }
 
 export default SiniestrosForm;
+
 
 
 

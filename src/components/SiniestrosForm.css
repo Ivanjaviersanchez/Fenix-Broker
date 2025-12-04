@@ -5,19 +5,31 @@
   box-shadow: 0 5px 25px rgba(0,0,0,0.15);
   margin-top: 2rem;
   font-family: 'New Astro', sans-serif;
+  color: var(--color-1);
 }
+
+.siniestros-form-container select {
+  color: var(--color-1);
+  background-color: white;
+  
+}
+.siniestros-form-container select option {
+  color: var(--color-2);
+  background-color: var(--color-7);
+} 
 
 .siniestros-btn {
   background: linear-gradient(to bottom, #89b1df, #358ae9);
-  border: solid 1px var(--color-1);
-  padding: 1rem 2.5rem;
+  border: solid var(--color-3) 1px; 
+  transition: background-color 0.3s ease;
   font-size: 2.5vh;
-  border-radius: 10px;
-  transition: 0.3s;
+  border-radius: 12px;
+  transition: all 0.3s ease;
 }
 
 .siniestros-btn:hover {
   background: linear-gradient(to bottom, #fbc296, #f8992e);
+  border: solid var(--color-6) 1px; 
   color: var(--color-6);
-  transform: translateX(5px);
+  transform: translateX(7px);
 }

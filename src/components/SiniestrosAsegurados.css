@@ -211,6 +211,7 @@
   transition: background-color 0.3s ease;
   display: inline-block;
   padding: 0 1vh;
+  font-family: 'New Astro', sans-serif;
   transition: all 0.3s ease;
 }
 .btn-vermas:hover {
