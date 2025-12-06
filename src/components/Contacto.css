@@ -1,7 +1,7 @@
 .ContainerContacto {
   margin: 0;
   padding: 0;
-  background: linear-gradient(to bottom, var(--color-7), var(--color-7), #89b1df);
+  background: linear-gradient(to bottom,#89b1df, var(--color-7), white, #89b1df);
   display: flex;
   flex-direction: column;
   gap: 5vh;
