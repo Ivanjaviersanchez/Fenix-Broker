@@ -25,115 +25,75 @@ function SiniestrosTerceros() {
 
       {/* Tarjetas principales */}
 
-      {/* <div className="siniestros-cards">
+      <div className="siniestros-cards">
 
         <div className="siniestro-card">
           <FaUserInjured className="icon" />
           <h4>¿Necesitás asistencia por un siniestro?</h4>
           <p>
-            Contactate de manera inmediata con las compañias aseguradoras.
+            En caso de tener un siniestro con un asegurado de nuestra organización debes realizar el reclamo en la compañia contratada mediante su portal web. 
           </p>
 
-          <div className="contact-icons contact-companias">
-            <a href="tel:08109993200" className="contact-icon phone" aria-label="Llamar">
-              <FaPhoneAlt />
-              <span>Seguros Rivadavia:  0810-999-3200</span>
-            </a>
-            <a href="tel:08008884488" className="contact-icon phone" aria-label="Llamar">
-              <FaPhoneAlt />
-              <span>Mercantil Andina: 0800-888-4488</span>
-            </a>
-            <a href="tel:08007774643" className="contact-icon phone" aria-label="Llamar">
-              <FaPhoneAlt />
-              <span>Sancor Seguros: 0800-777-4643</span>
-            </a>
-            <a href="tel:08003333244" className="contact-icon phone" aria-label="Llamar">
-              <FaPhoneAlt />
-              <span>Meridional Seguros: 0800-333-3244</span>
-            </a>
-          </div>
-        </div>
-
-
-        <div className="siniestro-card destacado">
-          <FaRegHandshake className="icon" />
-          <h4>Informar un siniestro ahora</h4>
-          <p>
-            Envíanos tus datos de asegurado por E-mail o Whatsapp para poder iniciar tu denuncia.
-          </p>
-          <div className="contact-icons">
+          <div className="contact-icons contact-web">
             <a
-              href="mailto:siniestros@organizacionfenix.com?subject=Denuncia%20de%20Siniestro&body=Hola%2C%20quiero%20informar%20un%20siniestro."
-              className="contact-icon email"
-              aria-label="Enviar correo"
-            >
-              <FaEnvelope />
-              <span>E-mail</span>
-            </a>
-            <a
-              href="https://wa.me/5492235059024?text=Hola!%20Necesito%20informar%20un%20siniestro"
+              href="https://www.segurosrivadavia.com/siniestros/terceros"
+              className="contact-icon web-link"
               target="_blank"
               rel="noopener noreferrer"
-              className="contact-icon whatsapp"
-              aria-label="WhatsApp"
             >
-              <FaWhatsapp />
-              <span>WhatsApp</span>
+              <FaExternalLinkAlt />
+              <span>Reclamos Rivadavia</span>
             </a>
-          </div>
-        </div>
 
-        <div className="siniestro-card">
-          <FaUserTie className="icon" />
-          <h4>Productor Asesor de Seguros</h4>
-          <p>
-            Comunicate con tu asesor intermediario para informar un siniestro.
-          </p>
-          <div className="contact-icons">
-            <a href="tel:+542235059024" className="contact-icon phone" aria-label="Llamar">
-              <FaPhoneAlt />
-              <span>Llamar</span>
-            </a>
             <a
-              href="https://wa.me/5492235059024?text=Hola!%20Necesito%20contactar%20con%20un%20asesor%20para%20informar%20un%20siniestro"
+              href="https://siniestros.mercantilandina.com.ar/terceros/#/login"
+              className="contact-icon web-link"
               target="_blank"
               rel="noopener noreferrer"
-              className="contact-icon whatsapp"
-              aria-label="WhatsApp"
             >
-              <FaWhatsapp />
-              <span>WhatsApp</span>
+              <FaExternalLinkAlt />
+              <span>Reclamos Mercantil Andina</span>
             </a>
+
+            <a
+              href="https://www.meridionalseguros.seg.ar/terceros/"
+              className="contact-icon web-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaExternalLinkAlt />
+              <span>Reclamos Meridional Seguros</span>
+            </a>
+
+            <a
+              href="https://www.sancorseguros.com.ar/siniestros/soy-tercero"
+              className="contact-icon web-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaExternalLinkAlt />
+              <span>Reclamos Sancor Seguros</span>
+            </a>
+
+            <div className="otros-ws">
+              <p>
+                Si el asegurado tiene su póliza en otra compañía, <strong>consultanos por WhatsApp</strong>.
+              </p>
+              <a
+                href="https://wa.me/5492235059024?text=Hola!%20Necesito%20información%20sobre%20un%20reclamo%20como%20tercero."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="contact-icon whatsapp"
+              >
+                <FaWhatsapp />
+                <span>Enviar WhatsApp</span>
+              </a>
+            </div>
           </div>
         </div>
-      </div> */}
 
-      {/* Documentación */}
-      <div className="siniestros-docs">
-        <h4>Documentación a presentar</h4>
-        <p>Conocé cómo iniciar o consultar el estado de un reclamo.</p>
-
-        <div className="docs-fields">
-          <div>
-            <label>Producto</label>
-            <select>
-              <option>Automotores y Motovehículos</option>
-              <option>Hogar</option>
-              <option>Comercio</option>
-            </select>
-          </div>
-          <div>
-            <label>Tipo de siniestro</label>
-            <select>
-              <option>Responsabilidad Civil por Daños a Terceros</option>
-              <option>Robo o Hurto</option>
-              <option>Incendio</option>
-            </select>
-          </div>
-        </div>
-
-        <button className="btn-vermas">Ver más</button>
       </div>
+
 
       {/* Sección final */}
       <div className="siniestros-tercero">

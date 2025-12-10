@@ -146,35 +146,31 @@ function Contacto() {
             <div className="TelefonosBlock">
               <h3>Auxilio mecánico:</h3>
               <ul>
-                <li>Allianz: 0800-888-2427</li>
-                <li>La Caja: 0810-555-2252</li>
-                <li>Chubb: 0800-5555-2482</li>
-                <li>Federación Patronal: 0800-222-0920</li>
-                <li>Mapfre: 0810-222-0468</li>
-                <li>QBE: 0810-999-2424</li>
-                <li>Sura: 0800-999-76925</li>
-                <li>Zurich: 0800-222-1600</li>
+                <li>Rivadavia: 0800-666-6789</li>
+                <li>Mercantil Andina: 0800-777-2634</li>
+                <li>Meridional: 0800-333-3244</li>
+                <li>Sancor: 0800-777-4643</li>
               </ul>
             </div>
             <div className="TelefonosBlock">
               <h3>Urgencias domiciliarias:</h3>
               <ul>
-                <li>Allianz: 0800-888-2427</li>
-                <li>QBE: 0810-999-7693</li>
-                <li>Sura: 0800-999-76925</li>
-                <li>Zurich: 0800-222-1600</li>
+                <li>Rivadavia: 0800-666-6789</li>
+                <li>Mercantil Andina: 0800-777-2634</li>
+                <li>Meridional: 0800-555-1234</li>
+                <li>Sancor: 0800-555-2850</li>
+                <li>Allianz: 0800-888-23234</li>
+                <li>Galicia Seguros: 0800-555-2272</li>
               </ul>
             </div>
             <div className="TelefonosBlock">
               <h3>ART – Emergencias:</h3>
               <ul>
+                <li>Prevencion: 0800-444-4278</li>
                 <li>Asociart: 0800-888-0093</li>
-                <li>Berkley: 0800-777-2020</li>
-                <li>Experta: 0800-888-0200</li>
-                <li>Federación Patronal: 0800-222-2222</li>
-                <li>La Segunda: 0800-444-2782</li>
-                <li>Provincia ART: 0800-333-1333</li>
-                <li>SMG: 0800-666-2000</li>
+                <li>Provincia art: 0800-333-1333</li>
+                <li>Andina art: 0800-222-0202</li>
+                <li>Experta art: 0800-888-0200</li>
               </ul>
             </div>
           </div>

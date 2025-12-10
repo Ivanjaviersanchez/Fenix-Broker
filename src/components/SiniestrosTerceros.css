@@ -1,0 +1,29 @@
+.siniestro-card {
+    text-align: center;
+}
+
+.contact-web {
+    flex-direction: column;
+    align-items: center;
+}
+
+.web-link {
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--color-2);
+  transition: 0.2s;
+}
+
+.web-link:hover {
+  filter: drop-shadow(0 0 6px rgba(0, 123, 255, 0.6));
+  color: var(--color-2);
+}
+
+.otros-ws {
+  margin-top: 15px;
+  justify-items: center;
+}
+

@@ -42,7 +42,7 @@ function HomePreguntas() {
                             <Accordion.Header>¿Qué cubre el seguro contra todo riesgo con franquicia?</Accordion.Header>
                             <Accordion.Body>
                             Te cubre ante responsabilidad civil, pérdida total y parcial por incendio, robo y/o hurto y accidente. Es ideal para quienes  quieren reducir el riesgo al valor de la franquicia. <br />
-                            Con Fenix, en seguros de automotor los daños parciales se cubren de acuerdo a la franquicia que elijas, puede ser franquicia de 3% o de 6% sobre el valor de 0km.
+                            Con Fenix, en seguros de automotor los daños parciales se cubren de acuerdo a la franquicia que elijas.
                             </Accordion.Body>
                         </Accordion.Item>
                         <Accordion.Item eventKey="4">
@@ -61,11 +61,12 @@ function HomePreguntas() {
                         <Accordion.Item eventKey="0">
                             <Accordion.Header>Auxilio Mecánico: ¿Cómo solicito la grúa?</Accordion.Header>
                             <Accordion.Body>
-                            Deberás llamar a SOS a los siguientes teléfonos dependiendo donde te encuentres: <br />
-                            Desde Argentina:   0800.345.1240 <br />
-                            Desde otro país    +54 351 4858321 (Cobro revertido) <br />
-                            Cobertura en: Argentina, Chile, Brasil (debajo del paralelo 24, Estado de Santa Catarina), Uruguay, Paraguay, Bolivia y Perú.  Río de Janeiro excluido. <br />
-                            Tené en cuenta que la asistencia para Perú será a través de reintegro, por lo que deberás solicitar el servicio a SOS y luego efectuar el trámite correspondiente.
+                            Deberás comunicarte con el número que figura en tu credencial de seguro. <br />
+                            Principales compañias: <br />
+                            Rivadavia Seguros 0800-666-6789 <br />
+                            Mercantil Andina 0800-777-2634 <br />
+                            Meridional Seguros 0800-333-3244 <br />
+                            Sancor Seguros 0800-777-4643
                             </Accordion.Body>
                         </Accordion.Item>
                         <Accordion.Item eventKey="1">
@@ -83,28 +84,24 @@ function HomePreguntas() {
                             <Accordion.Body>
                             En caso de que hayas tenido un siniestro tenés que saber que hay un plazo de 3 días para hacer la denuncia. <br />
                             Podés realizar la denuncia a través de alguno de nuestros canales: <br />
-                            • A través de tu Productor Asesor de Seguros. <br />
-                            • APP de Fenix Seguros <br />
-                            • Portal de asegurados de Fenix Seguros <br />
-                            • Por email a denuncias@-------.com.ar. En el asunto deberás colocar: DNI, nombre y apellido; y denuncia de (tipo de seguro) <br />
-                            • Equipo de Atención al Cliente: Llamando al 0810------- de lunes a viernes de 9 a 19 horas.
+                            • Por WhatsApp a través de un Productor Asesor de Seguros al 2235059024 <br />
+                            • Desde nuestro sitio web en la seccion de Siniestros podras completar el formulario para iniciar la denuncia. <br />
+                            • Por Email a siniestros@organizacionfenix.com detallando: DNI, nombre y apellido, tipo de seguro y descripción del siniestro.
                             </Accordion.Body>
                         </Accordion.Item>
                         <Accordion.Item eventKey="3">
                             <Accordion.Header>¿Cómo accedo a mi póliza?</Accordion.Header>
                             <Accordion.Body>
                             Como asegurado podés visualizar tu seguro en la APP Mi Argentina. <br />
-                            Ingresa a Contacto desde la nuestra Web y solicita tu póliza mediante un asesor
+                            Ingresa a Contacto desde la nuestra Web y solicita tu póliza mediante un asesor.
                             </Accordion.Body>
                         </Accordion.Item>
                         <Accordion.Item eventKey="4">
                             <Accordion.Header>Baja del seguro: ¿Querés dar de baja la póliza?</Accordion.Header>
                             <Accordion.Body>
-                            En el caso de que decidas anular tu póliza vigente podés hacerlo en cualquier momento. Para eso deberás solicitarlo a: <br />
-                            • Tu Productor Asesor de Seguros. <br />
-                            • Equipo de Atención al Cliente: De lunes a viernes de 9 a 19 horas al 0810-345-0492 <br />
-                            • Portal de asegurados de Fenix Seguros <br />
-                            • APP de Fenix Seguros
+                            En el caso de que decidas anular tu póliza vigente podés hacerlo en cualquier momento. Para eso deberás solicitarlo: <br />
+                            • Por WhatsApp a través de un Productor Asesor de Seguros al 2234002377 <br />
+                            • Por Email a produccion@organizacionfenix.com
                             </Accordion.Body>
                         </Accordion.Item>
                     </Accordion>
